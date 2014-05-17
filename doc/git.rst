@@ -7,14 +7,10 @@ Initializing a working copy
 
 Use the easy-setup shell script::
 
-    curl https://raw.github.com/odoo/odoo/master/checkout.sh | sh
+     curl -O https://raw.githubusercontent.com/odoo/odoo/master/checkout.sh
+     sh checkout.sh
 
 it will will ask a few questions and create a local copy.
-
-.. note:: if the repository is private, you have to download it manually then
-          execute it wherever you want your working copy to be created, go to
-          https://github.com/odoo/odoo/blob/master/checkout.sh then click the
-          **Raw** button.
 
 Git concepts
 ------------
@@ -106,6 +102,11 @@ Basic development workflow
 
 Tasks
 -----
+
+Converting your feature branches from bazaar
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`The readme`_ has some instructions.
 
 Viewing history: ``git log``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -236,3 +237,5 @@ checked-out branch/commit
 .. [#log-patch-empty] but only the changes performed by this actual commit,
                       for a merge the merged changes are not considered part
                       of the merge commit
+
+.. _the readme: https://github.com/odoo/odoo/blob/master/README.md#migration-from-bazaar
