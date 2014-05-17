@@ -2,6 +2,7 @@
 *.egg-info
 *.orig
 *.vim
+*.pyc
 build
 _build
 /bin
