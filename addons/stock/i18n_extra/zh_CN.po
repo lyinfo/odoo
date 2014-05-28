@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: OpenERP Server 6.0dev\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-27 14:41+0000\n"
-"PO-Revision-Date: 2014-05-27 23:04+0800\n"
+"PO-Revision-Date: 2014-05-28 09:27+0800\n"
 "Last-Translator: Kevin Wang <kevin_327@163.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -5658,9 +5658,8 @@ msgstr ""
 
 #. module: stock
 #: view:product.product:0
-#, fuzzy
 msgid "⇒ Request Procurement"
-msgstr "需求"
+msgstr "⇒ 需求"
 
 #. module: stock
 #: view:stock.inventory:0
@@ -5669,9 +5668,8 @@ msgstr ""
 
 #. module: stock
 #: view:product.product:0
-#, fuzzy
 msgid "⇒ Update"
-msgstr "更新"
+msgstr "⇒ 更新"
 
 #~ msgid ""
 #~ "Allow to manage several variants per product. As an example, if you  sell "
