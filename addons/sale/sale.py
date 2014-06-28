@@ -128,13 +128,12 @@ class sale_order(osv.osv):
         sale_clause = ''
         no_invoiced = False
         for arg in args:
-            if arg[1] == '=':
-                if arg[2]:
-                    clause += 'AND inv.state = \'paid\''
-                else:
-                    clause += 'AND inv.state != \'cancel\' AND sale.state != \'cancel\'  AND inv.state <> \'paid\'  AND rel.order_id = sale.id '
-                    sale_clause = ',  sale_order AS sale '
-                    no_invoiced = True
+            if (arg[1] == '=' and arg[2]) or (arg[1] == '!=' and not arg[2]):
+                clause += 'AND inv.state = \'paid\''
+            else:
+                clause += 'AND inv.state != \'cancel\' AND sale.state != \'cancel\'  AND inv.state <> \'paid\'  AND rel.order_id = sale.id '
+                sale_clause = ',  sale_order AS sale '
+                no_invoiced = True
 
         cursor.execute('SELECT rel.order_id ' \
                 'FROM sale_order_invoice_rel AS rel, account_invoice AS inv '+ sale_clause + \
@@ -186,10 +185,10 @@ class sale_order(osv.osv):
         return None
 
     _columns = {
-        'name': fields.char('Order Reference', size=64, required=True,
+        'name': fields.char('Order Reference', required=True,
             readonly=True, states={'draft': [('readonly', False)], 'sent': [('readonly', False)]}, select=True),
-        'origin': fields.char('Source Document', size=64, help="Reference of the document that generated this sales order request."),
-        'client_order_ref': fields.char('Reference/Description', size=64),
+        'origin': fields.char('Source Document', help="Reference of the document that generated this sales order request."),
+        'client_order_ref': fields.char('Reference/Description'),
         'state': fields.selection([
             ('draft', 'Draft Quotation'),
             ('sent', 'Quotation Sent'),
