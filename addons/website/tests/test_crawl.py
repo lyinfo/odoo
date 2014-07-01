@@ -3,6 +3,7 @@ import logging
 import urlparse
 import unittest2
 import urllib2
+import time
 import werkzeug.urls
 
 import lxml.html
@@ -26,6 +27,10 @@ class Crawler(openerp.tests.HttpCase):
     def crawl(self, url, seen=None, msg=''):
         if seen ==  None:
             seen = set()
+        if url in seen:
+            return seen
+        else:
+            seen.add(url)
 
         _logger.info("%s %s", msg, url)
         r = self.url_open(url)
@@ -52,21 +57,34 @@ class Crawler(openerp.tests.HttpCase):
                     not parts.path.startswith('/') or \
                     parts.path == '/web' or\
                     parts.path.startswith('/web/') or \
+                    parts.path.startswith('/en_US/') or \
                     (parts.scheme and parts.scheme not in ('http', 'https')):
                     continue
 
-                if href not in seen:
-                    seen.add(url)
-                    self.crawl(href, seen, msg)
+                self.crawl(href, seen, msg)
+        return seen
+
 
     def test_10_crawl_public(self):
-        self.crawl('/', msg='Anonymous Coward')
+        t0 = time.time()
+        seen = self.crawl('/', msg='Anonymous Coward')
+        count = len(seen)
+        duration = time.time() - t0
+        _logger.log(25, "public crawled %s urls in %.2fs, %.3fs per query", count, duration, duration/count)
 
     def test_20_crawl_demo(self):
+        t0 = time.time()
         self.authenticate('demo', 'demo')
-        self.crawl('/', msg='demo')
+        seen = self.crawl('/', msg='demo')
+        count = len(seen)
+        duration = time.time() - t0
+        _logger.log(25, "demo crawled %s urls in %.2fs, %.3fs per query", count, duration, duration/count)
 
     def test_30_crawl_admin(self):
+        t0 = time.time()
         self.authenticate('admin', 'admin')
-        self.crawl('/', msg='admin')
+        seen = self.crawl('/', msg='admin')
+        count = len(seen)
+        duration = time.time() - t0
+        _logger.log(25, "admin crawled %s urls in %.2fs, %.3fs per query", count, duration, duration/count)
 

@@ -226,7 +226,7 @@ def load_module_graph(cr, graph, status=None, perform_checks=True, skip_modules=
                 if hasattr(package, kind):
                     delattr(package, kind)
 
-            _logger.log(25, "%s loaded in %.2fs", package.name, time.time() - tm0)
+            #_logger.log(25, "%s loaded in %.2fs", package.name, time.time() - tm0)
 
         registry._init_modules.add(package.name)
         cr.commit()
