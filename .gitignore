@@ -18,7 +18,8 @@ openerp/filestore
 # generated for windows installer?
 install/win32/*.bat
 install/win32/meta.py
-
+#poedit *.mo
+*.mo
 # various virtualenv
 /bin/
 /build/
