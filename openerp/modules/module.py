@@ -278,7 +278,7 @@ def init_module_models(cr, module_name, obj_list):
     for obj in obj_list:
         obj._auto_end(cr, {'module': module_name})
         cr.commit()
-    todo.sort()
+    todo.sort(key=lambda x: x[0])
     for t in todo:
         t[1](cr, *t[2])
     cr.commit()
@@ -425,11 +425,12 @@ def run_unit_tests(module_name, dbname, position=runs_at_install):
         suite = unittest2.TestSuite(itertools.ifilter(position, tests))
 
         if suite.countTestCases():
-            tm0 = time.time()
+            t0 = time.time()
+            t0_sql = openerp.sql_db.sql_counter
             _logger.info('%s running tests.', m.__name__)
             result = unittest2.TextTestRunner(verbosity=2, stream=TestStream(m.__name__)).run(suite)
-            if time.time() - tm0 > 5:
-                _logger.log(25, "%s tested in %.2fs", m.__name__, time.time() - tm0)
+            if time.time() - t0 > 5:
+                _logger.log(25, "%s tested in %.2fs, %s queries", m.__name__, time.time() - t0, openerp.sql_db.sql_counter - t0_sql)
             if not result.wasSuccessful():
                 r = False
                 _logger.error("Module %s: %d failures, %d errors", module_name, len(result.failures), len(result.errors))
