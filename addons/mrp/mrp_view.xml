@@ -1103,6 +1103,9 @@
                  <xpath expr="//field[@name='default_resupply_wh_id']" position="before">
                     <field name="manufacture_to_resupply" />
                 </xpath>
+                <field name="wh_output_stock_loc_id" position="after">
+                    <field name="wh_raw_stock_loc_id"/>
+                </field>
             </field>
         </record>
     </data>
