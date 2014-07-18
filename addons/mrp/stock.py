@@ -205,6 +205,8 @@ class stock_warehouse(osv.osv):
         'manufacture_to_resupply': fields.boolean('Manufacture in this Warehouse', 
                                                   help="When products are manufactured, they can be manufactured in this warehouse."),
         'manufacture_pull_id': fields.many2one('procurement.rule', 'Manufacture Rule'),
+        'wh_raw_stock_loc_id': fields.many2one('stock.location', 'Raw Materials Location',
+                                           help='Location where the system will look for components.'),
     }
 
     def _get_manufacture_pull_rule(self, cr, uid, warehouse, context=None):

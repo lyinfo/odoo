@@ -465,9 +465,12 @@ class mrp_production(osv.osv):
         return result
 
     def _src_id_default(self, cr, uid, ids, context=None):
+        data_obj = self.pool.get('ir.model.data')
         try:
-            location_model, location_id = self.pool.get('ir.model.data').get_object_reference(cr, uid, 'stock', 'stock_location_stock')
-            self.pool.get('stock.location').check_access_rule(cr, uid, [location_id], 'read', context=context)
+            location_id = wh = data_obj.get_object(cr, uid, 'stock', 'warehouse0').wh_raw_stock_loc_id.id
+            if not location_id:
+                location_model, location_id = data_obj.get_object_reference(cr, uid, 'stock', 'stock_location_stock')
+                self.pool.get('stock.location').check_access_rule(cr, uid, [location_id], 'read', context=context)
         except (orm.except_orm, ValueError):
             location_id = False
         return location_id
