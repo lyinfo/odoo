@@ -33,6 +33,7 @@ Allow users to login through OAuth2 Provider.
     'website': 'http://www.openerp.com',
     'depends': ['base', 'web', 'base_setup', 'auth_signup'],
     'data': [
+        'res_config.xml',
         'res_users.xml',
         'auth_oauth_data.xml',
         'auth_oauth_data.yml',
