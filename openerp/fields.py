@@ -622,7 +622,7 @@ class Field(object):
                 be computed using :meth:`BaseModel.name_get`, if relevant
                 for the field
         """
-        return value
+        return False if value is None else value
 
     def convert_to_write(self, value, target=None, fnames=None):
         """ convert `value` from the cache to a valid value for method
@@ -850,12 +850,6 @@ class Field(object):
                 spec.append((field, target._ids))
 
         return spec
-
-
-class Any(Field):
-    """ Field for arbitrary Python values. """
-    # Warning: no storage is defined for this type of field!
-    type = 'any'
 
 
 class Boolean(Field):
