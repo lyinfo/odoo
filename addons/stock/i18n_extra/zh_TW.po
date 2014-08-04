@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Stock\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-25 01:25+0000\n"
-"PO-Revision-Date: 2014-07-25 10:16+0800\n"
+"PO-Revision-Date: 2014-08-04 18:18+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -176,7 +176,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:235
 #, python-format
 msgid "< Previous"
-msgstr ""
+msgstr "上一筆"
 
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_routes_form
@@ -713,7 +713,7 @@ msgstr ""
 #. module: stock
 #: view:stock.picking:0
 msgid "Cancel Transfer"
-msgstr ""
+msgstr "取消確認"
 
 #. module: stock
 #: selection:stock.inventory,state:0 selection:stock.move,state:0
@@ -760,14 +760,14 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:149
 #, python-format
 msgid "Change destination location"
-msgstr ""
+msgstr "修改目的貨位"
 
 #. module: stock
 #. openerp-web
 #: code:addons/stock/static/src/xml/picking.xml:145
 #, python-format
 msgid "Change source location"
-msgstr ""
+msgstr "修改來源貨位"
 
 #. module: stock
 #: view:stock.picking:0
@@ -942,7 +942,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:56
 #, python-format
 msgid "Create backorder"
-msgstr ""
+msgstr "分批處理"
 
 #. module: stock
 #: field:stock.inventory,move_ids:0
@@ -1341,7 +1341,7 @@ msgstr ""
 #. module: stock
 #: view:stock.picking:0
 msgid "Enter Transfer Details"
-msgstr ""
+msgstr "部分確認"
 
 #. module: stock
 #: code:addons/stock/stock.py:617 code:addons/stock/stock.py:2361
@@ -1395,7 +1395,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:77
 #, python-format
 msgid "Filter by location..."
-msgstr ""
+msgstr "過濾貨位"
 
 #. module: stock
 #: view:stock.quant:0
@@ -1469,7 +1469,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:100
 #, python-format
 msgid "From"
-msgstr ""
+msgstr "從"
 
 #. module: stock
 #: field:product.template,track_all:0
@@ -1515,7 +1515,7 @@ msgstr ""
 #. module: stock
 #: view:stock.picking:0
 msgid "General Informations"
-msgstr ""
+msgstr "一般資訊"
 
 #. module: stock
 #: field:stock.config.settings,group_stock_inventory_valuation:0
@@ -2375,7 +2375,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:232
 #, python-format
 msgid "Menu"
-msgstr ""
+msgstr "選單"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_inventory_merge
@@ -2536,7 +2536,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:236
 #, python-format
 msgid "Next >"
-msgstr ""
+msgstr "下一筆"
 
 #. module: stock
 #: selection:stock.pack.operation,processed:0
@@ -2667,7 +2667,7 @@ msgstr ""
 #. module: stock
 #: view:stock.picking:0
 msgid "Open Barcode interface"
-msgstr ""
+msgstr "打開點貨窗口"
 
 #. module: stock
 #: model:ir.actions.client,name:stock.action_client_warehouse_menu
@@ -2706,14 +2706,14 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:69
 #, python-format
 msgid "Operations Processed"
-msgstr ""
+msgstr "已處理"
 
 #. module: stock
 #. openerp-web
 #: code:addons/stock/static/src/xml/picking.xml:68
 #, python-format
 msgid "Operations ToDo"
-msgstr ""
+msgstr "等待處理..."
 
 #. module: stock
 #: help:stock.move,linked_move_operation_ids:0
@@ -2813,7 +2813,7 @@ msgstr ""
 #: view:stock.quant:0 field:stock.quant,owner_id:0
 #: field:stock.quant.package,owner_id:0
 msgid "Owner"
-msgstr ""
+msgstr "擁有者"
 
 #. module: stock
 #: field:stock.move,restrict_partner_id:0
@@ -2939,7 +2939,7 @@ msgstr ""
 #. module: stock
 #: field:stock.move,partially_available:0 selection:stock.picking,state:0
 msgid "Partially Available"
-msgstr ""
+msgstr "部分可用"
 
 #. module: stock
 #: model:ir.model,name:stock.model_res_partner
@@ -3150,7 +3150,7 @@ msgstr ""
 #: field:stock.fixed.putaway.strat,sequence:0 field:stock.move,priority:0
 #: field:stock.picking,priority:0
 msgid "Priority"
-msgstr ""
+msgstr "優先級"
 
 #. module: stock
 #: help:stock.picking,priority:0
@@ -3164,7 +3164,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:87 view:stock.move:0
 #, python-format
 msgid "Process"
-msgstr ""
+msgstr "處理"
 
 #. module: stock
 #: view:stock.move:0
@@ -3186,7 +3186,7 @@ msgstr ""
 #: field:stock.move,group_id:0 view:stock.picking:0
 #: field:stock.picking,group_id:0 field:stock.warehouse.orderpoint,group_id:0
 msgid "Procurement Group"
-msgstr ""
+msgstr "需求源"
 
 #. module: stock
 #: field:procurement.rule,location_id:0
@@ -3246,7 +3246,7 @@ msgstr ""
 #: field:stock.return.picking.line,product_id:0
 #, python-format
 msgid "Product"
-msgstr ""
+msgstr "產品"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_product_category_config_stock
@@ -3534,7 +3534,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:193
 #, python-format
 msgid "Quit"
-msgstr ""
+msgstr "離開"
 
 #. module: stock
 #: field:product.template,loc_rack:0
@@ -3853,7 +3853,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:98
 #, python-format
 msgid "Scanned"
-msgstr ""
+msgstr "收到的數量"
 
 #. module: stock
 #. openerp-web
@@ -3950,7 +3950,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:200
 #, python-format
 msgid "Select your operation"
-msgstr ""
+msgstr "選擇您的操作"
 
 #. module: stock
 #: field:stock.inventory,filter:0
@@ -4705,7 +4705,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:101
 #, python-format
 msgid "To"
-msgstr ""
+msgstr "到"
 
 #. module: stock
 #: selection:stock.picking,invoice_state:0
@@ -4732,7 +4732,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:99
 #, python-format
 msgid "Todo"
-msgstr ""
+msgstr "待處理的數量"
 
 #. module: stock
 #: view:False:0
@@ -4782,7 +4782,7 @@ msgstr ""
 #. module: stock
 #: view:stock.picking:0
 msgid "Transfer"
-msgstr ""
+msgstr "整批確認"
 
 #. module: stock
 #: selection:stock.picking,state:0
