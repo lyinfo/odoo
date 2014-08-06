@@ -7,7 +7,6 @@ msgstr ""
 "Project-Id-Version: Odoo Addons account\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-24 01:38+0000\n"
-"PO-Revision-Date: 2014-08-04 15:14+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1363,7 +1362,7 @@ msgstr ""
 #: field:cash.box.out,amount:0
 #, python-format
 msgid "Amount"
-msgstr ""
+msgstr "金額"
 
 #. module: account
 #: view:account.payment.term.line:0
@@ -3268,7 +3267,7 @@ msgstr ""
 #: view:account.invoice.report:0 code:addons/account/account_invoice.py:354
 #, python-format
 msgid "Customer"
-msgstr ""
+msgstr "客戶"
 
 #. module: account
 #: view:False:0
@@ -3554,7 +3553,7 @@ msgstr ""
 #: field:analytic.entries.report,name:0 field:report.invoice.created,name:0
 #, python-format
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #. module: account
 #: view:False:0
@@ -3677,7 +3676,7 @@ msgstr ""
 #: selection:account.subscription,state:0
 #: selection:report.invoice.created,state:0
 msgid "Draft"
-msgstr ""
+msgstr "草稿"
 
 #. module: account
 #: model:ir.ui.menu,name:account.periodical_processing_journal_entries_validation
@@ -3687,17 +3686,17 @@ msgstr ""
 #. module: account
 #: view:False:0 view:account.invoice:0
 msgid "Draft Invoice"
-msgstr ""
+msgstr "發票草稿"
 
 #. module: account
 #: view:account.invoice:0
 msgid "Draft Invoice "
-msgstr ""
+msgstr "發票草稿"
 
 #. module: account
 #: view:account.invoice:0 view:account.invoice.report:0
 msgid "Draft Invoices"
-msgstr ""
+msgstr "發票草稿"
 
 #. module: account
 #: view:account.invoice:0
@@ -5213,7 +5212,7 @@ msgstr ""
 #. module: account
 #: view:account.invoice:0 field:account.invoice,invoice_line:0
 msgid "Invoice Lines"
-msgstr ""
+msgstr "發票明細"
 
 #. module: account
 #: view:account.invoice:0
@@ -7338,7 +7337,7 @@ msgstr ""
 #: field:report.account.sales,product_id:0
 #: field:report.account_type.sales,product_id:0
 msgid "Product"
-msgstr ""
+msgstr "產品"
 
 #. module: account
 #: model:ir.model,name:account.model_product_category
@@ -7532,7 +7531,7 @@ msgstr ""
 #: field:report.account.sales,quantity:0
 #: field:report.account_type.sales,quantity:0
 msgid "Quantity"
-msgstr ""
+msgstr "數量"
 
 #. module: account
 #: field:temp.range,name:0
@@ -8667,7 +8666,7 @@ msgstr ""
 #. module: account
 #: field:account.invoice,amount_untaxed:0
 msgid "Subtotal"
-msgstr ""
+msgstr "未完稅金額"
 
 #. module: account
 #: view:account.bank.statement:0
@@ -8801,7 +8800,7 @@ msgstr ""
 #: model:ir.model,name:account.model_account_tax
 #, python-format
 msgid "Tax"
-msgstr ""
+msgstr "稅"
 
 #. module: account
 #: code:addons/account/account.py:3352
@@ -8991,7 +8990,7 @@ msgstr ""
 #: model:ir.ui.menu,name:account.menu_tax_report
 #: model:ir.ui.menu,name:account.next_id_27
 msgid "Taxes"
-msgstr ""
+msgstr "稅別"
 
 #. module: account
 #: model:ir.model,name:account.model_account_fiscal_position_tax
@@ -9918,7 +9917,7 @@ msgstr ""
 #: field:report.account_type.sales,amount_total:0
 #: field:report.invoice.created,amount_total:0
 msgid "Total"
-msgstr ""
+msgstr "總計"
 
 #. module: account
 #: view:account.invoice:0 view:account.move:0 view:report.invoice.created:0
@@ -10131,7 +10130,7 @@ msgstr ""
 #. module: account
 #: view:False:0 field:account.invoice.line,price_unit:0
 msgid "Unit Price"
-msgstr ""
+msgstr "單價"
 
 #. module: account
 #: field:account.cashbox.line,pieces:0
