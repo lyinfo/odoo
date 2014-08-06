@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Stock\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-25 01:25+0000\n"
-"PO-Revision-Date: 2014-08-04 18:18+0800\n"
+"PO-Revision-Date: 2014-08-06 21:06+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -454,7 +454,7 @@ msgstr ""
 #: model:ir.ui.menu,name:stock.menu_action_picking_type_form
 #: view:stock.picking.type:0
 msgid "All Operations"
-msgstr ""
+msgstr "所有操作"
 
 #. module: stock
 #: selection:stock.picking,move_type:0
@@ -619,12 +619,12 @@ msgstr ""
 #: model:ir.actions.act_window,name:stock.action_picking_tree_backorder
 #: view:stock.picking:0 view:stock.picking.type:0
 msgid "Backorders"
-msgstr ""
+msgstr "欠貨"
 
 #. module: stock
 #: view:stock.picking.type:0
 msgid "Backorders (%)"
-msgstr ""
+msgstr "欠貨(%)"
 
 #. module: stock
 #: view:False:0
@@ -2032,12 +2032,12 @@ msgstr ""
 #. module: stock
 #: view:stock.picking.type:0
 msgid "Last 10 Done Operations"
-msgstr ""
+msgstr "最近10筆已完成的操作"
 
 #. module: stock
 #: field:stock.picking.type,last_done_picking:0
 msgid "Last 10 Done Pickings"
-msgstr ""
+msgstr "最近10筆已完成的單據"
 
 #. module: stock
 #: field:stock.picking,message_last_post:0
@@ -2096,12 +2096,12 @@ msgstr ""
 #: view:stock.picking.type:0
 #, python-format
 msgid "Late"
-msgstr ""
+msgstr "延遲"
 
 #. module: stock
 #: view:stock.picking.type:0
 msgid "Late (%)"
-msgstr ""
+msgstr "延遲(%)"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_late
@@ -3544,7 +3544,7 @@ msgstr ""
 #. module: stock
 #: view:stock.move:0 view:stock.picking:0 view:stock.picking.type:0
 msgid "Ready"
-msgstr ""
+msgstr "就緒"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_ready
@@ -3761,7 +3761,7 @@ msgstr ""
 #. module: stock
 #: model:ir.actions.act_window,name:stock.act_stock_return_picking
 msgid "Return Shipment"
-msgstr ""
+msgstr "退貨"
 
 #. module: stock
 #: view:stock.return.picking:0
@@ -3777,7 +3777,7 @@ msgstr ""
 #. module: stock
 #: view:stock.picking:0
 msgid "Reverse Transfer"
-msgstr ""
+msgstr "退貨"
 
 #. module: stock
 #: field:stock.location,parent_right:0
@@ -5029,7 +5029,7 @@ msgstr ""
 #: selection:stock.move,state:0 view:stock.picking:0
 #: selection:stock.picking,state:0 view:stock.picking.type:0
 msgid "Waiting Availability"
-msgstr ""
+msgstr "等待可用"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_waiting
