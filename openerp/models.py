@@ -841,10 +841,10 @@ class BaseModel(object):
         ir_model_data = self.sudo().env['ir.model.data']
         data = ir_model_data.search([('model', '=', self._name), ('res_id', '=', self.id)])
         if data:
-            if data.module:
-                return '%s.%s' % (data.module, data.name)
+            if data[0].module:
+                return '%s.%s' % (data[0].module, data[0].name)
             else:
-                return data.name
+                return data[0].name
         else:
             postfix = 0
             name = '%s_%s' % (self._table, self.id)
@@ -1292,17 +1292,21 @@ class BaseModel(object):
         # trigger view init hook
         self.view_init(cr, uid, fields_list, context)
 
-        # use a new record to determine default values
+        # use a new record to determine default values; evaluate fields on the
+        # new record and put default values in result
         record = self.new(cr, uid, {}, context=context)
+        result = {}
         for name in fields_list:
             if name in self._fields:
-                record[name]            # force evaluation of defaults
+                value = record[name]
+                if name in record._cache:
+                    result[name] = value        # it really is a default value
 
-        # retrieve defaults from record's cache
-        result = self._convert_to_write(record._cache)
+        # convert default values to the expected format
+        result = self._convert_to_write(result)
         for key, val in result.items():
             if isinstance(val, NewId):
-                del result[key]         # ignore new records in defaults
+                del result[key]                 # ignore new records in defaults
 
         return result
 
@@ -1593,14 +1597,23 @@ class BaseModel(object):
         """
         view_id = self.get_formview_id(cr, uid, id, context=context)
         return {
-                'type': 'ir.actions.act_window',
-                'res_model': self._name,
-                'view_type': 'form',
-                'view_mode': 'form',
-                'views': [(view_id, 'form')],
-                'target': 'current',
-                'res_id': id,
-            }
+            'type': 'ir.actions.act_window',
+            'res_model': self._name,
+            'view_type': 'form',
+            'view_mode': 'form',
+            'views': [(view_id, 'form')],
+            'target': 'current',
+            'res_id': id,
+        }
+
+    def get_access_action(self, cr, uid, id, context=None):
+        """ Return an action to open the document. This method is meant to be
+        overridden in addons that want to give specific access to the document.
+        By default it opens the formview of the document.
+
+        :paramt int id: id of the document to open
+        """
+        return self.get_formview_action(cr, uid, id, context=context)
 
     def _view_look_dom_arch(self, cr, uid, node, view_id, context=None):
         return self.pool['ir.ui.view'].postprocess_and_fields(
@@ -1729,12 +1742,7 @@ class BaseModel(object):
             :rtype: list
             :return: list of pairs ``(id, text_repr)`` for all matching records.
         """
-        args = list(args or [])
-        if not self._rec_name:
-            _logger.warning("Cannot execute name_search, no _rec_name defined on %s", self._name)
-        elif not (name == '' and operator == 'ilike'):
-            args += [(self._rec_name, operator, name)]
-        return self.search(args, limit=limit).name_get()
+        return self._name_search(name, args, operator, limit=limit)
 
     def _name_search(self, cr, user, name='', args=None, operator='ilike', context=None, limit=100, name_get_uid=None):
         # private implementation of name_search, allows passing a dedicated user
@@ -2101,6 +2109,7 @@ class BaseModel(object):
             f for f in fields
             if f not in ('id', 'sequence')
             if f not in groupby_fields
+            if f in self._all_columns
             if self._all_columns[f].column._type in ('integer', 'float')
             if getattr(self._all_columns[f].column, '_classic_write')]
 
@@ -3627,7 +3636,8 @@ class BaseModel(object):
 
         # put the values of pure new-style fields into cache, and inverse them
         if new_vals:
-            self._cache.update(self._convert_to_cache(new_vals))
+            for record in self:
+                record._cache.update(record._convert_to_cache(new_vals, update=True))
             for key in new_vals:
                 self._fields[key].determine_inverse(self)
 
@@ -5098,11 +5108,17 @@ class BaseModel(object):
         context = dict(args[0] if args else self._context, **kwargs)
         return self.with_env(self.env(context=context))
 
-    def _convert_to_cache(self, values, validate=True):
-        """ Convert the `values` dictionary into cached values. """
+    def _convert_to_cache(self, values, update=False, validate=True):
+        """ Convert the `values` dictionary into cached values.
+
+            :param update: whether the conversion is made for updating `self`;
+                this is necessary for interpreting the commands of *2many fields
+            :param validate: whether values must be checked
+        """
         fields = self._fields
+        target = self if update else self.browse()
         return {
-            name: fields[name].convert_to_cache(value, self.env, validate=validate)
+            name: fields[name].convert_to_cache(value, target, validate=validate)
             for name, value in values.iteritems()
             if name in fields
         }
@@ -5191,7 +5207,7 @@ class BaseModel(object):
             exist in the database.
         """
         record = self.browse([NewId()])
-        record._cache.update(self._convert_to_cache(values))
+        record._cache.update(record._convert_to_cache(values, update=True))
 
         if record.env.in_onchange:
             # The cache update does not set inverse fields, so do it manually.
@@ -5199,8 +5215,9 @@ class BaseModel(object):
             # records, if that field depends on the main record.
             for name in values:
                 field = self._fields.get(name)
-                if field and field.inverse_field:
-                    field.inverse_field._update(record[name], record)
+                if field:
+                    for invf in field.inverse_fields:
+                        invf._update(record[name], record)
 
         return record
 
@@ -5398,7 +5415,7 @@ class BaseModel(object):
 
         # invalidate fields and inverse fields, too
         spec = [(f, ids) for f in fields] + \
-               [(f.inverse_field, None) for f in fields if f.inverse_field]
+               [(invf, None) for f in fields for invf in f.inverse_fields]
         self.env.invalidate(spec)
 
     @api.multi
@@ -5644,10 +5661,12 @@ class RecordCache(MutableMapping):
         self._recs = records
 
     def __contains__(self, field):
-        """ Return whether `records[0]` has a value for `field` in cache. """
+        """ Return whether `records[0]` has a regular value for `field` in cache. """
         if isinstance(field, basestring):
             field = self._recs._fields[field]
-        return self._recs.id in self._recs.env.cache[field]
+        dummy = SpecialValue(None)
+        value = self._recs.env.cache[field].get(self._recs.id, dummy)
+        return not isinstance(value, SpecialValue)
 
     def __getitem__(self, field):
         """ Return the cached value of `field` for `records[0]`. """
