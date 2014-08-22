@@ -1280,6 +1280,21 @@ class stock_picking(osv.osv):
             stock_move_obj.action_assign(cr, uid, move_ids, context=context)
 
     @api.cr_uid_ids_context
+    def do_enter_transfer_details(self, cr, uid, picking, context=None):
+        if not context:
+            context = {}
+
+        context.update({
+            'active_model': self._name,
+            'active_ids': picking,
+            'active_id': len(picking) and picking[0] or False
+        })
+
+        created_id = self.pool['stock.transfer_details'].create(cr, uid, {'picking_id': len(picking) and picking[0] or False}, context)
+        return self.pool['stock.transfer_details'].wizard_view(cr, uid, created_id, context)
+
+
+    @api.cr_uid_ids_context
     def do_transfer(self, cr, uid, picking_ids, context=None):
         """
             If no pack operation, we do simple action_done of the picking
@@ -2068,7 +2083,7 @@ class stock_move(osv.osv):
         """ Checks if serial number is assigned to stock move or not and raise an error if it had to.
         """
         self.check_tracking_product(cr, uid, move.product_id, lot_id, move.location_id, move.location_dest_id, context=context)
-        
+
 
     def action_assign(self, cr, uid, ids, context=None):
         """ Checks the product type and accordingly writes the state.
@@ -3620,8 +3635,7 @@ class stock_package(osv.osv):
 
     def action_print(self, cr, uid, ids, context=None):
         context = dict(context or {}, active_ids=ids)
-        return self.pool.get("report").get_action(cr, uid, ids, 'stock.report_package_barcode', context=context)
-
+        return self.pool.get("report").get_action(cr, uid, ids, 'stock.report_package_barcode_small', context=context)
 
     def unpack(self, cr, uid, ids, context=None):
         quant_obj = self.pool.get('stock.quant')
@@ -3749,9 +3763,9 @@ class stock_pack_operation(osv.osv):
         'product_uom_id': fields.many2one('product.uom', 'Product Unit of Measure'),
         'product_qty': fields.float('Quantity', digits_compute=dp.get_precision('Product Unit of Measure'), required=True),
         'qty_done': fields.float('Quantity Processed', digits_compute=dp.get_precision('Product Unit of Measure')),
-        'package_id': fields.many2one('stock.quant.package', 'Package'),  # 2
+        'package_id': fields.many2one('stock.quant.package', 'Source Package'),  # 2
         'lot_id': fields.many2one('stock.production.lot', 'Lot/Serial Number'),
-        'result_package_id': fields.many2one('stock.quant.package', 'Container Package', help="If set, the operations are packed into this package", required=False, ondelete='cascade'),
+        'result_package_id': fields.many2one('stock.quant.package', 'Destination Package', help="If set, the operations are packed into this package", required=False, ondelete='cascade'),
         'date': fields.datetime('Date', required=True),
         'owner_id': fields.many2one('res.partner', 'Owner', help="Owner of the quants"),
         #'update_cost': fields.boolean('Need cost update'),
@@ -3759,8 +3773,8 @@ class stock_pack_operation(osv.osv):
         'currency': fields.many2one('res.currency', string="Currency", help="Currency in which Unit cost is expressed", ondelete='CASCADE'),
         'linked_move_operation_ids': fields.one2many('stock.move.operation.link', 'operation_id', string='Linked Moves', readonly=True, help='Moves impacted by this operation for the computation of the remaining quantities'),
         'remaining_qty': fields.function(_get_remaining_qty, type='float', string='Remaining Qty'),
-        'location_id': fields.many2one('stock.location', 'Location From', required=True),
-        'location_dest_id': fields.many2one('stock.location', 'Location To', required=True),
+        'location_id': fields.many2one('stock.location', 'Source Location', required=True),
+        'location_dest_id': fields.many2one('stock.location', 'Destination Location', required=True),
         'processed': fields.selection([('true','Yes'), ('false','No')],'Has been processed?', required=True),
     }
 

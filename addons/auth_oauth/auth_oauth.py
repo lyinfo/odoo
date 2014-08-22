@@ -22,4 +22,5 @@ class auth_oauth_provider(osv.osv):
     }
     _defaults = {
         'enabled' : False,
+        'css_class' : "zocial",
     }
