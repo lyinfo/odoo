@@ -1566,12 +1566,9 @@ class property(function):
             column = obj._all_columns[prop_name].column
             values = ir_property.get_multi(cr, uid, prop_name, obj._name, ids, context=context)
             if column._type == 'many2one':
-                # name_get the values as SUPERUSER_ID
-                vals = None
-                for v in values.itervalues():
-                    if v:
-                        vals = v if not vals else (vals | v)
-
+                # name_get the non-null values as SUPERUSER_ID
+                vals = sum(set(filter(None, values.itervalues())),
+                           obj.pool[column._obj].browse(cr, uid, [], context=context))
                 vals_name = dict(vals.sudo().name_get()) if vals else {}
                 for id, value in values.iteritems():
                     ng = False
@@ -1587,12 +1584,12 @@ class property(function):
     def __init__(self, **args):
         if 'view_load' in args:
             _logger.warning("view_load attribute is deprecated on ir.fields. Args: %r", args)
-        obj = 'relation' in args and args['relation'] or ''
+        args = dict(args)
+        args['obj'] = args.pop('relation', '') or args.get('obj', '')
         super(property, self).__init__(
             fnct=self._fnct_read,
             fnct_inv=self._fnct_write,
             fnct_search=self._fnct_search,
-            obj=obj,
             multi='properties',
             **args
         )
