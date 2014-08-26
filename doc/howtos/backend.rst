@@ -4,8 +4,8 @@
 Backend
 =======
 
-Build an Odoo module
-====================
+Start/Stop the Odoo server
+==========================
 
 Odoo uses a client/server architecture in which clients are web browsers
 accessing the odoo server via RPC.
@@ -13,6 +13,19 @@ accessing the odoo server via RPC.
 Business logic and extension is generally performed on the server side,
 although supporting client features (e.g. new data representation such as
 interactive maps) can be added to the client.
+
+In order to start the server, simply invoke the command :ref:`odoo.py
+<reference/cmdline>` in the shell from the Odoo main directory:
+
+.. code:: bash
+
+    ./odoo.py
+
+The server is stopped by hitting ``Ctrl-C`` twice from the terminal, or by
+killing the corresponding OS process.
+
+Build an Odoo module
+====================
 
 Both server and client extensions are packaged as *modules* which are
 optionally loaded in a *database*.
@@ -92,15 +105,29 @@ might contain::
 
     import mymodule
 
+Fortunately, there is a mechanism to help you set up an module. The command
+``odoo.py`` has a subcommand :ref:`scaffold <reference/cmdline/scaffold>` to
+create an empty module:
+
+.. code:: bash
+
+    ./odoo.py scaffold <module name> <where to put it>
+
+The command creates a subdirectory for your module, and automatically creates a
+bunch of standard files for a module. Most of them simply contain commented code
+or XML. The usage of most of those files will be explained along this tutorial.
+
 .. exercise:: Module creation
 
-    Create an empty module Open Academy, install it in Odoo.
+    Use the command line above to  create an empty module Open Academy, and
+    install it in Odoo.
 
     .. only:: solutions
 
-        #. Create a new folder ``openacademy``
-        #. Create an empty ``openacademy/__init__.py`` file
-        #. Create an ``openacademy/__openerp__.py`` file
+        #. Invoke the command ``./odoo.py scaffold openacademy addons`` in the
+           Odoo directory.
+        #. Adapt the manifest file to your module.
+        #. Don't bother about the other files.
 
         .. patch::
 
@@ -200,8 +227,7 @@ overridden by setting :attr:`~openerp.models.Model._rec_name`.
 
     .. only:: solutions
 
-        #. Create a new file ``openacademy/course.py``
-        #. Edit ``openacademy/__init__.py`` to import it
+        Edit the file ``openacademy/models.py`` to include a *Course* class.
 
         .. patch::
 
@@ -245,8 +271,7 @@ be declared in the ``'data'`` list (always loaded) or in the ``'demo'`` list
 
     .. only:: solutions
 
-        #. Create a new file ``openacademy/demo.xml``
-        #. Add the file to the ``'demo'`` list of your ``__openerp__.py``
+        Edit the file ``openacademy/demo.xml`` to include some data.
 
         .. patch::
 
@@ -475,7 +500,7 @@ client data; it is also related to its sale order line records.
 
     .. only:: solutions
 
-        Create class *Session*:
+        Create the class *Session* in ``openacademy/models.py``.
 
         .. patch::
 
@@ -664,7 +689,8 @@ instead of a single view its ``arch`` field is composed of any number of
 .. exercise:: Alter existing content
 
     * Using model inheritance, modify the existing *Partner* model to add an
-      ``instructor`` boolean field
+      ``instructor`` boolean field, and a many2many field that corresponds to
+      the session-partner relation
     * Using view inheritance, display this fields in the partner form view
 
     .. only:: solutions
@@ -675,9 +701,9 @@ instead of a single view its ``arch`` field is composed of any number of
            inspect the view, find its external ID and the place to put the
            new field.
 
-       #. Create a ``openacademy/partner.py`` and import it in
+       #. Create a file ``openacademy/partner.py`` and import it in
           ``__init__.py``
-       #. Create an ``openacademy/views/partner.xml`` and add it to
+       #. Create a file ``openacademy/views/partner.xml`` and add it to
           ``__openerp__.py``
 
        .. patch::
@@ -1330,9 +1356,9 @@ rights are usually created by a CSV file named after its model:
 
         #. Create a new file ``openacademy/security/security.xml`` to
            hold the OpenAcademy Manager group
-        #. Create a new file ``openacademy/security/ir.model.access.csv`` with
+        #. Edit the file ``openacademy/security/ir.model.access.csv`` with
            the access rights to the models
-        #. finally update ``openacademy/__openerp__.py`` to add the new data
+        #. Finally update ``openacademy/__openerp__.py`` to add the new data
            files to it
 
         .. patch::
@@ -1385,10 +1411,10 @@ the language and country combination when they differ (e.g. pt.po or
 pt_BR.po). Translations will be loaded automatically by Odoo for all
 enabled languages. Developers always use English when creating a module, then
 export the module terms using Odoo's gettext POT export feature
-(Settings>Translations>Export a Translation File without specifying a
-language), to create the module template POT file, and then derive the
-translated PO files. Many IDE's have plugins or modes for editing and merging
-PO/POT files.
+(:menuselection:`Settings --> Translations --> Import/Export --> Export
+Translation` without specifying a language), to create the module template POT
+file, and then derive the translated PO files. Many IDE's have plugins or modes
+for editing and merging PO/POT files.
 
 .. tip:: The GNU gettext format (Portable Object) used by Odoo is
          integrated into LaunchPad, making it an online collaborative
@@ -1407,8 +1433,8 @@ PO/POT files.
 
    By default Odoo's POT export only extracts labels inside XML files or
    inside field definitions in Python code, but any Python string can be
-   translated this way by surrounding it with the tools.translate._ method
-   (e.g. _(‘Label') )
+   translated this way by surrounding it with the function :func:`openerp._`
+   (e.g. ``_("Label")``)
 
 .. exercise:: Translate a module
 
@@ -1421,8 +1447,8 @@ PO/POT files.
         #. Install whichever language you want (
            :menuselection:`Administration --> Translations --> Load an
            Official Translation`)
-        #. Synchronize translatable terms (:menuselection`Administration -->
-           Translations --> Application termsn --> Synchronize Translations`)
+        #. Synchronize translatable terms (:menuselection:`Administration -->
+           Translations --> Application Terms --> Synchronize Translations`)
         #. Create a template translation file by exporting (
            :menuselection:`Administration --> Translations -> Import/Export
            --> Export Translation`) without specifying a language, save in
@@ -1435,19 +1461,12 @@ PO/POT files.
            dedicated PO-file editor e.g. POEdit_ and translate the missing
            terms
 
-           .. note::
-
-               By default, Odoo's export only extracts labels inside XML
-               records or Python field definitions, but arbitrary Python
-               strings can be marked as translatable by calling
-               :func:`openerp._` with them e.g. ``_("Label")``)
-
         #. Add ``from openerp import _`` to ``course.py`` and
            mark missing strings as translatable
 
-           .. todo:: there isn't any!
-
         #. Repeat steps 3-6
+
+        .. patch::
 
         .. todo:: do we never reload translations?
 
@@ -1458,7 +1477,7 @@ Reporting
 Printed reports
 ---------------
 
-Odoo v8 comes with a new report engine based on :ref:`reference/qweb`,
+Odoo 8.0 comes with a new report engine based on :ref:`reference/qweb`,
 `Twitter Bootstrap`_ and Wkhtmltopdf_. 
 
 A report is a combination two elements:
@@ -1533,7 +1552,7 @@ Dashboards
 
    .. only:: solutions
 
-        #. Create a ``openacademy/views/session_board.xml``. It should contain
+        #. Create a file ``openacademy/views/session_board.xml``. It should contain
            the board view, the actions referenced in that view, an action to
            open the dashboard and a re-definition of the main menu item to add
            the dashboard action
@@ -1551,16 +1570,15 @@ WebServices
 
 The web-service module offer a common interface for all web-services :
 
-• SOAP
-• XML-RPC
-• NET-RPC
+- XML-RPC
+- JSON-RPC
 
 Business objects can also be accessed via the distributed object
 mechanism. They can all be modified via the client interface with contextual
 views.
 
-Odoo is accessible through XML-RPC interfaces, for which libraries exist in
-many languages.
+Odoo is accessible through XML-RPC/JSON-RPC interfaces, for which libraries
+exist in many languages.
 
 XML-RPC Library
 ---------------
@@ -1642,10 +1660,10 @@ server with the library xmlrpclib.
     * https://github.com/nicolas-van/openerp-client-lib
     * https://pypi.python.org/pypi/oersted/
 
-.. [#autofields] it is possible to :attr:`disable the creation of some
-                 <openerp.models.Model._log_access>`
+.. [#autofields] it is possible to :attr:`disable the automatic creation of some
+                 fields <openerp.models.Model._log_access>`
 .. [#rawsql] writing raw SQL queries is possible, but requires care as it
-              bypasses all Odoo authentication and security mechanisms.
+             bypasses all Odoo authentication and security mechanisms.
 
 .. _database index:
     http://use-the-index-luke.com/sql/preface
