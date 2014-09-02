@@ -30,6 +30,40 @@ from openerp.osv import fields, osv
 from openerp.tools.translate import _
 
 
+def replace_hours_label(model, cr, uid, view, context=None):
+    users_obj = model.pool.get('res.users')
+    if context is None: context = {}
+    # read uom as admin to avoid access rights issues, e.g. for portal/share users,
+    # this should be safe (no context passed to avoid side-effects)
+    obj_tm = users_obj.browse(cr, SUPERUSER_ID, uid, context=context).company_id.project_time_mode_id
+    tm = obj_tm and obj_tm.name or 'Hours'
+
+    if tm in ['Hours','Hour']:
+        return view
+
+    eview = etree.fromstring(view['arch'])
+
+    def _check_rec(eview):
+        if eview.attrib.get('widget','') == 'float_time':
+            eview.set('widget','float')
+        for child in eview:
+            _check_rec(child)
+        return True
+
+    def _replace_label(view_info):
+        for f in view_info['fields']:
+            if 'Hours' in view_info['fields'][f]['string']:
+                view_info['fields'][f]['string'] = view_info['fields'][f]['string'].replace('Hours',tm)
+            #recursive the nested views
+            for sub_name, subview in view_info['fields'][f].get('views', {}).iteritems():
+                _replace_label(subview)
+
+    _check_rec(eview)
+    view['arch'] = etree.tostring(eview)
+
+    _replace_label(view)
+    return view
+
 class project_task_type(osv.osv):
     _name = 'project.task.type'
     _description = 'Task Stage'
@@ -545,6 +579,10 @@ def Project():
             vals.update(alias_model_id=model_ids[0])
         return super(project, self).write(cr, uid, ids, vals, context=context)
 
+    # Override view according to the company definition
+    def fields_view_get(self, cr, uid, view_id=None, view_type='form', context=None, toolbar=False, submenu=False):
+        res = super(project, self).fields_view_get(cr, uid, view_id, view_type, context, toolbar, submenu=submenu)
+        return replace_hours_label(self, cr, uid, res, context=context)
 
 class task(osv.osv):
     _name = "project.task"
@@ -841,35 +879,8 @@ class task(osv.osv):
 
     # Override view according to the company definition
     def fields_view_get(self, cr, uid, view_id=None, view_type='form', context=None, toolbar=False, submenu=False):
-        users_obj = self.pool.get('res.users')
-        if context is None: context = {}
-        # read uom as admin to avoid access rights issues, e.g. for portal/share users,
-        # this should be safe (no context passed to avoid side-effects)
-        obj_tm = users_obj.browse(cr, SUPERUSER_ID, uid, context=context).company_id.project_time_mode_id
-        tm = obj_tm and obj_tm.name or 'Hours'
-
         res = super(task, self).fields_view_get(cr, uid, view_id, view_type, context, toolbar, submenu=submenu)
-
-        if tm in ['Hours','Hour']:
-            return res
-
-        eview = etree.fromstring(res['arch'])
-
-        def _check_rec(eview):
-            if eview.attrib.get('widget','') == 'float_time':
-                eview.set('widget','float')
-            for child in eview:
-                _check_rec(child)
-            return True
-
-        _check_rec(eview)
-
-        res['arch'] = etree.tostring(eview)
-
-        for f in res['fields']:
-            if 'Hours' in res['fields'][f]['string']:
-                res['fields'][f]['string'] = res['fields'][f]['string'].replace('Hours',tm)
-        return res
+        return replace_hours_label(self, cr, uid, res, context=context)
 
     def get_empty_list_help(self, cr, uid, help, context=None):
         context = dict(context or {})
