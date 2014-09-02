@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-15 06:45+0000\n"
-"PO-Revision-Date: 2014-08-15 16:54+0800\n"
+"POT-Creation-Date: 2014-08-27 08:49+0000\n"
+"PO-Revision-Date: 2014-08-27 16:56+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #. module: project
 #: code:addons/project/project.py:360 code:addons/project/project.py:380
-#: code:addons/project/project.py:703
+#: code:addons/project/project.py:735
 #, python-format
 msgid "%s (copy)"
 msgstr ""
@@ -237,7 +237,7 @@ msgstr ""
 #. module: project
 #: model:ir.filters,name:project.filter_task_report_reviewer
 msgid "By Reviewer"
-msgstr ""
+msgstr "審核者"
 
 #. module: project
 #: code:addons/project/wizard/project_task_delegate.py:69
@@ -277,7 +277,7 @@ msgid "Category of project's task, issue, ..."
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:921
+#: code:addons/project/project.py:953
 #, python-format
 msgid ""
 "Child task still open.\n"
@@ -400,7 +400,7 @@ msgstr "客戶"
 #: field:project.task.history,date:0
 #: field:project.task.history.cumulative,date:0 field:project.task.work,date:0
 msgid "Date"
-msgstr ""
+msgstr "日期"
 
 #. module: project
 #: help:project.project,message_last_post:0
@@ -437,7 +437,7 @@ msgstr ""
 #. module: project
 #: view:project.task:project.view_task_form2
 msgid "Delegate"
-msgstr ""
+msgstr "新委派"
 
 #. module: project
 #: view:project.task.delegate:project.view_project_task_delegate
@@ -460,7 +460,7 @@ msgid "Delegated To"
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:938
+#: code:addons/project/project.py:970
 #, python-format
 msgid "Delegated User should be specified"
 msgstr ""
@@ -473,7 +473,7 @@ msgstr ""
 #. module: project
 #: view:project.task:project.view_task_form2
 msgid "Delegation"
-msgstr ""
+msgstr "委派"
 
 #. module: project
 #: view:project.project:project.view_project_kanban
@@ -485,7 +485,7 @@ msgstr "刪除"
 #: view:project.task:project.view_task_form2 field:project.task,description:0
 #: field:project.task.type,description:0
 msgid "Description"
-msgstr ""
+msgstr "說明"
 
 #. module: project
 #: model:project.task.type,name:project.project_tt_design
@@ -501,7 +501,7 @@ msgstr ""
 #: view:project.project:project.edit_project
 #: view:project.project:project.view_project_kanban
 msgid "Documents"
-msgstr "文件/附件"
+msgstr "附件"
 
 #. module: project
 #: selection:project.task.delegate,state:0
@@ -512,7 +512,7 @@ msgstr ""
 #. module: project
 #: field:project.task.work,user_id:0
 msgid "Done by"
-msgstr ""
+msgstr "完成者"
 
 #. module: project
 #: view:project.task:project.view_task_kanban
@@ -588,7 +588,7 @@ msgstr ""
 #. module: project
 #: view:project.task:project.view_task_form2
 msgid "Extra Info"
-msgstr ""
+msgstr "其他資訊"
 
 #. module: project
 #: model:project.category,name:project.project_category_02
@@ -621,7 +621,7 @@ msgstr ""
 #. module: project
 #: view:project.task:project.view_task_form2
 msgid "Gantt View"
-msgstr ""
+msgstr "甘特圖"
 
 #. module: project
 #: field:project.config.settings,module_sale_service:0
@@ -688,7 +688,7 @@ msgstr ""
 #. module: project
 #: field:project.task,effective_hours:0
 msgid "Hours Spent"
-msgstr ""
+msgstr "花費Hours數"
 
 #. module: project
 #: field:project.task.delegate,planned_hours_me:0
@@ -750,7 +750,7 @@ msgstr ""
 #. module: project
 #: field:project.task,planned_hours:0
 msgid "Initially Planned Hours"
-msgstr ""
+msgstr "預估Hours數"
 
 #. module: project
 #: help:project.project,alias_id:0
@@ -810,7 +810,7 @@ msgstr ""
 #: view:report.project.task.user:project.view_task_project_user_search
 #: field:report.project.task.user,date_last_stage_update:0
 msgid "Last Stage Update"
-msgstr ""
+msgstr "階段更新時間"
 
 #. module: project
 #: field:project.category,write_uid:0
@@ -1017,7 +1017,7 @@ msgstr "上一級"
 #. module: project
 #: view:project.task:project.view_task_form2 field:project.task,parent_ids:0
 msgid "Parent Tasks"
-msgstr ""
+msgstr "上層任務"
 
 #. module: project
 #: model:ir.model,name:project.model_res_partner
@@ -1047,7 +1047,7 @@ msgstr ""
 #: field:project.task.history,planned_hours:0
 #: field:project.task.history.cumulative,planned_hours:0
 msgid "Planned Time"
-msgstr ""
+msgstr "預估Hours數"
 
 #. module: project
 #: view:project.config.settings:project.view_config_settings
@@ -1055,7 +1055,7 @@ msgid "Planning"
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:1228
+#: code:addons/project/project.py:1260
 #, python-format
 msgid "Please delete the project linked with this account first."
 msgstr ""
@@ -1063,7 +1063,7 @@ msgstr ""
 #. module: project
 #: field:project.task,priority:0 field:report.project.task.user,priority:0
 msgid "Priority"
-msgstr ""
+msgstr "優先級"
 
 #. module: project
 #: field:project.project,privacy_visibility:0
@@ -1088,7 +1088,7 @@ msgstr ""
 #: field:report.project.task.user,project_id:0
 #: model:res.request.link,name:project.req_link_project
 msgid "Project"
-msgstr ""
+msgstr "專案"
 
 #. module: project
 #: view:project.config.settings:project.view_config_settings
@@ -1219,21 +1219,21 @@ msgstr ""
 #. module: project
 #: view:project.task:project.view_task_form2
 msgid "Remaining"
-msgstr ""
+msgstr "剩餘Hours數"
 
 #. module: project
 #: view:project.task:project.view_task_tree2
 #: field:project.task,remaining_hours:0
 #: field:report.project.task.user,remaining_hours:0
 msgid "Remaining Hours"
-msgstr ""
+msgstr "剩餘Hours數"
 
 #. module: project
 #: view:project.task:project.view_task_kanban
 #: field:project.task.history,remaining_hours:0
 #: field:project.task.history.cumulative,remaining_hours:0
 msgid "Remaining Time"
-msgstr ""
+msgstr "剩餘Hours數"
 
 #. module: project
 #: view:project.project:project.edit_project
@@ -1250,12 +1250,12 @@ msgstr ""
 #: field:project.task,reviewer_id:0
 #: field:report.project.task.user,reviewer_id:0
 msgid "Reviewer"
-msgstr ""
+msgstr "審核者"
 
 #. module: project
 #: view:project.task:project.view_task_search_form
 msgid "Reviewers"
-msgstr ""
+msgstr "審核者"
 
 #. module: project
 #: view:project.project:project.view_project_project_filter
@@ -1266,7 +1266,7 @@ msgstr ""
 #: field:project.project,sequence:0 field:project.task,sequence:0
 #: field:project.task.type,sequence:0
 msgid "Sequence"
-msgstr ""
+msgstr "項次"
 
 #. module: project
 #: view:project.project:project.edit_project
@@ -1282,7 +1282,7 @@ msgstr ""
 #: view:project.task:project.view_task_form2
 #: view:project.task:project.view_task_tree2
 msgid "Spent Hours"
-msgstr ""
+msgstr "花費時間"
 
 #. module: project
 #: view:project.task:project.view_task_search_form
@@ -1320,7 +1320,7 @@ msgstr ""
 #. module: project
 #: field:project.task,date_start:0
 msgid "Starting Date"
-msgstr ""
+msgstr "開始日期"
 
 #. module: project
 #: field:project.project,state:0
@@ -1599,7 +1599,7 @@ msgstr ""
 #. module: project
 #: field:project.project,effective_hours:0 field:project.task.work,hours:0
 msgid "Time Spent"
-msgstr ""
+msgstr "已花費Hours數"
 
 #. module: project
 #: help:project.project,resource_calendar_id:0
@@ -1621,7 +1621,7 @@ msgstr "新增或修改發票，跳轉至相關合約："
 #. module: project
 #: field:project.task,total_hours:0
 msgid "Total"
-msgstr ""
+msgstr "總計Hours數"
 
 #. module: project
 #: field:report.project.task.user,total_hours:0
@@ -1708,8 +1708,8 @@ msgid "Validation Task Title"
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:435 code:addons/project/project.py:921
-#: code:addons/project/project.py:1228
+#: code:addons/project/project.py:435 code:addons/project/project.py:953
+#: code:addons/project/project.py:1260
 #, python-format
 msgid "Warning!"
 msgstr ""
@@ -1722,7 +1722,7 @@ msgstr ""
 #. module: project
 #: field:project.task.work,name:0
 msgid "Work summary"
-msgstr ""
+msgstr "工作摘要"
 
 #. module: project
 #: field:project.project,resource_calendar_id:0
@@ -1732,7 +1732,7 @@ msgstr ""
 #. module: project
 #: field:project.task,progress:0
 msgid "Working Time Progress (%)"
-msgstr ""
+msgstr "工作進度(%)"
 
 #. module: project
 #: field:project.config.settings,time_unit:0
@@ -1769,7 +1769,7 @@ msgid "oe_kanban_text_red"
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:878
+#: code:addons/project/project.py:910
 #, python-format
 msgid "tasks"
 msgstr ""

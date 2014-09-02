@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Base Module 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-02 06:26+0000\n"
-"PO-Revision-Date: 2014-07-02 14:28+0800\n"
+"PO-Revision-Date: 2014-08-21 15:46+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -7183,7 +7183,7 @@ msgstr ""
 #. module: base
 #: view:ir.attachment:0
 msgid "Creation"
-msgstr ""
+msgstr "創建於"
 
 #. module: base
 #: view:ir.attachment:0
@@ -8343,7 +8343,7 @@ msgstr ""
 #. module: base
 #: field:ir.attachment,datas:0
 msgid "File Content"
-msgstr ""
+msgstr "檔案內容"
 
 #. module: base
 #: field:base.language.export,format:0
@@ -9073,7 +9073,7 @@ msgstr ""
 #. module: base
 #: view:ir.attachment:0
 msgid "History"
-msgstr ""
+msgstr "歷史"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_holidays
@@ -14871,7 +14871,7 @@ msgstr ""
 #: field:ir.property,type:0 field:ir.translation,type:0 view:ir.ui.view:0
 #: view:ir.values:0 field:ir.values,key:0
 msgid "Type"
-msgstr ""
+msgstr "類型"
 
 #. module: base
 #: field:res.partner.bank.type,field_ids:0

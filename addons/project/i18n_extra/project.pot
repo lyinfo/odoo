@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-15 06:45+0000\n"
-"PO-Revision-Date: 2014-08-15 06:45+0000\n"
+"POT-Creation-Date: 2014-08-27 08:49+0000\n"
+"PO-Revision-Date: 2014-08-27 08:49+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,7 @@ msgstr ""
 #. module: project
 #: code:addons/project/project.py:360
 #: code:addons/project/project.py:380
-#: code:addons/project/project.py:703
+#: code:addons/project/project.py:735
 #, python-format
 msgid "%s (copy)"
 msgstr ""
@@ -267,7 +267,7 @@ msgid "Category of project's task, issue, ..."
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:921
+#: code:addons/project/project.py:953
 #, python-format
 msgid "Child task still open.\n"
 "Please cancel or complete child task first."
@@ -453,7 +453,7 @@ msgid "Delegated To"
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:938
+#: code:addons/project/project.py:970
 #, python-format
 msgid "Delegated User should be specified"
 msgstr ""
@@ -1040,7 +1040,7 @@ msgid "Planning"
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:1228
+#: code:addons/project/project.py:1260
 #, python-format
 msgid "Please delete the project linked with this account first."
 msgstr ""
@@ -1669,8 +1669,8 @@ msgstr ""
 
 #. module: project
 #: code:addons/project/project.py:435
-#: code:addons/project/project.py:921
-#: code:addons/project/project.py:1228
+#: code:addons/project/project.py:953
+#: code:addons/project/project.py:1260
 #, python-format
 msgid "Warning!"
 msgstr ""
@@ -1728,7 +1728,7 @@ msgid "oe_kanban_text_red"
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:878
+#: code:addons/project/project.py:910
 #, python-format
 msgid "tasks"
 msgstr ""
