@@ -107,6 +107,9 @@
                         <label for="qty_available"/>
                             <div>
                                 <field name="qty_available" class="oe_inline"/>
+                                <span attrs="{'invisible': [('package_count','=', 0)]}" groups="stock.group_tracking_lot">
+                                    (<field name="package_count" class="oe_inline"/>)
+                                </span>
                                 <button name="%(action_view_change_product_quantity)d" string="⇒ Update"
                                     type="action"
                                     class="oe_link"/>
