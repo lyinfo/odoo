@@ -1368,7 +1368,11 @@ class Many2one(_Relational):
             # evaluate name_get() as superuser, because the visibility of a
             # many2one field value (id and name) depends on the current record's
             # access rights, and not the value's access rights.
-            return value.sudo().name_get()[0]
+            try:
+                return value.sudo().name_get()[0]
+            except MissingError:
+                # Should not happen, unless the foreign key is missing.
+                return False
         else:
             return value.id
 
@@ -1438,6 +1442,7 @@ class _RelationalMulti(_Relational):
                         result += result.new(command[2])
                     elif command[0] == 1:
                         result.browse(command[1]).update(command[2])
+                        result += result.browse(command[1]) - result
                     elif command[0] == 2:
                         # note: the record will be deleted by write()
                         result -= result.browse(command[1])
