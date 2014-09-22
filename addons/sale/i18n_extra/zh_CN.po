@@ -1691,7 +1691,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:sale.action_orders_salesteams
 #: model:ir.ui.menu,name:sale.menu_sale_order view:sale.order:0
 msgid "Sales Orders"
-msgstr ""
+msgstr "銷售訂單"
 
 #. module: sale
 #: model:ir.model,name:sale.model_sale_report
