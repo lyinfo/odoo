@@ -843,7 +843,7 @@ class mrp_production(osv.osv):
             
             # qty available for consume and produce
             qty_avail = scheduled.product_qty - consumed_qty
-            if qty_avail <= 0.0:
+            if float_compare(qty_avail, 0.0, precision_rounding=scheduled.product_uom.rounding) <= 0:
                 # there will be nothing to consume for this raw material
                 continue
 
@@ -851,7 +851,7 @@ class mrp_production(osv.osv):
                 dicts[product_id] = {}
 
             # total qty of consumed product we need after this consumption
-            if product_qty + produced_qty <= production.product_qty: 
+            if float_compare(product_qty + produced_qty, production.product_qty, precision_rounding=production.product_uom.rounding) <= 0:
                 total_consume = ((product_qty + produced_qty) * scheduled.product_qty / production.product_qty)
             else:
                 total_consume = (production.product_qty * scheduled.product_qty / production.product_qty)
@@ -859,7 +859,7 @@ class mrp_production(osv.osv):
 
             # Search for quants related to this related move
             for move in production.move_lines:
-                if qty <= 0.0:
+                if float_compare(qty, 0.0, precision_rounding=production.product_uom.rounding) <= 0:
                     break
                 if move.product_id.id != product_id:
                     continue
@@ -877,7 +877,7 @@ class mrp_production(osv.osv):
                         else:
                             dicts[product_id][lot_id] = quant_qty
                         qty -= quant_qty
-            if qty > 0:
+            if float_compare(qty, 0, scheduled.product_uom.rounding) > 0:
                 if dicts[product_id].get(False):
                     dicts[product_id][False] += qty
                 else:
@@ -941,7 +941,7 @@ class mrp_production(osv.osv):
             for consume in consume_lines:
                 remaining_qty = consume['product_qty']
                 for raw_material_line in production.move_lines:
-                    if remaining_qty <= 0:
+                    if float_compare(remaining_qty, 0, precision_rounding=raw_material_line.product_uom.rounding) <= 0:
                         break
                     if consume['product_id'] != raw_material_line.product_id.id:
                         continue
