@@ -1215,7 +1215,7 @@ class stock_picking(osv.osv):
                 for move_dict in prod2move_ids.get(ops.product_id.id, []):
                     move = move_dict['move']
                     for quant in move.reserved_quant_ids:
-                        if not float_compare(qty_to_assign > 0.0, precision_rounding=ops.product_uom.rounding) > 0:
+                        if not float_compare(qty_to_assign > 0.0, precision_rounding=ops.product_uom_id.rounding) > 0:
                             break
                         if quant.id in quants_in_package_done:
                             continue
@@ -1231,7 +1231,7 @@ class stock_picking(osv.osv):
                             max_qty_on_link = min(quant.qty, qty_to_assign)
                             qty_on_link = _create_link_for_quant(ops.id, quant, max_qty_on_link)
                             qty_to_assign -= qty_on_link
-                if qty_to_assign > 0:
+                if float_compare(qty_to_assign, 0.0, precision_rounding=ops.product_uom_id.rounding) > 0:
                     #qty reserved is less than qty put in operations. We need to create a link but it's deferred after we processed
                     #all the quants (because they leave no choice on their related move and needs to be processed with higher priority)
                     still_to_do += [(ops, ops.product_id.id, qty_to_assign)]
