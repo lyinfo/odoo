@@ -25,7 +25,7 @@ from openerp.osv import fields
 from openerp.osv import osv
 from openerp.tools.translate import _
 from openerp import SUPERUSER_ID
-from openerp.tools import DEFAULT_SERVER_DATETIME_FORMAT
+from openerp.tools import DEFAULT_SERVER_DATETIME_FORMAT, float_compare
 
 class StockMove(osv.osv):
     _inherit = 'stock.move'
@@ -178,10 +178,10 @@ class StockMove(osv.osv):
         for move in self.browse(cr, uid, ids2, context=context):
             move_qty = move.product_qty
             uom_qty = uom_obj._compute_qty(cr, uid, move.product_id.uom_id.id, product_qty, move.product_uom.id)
-            if move_qty <= 0:
+            if float_compare(move_qty, 0, precision_rounding=move.product_uom.rounding) <= 0:
                 raise osv.except_osv(_('Error!'), _('Cannot consume a move with negative or zero quantity.'))
             quantity_rest = move.product_qty - uom_qty
-            if quantity_rest > 0:
+            if float_compare(quantity_rest, 0.0, precision_rounding=move.product_uom.rounding) > 0:
                 ctx = context.copy()
                 if location_id:
                     ctx['source_location_id'] = location_id
