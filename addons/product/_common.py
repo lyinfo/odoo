@@ -32,5 +32,4 @@ def rounding(f, r):
 def ceiling(f, r):
     if not r:
         return f
-    f = tools.float_round(f, 15)
     return math.ceil(f / r) * r
