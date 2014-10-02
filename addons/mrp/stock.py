@@ -178,7 +178,7 @@ class StockMove(osv.osv):
         for move in self.browse(cr, uid, ids2, context=context):
             prod_orders.add(move.raw_material_production_id.id or move.production_id.id)
             move_qty = move.product_qty
-            if move_qty <= 0:
+            if float_compare(move_qty, 0, precision_rounding=move.product_uom.rounding) <= 0:
                 raise osv.except_osv(_('Error!'), _('Cannot consume a move with negative or zero quantity.'))
             quantity_rest = move_qty - product_qty
             # Compare with numbers of move uom as we want to avoid a split with 0 qty
