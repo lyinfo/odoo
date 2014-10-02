@@ -50,13 +50,12 @@ class sale_order(osv.Model):
                 domain += [('id', '=', line_id)]
             return self.pool.get('sale.order.line').search(cr, SUPERUSER_ID, domain, context=context)
 
-    def _website_product_id_change(self, cr, uid, ids, order_id, product_id, qty=0.0, line_id=None, context=None):
+    def _website_product_id_change(self, cr, uid, ids, order_id, product_id, line_id=None, context=None):
         so = self.pool.get('sale.order').browse(cr, uid, order_id, context=context)
 
         values = self.pool.get('sale.order.line').product_id_change(cr, SUPERUSER_ID, [],
             pricelist=so.pricelist_id.id,
             product=product_id,
-            qty=qty,
             partner_id=so.partner_id.id,
             context=context
         )['value']
@@ -103,7 +102,7 @@ class sale_order(osv.Model):
                 sol.unlink(cr, SUPERUSER_ID, [line_id], context=context)
             else:
                 # update line
-                values = self._website_product_id_change(cr, uid, ids, so.id, product_id, quantity, line_id, context=context)
+                values = self._website_product_id_change(cr, uid, ids, so.id, product_id, line_id, context=context)
                 values['product_uom_qty'] = quantity
                 sol.write(cr, SUPERUSER_ID, [line_id], values, context=context)
 
