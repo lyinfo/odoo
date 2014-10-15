@@ -1,19 +1,20 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* web
+# 	* web
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 8.0\n"
+"Project-Id-Version: Odoo Web 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 11:27+0000\n"
-"PO-Revision-Date: 2014-09-26 11:27+0000\n"
-"Last-Translator: <>\n"
+"PO-Revision-Date: 2014-09-26 19:32+0800\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: zh_CN\n"
 
 #. module: web
 #. openerp-web
@@ -446,7 +447,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:93
 #, python-format
-msgid "By default, the master password is 'admin'. This password\n"
+msgid ""
+"By default, the master password is 'admin'. This password\n"
 "                    is required to created, delete dump or restore databases."
 msgstr ""
 
@@ -1192,9 +1194,12 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:87
 #, python-format
-msgid "Fill in this form to create an Odoo database. You can\n"
-"                    create databases for different companies or for different\n"
-"                    goals (testing, production). Once the database is created,\n"
+msgid ""
+"Fill in this form to create an Odoo database. You can\n"
+"                    create databases for different companies or for "
+"different\n"
+"                    goals (testing, production). Once the database is "
+"created,\n"
 "                    you will be able to install your first application."
 msgstr ""
 
@@ -1259,7 +1264,9 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:1943
 #, python-format
-msgid "For use if CSV files have titles on multiple lines, skips more than a single line during import"
+msgid ""
+"For use if CSV files have titles on multiple lines, skips more than a single "
+"line during import"
 msgstr ""
 
 #. module: web
@@ -1472,7 +1479,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/js/pyeval.js:900
 #, python-format
-msgid "Local evaluation failure\n"
+msgid ""
+"Local evaluation failure\n"
 "%s\n"
 "\n"
 "%s"
@@ -1594,8 +1602,7 @@ msgstr ""
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/views.js:1167
-#: code:addons/web/static/src/xml/base.xml:1279
-#: view:website:web.menu
+#: code:addons/web/static/src/xml/base.xml:1279 view:website:web.menu
 #, python-format
 msgid "More"
 msgstr ""
@@ -1713,8 +1720,7 @@ msgid "Object:"
 msgstr ""
 
 #. module: web
-#: view:website:web.layout
-#: view:website:web.login_layout
+#: view:website:web.layout view:website:web.login_layout
 #: view:website:web.menu_secondary
 msgid "Odoo"
 msgstr ""
@@ -1828,8 +1834,7 @@ msgstr ""
 
 #. module: web
 #. openerp-web
-#: code:addons/web/static/src/xml/base.xml:309
-#: view:website:web.login
+#: code:addons/web/static/src/xml/base.xml:309 view:website:web.login
 #, python-format
 msgid "Password"
 msgstr ""
@@ -1880,7 +1885,9 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:1844
 #, python-format
-msgid "Please pay attention that all records matching your search filter will be exported. Not only the selected ids."
+msgid ""
+"Please pay attention that all records matching your search filter will be "
+"exported. Not only the selected ids."
 msgstr ""
 
 #. module: web
@@ -1898,8 +1905,7 @@ msgid "Please select fields to save export list..."
 msgstr ""
 
 #. module: web
-#: view:website:web.login_layout
-#: view:website:web.menu_secondary
+#: view:website:web.login_layout view:website:web.menu_secondary
 msgid "Powered by"
 msgstr ""
 
@@ -2133,7 +2139,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:1910
 #, python-format
-msgid "Select a .CSV file to import. If you need a sample of file to import,\n"
+msgid ""
+"Select a .CSV file to import. If you need a sample of file to import,\n"
 "       you should use the export tool with the \"Import Compatible\" option."
 msgstr ""
 
@@ -2356,7 +2363,8 @@ msgstr ""
 #. module: web
 #: code:addons/web/controllers/main.py:799
 #, python-format
-msgid "The old password you provided is incorrect, your password was not changed."
+msgid ""
+"The old password you provided is incorrect, your password was not changed."
 msgstr ""
 
 #. module: web
@@ -2377,7 +2385,9 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/js/view_form.js:5776
 #, python-format
-msgid "The type of the field '%s' must be a many2many field with a relation to 'ir.attachment' model."
+msgid ""
+"The type of the field '%s' must be a many2many field with a relation to 'ir."
+"attachment' model."
 msgstr ""
 
 #. module: web
@@ -2391,7 +2401,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/js/search.js:1780
 #, python-format
-msgid "This filter is global and will be removed for everybody if you continue."
+msgid ""
+"This filter is global and will be removed for everybody if you continue."
 msgstr ""
 
 #. module: web
@@ -2405,8 +2416,11 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:1797
 #, python-format
-msgid "This wizard will export all data that matches the current search criteria to a CSV file.\n"
-"            You can export all data or only the fields that can be reimported after modification."
+msgid ""
+"This wizard will export all data that matches the current search criteria to "
+"a CSV file.\n"
+"            You can export all data or only the fields that can be "
+"reimported after modification."
 msgstr ""
 
 #. module: web
@@ -2616,13 +2630,14 @@ msgstr ""
 #: code:addons/web/static/src/js/views.js:1270
 #, python-format
 msgid "Warning"
-msgstr ""
+msgstr "警告"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/view_form.js:792
 #, python-format
-msgid "Warning, the record has been modified, your changes will be discarded.\n"
+msgid ""
+"Warning, the record has been modified, your changes will be discarded.\n"
 "\n"
 "Are you sure you want to leave this page ?"
 msgstr ""
@@ -2922,4 +2937,3 @@ msgstr ""
 #, python-format
 msgid "triggered from search view"
 msgstr ""
-

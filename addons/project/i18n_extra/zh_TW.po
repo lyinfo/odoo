@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Project 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-13 02:38+0000\n"
-"PO-Revision-Date: 2014-09-13 10:58+0800\n"
+"POT-Creation-Date: 2014-10-14 07:03+0000\n"
+"PO-Revision-Date: 2014-10-14 15:10+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -35,7 +35,7 @@ msgstr "任務"
 
 #. module: project
 #: code:addons/project/project.py:394 code:addons/project/project.py:414
-#: code:addons/project/project.py:741
+#: code:addons/project/project.py:742
 #, python-format
 msgid "%s (copy)"
 msgstr ""
@@ -283,7 +283,7 @@ msgid "Category of project's task, issue, ..."
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:932
+#: code:addons/project/project.py:933
 #, python-format
 msgid ""
 "Child task still open.\n"
@@ -468,7 +468,7 @@ msgid "Delegated To"
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:949
+#: code:addons/project/project.py:950
 #, python-format
 msgid "Delegated User should be specified"
 msgstr ""
@@ -574,6 +574,13 @@ msgstr ""
 #. module: project
 #: help:project.task.delegate,planned_hours:0
 msgid "Estimated time to close this task by the delegated user"
+msgstr ""
+
+#. module: project
+#: help:project.task,planned_hours:0
+msgid ""
+"Estimated time to do the task, usually set by the project manager when the "
+"task is in draft state."
 msgstr ""
 
 #. module: project
@@ -749,6 +756,12 @@ msgstr "執行中"
 #: view:project.project:project.edit_project
 msgid "Incoming Emails create"
 msgstr ""
+
+#. module: project
+#: field:project.task,planned_hours:0
+#, fuzzy
+msgid "Initially Planned Hours"
+msgstr "預估Hours數"
 
 #. module: project
 #: help:project.project,alias_id:0
@@ -1051,18 +1064,12 @@ msgid "Planned Time"
 msgstr "預估Hours數"
 
 #. module: project
-#: field:project.task,planned_hours:0
-#, fuzzy
-msgid "Planned hours"
-msgstr "預估Hours數"
-
-#. module: project
 #: view:project.config.settings:project.view_config_settings
 msgid "Planning"
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:1239
+#: code:addons/project/project.py:1240
 #, python-format
 msgid "Please delete the project linked with this account first."
 msgstr ""
@@ -1315,6 +1322,7 @@ msgstr ""
 
 #. module: project
 #: model:ir.actions.act_window,name:project.open_task_type_form
+#: model:ir.ui.menu,name:project.menu_task_types_view
 msgid "Stages"
 msgstr "階段"
 
@@ -1404,24 +1412,24 @@ msgstr ""
 #: model:mail.message.subtype,name:project.mt_project_task_assigned
 #: model:mail.message.subtype,name:project.mt_task_assigned
 msgid "Task Assigned"
-msgstr ""
+msgstr "任務被指派"
 
 #. module: project
 #: model:mail.message.subtype,name:project.mt_project_task_blocked
 #: model:mail.message.subtype,name:project.mt_task_blocked
 msgid "Task Blocked"
-msgstr ""
+msgstr "任務有困難"
 
 #. module: project
 #: model:mail.message.subtype,name:project.mt_project_task_new
 #: model:mail.message.subtype,name:project.mt_task_new
 msgid "Task Created"
-msgstr ""
+msgstr "任務被創建"
 
 #. module: project
 #: model:ir.model,name:project.model_project_task_delegate
 msgid "Task Delegate"
-msgstr ""
+msgstr "任務委派"
 
 #. module: project
 #: model:res.groups,name:project.group_delegate_task
@@ -1451,11 +1459,6 @@ msgstr ""
 #: model:mail.message.subtype,name:project.mt_project_task_stage
 msgid "Task Stage Changed"
 msgstr ""
-
-#. module: project
-#: model:ir.ui.menu,name:project.menu_task_types_view
-msgid "Task Stages"
-msgstr "階段"
 
 #. module: project
 #: field:project.task,name:0 field:report.project.task.user,name:0
@@ -1725,8 +1728,8 @@ msgid "Validation Task Title"
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:469 code:addons/project/project.py:932
-#: code:addons/project/project.py:1239
+#: code:addons/project/project.py:469 code:addons/project/project.py:933
+#: code:addons/project/project.py:1240
 #, python-format
 msgid "Warning!"
 msgstr ""
@@ -1791,7 +1794,7 @@ msgid "oe_kanban_text_red"
 msgstr ""
 
 #. module: project
-#: code:addons/project/project.py:889
+#: code:addons/project/project.py:890
 #, python-format
 msgid "tasks"
 msgstr ""
@@ -1801,6 +1804,9 @@ msgstr ""
 #: field:project.project,task_ids:0
 msgid "unknown"
 msgstr ""
+
+#~ msgid "Task Stages"
+#~ msgstr "階段"
 
 #~ msgid "Reviewers"
 #~ msgstr "審核者"
