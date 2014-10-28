@@ -102,17 +102,20 @@ class QueryURL(object):
         return path
 
 
+def get_pricelist():
+    cr, uid, context, pool = request.cr, request.uid, request.context, request.registry
+    sale_order = context.get('sale_order')
+    if sale_order:
+        pricelist = sale_order.pricelist_id
+    else:
+        partner = pool['res.users'].browse(cr, SUPERUSER_ID, uid, context=context).partner_id
+        pricelist = partner.property_product_pricelist
+    return pricelist
+
 class website_sale(http.Controller):
 
     def get_pricelist(self):
-        cr, uid, context, pool = request.cr, request.uid, request.context, request.registry
-        sale_order = context.get('sale_order')
-        if sale_order:
-            pricelist = sale_order.pricelist_id
-        else:
-            partner = pool['res.users'].browse(cr, SUPERUSER_ID, uid, context=context).partner_id
-            pricelist = partner.property_product_pricelist
-        return pricelist
+        return get_pricelist()
 
     def get_attribute_value_ids(self, product):
         cr, uid, context, pool = request.cr, request.uid, request.context, request.registry
@@ -429,10 +432,10 @@ class website_sale(http.Controller):
 
         return values
 
-    mandatory_billing_fields = ["name", "phone", "email", "street2", "city", "country_id", "zip"]
-    optional_billing_fields = ["street", "state_id", "vat", "vat_subjected"]
-    mandatory_shipping_fields = ["name", "phone", "street", "city", "country_id", "zip"]
-    optional_shipping_fields = ["state_id"]
+    mandatory_billing_fields = ["name", "phone", "email", "street2", "city", "country_id"]
+    optional_billing_fields = ["street", "state_id", "vat", "vat_subjected", "zip"]
+    mandatory_shipping_fields = ["name", "phone", "street", "city", "country_id"]
+    optional_shipping_fields = ["state_id", "zip"]
 
     def checkout_parse(self, address_type, data, remove_prefix=False):
         """ data is a dict OR a partner browse record
