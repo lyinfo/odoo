@@ -1592,12 +1592,14 @@ class Reports(http.Controller):
             else:
                 file_name = action['report_name']
         file_name = '%s.%s' % (file_name, report_struct['format'])
-
+        headers=[
+             ('Content-Disposition', content_disposition(file_name)),
+             ('Content-Type', report_mimetype),
+             ('Content-Length', len(report))]
+        if action.get('pdf_viewer'):
+            del headers[0]
         return request.make_response(report,
-             headers=[
-                 ('Content-Disposition', content_disposition(file_name)),
-                 ('Content-Type', report_mimetype),
-                 ('Content-Length', len(report))],
+             headers=headers,
              cookies={'fileToken': token})
 
 class Apps(http.Controller):
