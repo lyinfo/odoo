@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <!--
+    臺灣地區一般行業會計科目及代碼
+    -->
+    <data>
+        <!-- 0: 科目表模板-->
+        <record id="agl_root" model="account.account.template">
+            <field name="name">會計科目表</field>
+            <field name="code">0</field>
+            <field name="type">view</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <!-- 1xxx: 資產-->
+        <record id="agl_1" model="account.account.template">
+            <field name="name">資產</field>
+            <field name="code">1</field>
+            <field ref="agl_root" name="parent_id"/>
+            <field name="type">view</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <!-- 11xx: 流動資產-->
+        <record id="agl_11" model="account.account.template">
+            <field name="name">流動資產</field>
+            <field name="code">11</field>
+            <field ref="agl_1" name="parent_id"/>
+            <field name="type">view</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+
+        <!--1100-->
+        <record id="agl_1100" model="account.account.template">
+            <field name="code">1100</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_11" name="parent_id"/>
+            <field name="type">view</field>
+            <field name="name">現金及約當現金</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1101" model="account.account.template">
+            <field name="code">1101</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1100" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">庫存現金</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1102" model="account.account.template">
+            <field name="code">1102</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1100" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">零用金／週轉金</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1103" model="account.account.template">
+            <field name="code">1103</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1100" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">銀行存款</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1105" model="account.account.template">
+            <field name="code">1105</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1100" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">在途現金</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1107" model="account.account.template">
+            <field name="code">1107</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1100" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">約當現金</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1108" model="account.account.template">
+            <field name="code">1108</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1100" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">分類為約當現金之銀行透支</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+
+        <!--1110-->
+        <record id="agl_1110" model="account.account.template">
+            <field name="code">1110</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_11" name="parent_id"/>
+            <field name="type">view</field>
+            <field name="name">透過損益按公允價值衡量之金融資產-流動</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1111" model="account.account.template">
+            <field name="code">1111</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1110" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">原始認列時指定為透過損益按公允價值衡量之金融資產-流動</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1112" model="account.account.template">
+            <field name="code">1112</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1110" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">原始認列時指定為透過損益按公允價值衡量之金融資產評價調整-流動</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1113" model="account.account.template">
+            <field name="code">1113</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1110" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">強制按公允價值衡量之金融資產-流動</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1114" model="account.account.template">
+            <field name="code">1114</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1110" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">強制按公允價值衡量之金融資產評價調整-流動</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1115" model="account.account.template">
+            <field name="code">1115</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1110" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">持有供交易之金融資產-流動</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+        <record id="agl_1116" model="account.account.template">
+            <field name="code">1116</field>
+            <field eval="False" name="reconcile"/>
+            <field ref="agl_1110" name="parent_id"/>
+            <field name="type">liquidity</field>
+            <field name="name">持有供交易之金融資產評價調整-流動</field>
+            <field name="user_type" ref="ut_all"/>
+        </record>
+
+
+    </data>
+</openerp>
+
+
+    </data>
+</openerp>

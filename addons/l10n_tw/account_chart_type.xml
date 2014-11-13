@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- 根科目，不显示在报表行上 -->
+        <record id="ut_all" model="account.account.type">
+            <field name="name">不顯示在報表上</field>
+            <field name="code">0</field>
+            <field name="close_method">none</field>
+            <field name="report_type">none</field>
+        </record>
+        <record model="account.account.type" id="account_type_equity_view1">
+            <field name="name">權益匯總</field>
+            <field name="code">view</field>
+            <field name="close_method">balance</field>
+            <field name="report_type">liability</field>
+        </record>
+        <record model="account.account.type" id="account_type_cost_view1">
+            <field name="name">成本彙總</field>
+            <field name="code">cost</field>
+            <field name="close_method">none</field>
+            <field name="report_type">none</field>
+        </record>
+        <record model="account.account.type" id="account_type_cost">
+            <field name="name">成本</field>
+            <field name="code">cost</field>
+            <field name="close_method">none</field>
+            <field name="report_type">none</field>
+        </record>
+        <record model="account.account.type" id="account_type_other_income_view1">
+            <field name="name">業外收入支出匯總</field>
+            <field name="code">income.other</field>
+            <field name="close_method">none</field>
+            <field name="report_type">income</field>
+        </record>
+        <record model="account.account.type" id="account_type_other_income">
+            <field name="name">業外收入</field>
+            <field name="code">income.other</field>
+            <field name="close_method">none</field>
+            <field name="report_type">income</field>
+        </record>
+        <record model="account.account.type" id="account_type_other_expense">
+            <field name="name">業外支出</field>
+            <field name="code">expense.other</field>
+            <field name="close_method">none</field>
+            <field name="report_type">expense</field>
+        </record>
+    </data>
+</openerp>
