@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="True">
+        <!-- Tax Code Configuration -->
+        <record id="vat_tw_chart_root" model="account.tax.code.template">
+            <field name="name">台湾税务报表</field>
+            <field name="parent_id" eval="False"/>
+        </record>
+    </data>
+</openerp>
