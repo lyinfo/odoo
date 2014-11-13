@@ -155,6 +155,7 @@ class product_uom(osv.osv):
         'active': 1,
         'rounding': 0.01,
         'uom_type': 'reference',
+        'factor': 1.0,
     }
 
     _sql_constraints = [
