@@ -1,5 +1,4 @@
-$(document).ready(function () {
-    if ($('.website_forum').length){
+    openerp.website.if_dom_contains('.website_forum', function () {
         $('.karma_required').on('click', function (ev) {
             var karma = $(ev.currentTarget).data('karma');
             if (karma) {
@@ -217,24 +216,21 @@ $(document).ready(function () {
             var editor = CKEDITOR.instances['content'];
             editor.on('instanceReady', CKEDITORLoadComplete);
         }
-    }
-});
 
+        function IsKarmaValid(eventNumber, minKarma){
+            "use strict";
+            if(parseInt($("#karma").val()) >= minKarma){
+                CKEDITOR.tools.callFunction(eventNumber,this);
+                return false;
+            } else {
+                alert("Sorry you need more than " + minKarma + " Karma.");
+            }
+        }
 
-
-function IsKarmaValid(eventNumber,minKarma){
-    "use strict";
-    if(parseInt($("#karma").val()) >= minKarma){
-        CKEDITOR.tools.callFunction(eventNumber,this);
-        return false;
-    } else {
-        alert("Sorry you need more than " + minKarma + " Karma.");
-    }
-}
-
-function CKEDITORLoadComplete(){
-    "use strict";
-    $('.cke_button__link').attr('onclick','IsKarmaValid(33,30)');
-    $('.cke_button__unlink').attr('onclick','IsKarmaValid(37,30)');
-    $('.cke_button__image').attr('onclick','IsKarmaValid(41,30)');
-}
+        function CKEDITORLoadComplete(){
+            "use strict";
+            $('.cke_button__link').on('click', function() { IsKarmaValid(33,30); });
+            $('.cke_button__unlink').on('click', function() { IsKarmaValid(37,30); });
+            $('.cke_button__image').on('click', function() { IsKarmaValid(41,30); });
+        }
+    });
