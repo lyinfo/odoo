@@ -1451,7 +1451,7 @@ class Many2one(_Relational):
         records._cache[self] = value
 
     def convert_to_cache(self, value, record, validate=True):
-        if isinstance(value, (NoneType, int)):
+        if isinstance(value, (NoneType, int, long)):
             return record.env[self.comodel_name].browse(value)
         if isinstance(value, BaseModel):
             if value._name == self.comodel_name and len(value) <= 1:
@@ -1462,7 +1462,7 @@ class Many2one(_Relational):
         elif isinstance(value, dict):
             return record.env[self.comodel_name].new(value)
         else:
-            return record.env[self.comodel_name].browse(value)
+            return self.null(record.env)
 
     def convert_to_read(self, value, use_name_get=True):
         if use_name_get and value:
