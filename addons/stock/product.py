@@ -133,16 +133,12 @@ class product_product(osv.osv):
         quants = self.pool.get('stock.quant').read_group(cr, uid, domain_quant, ['product_id', 'qty'], ['product_id'], context=context)
         quants = dict(map(lambda x: (x['product_id'][0], x['qty']), quants))
 
-        packages = self.pool.get('stock.quant').read_group(cr, uid, domain_quant + [('package_id', '!=', False)], ['product_id'], ['product_id', 'package_id'], context=context)
-        packages = dict(map(lambda x: (x['product_id'][0], x['product_id_count']), packages))
-
         moves_in = dict(map(lambda x: (x['product_id'][0], x['product_qty']), moves_in))
         moves_out = dict(map(lambda x: (x['product_id'][0], x['product_qty']), moves_out))
         res = {}
         for id in ids:
             res[id] = {
                 'qty_available': quants.get(id, 0.0),
-                'package_count': packages.get(id, 0),
                 'incoming_qty': moves_in.get(id, 0.0),
                 'outgoing_qty': moves_out.get(id, 0.0),
                 'virtual_available': quants.get(id, 0.0) + moves_in.get(id, 0.0) - moves_out.get(id, 0.0),
@@ -154,7 +150,7 @@ class product_product(osv.osv):
         res = []
         for field, operator, value in domain:
             #to prevent sql injections
-            assert field in ('qty_available', 'virtual_available', 'incoming_qty', 'outgoing_qty', 'package_count'), 'Invalid domain left operand'
+            assert field in ('qty_available', 'virtual_available', 'incoming_qty', 'outgoing_qty'), 'Invalid domain left operand'
             assert operator in ('<', '>', '=', '!=', '<=', '>='), 'Invalid domain operator'
             assert isinstance(value, (float, int)), 'Invalid domain right operand'
 
@@ -187,20 +183,6 @@ class product_product(osv.osv):
             string='Quantity On Hand',
             fnct_search=_search_product_quantity,
             help="Current quantity of products.\n"
-                 "In a context with a single Stock Location, this includes "
-                 "goods stored at this Location, or any of its children.\n"
-                 "In a context with a single Warehouse, this includes "
-                 "goods stored in the Stock Location of this Warehouse, or any "
-                 "of its children.\n"
-                 "stored in the Stock Location of the Warehouse of this Shop, "
-                 "or any of its children.\n"
-                 "Otherwise, this includes goods stored in any Stock Location "
-                 "with 'internal' type."),
-        'package_count': fields.function(_product_available, multi='qty_available',
-            type='integer',
-            string='Packages On Hand',
-            fnct_search=_search_product_quantity,
-            help="Current packages count of products.\n"
                  "In a context with a single Stock Location, this includes "
                  "goods stored at this Location, or any of its children.\n"
                  "In a context with a single Warehouse, this includes "
@@ -312,7 +294,6 @@ class product_template(osv.osv):
                 # "reception_count": sum([p.reception_count for p in product.product_variant_ids]),
                 # "delivery_count": sum([p.delivery_count for p in product.product_variant_ids]),
                 "qty_available": sum([p.qty_available for p in product.product_variant_ids]),
-                "package_count": sum([p.package_count for p in product.product_variant_ids]),
                 "virtual_available": sum([p.virtual_available for p in product.product_variant_ids]),
                 "incoming_qty": sum([p.incoming_qty for p in product.product_variant_ids]),
                 "outgoing_qty": sum([p.outgoing_qty for p in product.product_variant_ids]),
@@ -387,8 +368,6 @@ class product_template(osv.osv):
         #     fnct_search=_search_product_quantity, type='float', string='Quantity On Hand'),
         'qty_available': fields.function(_product_available, multi='qty_available',
             fnct_search=_search_product_quantity, type='float', string='Quantity On Hand'),
-        'package_count': fields.function(_product_available, multi='qty_available',
-            fnct_search=_search_product_quantity, type='integer', string='Packages On Hand') ,
         'virtual_available': fields.function(_product_available, multi='qty_available',
             fnct_search=_search_product_quantity, type='float', string='Quantity Available'),
         'incoming_qty': fields.function(_product_available, multi='qty_available',
