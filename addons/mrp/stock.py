@@ -244,6 +244,10 @@ class stock_warehouse(osv.osv):
                                            help='Location where the system will look for components.'),
     }
 
+    _defaults = {
+        'manufacture_to_resupply': True,
+    }
+
     def _get_manufacture_pull_rule(self, cr, uid, warehouse, context=None):
         route_obj = self.pool.get('stock.location.route')
         data_obj = self.pool.get('ir.model.data')
