@@ -1990,8 +1990,7 @@ class stock_move(osv.osv):
             'product_uom_qty': 0.00
         }
 
-        uos_rounding = product_uos and self.pool.get('product.uom').read(cr, uid, product_uos, ['rounding']) or None
-        if (not product_id) or (uos_rounding is None) or (float_compare(product_uos_qty, 0.0, precision_rounding=uos_rounding) <= 0):
+        if (not product_id) or (product_uos_qty <= 0.0):
             result['product_uos_qty'] = 0.0
             return {'value': result}
 
