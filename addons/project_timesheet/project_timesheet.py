@@ -123,11 +123,11 @@ class project_work(osv.osv):
             vals_line['date'] = ts.strftime(tools.DEFAULT_SERVER_DATE_FORMAT)
 
         # Calculate quantity based on employee's product's uom
-        vals_line['unit_amount'] = vals['hours']
+        vals_line['unit_amount'] = vals.get('hours', 0)
 
         default_uom = self.pool['res.users'].browse(cr, uid, uid, context=context).company_id.project_time_mode_id.id
         if result['product_uom_id'] != default_uom:
-            vals_line['unit_amount'] = self.pool['product.uom']._compute_qty(cr, uid, default_uom, vals['hours'], result['product_uom_id'])
+            vals_line['unit_amount'] = self.pool['product.uom']._compute_qty(cr, uid, default_uom, vals.get('hours', 0), result['product_uom_id'])
         acc_id = task_obj.project_id and task_obj.project_id.analytic_account_id.id or acc_id
         if acc_id:
             vals_line['account_id'] = acc_id
