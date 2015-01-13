@@ -313,6 +313,44 @@ Source installation requires manually installing dependencies:
         C:\> cd \YourOdooPath
         C:\YourOdooPath> C:\Python27\Scripts\pip.exe install -r requirements.txt
 
+* Less css compiler via nodejs
+
+  - on Linux, use your distribution's package to install nodejs and npm.
+
+    In debian you need at least jessie, as the packaged version of npm before
+    that does not work. In Ubuntu you need at least Ubuntu 14.04, as the
+    packaged version of npm before that does not work. Otherwise install nodejs
+    and npm manually.
+
+    Once you have npm working, install less and less-plugin-clean-css.
+
+    .. code-block:: console
+
+        $ sudo npm install -g less less-plugin-clean-css
+
+    On debian and Ubuntu you also need to set a symbolic link from noejs to
+    node because the shebang line of lessc uses node.
+
+    .. code-block:: console
+
+        $ sudo ln -s /usr/bin/nodejs /usr/bin/node
+
+
+  - on OS X, install nodejs via your preferred package manager (macports_,
+    homebrew_) then install less and less-plugin-clean-css.
+
+    .. code-block:: console
+
+        $ sudo npm install -g less less-plugin-clean-css
+
+
+  - on Windows, install nodejs then reboot and install less and
+    less-plugin-clean-css.
+
+    .. code-block:: console
+
+        C:\> npm install -g less less-plugin-clean-css
+
 
 Running Odoo
 ------------
