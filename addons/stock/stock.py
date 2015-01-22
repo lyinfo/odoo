@@ -1085,6 +1085,7 @@ class stock_picking(osv.osv):
 
         # Create the necessary operations for the grouped quants and remaining qtys
         uom_obj = self.pool.get('product.uom')
+        prevals = {}
         for key, qty in qtys_grouped.items():
             product = self.pool.get("product.product").browse(cr, uid, key[0], context=context)
             uom_id = product.uom_id.id
@@ -1092,7 +1093,7 @@ class stock_picking(osv.osv):
             if product_uom.get(key[0]):
                 uom_id = product_uom[key[0]].id
                 qty_uom = uom_obj._compute_qty(cr, uid, product.uom_id.id, qty, uom_id)
-            vals.append({
+            val_dict = {
                 'picking_id': picking.id,
                 'product_qty': qty_uom,
                 'product_id': key[0],
@@ -1102,7 +1103,17 @@ class stock_picking(osv.osv):
                 'location_id': key[4],
                 'location_dest_id': key[5],
                 'product_uom_id': uom_id,
-            })
+            }
+            if key[0] in prevals:
+                prevals[key[0]].append(val_dict)
+            else:
+                prevals[key[0]] = [val_dict]
+        # prevals var holds the operations in order to create them in the same order than the picking stock moves if possible
+        processed_products = set()
+        for move in picking.move_lines:
+            if move.product_id.id not in processed_products:
+                vals += prevals.get(move.product_id.id, [])
+                processed_products.add(move.product_id.id)
         return vals
 
     @api.cr_uid_ids_context
@@ -2948,7 +2959,7 @@ class stock_warehouse(osv.osv):
                 inter_wh_route_vals = self._get_inter_wh_route(cr, uid, warehouse, wh, context=context)
                 inter_wh_route_id = route_obj.create(cr, uid, vals=inter_wh_route_vals, context=context)
                 values = [(output_loc, transit_location, wh.out_type_id.id, wh), (transit_location, input_loc, warehouse.in_type_id.id, warehouse)]
-                pull_rules_list = self._get_supply_pull_rules(cr, uid, warehouse, values, inter_wh_route_id, context=context)
+                pull_rules_list = self._get_supply_pull_rules(cr, uid, wh.id, values, inter_wh_route_id, context=context)
                 for pull_rule in pull_rules_list:
                     pull_obj.create(cr, uid, vals=pull_rule, context=context)
                 #if the warehouse is also set as default resupply method, assign this route automatically to the warehouse
@@ -3009,7 +3020,7 @@ class stock_warehouse(osv.osv):
             'sequence': 10,
         }
 
-    def _get_supply_pull_rules(self, cr, uid, supplied_warehouse, values, new_route_id, context=None):
+    def _get_supply_pull_rules(self, cr, uid, supply_warehouse, values, new_route_id, context=None):
         pull_rules_list = []
         for from_loc, dest_loc, pick_type_id, warehouse in values:
             pull_rules_list.append({
@@ -3020,8 +3031,8 @@ class stock_warehouse(osv.osv):
                 'action': 'move',
                 'picking_type_id': pick_type_id,
                 'procure_method': warehouse.lot_stock_id.id != from_loc.id and 'make_to_order' or 'make_to_stock', # first part of the resuply route is MTS
-                'warehouse_id': supplied_warehouse.id,
-                'propagate_warehouse_id': warehouse.id,
+                'warehouse_id': warehouse.id,
+                'propagate_warehouse_id': supply_warehouse,
             })
         return pull_rules_list
 

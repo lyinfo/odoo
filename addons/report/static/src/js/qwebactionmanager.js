@@ -1,14 +1,20 @@
 openerp.report = function(instance) {
     var wkhtmltopdf_state;
 
-    var trigger_download = function(session, response, c) {
+    var trigger_download = function(session, response, c, action, options) {
         session.get_file({
             url: '/report/download',
             data: {data: JSON.stringify(response)},
             complete: openerp.web.unblockUI,
-            error: c.rpc_error.bind(c)
+            error: c.rpc_error.bind(c),
+            success: function(){
+                if (action && options && !action.dialog) {
+                    options.on_close();
+                }
+            },
         });
-    }
+    };
+
     var show_pdf = function(session, response, c, options, self) {
         response.push("pdf_viewer")
         session.show_pdf({
@@ -24,7 +30,7 @@ openerp.report = function(instance) {
             },
             error: c.rpc_error.bind(c)
         });
-    }
+    };
 
     instance.web.ActionManager = instance.web.ActionManager.extend({
         ir_actions_report_xml: function(action, options) {
@@ -99,11 +105,11 @@ workers to print a pdf version of the reports.'), true);
                             return show_pdf(self.session, response, c, options, self);
                         }
                         else {
-                            return trigger_download(self.session, response, c );
+                            return trigger_download(self.session, response, c, action, options);
                         }
                     });
                 } else if (action.report_type === 'controller') {
-                    return trigger_download(self.session, response, c);
+                    return trigger_download(self.session, response, c, action, options);
                 }                     
             } else {
                 return self._super(action, options);
