@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-09-23 16:27+0000\n"
-"PO-Revision-Date: 2014-11-29 11:14+0800\n"
+"PO-Revision-Date: 2015-01-25 10:35+0800\n"
 "Last-Translator: jeffery chen fan <jeffery9@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1010,12 +1010,12 @@ msgstr ""
 #: code:addons/mail/static/src/xml/mail.xml:57
 #, python-format
 msgid "Log a note for this document. No notification will be sent"
-msgstr ""
+msgstr "留下任何关于当前表单的记录， 不发送任何通知。"
 
 #. module: mail
 #: field:mail.compose.message,is_log:0
 msgid "Log an Internal Note"
-msgstr ""
+msgstr "留下记录"
 
 #. module: mail
 #. openerp-web
@@ -1023,7 +1023,7 @@ msgstr ""
 #: code:addons/mail/static/src/xml/mail.xml:57
 #, python-format
 msgid "Log an internal note"
-msgstr ""
+msgstr "留下记录"
 
 #. module: mail
 #: code:addons/mail/mail_mail.py:330
@@ -1495,7 +1495,7 @@ msgstr "读取"
 #. module: mail
 #: field:res.partner,notify_email:0
 msgid "Receive Inbox Notifications by Email"
-msgstr ""
+msgstr "通过Email接收消息通知"
 
 #. module: mail
 #: view:mail.mail:mail.view_mail_search selection:mail.mail,state:0
@@ -1734,7 +1734,7 @@ msgstr "子类型"
 #: code:addons/mail/static/src/xml/suggestions.xml:16
 #, python-format
 msgid "Suggested Groups"
-msgstr ""
+msgstr "推荐的讨论组"
 
 #. module: mail
 #: field:mail.group,message_summary:0 field:mail.thread,message_summary:0
@@ -2028,7 +2028,7 @@ msgstr "您有一个未读消息"
 #: code:addons/mail/mail_mail.py:160
 #, python-format
 msgid "about"
-msgstr ""
+msgstr "大约"
 
 #. module: mail
 #: code:addons/mail/mail_mail.py:160

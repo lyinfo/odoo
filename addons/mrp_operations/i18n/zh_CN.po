@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-09-23 16:28+0000\n"
-"PO-Revision-Date: 2014-08-14 16:10+0000\n"
+"PO-Revision-Date: 2015-01-25 20:52+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-09-24 09:20+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: zh_CN\n"
 
 #. module: mrp_operations
 #: field:mrp.workorder,nbr:0
@@ -36,7 +37,8 @@ msgid ""
 msgstr ""
 "* 工单被创建时，“草稿“状态。\n"
 "* 从工单被用户进入开始模式后，设为”在进行中“模式。\n"
-"* 当工单是运行模式，在此期间，如果用户要停止或作出改变，可设置为”挂起“状态。\n"
+"* 当工单是运行模式，在此期间，如果用户要停止或作出改变，可设置为”挂起“状"
+"态。\n"
 "* 当用户取消工单，设置为”取消状态“。\n"
 "* 从工单被完成的时候开始，设置为”完成“状态。"
 
@@ -243,7 +245,7 @@ msgstr "未开工工票"
 #: view:mrp.production.workcenter.line:mrp_operations.view_mrp_production_workcenter_form_view_filter
 #: view:mrp.workorder:mrp_operations.view_report_mrp_workorder_filter
 msgid "Group By"
-msgstr ""
+msgstr "分组方式"
 
 #. module: mrp_operations
 #: view:mrp.production.workcenter.line:mrp_operations.graph_in_hrs_workcenter
@@ -251,8 +253,7 @@ msgid "Hours by Work Center"
 msgstr "按工作中心工时合计"
 
 #. module: mrp_operations
-#: field:mrp.workorder,id:0
-#: field:mrp_operations.operation,id:0
+#: field:mrp.workorder,id:0 field:mrp_operations.operation,id:0
 #: field:mrp_operations.operation.code,id:0
 msgid "ID"
 msgstr ""
@@ -325,7 +326,7 @@ msgstr ""
 #. module: mrp_operations
 #: view:mrp.workorder:mrp_operations.view_report_mrp_workorder_filter
 msgid "Month Planned"
-msgstr ""
+msgstr "计划月份"
 
 #. module: mrp_operations
 #: code:addons/mrp_operations/mrp_operations.py:462
@@ -367,7 +368,7 @@ msgstr "工单已完成"
 #: code:addons/mrp_operations/mrp_operations.py:435
 #, python-format
 msgid "Operation is not started yet!"
-msgstr ""
+msgstr "操作尚未启动"
 
 #. module: mrp_operations
 #: model:ir.actions.act_window,name:mrp_operations.mrp_production_operation_action

@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-21 02:59+0000\n"
-"PO-Revision-Date: 2014-10-26 00:21+0800\n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-01-23 10:08+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
-"Language: zh_TW\n"
 
 #. module: stock_account
 #: view:stock.history:stock_account.view_stock_history_report_tree
@@ -45,6 +45,17 @@ msgstr ""
 #: code:addons/stock_account/wizard/stock_change_standard_price.py:76
 #, python-format
 msgid "Active ID is not set in Context."
+msgstr ""
+
+#. module: stock_account
+#: help:stock.config.settings,group_stock_inventory_valuation:0
+msgid ""
+"Allows to configure inventory valuations on products and product categories."
+msgstr ""
+
+#. module: stock_account
+#: selection:product.template,cost_method:0
+msgid "Average Price"
 msgstr ""
 
 #. module: stock_account
@@ -114,6 +125,11 @@ msgid "Cost Price"
 msgstr "成本單價"
 
 #. module: stock_account
+#: field:product.template,cost_method:0
+msgid "Costing Method"
+msgstr ""
+
+#. module: stock_account
 #: view:stock.invoice.onshipping:stock_account.view_stock_invoice_onshipping
 msgid "Create"
 msgstr ""
@@ -139,6 +155,11 @@ msgid "Create Supplier Invoice"
 msgstr ""
 
 #. module: stock_account
+#: field:stock.config.settings,module_stock_invoice_directly:0
+msgid "Create and open the invoice when the user finish a delivery order"
+msgstr ""
+
+#. module: stock_account
 #: view:stock.invoice.onshipping:stock_account.view_stock_invoice_onshipping
 msgid "Create invoice"
 msgstr ""
@@ -161,11 +182,16 @@ msgstr ""
 #: model:ir.actions.act_window,name:stock_account.action_history_tree
 #: model:ir.ui.menu,name:stock_account.menu_action_history_tree
 msgid "Current Inventory Valuation"
-msgstr ""
+msgstr "當前庫存價值"
 
 #. module: stock_account
 #: field:wizard.valuation.history,date:0
 msgid "Date"
+msgstr ""
+
+#. module: stock_account
+#: field:stock.invoice.onshipping,journal_id:0
+msgid "Destination Journal"
 msgstr ""
 
 #. module: stock_account
@@ -182,14 +208,45 @@ msgid "Force Valuation Period"
 msgstr "強制盤點會計區間"
 
 #. module: stock_account
+#: field:stock.config.settings,group_stock_inventory_valuation:0
+msgid "Generate accounting entries per stock movement"
+msgstr ""
+
+#. module: stock_account
 #: view:stock.history:stock_account.view_stock_history_report_search
 msgid "Group By"
+msgstr ""
+
+#. module: stock_account
+#: field:stock.invoice.onshipping,group:0
+msgid "Group by partner"
 msgstr ""
 
 #. module: stock_account
 #: field:stock.change.standard.price,id:0 field:stock.history,id:0
 #: field:stock.invoice.onshipping,id:0 field:wizard.valuation.history,id:0
 msgid "ID"
+msgstr ""
+
+#. module: stock_account
+#: help:stock.change.standard.price,new_price:0
+msgid ""
+"If cost price is increased, stock variation account will be debited and "
+"stock output account will be credited with the value = (difference of amount "
+"* quantity available).\n"
+"If cost price is decreased, stock variation account will be creadited and "
+"stock input account will be debited."
+msgstr ""
+
+#. module: stock_account
+#: help:product.template,valuation:0
+msgid ""
+"If real-time valuation is enabled for a product, the system will "
+"automatically write journal entries corresponding to stock moves, with "
+"product price as specified by the 'Costing Method'The inventory variation "
+"account set on the product category will represent the current inventory "
+"value, and the stock input and stock output account will hold the "
+"counterpart moves for incoming and outgoing products."
 msgstr ""
 
 #. module: stock_account
@@ -205,7 +262,13 @@ msgid "Inventory"
 msgstr ""
 
 #. module: stock_account
+#: model:ir.model,name:stock_account.model_stock_location
+msgid "Inventory Locations"
+msgstr ""
+
+#. module: stock_account
 #: view:product.template:stock_account.view_template_property_form
+#: field:product.template,valuation:0
 msgid "Inventory Valuation"
 msgstr ""
 
@@ -216,7 +279,13 @@ msgstr ""
 
 #. module: stock_account
 #: field:procurement.order,invoice_state:0 field:stock.move,invoice_state:0
+#: field:stock.picking,invoice_state:0
 msgid "Invoice Control"
+msgstr ""
+
+#. module: stock_account
+#: field:stock.invoice.onshipping,invoice_date:0
+msgid "Invoice Date"
 msgstr ""
 
 #. module: stock_account
@@ -230,7 +299,13 @@ msgstr ""
 #: selection:procurement.rule,invoice_state:0
 #: selection:stock.location.path,invoice_state:0
 #: selection:stock.move,invoice_state:0
+#: selection:stock.picking,invoice_state:0
 msgid "Invoiced"
+msgstr ""
+
+#. module: stock_account
+#: field:stock.return.picking,invoice_state:0
+msgid "Invoicing"
 msgstr ""
 
 #. module: stock_account
@@ -253,7 +328,6 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: stock_account
-#: model:ir.model,name:stock_account.model_stock_location
 #: view:stock.history:stock_account.view_stock_history_report_search
 #: field:stock.history,location_id:0
 msgid "Location"
@@ -282,6 +356,11 @@ msgid "No invoice created!"
 msgstr ""
 
 #. module: stock_account
+#: selection:stock.return.picking,invoice_state:0
+msgid "No invoicing"
+msgstr ""
+
+#. module: stock_account
 #: code:addons/stock_account/wizard/stock_invoice_onshipping.py:82
 #, python-format
 msgid "None of these picking lists require invoicing."
@@ -292,6 +371,7 @@ msgstr ""
 #: selection:procurement.rule,invoice_state:0
 #: selection:stock.location.path,invoice_state:0
 #: selection:stock.move,invoice_state:0
+#: selection:stock.picking,invoice_state:0
 msgid "Not Applicable"
 msgstr ""
 
@@ -315,9 +395,20 @@ msgid "Operation Date"
 msgstr ""
 
 #. module: stock_account
+#: selection:product.template,valuation:0
+msgid "Periodical (manual)"
+msgstr ""
+
+#. module: stock_account
 #: model:ir.model,name:stock_account.model_stock_picking
 msgid "Picking List"
 msgstr ""
+
+#. module: stock_account
+#: field:stock.change.standard.price,new_price:0
+#, fuzzy
+msgid "Price"
+msgstr "成本單價"
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_procurement_order
@@ -330,7 +421,6 @@ msgid "Procurement Rule"
 msgstr ""
 
 #. module: stock_account
-#: model:ir.model,name:stock_account.model_product_product
 #: view:stock.history:stock_account.view_stock_history_report_search
 #: field:stock.history,product_id:0
 msgid "Product"
@@ -364,6 +454,17 @@ msgid "Quants"
 msgstr ""
 
 #. module: stock_account
+#: selection:product.template,cost_method:0
+#, fuzzy
+msgid "Real Price"
+msgstr "成本單價"
+
+#. module: stock_account
+#: selection:product.template,valuation:0
+msgid "Real Time (automated)"
+msgstr ""
+
+#. module: stock_account
 #: selection:stock.invoice.onshipping,journal_type:0
 msgid "Refund Purchase"
 msgstr ""
@@ -394,6 +495,11 @@ msgid "Source"
 msgstr ""
 
 #. module: stock_account
+#: selection:product.template,cost_method:0
+msgid "Standard Price"
+msgstr ""
+
+#. module: stock_account
 #: code:addons/stock_account/product.py:137
 #: code:addons/stock_account/product.py:144
 #, python-format
@@ -401,8 +507,30 @@ msgid "Standard Price changed"
 msgstr ""
 
 #. module: stock_account
+#: help:product.template,cost_method:0
+msgid ""
+"Standard Price: The cost price is manually updated at the end of a specific "
+"period (usually every year).\n"
+"                    Average Price: The cost price is recomputed at each "
+"incoming shipment and used for the product valuation.\n"
+"                    Real Price: The cost price displayed is the price of the "
+"last outgoing product (will be use in case of inventory loss for example)."
+msgstr ""
+
+#. module: stock_account
+#: field:product.category,property_stock_account_input_categ:0
+#: field:product.template,property_stock_account_input:0
+msgid "Stock Input Account"
+msgstr ""
+
+#. module: stock_account
 #: model:ir.model,name:stock_account.model_stock_invoice_onshipping
 msgid "Stock Invoice Onshipping"
+msgstr ""
+
+#. module: stock_account
+#: field:product.category,property_stock_journal:0
+msgid "Stock Journal"
 msgstr ""
 
 #. module: stock_account
@@ -412,9 +540,31 @@ msgid "Stock Move"
 msgstr ""
 
 #. module: stock_account
+#: field:product.category,property_stock_account_output_categ:0
+#: field:product.template,property_stock_account_output:0
+msgid "Stock Output Account"
+msgstr ""
+
+#. module: stock_account
 #: model:ir.actions.act_window,name:stock_account.action_wizard_stock_valuation_history
 #: model:ir.ui.menu,name:stock_account.menu_action_wizard_valuation_history
 msgid "Stock Valuation"
+msgstr ""
+
+#. module: stock_account
+#: field:product.category,property_stock_valuation_account_id:0
+#, fuzzy
+msgid "Stock Valuation Account"
+msgstr "強制盤點會計區間"
+
+#. module: stock_account
+#: field:stock.location,valuation_in_account_id:0
+msgid "Stock Valuation Account (Incoming)"
+msgstr ""
+
+#. module: stock_account
+#: field:stock.location,valuation_out_account_id:0
+msgid "Stock Valuation Account (Outgoing)"
 msgstr ""
 
 #. module: stock_account
@@ -427,16 +577,50 @@ msgid "Stock Value At Date"
 msgstr ""
 
 #. module: stock_account
+#: help:stock.config.settings,module_stock_invoice_directly:0
+msgid ""
+"This allows to automatically launch the invoicing wizard if the delivery is "
+"to be invoiced when you send or deliver goods.\n"
+"-This installs the module stock_invoice_directly."
+msgstr ""
+
+#. module: stock_account
 #: selection:procurement.order,invoice_state:0
 #: selection:procurement.rule,invoice_state:0
 #: selection:stock.location.path,invoice_state:0
 #: selection:stock.move,invoice_state:0
+#: selection:stock.picking,invoice_state:0
 msgid "To Be Invoiced"
+msgstr ""
+
+#. module: stock_account
+#: selection:stock.return.picking,invoice_state:0
+msgid "To be refunded/invoiced"
 msgstr ""
 
 #. module: stock_account
 #: view:stock.history:stock_account.view_stock_history_report_tree
 msgid "Total Value"
+msgstr ""
+
+#. module: stock_account
+#: help:stock.location,valuation_in_account_id:0
+msgid ""
+"Used for real-time inventory valuation. When set on a virtual location (non "
+"internal type), this account will be used to hold the value of products "
+"being moved from an internal location into this location, instead of the "
+"generic Stock Output Account set on the product. This has no effect for "
+"internal locations."
+msgstr ""
+
+#. module: stock_account
+#: help:stock.location,valuation_out_account_id:0
+msgid ""
+"Used for real-time inventory valuation. When set on a virtual location (non "
+"internal type), this account will be used to hold the value of products "
+"being moved out of this location and into an internal location, instead of "
+"the generic Stock Output Account set on the product. This has no effect for "
+"internal locations."
 msgstr ""
 
 #. module: stock_account
@@ -451,6 +635,58 @@ msgid "Warning!"
 msgstr ""
 
 #. module: stock_account
+#: help:product.category,property_stock_account_input_categ:0
+msgid ""
+"When doing real-time inventory valuation, counterpart journal items for all "
+"incoming stock moves will be posted in this account, unless there is a "
+"specific valuation account set on the source location. This is the default "
+"value for all products in this category. It can also directly be set on each "
+"product"
+msgstr ""
+
+#. module: stock_account
+#: help:product.template,property_stock_account_input:0
+msgid ""
+"When doing real-time inventory valuation, counterpart journal items for all "
+"incoming stock moves will be posted in this account, unless there is a "
+"specific valuation account set on the source location. When not set on the "
+"product, the one from the product category is used."
+msgstr ""
+
+#. module: stock_account
+#: help:product.category,property_stock_account_output_categ:0
+msgid ""
+"When doing real-time inventory valuation, counterpart journal items for all "
+"outgoing stock moves will be posted in this account, unless there is a "
+"specific valuation account set on the destination location. This is the "
+"default value for all products in this category. It can also directly be set "
+"on each product"
+msgstr ""
+
+#. module: stock_account
+#: help:product.template,property_stock_account_output:0
+msgid ""
+"When doing real-time inventory valuation, counterpart journal items for all "
+"outgoing stock moves will be posted in this account, unless there is a "
+"specific valuation account set on the destination location. When not set on "
+"the product, the one from the product category is used."
+msgstr ""
+
+#. module: stock_account
+#: help:product.category,property_stock_journal:0
+msgid ""
+"When doing real-time inventory valuation, this is the Accounting Journal in "
+"which entries will be automatically posted when stock moves are processed."
+msgstr ""
+
+#. module: stock_account
+#: help:product.category,property_stock_valuation_account_id:0
+msgid ""
+"When real-time inventory valuation is enabled on a product, this account "
+"will hold the current value of the products."
+msgstr ""
+
+#. module: stock_account
 #: model:ir.model,name:stock_account.model_wizard_valuation_history
 msgid "Wizard that opens the stock valuation history table"
 msgstr ""
@@ -458,4 +694,11 @@ msgstr ""
 #. module: stock_account
 #: view:stock.change.standard.price:stock_account.view_change_standard_price
 msgid "_Apply"
+msgstr ""
+
+#. module: stock_account
+#: view:stock.change.standard.price:stock_account.view_change_standard_price
+#: view:stock.invoice.onshipping:stock_account.view_stock_invoice_onshipping
+#: view:wizard.valuation.history:stock_account.view_wizard_valuation_history
+msgid "or"
 msgstr ""

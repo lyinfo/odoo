@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-09-23 16:27+0000\n"
-"PO-Revision-Date: 2014-09-27 12:06+0000\n"
+"PO-Revision-Date: 2015-01-24 12:07+0800\n"
 "Last-Translator: youring <youring@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-09-28 07:21+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: zh_CN\n"
 
 #. module: purchase
 #: model:email.template,body_html:purchase.email_template_edi_purchase_done
@@ -33,8 +34,8 @@ msgid ""
 "    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
 "       &nbsp;&nbsp;<strong>REFERENCES</strong><br />\n"
 "       &nbsp;&nbsp;Order number: <strong>${object.name}</strong><br />\n"
-"       &nbsp;&nbsp;Order total: <strong>${object.amount_total} "
-"${object.currency_id.name}</strong><br />\n"
+"       &nbsp;&nbsp;Order total: <strong>${object.amount_total} ${object."
+"currency_id.name}</strong><br />\n"
 "       &nbsp;&nbsp;Order date: ${object.date_order}<br />\n"
 "       % if object.origin:\n"
 "       &nbsp;&nbsp;Order reference: ${object.origin}<br />\n"
@@ -58,8 +59,8 @@ msgid ""
 "background-repeat: repeat no-repeat;\">\n"
 "        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: "
 "#DDD;\">\n"
-"            <strong style=\"text-"
-"transform:uppercase;\">${object.company_id.name}</strong></h3>\n"
+"            <strong style=\"text-transform:uppercase;\">${object.company_id."
+"name}</strong></h3>\n"
 "    </div>\n"
 "    <div style=\"width: 347px; margin: 0px; padding: 5px 14px; line-height: "
 "16px; background-color: #F2F2F2;\">\n"
@@ -74,9 +75,8 @@ msgid ""
 "            ${object.company_id.zip} ${object.company_id.city}<br/>\n"
 "        % endif\n"
 "        % if object.company_id.country_id:\n"
-"            ${object.company_id.state_id and ('%s, ' % "
-"object.company_id.state_id.name) or ''} ${object.company_id.country_id.name "
-"or ''}<br/>\n"
+"            ${object.company_id.state_id and ('%s, ' % object.company_id."
+"state_id.name) or ''} ${object.company_id.country_id.name or ''}<br/>\n"
 "        % endif\n"
 "        </span>\n"
 "        % if object.company_id.phone:\n"
@@ -88,8 +88,8 @@ msgid ""
 "        % endif\n"
 "        % if object.company_id.website:\n"
 "            <div>\n"
-"                Web :&nbsp;<a "
-"href=\"${object.company_id.website}\">${object.company_id.website}</a>\n"
+"                Web :&nbsp;<a href=\"${object.company_id.website}\">${object."
+"company_id.website}</a>\n"
 "            </div>\n"
 "        %endif\n"
 "        <p></p>\n"
@@ -137,8 +137,8 @@ msgid ""
 "background-repeat: repeat no-repeat;\">\n"
 "        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: "
 "#DDD;\">\n"
-"            <strong style=\"text-"
-"transform:uppercase;\">${object.company_id.name}</strong></h3>\n"
+"            <strong style=\"text-transform:uppercase;\">${object.company_id."
+"name}</strong></h3>\n"
 "    </div>\n"
 "    <div style=\"width: 347px; margin: 0px; padding: 5px 14px; line-height: "
 "16px; background-color: #F2F2F2;\">\n"
@@ -153,9 +153,8 @@ msgid ""
 "            ${object.company_id.zip} ${object.company_id.city}<br/>\n"
 "        % endif\n"
 "        % if object.company_id.country_id:\n"
-"            ${object.company_id.state_id and ('%s, ' % "
-"object.company_id.state_id.name) or ''} ${object.company_id.country_id.name "
-"or ''}<br/>\n"
+"            ${object.company_id.state_id and ('%s, ' % object.company_id."
+"state_id.name) or ''} ${object.company_id.country_id.name or ''}<br/>\n"
 "        % endif\n"
 "        </span>\n"
 "        % if object.company_id.phone:\n"
@@ -167,8 +166,8 @@ msgid ""
 "        % endif\n"
 "        % if object.company_id.website:\n"
 "            <div>\n"
-"                Web :&nbsp;<a "
-"href=\"${object.company_id.website}\">${object.company_id.website}</a>\n"
+"                Web :&nbsp;<a href=\"${object.company_id.website}\">${object."
+"company_id.website}</a>\n"
 "            </div>\n"
 "        %endif\n"
 "        <p></p>\n"
@@ -192,8 +191,8 @@ msgid ""
 "status.                                        \n"
 "* The 'Confirmed' status is set automatically as confirm when purchase order "
 "in confirm status.                                        \n"
-"* The 'Done' status is set automatically when purchase order is set as done. "
-"                                       \n"
+"* The 'Done' status is set automatically when purchase order is set as "
+"done.                                        \n"
 "* The 'Cancelled' status is set automatically when user cancel purchase "
 "order."
 msgstr ""
@@ -261,7 +260,8 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                   单击此处来记录一笔供应商发票。\n"
 "                </p><p>\n"
-"供应商发票可以基于采购单或收货单预先生成。此功能允许你通过系统草稿单据控制从供应商收到的发票。\n"
+"供应商发票可以基于采购单或收货单预先生成。此功能允许你通过系统草稿单据控制从"
+"供应商收到的发票。\n"
 "                </p>\n"
 "            "
 
@@ -283,7 +283,8 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                   该供应商没有采购单，单击这里创建新询价单。\n"
 "                </p><p>\n"
-"                   询价是采购的第一个步骤。一旦将询价单转为采购单接下来你就可以控制收货和供应商发票。\n"
+"                   询价是采购的第一个步骤。一旦将询价单转为采购单接下来你就可"
+"以控制收货和供应商发票。\n"
 "                </p>\n"
 "            "
 
@@ -316,8 +317,8 @@ msgid ""
 "                Click to create a new incoming shipment.\n"
 "              </p><p> \n"
 "                Here you can track all the product receipts of purchase\n"
-"                orders where the invoicing is \"Based on Incoming "
-"Shipments\",\n"
+"                orders where the invoicing is \"Based on Incoming Shipments"
+"\",\n"
 "                and for which you have not received a supplier invoice yet.\n"
 "                You can generate a supplier invoice based on those "
 "receipts.\n"
@@ -356,8 +357,8 @@ msgid ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                Click to create a request for quotation.\n"
 "              </p><p>\n"
-"                The quotation contains the history of the "
-"discussion/negociation\n"
+"                The quotation contains the history of the discussion/"
+"negociation\n"
 "                you had with your supplier. Once confirmed, a request for\n"
 "                quotation is converted into a purchase order.\n"
 "              </p><p>\n"
@@ -370,7 +371,8 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                单击此处创建新的询价单。\n"
 "              </p><p>\n"
-"询价单包含了你与供应商之间的沟通和谈判历史。一旦确认以后询价单将转换为采购单。</p>\n"
+"询价单包含了你与供应商之间的沟通和谈判历史。一旦确认以后询价单将转换为采购"
+"单。</p>\n"
 "<p>大多数询价单是由系统根据库存需求情况自动创建的。</p>\n"
 "            "
 
@@ -392,9 +394,11 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "            点击以创建一份发票草稿。\n"
 "          </p><p>\n"
-"            此菜单用来控制从供应商那里收到的发票。Odoo会按照你的设置，根据你的采购订单或收货单生成发票草稿。\n"
+"            此菜单用来控制从供应商那里收到的发票。Odoo会按照你的设置，根据你"
+"的采购订单或收货单生成发票草稿。\n"
 "          </p><p>\n"
-"            一旦收到了供应商的发票，你可以将它与发票草稿进行对比，从而核准发票草稿。\n"
+"            一旦收到了供应商的发票，你可以将它与发票草稿进行对比，从而核准发"
+"票草稿。\n"
 "          </p>\n"
 "        "
 
@@ -430,7 +434,8 @@ msgid ""
 "              </p>\n"
 "            "
 msgstr ""
-"当开票方式是“基于采购单行”，这里能跟踪采购订单的所有行 ，以及哪些还没有收到供应商发票。你能基于这个列表生成一个供应商发票草稿。\n"
+"当开票方式是“基于采购单行”，这里能跟踪采购订单的所有行 ，以及哪些还没有收到供"
+"应商发票。你能基于这个列表生成一个供应商发票草稿。\n"
 "            "
 
 #. module: purchase
@@ -582,21 +587,20 @@ msgstr "基于采购订单行"
 #: view:purchase.order:purchase.purchase_order_form
 #: selection:purchase.order,state:0
 msgid "Bid Received"
-msgstr ""
+msgstr "报价已确认"
 
 #. module: purchase
 #: field:purchase.order,bid_date:0
 msgid "Bid Received On"
-msgstr ""
+msgstr "报价时间"
 
 #. module: purchase
 #: field:purchase.order,bid_validity:0
 msgid "Bid Valid Until"
-msgstr ""
+msgstr "报价有效期至"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1160
-#: code:addons/purchase/stock.py:179
+#: code:addons/purchase/purchase.py:1160 code:addons/purchase/stock.py:179
 #, python-format
 msgid "Buy"
 msgstr "购买"
@@ -638,8 +642,7 @@ msgid "Cancel"
 msgstr "取消"
 
 #. module: purchase
-#: selection:purchase.order,state:0
-#: selection:purchase.order.line,state:0
+#: selection:purchase.order,state:0 selection:purchase.order.line,state:0
 #: selection:purchase.report,state:0
 msgid "Cancelled"
 msgstr "已取消"
@@ -671,8 +674,7 @@ msgid "Companies"
 msgstr "公司"
 
 #. module: purchase
-#: field:purchase.order,company_id:0
-#: field:purchase.order.line,company_id:0
+#: field:purchase.order,company_id:0 field:purchase.order.line,company_id:0
 #: view:purchase.report:purchase.view_purchase_order_search
 #: field:purchase.report,company_id:0
 msgid "Company"
@@ -731,8 +733,7 @@ msgstr "创建者"
 
 #. module: purchase
 #: field:purchase.config.settings,create_date:0
-#: field:purchase.order,create_date:0
-#: field:purchase.order.group,create_date:0
+#: field:purchase.order,create_date:0 field:purchase.order.group,create_date:0
 #: field:purchase.order.line,create_date:0
 #: field:purchase.order.line_invoice,create_date:0
 msgid "Created on"
@@ -754,8 +755,7 @@ msgid "Customer Address (Direct Delivery)"
 msgstr "客户地址（直接发运）"
 
 #. module: purchase
-#: field:purchase.order,date_approve:0
-#: field:purchase.report,date_approve:0
+#: field:purchase.order,date_approve:0 field:purchase.report,date_approve:0
 msgid "Date Approved"
 msgstr "审批日期"
 
@@ -777,12 +777,12 @@ msgstr "采购订单审批日期"
 #. module: purchase
 #: help:purchase.order,bid_validity:0
 msgid "Date on which the bid expired"
-msgstr ""
+msgstr "报价过期日期及时间"
 
 #. module: purchase
 #: help:purchase.order,bid_date:0
 msgid "Date on which the bid was received"
-msgstr ""
+msgstr "收到报价的日期或时间"
 
 #. module: purchase
 #: help:purchase.report,date:0
@@ -844,15 +844,13 @@ msgid ""
 msgstr ""
 
 #. module: purchase
-#: field:purchase.order.line,name:0
-#: view:website:purchase.report_purchaseorder
+#: field:purchase.order.line,name:0 view:website:purchase.report_purchaseorder
 #: view:website:purchase.report_purchasequotation
 msgid "Description"
 msgstr "说明"
 
 #. module: purchase
-#: field:purchase.order,location_id:0
-#: field:purchase.report,location_id:0
+#: field:purchase.order,location_id:0 field:purchase.report,location_id:0
 msgid "Destination"
 msgstr "目的地"
 
@@ -869,8 +867,7 @@ msgid ""
 msgstr ""
 
 #. module: purchase
-#: selection:purchase.order,state:0
-#: selection:purchase.order.line,state:0
+#: selection:purchase.order,state:0 selection:purchase.order.line,state:0
 #: selection:purchase.report,state:0
 msgid "Done"
 msgstr "完成"
@@ -908,10 +905,8 @@ msgid "Email composition wizard"
 msgstr "电子邮件撰写向导"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:404
-#: code:addons/purchase/purchase.py:529
-#: code:addons/purchase/purchase.py:546
-#: code:addons/purchase/purchase.py:589
+#: code:addons/purchase/purchase.py:404 code:addons/purchase/purchase.py:529
+#: code:addons/purchase/purchase.py:546 code:addons/purchase/purchase.py:589
 #: code:addons/purchase/stock.py:182
 #, python-format
 msgid "Error!"
@@ -974,15 +969,13 @@ msgstr "隐藏已取消明细行"
 msgid ""
 "Holds the Chatter summary (number of messages, ...). This summary is "
 "directly in html format in order to be inserted in kanban views."
-msgstr "保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
+msgstr ""
+"保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
 
 #. module: purchase
-#: field:purchase.config.settings,id:0
-#: field:purchase.order,id:0
-#: field:purchase.order.group,id:0
-#: field:purchase.order.line,id:0
-#: field:purchase.order.line_invoice,id:0
-#: field:purchase.report,id:0
+#: field:purchase.config.settings,id:0 field:purchase.order,id:0
+#: field:purchase.order.group,id:0 field:purchase.order.line,id:0
+#: field:purchase.order.line_invoice,id:0 field:purchase.report,id:0
 msgid "ID"
 msgstr "ID"
 
@@ -1044,8 +1037,7 @@ msgid ""
 msgstr "国际商业条款是一系列预定义的用于国际贸易的商业条款。"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:328
-#: code:addons/purchase/purchase.py:1007
+#: code:addons/purchase/purchase.py:328 code:addons/purchase/purchase.py:1007
 #, python-format
 msgid "Invalid Action!"
 msgstr "非法的动作"
@@ -1061,8 +1053,7 @@ msgid "Invoice Control"
 msgstr "发票管理"
 
 #. module: purchase
-#: selection:purchase.order,state:0
-#: selection:purchase.report,state:0
+#: selection:purchase.order,state:0 selection:purchase.report,state:0
 msgid "Invoice Exception"
 msgstr "发票异常"
 
@@ -1099,22 +1090,20 @@ msgid "Invoiceable on incoming shipment?"
 msgstr ""
 
 #. module: purchase
-#: field:purchase.order,invoiced_rate:0
-#: field:purchase.order.line,invoiced:0
+#: field:purchase.order,invoiced_rate:0 field:purchase.order.line,invoiced:0
 msgid "Invoiced"
 msgstr "已开票"
 
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_2_stock_picking
-#: field:purchase.order,invoice_count:0
-#: field:purchase.order,invoice_ids:0
+#: field:purchase.order,invoice_count:0 field:purchase.order,invoice_ids:0
 msgid "Invoices"
 msgstr "发票"
 
 #. module: purchase
 #: view:purchase.order.line:purchase.purchase_order_line_form
 msgid "Invoices and Incoming Shipments"
-msgstr ""
+msgstr "发票及进货"
 
 #. module: purchase
 #: help:purchase.order,invoice_ids:0
@@ -1162,8 +1151,7 @@ msgid "Last Message Date"
 msgstr "最新消息日期"
 
 #. module: purchase
-#: field:purchase.config.settings,write_uid:0
-#: field:purchase.order,write_uid:0
+#: field:purchase.config.settings,write_uid:0 field:purchase.order,write_uid:0
 #: field:purchase.order.group,write_uid:0
 #: field:purchase.order.line,write_uid:0
 #: field:purchase.order.line_invoice,write_uid:0
@@ -1172,8 +1160,7 @@ msgstr "最近更新者"
 
 #. module: purchase
 #: field:purchase.config.settings,write_date:0
-#: field:purchase.order,write_date:0
-#: field:purchase.order.group,write_date:0
+#: field:purchase.order,write_date:0 field:purchase.order.group,write_date:0
 #: field:purchase.order.line,write_date:0
 #: field:purchase.order.line_invoice,write_date:0
 msgid "Last Updated on"
@@ -1225,7 +1212,9 @@ msgid ""
 "Margin of error for supplier lead times. When the systemgenerates Purchase "
 "Orders for procuring products,they will be scheduled that many days earlier "
 "to cope with unexpected supplier delays."
-msgstr "供应商交期的误差范围。当 系统为取得产品而生成了采购单，将安排提前几日以应对意外供应商延误。"
+msgstr ""
+"供应商交期的误差范围。当 系统为取得产品而生成了采购单，将安排提前几日以应对意"
+"外供应商延误。"
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.action_view_purchase_order_group
@@ -1316,8 +1305,7 @@ msgstr "打开采购菜单"
 
 #. module: purchase
 #: view:purchase.order:purchase.view_request_for_quotation_filter
-#: field:purchase.order,date_order:0
-#: field:purchase.order.line,date_order:0
+#: field:purchase.order,date_order:0 field:purchase.order.line,date_order:0
 #: field:purchase.report,date:0
 msgid "Order Date"
 msgstr "订单日期"
@@ -1450,8 +1438,7 @@ msgid "Price Types"
 msgstr "计价基础"
 
 #. module: purchase
-#: field:purchase.order,pricelist_id:0
-#: field:purchase.report,pricelist_id:0
+#: field:purchase.order,pricelist_id:0 field:purchase.report,pricelist_id:0
 msgid "Pricelist"
 msgstr "价格表"
 
@@ -1486,8 +1473,7 @@ msgstr "产品需求规则"
 #: model:ir.model,name:purchase.model_product_product
 #: field:purchase.order,product_id:0
 #: view:purchase.order.line:purchase.purchase_order_line_search
-#: field:purchase.order.line,product_id:0
-#: field:purchase.report,product_id:0
+#: field:purchase.order.line,product_id:0 field:purchase.report,product_id:0
 msgid "Product"
 msgstr "产品"
 
@@ -1556,7 +1542,9 @@ msgid ""
 "Purchase Analysis allows you to easily check and analyse your company "
 "purchase history and performance. From this menu you can track your "
 "negotiation performance, the delivery performance of your suppliers, etc."
-msgstr "采购分析使您轻松检查和分析您公司的采购日志和特性，在这菜单您能跟踪您协商的特性和您供应商送货的特性等。"
+msgstr ""
+"采购分析使您轻松检查和分析您公司的采购日志和特性，在这菜单您能跟踪您协商的特"
+"性和您供应商送货的特性等。"
 
 #. module: purchase
 #: selection:purchase.order,state:0
@@ -1673,7 +1661,9 @@ msgstr "采购订单"
 msgid ""
 "Put an address if you want to deliver directly from the supplier to the "
 "customer. Otherwise, keep empty to deliver to your own company."
-msgstr "如果你要直接从供应商发货给给客户，输入一个地址。否则，发给你自己公司的时候，留空。"
+msgstr ""
+"如果你要直接从供应商发货给给客户，输入一个地址。否则，发给你自己公司的时候，"
+"留空。"
 
 #. module: purchase
 #: view:website:purchase.report_purchaseorder
@@ -1707,7 +1697,7 @@ msgstr "询价单"
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_form
 msgid "RFQ & Bid"
-msgstr ""
+msgstr "询比议价"
 
 #. module: purchase
 #: model:mail.message.subtype,name:purchase.mt_rfq_approved
@@ -1725,8 +1715,7 @@ msgid "RFQ Done"
 msgstr "询价单已完成"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:318
-#: code:addons/purchase/purchase.py:936
+#: code:addons/purchase/purchase.py:318 code:addons/purchase/purchase.py:936
 #, python-format
 msgid "RFQ created"
 msgstr "询价单已创建"
@@ -1885,8 +1874,7 @@ msgid "Set to Draft"
 msgstr "设为草稿"
 
 #. module: purchase
-#: selection:purchase.order,state:0
-#: selection:purchase.report,state:0
+#: selection:purchase.order,state:0 selection:purchase.report,state:0
 msgid "Shipping Exception"
 msgstr "运输异常"
 
@@ -1970,8 +1958,7 @@ msgid "Supplier Reference"
 msgstr "供应商单号"
 
 #. module: purchase
-#: field:purchase.order,amount_tax:0
-#: field:purchase.order.line,taxes_id:0
+#: field:purchase.order,amount_tax:0 field:purchase.order.line,taxes_id:0
 #: view:website:purchase.report_purchaseorder
 msgid "Taxes"
 msgstr "税"
@@ -2219,8 +2206,7 @@ msgid "Warehouse"
 msgstr "仓库"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1104
-#: code:addons/purchase/purchase.py:1119
+#: code:addons/purchase/purchase.py:1104 code:addons/purchase/purchase.py:1119
 #: code:addons/purchase/purchase.py:1123
 #: code:addons/purchase/wizard/purchase_order_group.py:44
 #, python-format

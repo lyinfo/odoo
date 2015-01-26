@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2015-01-10 19:14+0800\n"
+"PO-Revision-Date: 2015-01-24 16:45+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr ""
 #: field:purchase.requisition,account_analytic_id:0
 #: field:purchase.requisition.line,account_analytic_id:0
 msgid "Analytic Account"
-msgstr ""
+msgstr "辅助核算项"
 
 #. module: purchase_requisition
 #: view:purchase.requisition:purchase_requisition.view_purchase_requisition_form
@@ -59,7 +59,7 @@ msgstr ""
 #. module: purchase_requisition
 #: selection:purchase.requisition,state:0
 msgid "Bid Selection"
-msgstr ""
+msgstr "定标"
 
 #. module: purchase_requisition
 #: field:purchase.requisition,exclusive:0

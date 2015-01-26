@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-08-14 16:10+0000\n"
+"PO-Revision-Date: 2015-01-26 11:46+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:17+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: zh_CN\n"
 
 #. module: hr_timesheet_invoice
 #: model:hr_timesheet_invoice.factor,name:hr_timesheet_invoice.timesheet_invoice_factor2
@@ -141,32 +142,30 @@ msgstr "取消"
 #. module: hr_timesheet_invoice
 #: view:account.analytic.account:hr_timesheet_invoice.account_analytic_account_form_form
 msgid "Cancel Contract"
-msgstr ""
+msgstr "取消合约"
 
 #. module: hr_timesheet_invoice
 #: view:account.analytic.account:hr_timesheet_invoice.account_analytic_account_form_form
 msgid "Close Contract"
-msgstr ""
+msgstr "关闭合约"
 
 #. module: hr_timesheet_invoice
 #: code:addons/hr_timesheet_invoice/hr_timesheet_invoice.py:253
 #, python-format
 msgid "Configuration Error!"
-msgstr ""
+msgstr "配置错误！"
 
 #. module: hr_timesheet_invoice
 #: code:addons/hr_timesheet_invoice/hr_timesheet_invoice.py:180
 #, python-format
-msgid ""
-"Contract incomplete. Please fill in the Customer and Pricelist fields."
-msgstr ""
+msgid "Contract incomplete. Please fill in the Customer and Pricelist fields."
+msgstr "合约未完整。请填写客户及价格表字段。"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create,price:0
 #: field:hr.timesheet.invoice.create.final,price:0
 #: view:report.timesheet.line:hr_timesheet_invoice.view_timesheet_line_tree
-#: field:report.timesheet.line,cost:0
-#: field:report_timesheet.user,cost:0
+#: field:report.timesheet.line,cost:0 field:report_timesheet.user,cost:0
 #: view:website:hr_timesheet_invoice.report_analyticprofit
 msgid "Cost"
 msgstr "成本"
@@ -315,7 +314,7 @@ msgstr ""
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.analytic.profit:hr_timesheet_invoice.view_hr_timesheet_analytic_profit
 msgid "Duration"
-msgstr ""
+msgstr "持续时间"
 
 #. module: hr_timesheet_invoice
 #: view:website:hr_timesheet_invoice.report_analyticprofit
@@ -326,7 +325,7 @@ msgstr "有效"
 #: code:addons/hr_timesheet_invoice/hr_timesheet_invoice.py:140
 #, python-format
 msgid "Error!"
-msgstr ""
+msgstr "错误！"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_analytic_account_tree
@@ -360,7 +359,7 @@ msgstr ""
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create,product:0
 msgid "Force Product"
-msgstr ""
+msgstr "特定产品"
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.invoice.create.final:hr_timesheet_invoice.view_hr_timesheet_invoice_create_final
@@ -375,7 +374,7 @@ msgstr "强制使用指定产品"
 #. module: hr_timesheet_invoice
 #: model:hr_timesheet_invoice.factor,name:hr_timesheet_invoice.timesheet_invoice_factor3
 msgid "Free of charge"
-msgstr ""
+msgstr "免费"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.analytic.profit,date_from:0
@@ -390,7 +389,7 @@ msgstr "辅助核算项"
 #. module: hr_timesheet_invoice
 #: view:report.timesheet.line:hr_timesheet_invoice.view_timesheet_line_search
 msgid "Group By"
-msgstr ""
+msgstr "分组方式"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.analytic.profit,id:0
@@ -400,11 +399,9 @@ msgstr ""
 #: field:report.account.analytic.line.to.invoice,id:0
 #: field:report.analytic.account.close,id:0
 #: field:report.hr_timesheet_invoice.report_analyticprofit,id:0
-#: field:report.timesheet.line,id:0
-#: field:report_timesheet.account,id:0
+#: field:report.timesheet.line,id:0 field:report_timesheet.account,id:0
 #: field:report_timesheet.account.date,id:0
-#: field:report_timesheet.invoice,id:0
-#: field:report_timesheet.user,id:0
+#: field:report_timesheet.invoice,id:0 field:report_timesheet.user,id:0
 msgid "ID"
 msgstr ""
 
@@ -422,7 +419,7 @@ msgstr ""
 #. module: hr_timesheet_invoice
 #: field:hr_timesheet_invoice.factor,name:0
 msgid "Internal Name"
-msgstr ""
+msgstr "内部名称"
 
 #. module: hr_timesheet_invoice
 #: field:account.analytic.line,invoice_id:0
@@ -450,7 +447,7 @@ msgstr "部分成本行已开发票"
 #. module: hr_timesheet_invoice
 #: view:account.analytic.account:hr_timesheet_invoice.account_analytic_account_form_form
 msgid "Invoice on Timesheets Options"
-msgstr ""
+msgstr "时间表发票选项"
 
 #. module: hr_timesheet_invoice
 #: view:website:hr_timesheet_invoice.report_analyticprofit
@@ -460,7 +457,7 @@ msgstr "用户的发票税率"
 #. module: hr_timesheet_invoice
 #: field:account.analytic.line,to_invoice:0
 msgid "Invoiceable"
-msgstr ""
+msgstr "发票额"
 
 #. module: hr_timesheet_invoice
 #: view:account.analytic.line:hr_timesheet_invoice.view_account_analytic_line_search_inherit
@@ -597,8 +594,7 @@ msgstr "5月"
 #. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,month:0
 #: view:report.timesheet.line:hr_timesheet_invoice.view_timesheet_line_search
-#: field:report.timesheet.line,month:0
-#: field:report_timesheet.account,month:0
+#: field:report.timesheet.line,month:0 field:report_timesheet.account,month:0
 #: field:report_timesheet.account.date,month:0
 #: field:report_timesheet.user,month:0
 msgid "Month"
@@ -662,7 +658,7 @@ msgstr ""
 #. module: hr_timesheet_invoice
 #: field:account.analytic.account,pricelist_id:0
 msgid "Pricelist"
-msgstr ""
+msgstr "价格表"
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.analytic.profit:hr_timesheet_invoice.view_hr_timesheet_analytic_profit
@@ -768,12 +764,12 @@ msgstr "理论"
 #: field:report_timesheet.invoice,quantity:0
 #: field:report_timesheet.user,quantity:0
 msgid "Time"
-msgstr ""
+msgstr "时间"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create.final,time:0
 msgid "Time Spent"
-msgstr ""
+msgstr "花费时间"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create,time:0
@@ -783,7 +779,7 @@ msgstr "花费的时间"
 #. module: hr_timesheet_invoice
 #: field:account.analytic.account,to_invoice:0
 msgid "Timesheet Invoicing Ratio"
-msgstr ""
+msgstr "时间表发票率"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_timesheet_line_stat_all
@@ -843,7 +839,7 @@ msgstr "用户计工单"
 #. module: hr_timesheet_invoice
 #: view:report_timesheet.user:hr_timesheet_invoice.view_timesheet_user_search
 msgid "Timesheet by users"
-msgstr ""
+msgstr "按人员"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_report_timesheet_account
@@ -887,7 +883,7 @@ msgstr "开票"
 #. module: hr_timesheet_invoice
 #: view:account.analytic.account:hr_timesheet_invoice.account_analytic_account_form_form
 msgid "To Renew"
-msgstr ""
+msgstr "续订"
 
 #. module: hr_timesheet_invoice
 #: field:report_timesheet.invoice,amount_invoice:0
@@ -924,7 +920,7 @@ msgstr "发票类型"
 #. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,product_uom_id:0
 msgid "Unit of Measure"
-msgstr ""
+msgstr "单位"
 
 #. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,unit_amount:0
@@ -952,7 +948,7 @@ msgstr "用户或者账簿名称"
 #: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:56
 #, python-format
 msgid "Warning!"
-msgstr ""
+msgstr "警告！"
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.invoice.create:hr_timesheet_invoice.view_hr_timesheet_invoice_create
@@ -966,8 +962,7 @@ msgstr ""
 #. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,name:0
 #: view:report.timesheet.line:hr_timesheet_invoice.view_timesheet_line_search
-#: field:report.timesheet.line,name:0
-#: field:report_timesheet.account,name:0
+#: field:report.timesheet.line,name:0 field:report_timesheet.account,name:0
 #: field:report_timesheet.account.date,name:0
 #: field:report_timesheet.user,name:0
 msgid "Year"
