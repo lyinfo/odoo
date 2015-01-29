@@ -6,17 +6,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-01-21 14:07+0000\n"
-"PO-Revision-Date: 2015-01-26 11:17+0800\n"
+"PO-Revision-Date: 2014-08-14 16:10+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-24 09:29+0000\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Launchpad-Export-Date: 2015-01-22 08:12+0000\n"
+"X-Generator: Launchpad (build 17306)\n"
 
 #. module: project
 #: field:res.partner,task_count:0
@@ -421,7 +421,8 @@ msgid "Cumulative Flow"
 msgstr "渐进过程"
 
 #. module: project
-#: view:project.project:project.edit_project field:project.task,partner_id:0
+#: view:project.project:project.edit_project
+#: field:project.task,partner_id:0
 msgid "Customer"
 msgstr "客户"
 
@@ -794,6 +795,12 @@ msgid ""
 msgstr ""
 "与此项目相关的内部电子邮件。传入的电子邮件会自动的同步任务（或选择性的问题，"
 "如果问题跟踪模块安装）。"
+
+#. module: project
+#: code:addons/project/project.py:201
+#, python-format
+msgid "Internal project: all employees can access"
+msgstr ""
 
 #. module: project
 #: code:addons/project/project.py:201
@@ -1857,7 +1864,7 @@ msgstr "oe_kanban_text_red"
 #: view:project.config.settings:project.view_config_settings
 #: view:project.task.delegate:project.view_project_task_delegate
 msgid "or"
-msgstr "或"
+msgstr "或者"
 
 #. module: project
 #: code:addons/project/project.py:878
