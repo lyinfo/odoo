@@ -338,7 +338,7 @@ msgstr "再分配給業務夥伴"
 #. module: sale
 #: field:sale.config.settings,group_sale_delivery_address:0
 msgid "Allow a different address for delivery and invoicing "
-msgstr ""
+msgstr "允許不同的出貨地址及發票地址"
 
 #. module: sale
 #: field:sale.config.settings,module_sale_journal:0
@@ -353,7 +353,7 @@ msgstr "可依客戶或產品來設定警示訊息"
 #. module: sale
 #: field:sale.config.settings,module_website_quote:0
 msgid "Allow online quotations and templates"
-msgstr ""
+msgstr "允許在線報價及其範本"
 
 #. module: sale
 #: field:sale.config.settings,group_discount_per_so_line:0
@@ -372,7 +372,7 @@ msgstr ""
 #. module: sale
 #: field:sale.config.settings,group_uom:0
 msgid "Allow using different units of measure"
-msgstr ""
+msgstr "允許使用不同的計量單位"
 
 #. module: sale
 #: help:sale.config.settings,module_account_analytic_analysis:0
@@ -960,7 +960,7 @@ msgstr ""
 #: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
 #: view:sale.report:sale.view_order_product_search
 msgid "Group By"
-msgstr ""
+msgstr "分組方式"
 
 #. module: sale
 #: field:sale.make.invoice,grouped:0
@@ -1221,6 +1221,11 @@ msgid "Messages and communication history"
 msgstr "訊息及聯絡紀錄"
 
 #. module: sale
+#: view:sale.order:sale.view_sales_order_filter
+msgid "Mine"
+msgstr "我的"
+
+#. module: sale
 #: view:sale.report:sale.view_order_product_search
 msgid "My Sales"
 msgstr "我的業務銷售"
@@ -1239,7 +1244,7 @@ msgstr "新增報價單複本"
 #. module: sale
 #: view:sale.order:sale.view_sales_order_filter
 msgid "New Mail"
-msgstr ""
+msgstr "新消息"
 
 #. module: sale
 #: code:addons/sale/sale.py:1048
@@ -1326,7 +1331,7 @@ msgstr "依訂單項目開立發票"
 #: view:sale.order:sale.view_sales_order_filter
 #: view:sale.report:sale.view_order_product_search
 msgid "Order Month"
-msgstr ""
+msgstr "訂單月份"
 
 #. module: sale
 #: view:sale.order:sale.view_order_tree
@@ -1342,7 +1347,7 @@ msgstr "單號"
 #: field:sale.order,name:0
 #: field:sale.order.line,order_id:0
 msgid "Order Reference"
-msgstr "訂單參考"
+msgstr "訂單編號"
 
 #. module: sale
 #: sql_constraint:sale.order:0
@@ -1357,7 +1362,7 @@ msgstr "訂單狀態"
 #. module: sale
 #: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
 msgid "Order reference"
-msgstr "訂單參照"
+msgstr "訂單編號"
 
 #. module: sale
 #: view:sale.report:sale.view_order_product_search
@@ -1618,7 +1623,7 @@ msgstr "產生此份銷售訂單需求的文件參考"
 #. module: sale
 #: field:sale.order,client_order_ref:0
 msgid "Reference/Description"
-msgstr ""
+msgstr "參考文件"
 
 #. module: sale
 #: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban

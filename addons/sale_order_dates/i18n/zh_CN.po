@@ -20,7 +20,7 @@ msgstr ""
 #. module: sale_order_dates
 #: field:sale.order,commitment_date:0
 msgid "Commitment Date"
-msgstr "承诺日期"
+msgstr "预定交期"
 
 #. module: sale_order_dates
 #: help:sale.order,requested_date:0

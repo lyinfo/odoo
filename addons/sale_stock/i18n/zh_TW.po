@@ -60,7 +60,7 @@ msgstr "無法取消銷售訂單"
 #. module: sale_stock
 #: field:sale.config.settings,group_route_so_lines:0
 msgid "Choose MTO, drop shipping,... on sales order lines"
-msgstr ""
+msgstr "允許在銷售訂單明細上選擇 按訂單生產，代發貨，..."
 
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_res_company
@@ -326,7 +326,7 @@ msgstr "預設開立發票的方式是"
 #. module: sale_stock
 #: view:stock.picking:sale_stock.view_picking_internal_search_inherit
 msgid "To Invoice"
-msgstr ""
+msgstr "待開發票"
 
 #. module: sale_stock
 #: help:sale.config.settings,group_invoice_deli_orders:0

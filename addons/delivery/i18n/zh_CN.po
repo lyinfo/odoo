@@ -93,7 +93,7 @@ msgstr "固定价格"
 #. module: delivery
 #: field:delivery.carrier,use_detailed_pricelist:0
 msgid "Advanced Pricing per Destination"
-msgstr "根据目的地定价"
+msgstr "根据目的地价格表定价"
 
 #. module: delivery
 #: field:delivery.carrier,amount:0
@@ -105,12 +105,12 @@ msgstr "金额"
 msgid ""
 "Amount of the order to benefit from a free shipping, expressed in the "
 "company currency"
-msgstr "免费送货的订单金额，以公司本位币显示"
+msgstr "免费运输的订单金额，以公司本位币显示"
 
 #. module: delivery
 #: field:delivery.carrier,available:0
 msgid "Available"
-msgstr ""
+msgstr "可用"
 
 #. module: delivery
 #: view:delivery.carrier:delivery.view_delivery_carrier_form
@@ -184,64 +184,64 @@ msgstr "默认价格"
 #. module: delivery
 #: model:ir.ui.menu,name:delivery.menu_delivery
 msgid "Delivery"
-msgstr "送货"
+msgstr "运输"
 
 #. module: delivery
 #: model:ir.model,name:delivery.model_delivery_grid
 msgid "Delivery Grid"
-msgstr "送货网络"
+msgstr "运输价格表"
 
 #. module: delivery
 #: model:ir.model,name:delivery.model_delivery_grid_line
 msgid "Delivery Grid Line"
-msgstr "送货网络明细"
+msgstr "运输价格明细"
 
 #. module: delivery
 #: field:delivery.carrier,grids_id:0
 msgid "Delivery Grids"
-msgstr "送货网络"
+msgstr "运输价格表"
 
 #. module: delivery
 #: field:delivery.carrier,name:0
 #: field:res.partner,property_delivery_carrier:0
 #: field:sale.order,carrier_id:0
 msgid "Delivery Method"
-msgstr "送货方式"
+msgstr "运输方式"
 
 #. module: delivery
 #: model:ir.actions.act_window,name:delivery.action_delivery_carrier_form
 #: model:ir.ui.menu,name:delivery.menu_action_delivery_carrier_form
 msgid "Delivery Methods"
-msgstr "运输方法"
+msgstr "运输方式"
 
 #. module: delivery
 #: model:ir.actions.act_window,name:delivery.action_delivery_grid_form
 #: model:ir.ui.menu,name:delivery.menu_action_delivery_grid_form
 msgid "Delivery Pricelist"
-msgstr "送货价格表"
+msgstr "运输价格表"
 
 #. module: delivery
 #: field:delivery.carrier,product_id:0
 msgid "Delivery Product"
-msgstr "送货服务"
+msgstr "运输服务"
 
 #. module: delivery
 #: model:product.template,name:delivery.product_product_delivery_product_template
 msgid "Delivery by Poste"
-msgstr "由post送货"
+msgstr "由post运输"
 
 #. module: delivery
 #: view:delivery.carrier:delivery.view_delivery_carrier_form
 #: view:delivery.grid:delivery.view_delivery_grid_form
 #: view:delivery.grid:delivery.view_delivery_grid_tree
 msgid "Delivery grids"
-msgstr "送货网络"
+msgstr "运输价格表"
 
 #. module: delivery
 #: view:delivery.carrier:delivery.view_delivery_carrier_form
 #: view:delivery.grid:delivery.view_delivery_grid_form
 msgid "Destination"
-msgstr "目标库位"
+msgstr "目的地"
 
 #. module: delivery
 #: selection:delivery.grid.line,price_type:0
@@ -262,44 +262,44 @@ msgstr "金额高于 %.2f 免费"
 #. module: delivery
 #: view:delivery.carrier:delivery.view_delivery_carrier_form
 msgid "General Information"
-msgstr ""
+msgstr "一般信息"
 
 #. module: delivery
 #: help:delivery.grid.line,sequence:0
 msgid "Gives the sequence order when calculating delivery grid."
-msgstr ""
+msgstr "指定序号用于计算运输价格的优先顺序。"
 
 #. module: delivery
 #: help:delivery.grid,sequence:0
 msgid "Gives the sequence order when displaying a list of delivery grid."
-msgstr "输入序列用于在送货网络列表上排序"
+msgstr "输入序列用于在运输价格列表上排序"
 
 #. module: delivery
 #: field:delivery.grid.line,grid_id:0
 msgid "Grid"
-msgstr "网络"
+msgstr "价格表"
 
 #. module: delivery
 #: field:delivery.grid,line_ids:0
 msgid "Grid Line"
-msgstr "网络明细"
+msgstr "价格表明细"
 
 #. module: delivery
 #: view:delivery.grid.line:delivery.view_delivery_grid_line_form
 #: view:delivery.grid.line:delivery.view_delivery_grid_line_tree
 msgid "Grid Lines"
-msgstr "网络明细"
+msgstr "价格表明细"
 
 #. module: delivery
 #: field:delivery.grid,name:0
 msgid "Grid Name"
-msgstr "网络名"
+msgstr "价格表名称"
 
 #. module: delivery
 #: view:delivery.carrier:delivery.view_delivery_carrier_form
 #: view:delivery.grid:delivery.view_delivery_grid_form
 msgid "Grid definition"
-msgstr "网络定义"
+msgstr "价格表定义"
 
 #. module: delivery
 #: field:delivery.carrier,id:0
@@ -320,7 +320,7 @@ msgstr "如果生效设为false，可以不必删除承运方就隐藏它。"
 msgid ""
 "If the active field is set to False, it will allow you to hide the delivery "
 "grid without removing it."
-msgstr "如果生效字段为false，送货网络将隐藏而不是删除。"
+msgstr "如果生效字段为false，运输价格表将隐藏而不是删除。"
 
 #. module: delivery
 #: help:delivery.carrier,free_if_more_than:0
@@ -339,7 +339,7 @@ msgstr "如果你没有“添加引用”，当基于送货单开票时，将计
 #. module: delivery
 #: field:sale.order.line,is_delivery:0
 msgid "Is a Delivery"
-msgstr ""
+msgstr "为运输费用"
 
 #. module: delivery
 #: help:delivery.carrier,available:0
@@ -390,13 +390,13 @@ msgstr "净重"
 #: code:addons/delivery/sale.py:71
 #, python-format
 msgid "No Grid Available!"
-msgstr ""
+msgstr "没有可用的价格表!"
 
 #. module: delivery
 #: code:addons/delivery/sale.py:71
 #, python-format
 msgid "No grid matching for this carrier!"
-msgstr ""
+msgstr "没有与此承运商匹配的价格表！"
 
 #. module: delivery
 #: field:delivery.carrier,normal_price:0
@@ -417,7 +417,7 @@ msgstr "运算符"
 #: code:addons/delivery/sale.py:74
 #, python-format
 msgid "Order not in Draft State!"
-msgstr ""
+msgstr "订单不在草稿状态！"
 
 #. module: delivery
 #: model:ir.model,name:delivery.model_res_partner
@@ -484,7 +484,7 @@ msgstr ""
 #: field:delivery.grid,sequence:0
 #: field:delivery.grid.line,sequence:0
 msgid "Sequence"
-msgstr "序列"
+msgstr "序号"
 
 #. module: delivery
 #: field:delivery.grid,zip_from:0
@@ -495,18 +495,18 @@ msgstr "开始邮编"
 #: view:delivery.grid:delivery.view_delivery_grid_form
 #: field:delivery.grid,state_ids:0
 msgid "States"
-msgstr "状态"
+msgstr "地区"
 
 #. module: delivery
 #: model:ir.model,name:delivery.model_stock_move
 msgid "Stock Move"
-msgstr "库存调拨"
+msgstr "库存移转"
 
 #. module: delivery
 #: code:addons/delivery/stock.py:91
 #, python-format
 msgid "The carrier %s (id: %d) has no delivery grid!"
-msgstr "承运方 %s (id: %d) 没有送货网络！"
+msgstr "承运方 %s (id: %d) 没有运输价格表！"
 
 #. module: delivery
 #: code:addons/delivery/sale.py:74
@@ -522,12 +522,12 @@ msgstr "提供送货服务的业务伙伴"
 #. module: delivery
 #: help:res.partner,property_delivery_carrier:0
 msgid "This delivery method will be used when invoicing from picking."
-msgstr "这个送货方式会在基于送货单开发票的时候使用。"
+msgstr "这个运输方式会在基于送货单开发票的时候使用。"
 
 #. module: delivery
 #: field:delivery.grid,zip_to:0
 msgid "To Zip"
-msgstr "目的地邮编"
+msgstr "结束邮编"
 
 #. module: delivery
 #: field:delivery.carrier,partner_id:0

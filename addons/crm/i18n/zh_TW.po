@@ -283,22 +283,22 @@ msgstr "啟用"
 #: view:crm.lead:crm.crm_case_form_view_leads
 #: view:crm.lead:crm.crm_case_form_view_oppor
 msgid "Address"
-msgstr ""
+msgstr "地址"
 
 #. module: crm
 #: view:sale.config.settings:crm.view_sale_config_settings
 msgid "After-Sale Services"
-msgstr ""
+msgstr "售後服務"
 
 #. module: crm
 #: field:crm.case.section,alias_id:0
 msgid "Alias"
-msgstr ""
+msgstr "郵件路由"
 
 #. module: crm
 #: field:sale.config.settings,alias_domain:0
 msgid "Alias Domain"
-msgstr ""
+msgstr "路由網域"
 
 #. module: crm
 #: code:addons/crm/base_partner_merge.py:304
@@ -967,7 +967,7 @@ msgstr "說明"
 #. module: crm
 #: view:crm.phonecall:crm.crm_case_phone_form_view
 msgid "Description..."
-msgstr ""
+msgstr "說明..."
 
 #. module: crm
 #: model:crm.case.categ,name:crm.categ_oppor5
@@ -1323,12 +1323,12 @@ msgstr ""
 #: view:crm.lead:crm.crm_case_form_view_leads
 #: view:crm.lead:crm.crm_case_form_view_oppor
 msgid "Internal Notes"
-msgstr ""
+msgstr "內部備註"
 
 #. module: crm
 #: field:base.partner.merge.automatic.wizard,group_by_is_company:0
 msgid "Is Company"
-msgstr ""
+msgstr "公司"
 
 #. module: crm
 #: field:crm.lead,message_is_follower:0
@@ -1356,7 +1356,7 @@ msgstr "最近動作"
 #. module: crm
 #: view:crm.lead:crm.view_crm_case_leads_filter
 msgid "Last Message"
-msgstr ""
+msgstr "最後聯繫日期"
 
 #. module: crm
 #: field:crm.lead,message_last_post:0
@@ -1594,7 +1594,7 @@ msgstr ""
 #. module: crm
 #: model:ir.filters,name:crm.filter_leads_long_term_revenue
 msgid "Long Term Revenue"
-msgstr ""
+msgstr "長期收益"
 
 #. module: crm
 #: model:crm.case.stage,name:crm.stage_lead7
@@ -1831,7 +1831,7 @@ msgstr "通話月份"
 #. module: crm
 #: view:crm.lead:crm.view_crm_case_leads_filter
 msgid "My Leads"
-msgstr ""
+msgstr "我的潛客"
 
 #. module: crm
 #: view:crm.lead:crm.view_crm_case_opportunities_filter
@@ -1882,7 +1882,7 @@ msgstr "建立"
 #: view:crm.lead:crm.view_crm_case_opportunities_filter
 #: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
 msgid "New Mail"
-msgstr ""
+msgstr "新消息"
 
 #. module: crm
 #: model:crm.tracking.source,name:crm.crm_source_newsletter
@@ -2209,7 +2209,7 @@ msgstr ""
 #: view:crm.payment.mode:crm.view_crm_payment_mode_tree
 #: model:ir.actions.act_window,name:crm.action_crm_payment_mode
 msgid "Payment Mode"
-msgstr ""
+msgstr "付款方式"
 
 #. module: crm
 #: model:ir.ui.menu,name:crm.menu_crm_payment_mode_act
@@ -2480,7 +2480,7 @@ msgstr "銷售採購"
 #: model:ir.actions.act_window,name:crm.crm_lead_categ_action
 #: model:ir.ui.menu,name:crm.menu_crm_lead_categ
 msgid "Sales Tags"
-msgstr ""
+msgstr "銷售標記"
 
 #. module: crm
 #: field:crm.case.categ,section_id:0
@@ -2534,7 +2534,7 @@ msgstr "銷售人員"
 #. module: crm
 #: view:crm.phonecall:crm.crm_case_phone_form_view
 msgid "Schedule"
-msgstr ""
+msgstr "按排"
 
 #. module: crm
 #: view:crm.phonecall2phonecall:crm.phonecall_to_phonecall_view
@@ -2739,12 +2739,12 @@ msgstr ""
 #: model:ir.model,name:crm.model_crm_tracking_source
 #: model:ir.ui.menu,name:crm.menu_crm_tracking_source
 msgid "Source"
-msgstr ""
+msgstr "來源"
 
 #. module: crm
 #: field:crm.tracking.source,name:0
 msgid "Source Name"
-msgstr ""
+msgstr "來源"
 
 #. module: crm
 #: view:crm.case.stage:crm.crm_case_stage_form
@@ -2854,7 +2854,7 @@ msgstr ""
 #. module: crm
 #: field:crm.lead,categ_ids:0
 msgid "Tags"
-msgstr ""
+msgstr "標記"
 
 #. module: crm
 #: help:crm.case.section,alias_id:0
@@ -3068,7 +3068,7 @@ msgstr "類型用於區分潛在客戶和商機"
 #: view:crm.lead:crm.view_crm_case_opportunities_filter
 #: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
 msgid "Unassigned"
-msgstr ""
+msgstr "未指派"
 
 #. module: crm
 #: field:crm.lead,message_unread:0

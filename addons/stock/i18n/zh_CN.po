@@ -115,13 +115,13 @@ msgstr " 分拣序列"
 #. module: stock
 #: field:stock.inventory,move_ids_exist:0
 msgid " Stock Move Exists?"
-msgstr " 库存调拨是否存在？"
+msgstr " 库存移转是否存在？"
 
 #. module: stock
 #: code:addons/stock/stock.py:2444
 #, python-format
 msgid "%s %s %s has been <b>moved to</b> scrap."
-msgstr "%s %s %s 已被 <b>调拨到</b> 报废仓."
+msgstr "%s %s %s 已被 <b>移转到</b> 报废仓."
 
 #. module: stock
 #: code:addons/stock/stock.py:2930
@@ -319,7 +319,7 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                创建一个库存调拨单。\n"
+"                创建一个库存操作。\n"
 "              </p><p>\n"
 "                此菜单给你在一个特定产品上面的库存操作的完整的可追溯性。\n"
 "                你能过滤该产品，查看该产品所有已经发生和未发生的移库。\n"
@@ -483,7 +483,7 @@ msgstr ""
 #. module: stock
 #: selection:stock.move,procure_method:0
 msgid "Advanced: Apply Procurement Rules"
-msgstr "高级：应用补货规则"
+msgstr "高级：应用需求供给规则"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_type_form
@@ -507,7 +507,7 @@ msgstr "全部产品"
 #. module: stock
 #: field:stock.move,returned_move_ids:0
 msgid "All returned moves"
-msgstr "所有退回的调拨"
+msgstr "所有退回的移转"
 
 #. module: stock
 #: code:addons/stock/procurement.py:241
@@ -598,7 +598,7 @@ msgstr ""
 #: field:stock.location.path,auto:0
 #: selection:stock.location.path,auto:0
 msgid "Automatic Move"
-msgstr "自动流转"
+msgstr "自动移转"
 
 #. module: stock
 #: selection:stock.location.path,auto:0
@@ -608,7 +608,7 @@ msgstr "自动，但不增加操作"
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_procurement
 msgid "Automatic Procurements"
-msgstr "自动补货"
+msgstr "自动需求"
 
 #. module: stock
 #: field:stock.move,string_availability_info:0
@@ -755,12 +755,12 @@ msgstr "取消盘点"
 #. module: stock
 #: view:stock.move:stock.view_move_form
 msgid "Cancel Move"
-msgstr "取消调拨"
+msgstr "取消移转"
 
 #. module: stock
 #: view:stock.picking:stock.view_picking_form
 msgid "Cancel Transfer"
-msgstr "取消流转"
+msgstr "取消移转"
 
 #. module: stock
 #: selection:stock.inventory,state:0
@@ -783,7 +783,7 @@ msgstr "案例"
 #. module: stock
 #: field:stock.return.picking,move_dest_exists:0
 msgid "Chained Move Exists"
-msgstr "链式调拨已存在"
+msgstr "链式移转已存在"
 
 #. module: stock
 #. openerp-web
@@ -890,7 +890,7 @@ msgstr "公司"
 #. module: stock
 #: model:ir.model,name:stock.model_procurement_orderpoint_compute
 msgid "Compute Minimum Stock Rules"
-msgstr "计算最小库存规则"
+msgstr "运行安全库需求计划"
 
 #. module: stock
 #: view:procurement.orderpoint.compute:stock.view_procurement_compute_wizard
@@ -901,7 +901,7 @@ msgstr "计算库存"
 #: model:ir.actions.act_window,name:stock.action_procurement_compute
 #: model:ir.ui.menu,name:stock.menu_procurement_compute
 msgid "Compute Stock Minimum Rules Only"
-msgstr "仅计算最小库存规则"
+msgstr "运行安全库需求计划"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_configuration
@@ -935,7 +935,7 @@ msgstr "已确认"
 #. module: stock
 #: view:stock.picking:stock.view_picking_internal_search
 msgid "Confirmed Moves"
-msgstr "已确认调拨"
+msgstr "已确认移转"
 
 #. module: stock
 #: view:report.stock.lines.date:stock.report_stock_lines_date_search
@@ -991,7 +991,7 @@ msgstr "创建批次"
 #. module: stock
 #: selection:procurement.rule,procure_method:0
 msgid "Create Procurement"
-msgstr "创建补货"
+msgstr "创建需求计划"
 
 #. module: stock
 #. openerp-web
@@ -1003,12 +1003,12 @@ msgstr "创建退货单"
 #. module: stock
 #: field:stock.inventory,move_ids:0
 msgid "Created Moves"
-msgstr "已创建的库存调拨"
+msgstr "已创建的库存移转"
 
 #. module: stock
 #: field:stock.warehouse.orderpoint,procurement_ids:0
 msgid "Created Procurements"
-msgstr "创建补货"
+msgstr "创建需求计划"
 
 #. module: stock
 #: field:make.procurement,create_uid:0
@@ -1192,7 +1192,7 @@ msgstr "完成日期"
 #. module: stock
 #: field:stock.picking,date_done:0
 msgid "Date of Transfer"
-msgstr "流转日期"
+msgstr "移转日期"
 
 #. module: stock
 #: field:report.stock.lines.date,date:0
@@ -1202,7 +1202,7 @@ msgstr "最近盘点时间"
 #. module: stock
 #: field:report.stock.lines.date,move_date:0
 msgid "Date of latest Stock Move"
-msgstr "最近调拨时间"
+msgstr "最近移转时间"
 
 #. module: stock
 #: help:stock.picking,message_last_post:0
@@ -1219,12 +1219,12 @@ msgstr "盘点日期"
 #: view:report.stock.lines.date:stock.report_stock_lines_date_form
 #: view:report.stock.lines.date:stock.report_stock_lines_date_search
 msgid "Dates of Inventories & Moves"
-msgstr "盘点与调拨时间"
+msgstr "盘点与移转时间"
 
 #. module: stock
 #: model:ir.model,name:stock.model_report_stock_lines_date
 msgid "Dates of Inventories and latest Moves"
-msgstr "盘点及最近调拨时间"
+msgstr "盘点及最近移转时间"
 
 #. module: stock
 #: model:res.company,overdue_msg:stock.res_company_1
@@ -1287,12 +1287,12 @@ msgstr ""
 #. module: stock
 #: selection:stock.move,procure_method:0
 msgid "Default: Take From Stock"
-msgstr ""
+msgstr "默认：现货库出"
 
 #. module: stock
 #: help:stock.warehouse,route_ids:0
 msgid "Defaults routes through the warehouse"
-msgstr "默认的物流路线"
+msgstr "默认的供需路线"
 
 #. module: stock
 #: help:stock.location,putaway_strategy_id:0
@@ -1410,7 +1410,7 @@ msgstr "目标库位"
 #: field:procurement.order,move_dest_id:0
 #: field:stock.move,move_dest_id:0
 msgid "Destination Move"
-msgstr "调拨目的地"
+msgstr "移转目的地"
 
 #. module: stock
 #: field:stock.pack.operation,result_package_id:0
@@ -1463,12 +1463,12 @@ msgstr "完成"
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_done
 msgid "Done Transfers"
-msgstr "完成流转"
+msgstr "完成移转"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_done_grouped
 msgid "Done Transfers by Date"
-msgstr "已完成流转按日期分组"
+msgstr "已完成移转按日期分组"
 
 #. module: stock
 #: selection:stock.inventory,state:0
@@ -1480,7 +1480,7 @@ msgstr "草稿"
 #. module: stock
 #: view:stock.picking:stock.view_picking_internal_search
 msgid "Draft Moves"
-msgstr "调拨草稿"
+msgstr "移转草稿"
 
 #. module: stock
 #: view:stock.picking.type:stock.stock_picking_type_kanban
@@ -1491,7 +1491,7 @@ msgstr "编辑..."
 #: code:addons/stock/wizard/stock_transfer_details.py:115
 #, python-format
 msgid "Enter transfer details"
-msgstr "准备流转明细"
+msgstr "准备移转明细"
 
 #. module: stock
 #: code:addons/stock/stock.py:638
@@ -1595,14 +1595,14 @@ msgstr "强制出库策略"
 msgid ""
 "Forces to specify a Serial Number for all moves containing this product and "
 "coming from a Supplier Location"
-msgstr "为包含该产品和来自供应商库位的所有调拨单 强制指定一个 系列号"
+msgstr "为包含该产品和来自供应商库位的所有操作 强制指定一个 系列号"
 
 #. module: stock
 #: help:product.template,track_outgoing:0
 msgid ""
 "Forces to specify a Serial Number for all moves containing this product and "
 "going to a Customer Location"
-msgstr "强制给所有包含将要进入客户库位的这个产品的调拨指定一个系列号"
+msgstr "强制给所有包含将要进入客户库位的这个产品的移转指定一个系列号"
 
 #. module: stock
 #: help:product.template,track_all:0
@@ -1714,7 +1714,7 @@ msgstr "一般信息"
 #. module: stock
 #: field:stock.config.settings,module_procurement_jit:0
 msgid "Generate procurement in real time"
-msgstr "实时生产补货"
+msgstr "实时生产需求"
 
 #. module: stock
 #: model:stock.location,name:stock.stock_location_5
@@ -1751,7 +1751,7 @@ msgstr "分组于"
 #. module: stock
 #: view:procurement.order:stock.view_procurement_form_stock_inherit
 msgid "Group's Pickings"
-msgstr "同组的拣货单"
+msgstr "同组的操作"
 
 #. module: stock
 #: field:stock.pack.operation,processed:0
@@ -1861,7 +1861,7 @@ msgid ""
 "If checked, when the previous move is cancelled or split, the move generated "
 "by this move will too"
 msgstr ""
-"如果勾选此项,当先前的调拨是取消或拆分,所产生的后续调拨也会一并取消或拆分"
+"如果勾选此项,当先前的移转是取消或拆分,所产生的后续移转也会一并取消或拆分"
 
 #. module: stock
 #: help:procurement.rule,propagate:0
@@ -1870,13 +1870,13 @@ msgid ""
 "next procurement) is cancelled or split, the move generated by this move "
 "will too"
 msgstr ""
-"如果勾选此项,当先前的调拨（产生于子补货单）是取消或拆分,所产生的后续调拨也会"
+"如果勾选此项,当先前的移转（产生于子需求单）是取消或拆分,所产生的后续移转也会"
 "一并取消或拆分"
 
 #. module: stock
 #: help:stock.move,propagate:0
 msgid "If checked, when this move is cancelled, cancel the linked move too"
-msgstr "如果选中，在取消本调拨时也取消相关调拨。"
+msgstr "如果选中，在取消本移转时也取消相关移转。"
 
 #. module: stock
 #: help:procurement.rule,route_id:0
@@ -2039,7 +2039,7 @@ msgstr "内部库位"
 #. module: stock
 #: field:stock.picking,move_lines:0
 msgid "Internal Moves"
-msgstr "内部调拨"
+msgstr "内部移转"
 
 #. module: stock
 #: field:stock.production.lot,ref:0
@@ -2051,12 +2051,12 @@ msgstr "编号"
 #: model:stock.picking.type,name:stock.picking_type_internal
 #, python-format
 msgid "Internal Transfers"
-msgstr "内部流转"
+msgstr "内部移转"
 
 #. module: stock
 #: field:res.company,internal_transit_location_id:0
 msgid "Internal Transit Location"
-msgstr "内部调拨库位"
+msgstr "内部移转库位"
 
 #. module: stock
 #: field:stock.warehouse,int_type_id:0
@@ -2166,7 +2166,7 @@ msgstr "盘点库位"
 #. module: stock
 #: help:stock.inventory,move_ids:0
 msgid "Inventory Moves."
-msgstr "盘点调拨"
+msgstr "盘点移转"
 
 #. module: stock
 #: help:stock.inventory,name:0
@@ -2334,13 +2334,13 @@ msgstr "逾期(%)"
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_late
 msgid "Late Transfers"
-msgstr "逾期流转"
+msgstr "逾期移转"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_stock_line_date
 #: model:ir.ui.menu,name:stock.menu_report_stock_line_date
 msgid "Latest Inventories & Moves"
-msgstr "最近的盘点与调拨"
+msgstr "最近的盘点与移转"
 
 #. module: stock
 #: field:stock.location,parent_left:0
@@ -2366,7 +2366,7 @@ msgstr ""
 #. module: stock
 #: field:stock.pack.operation,linked_move_operation_ids:0
 msgid "Linked Moves"
-msgstr "已链接调拨"
+msgstr "已链接移转"
 
 #. module: stock
 #: field:stock.move,linked_move_operation_ids:0
@@ -2519,7 +2519,7 @@ msgstr "按单生产规则"
 #. module: stock
 #: model:ir.model,name:stock.model_make_procurement
 msgid "Make Procurements"
-msgstr "生成补货"
+msgstr "生成需求计划"
 
 #. module: stock
 #: code:addons/stock/stock.py:3071
@@ -2562,7 +2562,7 @@ msgstr ""
 #. module: stock
 #: field:stock.config.settings,group_stock_adv_location:0
 msgid "Manage advanced routes for your warehouse"
-msgstr "管理高级物流路线"
+msgstr "管理高级供需路线"
 
 #. module: stock
 #: field:stock.config.settings,group_uom:0
@@ -2602,7 +2602,7 @@ msgstr "手动操作"
 #. module: stock
 #: view:stock.picking:stock.view_picking_form
 msgid "Mark as Todo"
-msgstr "准备流转"
+msgstr "准备移转"
 
 #. module: stock
 #: field:stock.picking,max_date:0
@@ -2612,7 +2612,7 @@ msgstr "最大预计日期"
 #. module: stock
 #: field:stock.warehouse.orderpoint,product_max_qty:0
 msgid "Maximum Quantity"
-msgstr "最大数量"
+msgstr "最高安全库存"
 
 #. module: stock
 #. openerp-web
@@ -2653,7 +2653,7 @@ msgstr "最小库存规则"
 #. module: stock
 #: field:stock.warehouse.orderpoint,product_min_qty:0
 msgid "Minimum Quantity"
-msgstr "最小数量"
+msgstr "最低安全库存"
 
 #. module: stock
 #: field:procurement.order,orderpoint_id:0
@@ -2670,6 +2670,7 @@ msgstr "最小库存规则"
 msgid ""
 "Minimum days to trigger a propagation of date change in pushed/pull flows."
 msgstr ""
+"推式或拉式物流日期向后沿最小天数"
 
 #. module: stock
 #: view:stock.warehouse.orderpoint:stock.view_warehouse_orderpoint_form
@@ -2680,13 +2681,13 @@ msgstr "杂项"
 #: field:stock.move.operation.link,move_id:0
 #: field:stock.return.picking.line,move_id:0
 msgid "Move"
-msgstr "调拨"
+msgstr "移转"
 
 #. module: stock
 #: code:addons/stock/procurement.py:43
 #, python-format
 msgid "Move From Another Location"
-msgstr "从其他货位调拨"
+msgstr "从其他货位移转"
 
 #. module: stock
 #: field:stock.quant,negative_move_id:0
@@ -2696,12 +2697,12 @@ msgstr ""
 #. module: stock
 #: field:stock.move,split_from:0
 msgid "Move Split From"
-msgstr "调拨拆分来自"
+msgstr "移转拆分来自"
 
 #. module: stock
 #: field:procurement.rule,procure_method:0
 msgid "Move Supply Method"
-msgstr "调拨供应方法"
+msgstr "移转供应方法"
 
 #. module: stock
 #: help:stock.move,date:0
@@ -2732,12 +2733,12 @@ msgstr "已处理的库存量"
 #: field:stock.quant,history_ids:0
 #: field:stock.return.picking,product_return_moves:0
 msgid "Moves"
-msgstr "库存调拨"
+msgstr "库存移转"
 
 #. module: stock
 #: help:procurement.order,move_ids:0
 msgid "Moves created by the procurement"
-msgstr "补货创建的移库"
+msgstr "需求创建的移库"
 
 #. module: stock
 #: help:stock.warehouse.orderpoint,group_id:0
@@ -2762,7 +2763,7 @@ msgstr ""
 #. module: stock
 #: view:procurement.rule:stock.view_procurement_rule_form_stock_inherit
 msgid "Moving Options"
-msgstr "调拨选项"
+msgstr "移转选项"
 
 #. module: stock
 #: field:product.putaway,name:0
@@ -2998,7 +2999,7 @@ msgstr ""
 #. module: stock
 #: help:stock.move,move_dest_id:0
 msgid "Optional: next stock move when chaining them"
-msgstr "选项: 如果是连锁那会引发库存调拨."
+msgstr "选项: 如果是连锁那会引发库存移转."
 
 #. module: stock
 #: help:stock.move,move_orig_ids:0
@@ -3286,7 +3287,7 @@ msgstr "拣货+运货"
 #. module: stock
 #: field:stock.warehouse,pick_type_id:0
 msgid "Pick Type"
-msgstr "拣货类型"
+msgstr "操作类型"
 
 #. module: stock
 #: model:ir.actions.report.xml,name:stock.action_report_picking
@@ -3299,12 +3300,12 @@ msgstr "库存操作"
 #: model:ir.model,name:stock.model_stock_picking
 #: view:stock.picking:stock.view_picking_internal_search
 msgid "Picking List"
-msgstr "操作清单"
+msgstr "库存移转清单"
 
 #. module: stock
 #: view:stock.picking:stock.view_picking_internal_search
 msgid "Picking Lists"
-msgstr "操作清单"
+msgstr "库存移转清单"
 
 #. module: stock
 #: field:procurement.rule,picking_type_id:0
@@ -3347,17 +3348,17 @@ msgstr "操作类型"
 #. module: stock
 #: view:stock.picking:stock.vpicktree
 msgid "Picking list"
-msgstr "操作清单"
+msgstr "库存移转清单"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_transfer_details
 msgid "Picking wizard"
-msgstr "操作向导"
+msgstr "移转向导"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_transfer_details_items
 msgid "Picking wizard items"
-msgstr "操作向导项目"
+msgstr "移转向导项目"
 
 #. module: stock
 #: view:procurement.group:stock.procurement_group_form_view_herited
@@ -3372,12 +3373,12 @@ msgstr "已处理的操作"
 #. module: stock
 #: model:ir.actions.act_window,name:stock.do_view_pickings
 msgid "Pickings for Groups"
-msgstr "要分组的操作"
+msgstr "分组的操作"
 
 #. module: stock
 #: view:stock.picking:stock.view_picking_internal_search
 msgid "Pickings that are late on scheduled time"
-msgstr ""
+msgstr "已逾期的操作"
 
 #. module: stock
 #: field:make.procurement,date_planned:0
@@ -3440,7 +3441,7 @@ msgstr ""
 #. module: stock
 #: view:stock.picking:stock.view_picking_form
 msgid "Print Picking List"
-msgstr "打印操作清单"
+msgstr "打印移转清单"
 
 #. module: stock
 #. openerp-web
@@ -3461,7 +3462,7 @@ msgstr "优先级"
 msgid ""
 "Priority for this picking. Setting manually a value here would set it as "
 "priority for all the moves"
-msgstr "此库存拣货单的优先级。 手工指定的值将会影响该单的所有调拨明细的优先级"
+msgstr "此库存操作的优先级。 手工指定的值将会影响该单的所有移转的优先级"
 
 #. module: stock
 #: view:stock.move:stock.view_move_tree
@@ -3483,7 +3484,7 @@ msgstr "稍候处理"
 #: selection:stock.location,usage:0
 #: field:stock.move,procurement_id:0
 msgid "Procurement"
-msgstr "补货"
+msgstr "需求计划"
 
 #. module: stock
 #: field:stock.move,group_id:0
@@ -3491,47 +3492,47 @@ msgstr "补货"
 #: field:stock.picking,group_id:0
 #: field:stock.warehouse.orderpoint,group_id:0
 msgid "Procurement Group"
-msgstr "补货组"
+msgstr "需求群组"
 
 #. module: stock
 #: field:procurement.order,location_id:0
 #: field:procurement.rule,location_id:0
 #: field:product.template,property_stock_procurement:0
 msgid "Procurement Location"
-msgstr "补货库位"
+msgstr "需求库位"
 
 #. module: stock
 #: view:stock.warehouse.orderpoint:stock.view_warehouse_orderpoint_form
 msgid "Procurement Orders to Process"
-msgstr "待处理的补货"
+msgstr "待处理的需求"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.act_make_procurement
 #: view:make.procurement:stock.view_make_procurment_wizard
 msgid "Procurement Request"
-msgstr "补货请求"
+msgstr "需求申请"
 
 #. module: stock
 #: model:ir.model,name:stock.model_procurement_group
 msgid "Procurement Requisition"
-msgstr "补货申请"
+msgstr "需求申请"
 
 #. module: stock
 #: model:ir.model,name:stock.model_procurement_rule
 #: field:stock.move,rule_id:0
 msgid "Procurement Rule"
-msgstr "补货规则"
+msgstr "需求供给规则"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_procurement_rules
 msgid "Procurement Rules"
-msgstr "补货规则"
+msgstr "需求供给规则"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_procurement_action
 #: model:stock.location,name:stock.location_procurement
 msgid "Procurements"
-msgstr "补货"
+msgstr "需求计划"
 
 #. module: stock
 #: code:addons/stock/product.py:277
@@ -3597,7 +3598,7 @@ msgstr "产品批次过滤器"
 #. module: stock
 #: view:stock.return.picking.line:stock.stock_return_line_tree_in
 msgid "Product Moves"
-msgstr "产品调拨"
+msgstr "产品移转"
 
 #. module: stock
 #: field:stock.inventory.line,product_name:0
@@ -3621,7 +3622,7 @@ msgstr "产品销售单位"
 #: field:stock.transfer_details_items,product_uom_id:0
 #: field:stock.warehouse.orderpoint,product_uom:0
 msgid "Product Unit of Measure"
-msgstr "产品计量单位"
+msgstr "计量单位"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_product_variant_config_stock
@@ -3662,7 +3663,7 @@ msgstr "产品"
 #. module: stock
 #: view:stock.transfer_details:stock.view_stock_enter_transfer_details
 msgid "Products To Move"
-msgstr "准备调拨的产品"
+msgstr "准备移转的产品"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_product_by_category_stock_form
@@ -3744,38 +3745,38 @@ msgstr ""
 #. module: stock
 #: view:product.putaway:stock.view_putaway
 msgid "Putaway"
-msgstr ""
+msgstr "入库"
 
 #. module: stock
 #: field:stock.warehouse.orderpoint,qty_multiple:0
 msgid "Qty Multiple"
-msgstr ""
+msgstr "订货倍数"
 
 #. module: stock
 #: sql_constraint:stock.warehouse.orderpoint:0
 msgid "Qty Multiple must be greater than or equal to zero."
-msgstr ""
+msgstr "订货倍数必须大于或等于0"
 
 #. module: stock
 #: code:addons/stock/stock.py:3352
 #, python-format
 msgid "Quality Control"
-msgstr ""
+msgstr "质量控制"
 
 #. module: stock
 #: field:stock.warehouse,wh_qc_stock_loc_id:0
 msgid "Quality Control Location"
-msgstr ""
+msgstr "质量控制库位"
 
 #. module: stock
 #: view:stock.quant:stock.view_stock_quant_form
 msgid "Quant History"
-msgstr "相关调拨"
+msgstr "相关移转"
 
 #. module: stock
 #: field:stock.picking,quant_reserved_exist:0
 msgid "Quant already reserved ?"
-msgstr ""
+msgstr "库存已被保留？"
 
 #. module: stock
 #: code:addons/stock/stock.py:1916
@@ -3928,46 +3929,46 @@ msgstr "就绪"
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_ready
 msgid "Ready Transfers"
-msgstr "准备流转"
+msgstr "准备移转"
 
 #. module: stock
 #: selection:stock.picking,state:0
 msgid "Ready to Transfer"
-msgstr "准备流转"
+msgstr "准备移转"
 
 #. module: stock
 #: view:stock.inventory:stock.view_inventory_form
 msgid "Real Quantity"
-msgstr "实际数量"
+msgstr "实盘数量"
 
 #. module: stock
 #: view:product.product:stock.product_kanban_stock_view
 #: field:product.product,reception_count:0
 msgid "Receipt"
-msgstr ""
+msgstr "入库"
 
 #. module: stock
 #: field:stock.warehouse,reception_route_id:0
 msgid "Receipt Route"
-msgstr ""
+msgstr "入库路线"
 
 #. module: stock
 #: code:addons/stock/stock.py:3389
 #, python-format
 msgid "Receipt in 1 step"
-msgstr ""
+msgstr "一步入库"
 
 #. module: stock
 #: code:addons/stock/stock.py:3390
 #, python-format
 msgid "Receipt in 2 steps"
-msgstr ""
+msgstr "2步入库"
 
 #. module: stock
 #: code:addons/stock/stock.py:3391
 #, python-format
 msgid "Receipt in 3 steps"
-msgstr ""
+msgstr "3步入库"
 
 #. module: stock
 #: code:addons/stock/stock.py:3262
@@ -3977,12 +3978,12 @@ msgstr ""
 #: model:stock.picking.type,name:stock.picking_type_in
 #, python-format
 msgid "Receipts"
-msgstr ""
+msgstr "入库"
 
 #. module: stock
 #: selection:stock.warehouse,reception_steps:0
 msgid "Receive goods directly in stock (1 step)"
-msgstr ""
+msgstr "收货直接入库（1步）"
 
 #. module: stock
 #: code:addons/stock/product.py:249
@@ -3995,12 +3996,12 @@ msgstr "已接收数量"
 #: code:addons/stock/static/src/xml/picking.xml:269
 #, python-format
 msgid "Recompute"
-msgstr ""
+msgstr "重新计算"
 
 #. module: stock
 #: field:stock.picking,recompute_pack_op:0
 msgid "Recompute pack operation?"
-msgstr ""
+msgstr "重新计算拣货操作？"
 
 #. module: stock
 #: view:stock.move:stock.view_move_search
@@ -4010,7 +4011,7 @@ msgstr ""
 #: field:stock.move,picking_id:0
 #: field:stock.picking,name:0
 msgid "Reference"
-msgstr "相关单号"
+msgstr "内部单号"
 
 #. module: stock
 #: field:stock.picking.type,sequence_id:0
@@ -4020,12 +4021,12 @@ msgstr "编号规则"
 #. module: stock
 #: sql_constraint:stock.picking:0
 msgid "Reference must be unique per company!"
-msgstr ""
+msgstr "内部单号必须每公司唯一!"
 
 #. module: stock
 #: help:stock.picking,origin:0
 msgid "Reference of the document"
-msgstr "文档的参照"
+msgstr "该单据的来源参考单号"
 
 #. module: stock
 #: field:stock.picking,pack_operation_ids:0
@@ -4035,12 +4036,12 @@ msgstr "相关的装箱作业"
 #. module: stock
 #: field:stock.pack.operation,remaining_qty:0
 msgid "Remaining Qty"
-msgstr ""
+msgstr "剩余数量"
 
 #. module: stock
 #: field:stock.move,remaining_qty:0
 msgid "Remaining Quantity"
-msgstr ""
+msgstr "剩余数量"
 
 #. module: stock
 #: view:stock.picking:stock.view_picking_internal_search
@@ -4074,7 +4075,7 @@ msgstr "从包裹中移除"
 #. module: stock
 #: field:stock.warehouse.orderpoint,logic:0
 msgid "Reordering Mode"
-msgstr "再订购规则"
+msgstr "安全库存规则"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.act_stock_warehouse_2_stock_warehouse_orderpoint
@@ -4087,23 +4088,23 @@ msgstr "再订购规则"
 #: view:stock.warehouse.orderpoint:stock.view_warehouse_orderpoint_tree
 #: view:stock.warehouse.orderpoint:stock.warehouse_orderpoint_search
 msgid "Reordering Rules"
-msgstr "再订购规则"
+msgstr "安全库存规则"
 
 #. module: stock
 #: view:stock.warehouse.orderpoint:stock.warehouse_orderpoint_search
 msgid "Reordering Rules Search"
-msgstr "再订购规则搜索"
+msgstr "安全库存规则搜索"
 
 #. module: stock
 #: field:stock.move.operation.link,reserved_quant_id:0
 msgid "Reserved Quant"
-msgstr ""
+msgstr "保留的库存量"
 
 #. module: stock
 #: view:stock.move:stock.view_move_form
 #: view:stock.move:stock.view_move_picking_form
 msgid "Reserved Quants"
-msgstr "保留的份"
+msgstr "保留的库存量"
 
 #. module: stock
 #: field:stock.quant,reservation_id:0
@@ -4113,22 +4114,22 @@ msgstr "已保留"
 #. module: stock
 #: field:stock.move,reserved_quant_ids:0
 msgid "Reserved quants"
-msgstr "保留的份"
+msgstr "保留的库存量"
 
 #. module: stock
 #: field:stock.warehouse,resupply_from_wh:0
 msgid "Resupply From Other Warehouses"
-msgstr ""
+msgstr "从其他仓库补给"
 
 #. module: stock
 #: field:stock.warehouse,resupply_route_ids:0
 msgid "Resupply Routes"
-msgstr ""
+msgstr "补给路线"
 
 #. module: stock
 #: field:stock.warehouse,resupply_wh_ids:0
 msgid "Resupply Warehouses"
-msgstr ""
+msgstr "补给仓库"
 
 #. module: stock
 #: view:stock.return.picking:stock.view_stock_return_picking_form
@@ -4164,7 +4165,7 @@ msgstr "退回的操作"
 #. module: stock
 #: view:stock.picking:stock.view_picking_form
 msgid "Reverse Transfer"
-msgstr "反向流转"
+msgstr "反向移转"
 
 #. module: stock
 #: field:stock.location,parent_right:0
@@ -4177,18 +4178,18 @@ msgstr "右父项"
 #: field:stock.location.path,route_id:0
 #: view:stock.location.route:stock.stock_location_route_form_view
 msgid "Route"
-msgstr "物流路线"
+msgstr "供需路线"
 
 #. module: stock
 #: field:stock.location.route,name:0
 msgid "Route Name"
-msgstr "物流路线"
+msgstr "供需路线"
 
 #. module: stock
 #: field:procurement.rule,route_sequence:0
 #: field:stock.location.path,route_sequence:0
 msgid "Route Sequence"
-msgstr ""
+msgstr "路线序号"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_routes_form
@@ -4201,7 +4202,7 @@ msgstr ""
 #: view:stock.warehouse:stock.view_warehouse
 #: field:stock.warehouse,route_ids:0
 msgid "Routes"
-msgstr "物流路线"
+msgstr "供需路线"
 
 #. module: stock
 #: help:stock.warehouse,resupply_route_ids:0
@@ -4223,7 +4224,7 @@ msgstr "规则"
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_proc_schedulers
 msgid "Run Schedulers"
-msgstr "运行计划"
+msgstr "运行需求计划"
 
 #. module: stock
 #. openerp-web
@@ -4268,7 +4269,7 @@ msgstr "计划日期"
 #. module: stock
 #: help:stock.move,date_expected:0
 msgid "Scheduled date for the processing of this move"
-msgstr "此库存调拨处理的日程表日期"
+msgstr "此库存移转处理的日程表日期"
 
 #. module: stock
 #: help:stock.picking,min_date:0
@@ -4302,7 +4303,7 @@ msgstr "废料库位"
 #. module: stock
 #: model:ir.actions.act_window,name:stock.move_scrap
 msgid "Scrap Move"
-msgstr "损耗调拨"
+msgstr "损耗移转"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_move_scrap
@@ -4354,7 +4355,7 @@ msgstr ""
 #. module: stock
 #: field:stock.inventory,filter:0
 msgid "Selection Filter"
-msgstr ""
+msgstr "选择条件"
 
 #. module: stock
 #: field:stock.location.path,sequence:0
@@ -4589,7 +4590,7 @@ msgstr "库存库位"
 #. module: stock
 #: model:ir.model,name:stock.model_stock_move
 msgid "Stock Move"
-msgstr "库存调拨"
+msgstr "库存移转"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_move_form2
@@ -4602,12 +4603,12 @@ msgstr "库存调拨"
 #: view:stock.picking:stock.view_picking_form
 #: view:stock.production.lot:stock.view_production_lot_form
 msgid "Stock Moves"
-msgstr "库存调拨"
+msgstr "库存移转"
 
 #. module: stock
 #: view:stock.move:stock.view_move_graph
 msgid "Stock Moves Analysis"
-msgstr "库存调拨分析"
+msgstr "库存移转分析"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_all
@@ -4632,12 +4633,12 @@ msgstr "库存可用（已准备好）"
 #. module: stock
 #: view:stock.move:stock.view_move_search
 msgid "Stock moves that are Confirmed, Available or Waiting"
-msgstr "库存调拨处于已确认、可用或者在等待的状态"
+msgstr "库存移转处于已确认、可用或者在等待的状态"
 
 #. module: stock
 #: view:stock.move:stock.view_move_search
 msgid "Stock moves that have been processed"
-msgstr "库存调拨已经被处理"
+msgstr "库存移转已经被处理"
 
 #. module: stock
 #: view:report.stock.lines.date:stock.report_stock_lines_date_search
@@ -4711,7 +4712,7 @@ msgstr ""
 #. module: stock
 #: selection:procurement.rule,procure_method:0
 msgid "Take From Stock"
-msgstr ""
+msgstr "现货库出"
 
 #. module: stock
 #: view:stock.warehouse:stock.view_warehouse
@@ -4850,7 +4851,7 @@ msgstr ""
 #. module: stock
 #: help:stock.quant,reservation_id:0
 msgid "The move the quant is reserved for"
-msgstr "当前库存为之保留的调拨"
+msgstr "当前库存为之保留的移转"
 
 #. module: stock
 #: sql_constraint:stock.warehouse:0
@@ -4951,11 +4952,13 @@ msgid ""
 "different of the warehouse this rule is for (e.g for resupplying rules from "
 "another warehouse)"
 msgstr ""
+"在创建新的移转或补充货时传递一个不同于当前规则的仓库(例如：为其他仓库提供补"
+"给）"
 
 #. module: stock
 #: field:stock.inventory.line,theoretical_qty:0
 msgid "Theoretical Quantity"
-msgstr "理论数量"
+msgstr "账面数量"
 
 #. module: stock
 #: help:stock.config.settings,module_procurement_jit:0
@@ -5070,14 +5073,14 @@ msgstr "默认作为您接收当前业务伙伴产品的源库位"
 msgid ""
 "This stock location will be used, instead of the default one, as the source "
 "location for stock moves generated by manufacturing orders."
-msgstr "该库位将被使用以替换默认的，同样的，库存调拨的源库位将根据制造单生成。"
+msgstr "该库位将被使用以替换默认的，同样的，库存移转的源库位将根据制造单生成。"
 
 #. module: stock
 #: help:product.template,property_stock_procurement:0
 msgid ""
 "This stock location will be used, instead of the default one, as the source "
 "location for stock moves generated by procurements."
-msgstr "该库位将被使用以替换默认的，同样的，库存调拨的源库位将根据补货生成。"
+msgstr "该库位将被使用以替换默认的，同样的，库存移转的源库位将根据需求生成。"
 
 #. module: stock
 #: help:product.template,property_stock_inventory:0
@@ -5180,22 +5183,22 @@ msgstr "追踪批号或序列号"
 #: view:stock.picking:stock.view_picking_form
 #: field:stock.transfer_details_items,transfer_id:0
 msgid "Transfer"
-msgstr "流转"
+msgstr "移转"
 
 #. module: stock
 #: view:stock.transfer_details:stock.view_stock_enter_transfer_details
 msgid "Transfer details"
-msgstr "流转明细"
+msgstr "移转明细"
 
 #. module: stock
 #: selection:stock.picking,state:0
 msgid "Transferred"
-msgstr "已流转"
+msgstr "已移转"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree
 msgid "Transfers"
-msgstr "流转"
+msgstr "移转"
 
 #. module: stock
 #: selection:stock.location,usage:0
@@ -5417,7 +5420,7 @@ msgstr "虚拟库位"
 #. module: stock
 #: selection:stock.move,state:0
 msgid "Waiting Another Move"
-msgstr "等待其它调拨"
+msgstr "等待其它移转"
 
 #. module: stock
 #: selection:stock.picking,state:0
@@ -5435,12 +5438,12 @@ msgstr "等待可用"
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_waiting
 msgid "Waiting Availability Transfers"
-msgstr "等待可用的流转"
+msgstr "等待可用的移转"
 
 #. module: stock
 #: view:stock.picking:stock.view_picking_internal_search
 msgid "Waiting Moves"
-msgstr "等待调拨"
+msgstr "等待移转"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_warehouse
@@ -5549,7 +5552,7 @@ msgid ""
 "When the virtual stock goes below the Min Quantity specified for this field, "
 "Odoo generates a procurement to bring the forecasted quantity to the Max "
 "Quantity."
-msgstr "当计划库存低于指定的最小数量时,将生成补货调整计划库存到最大数量。"
+msgstr "当计划库存低于指定的最低安全库存时,将生成需求调整计划库存到最高安全库存。"
 
 #. module: stock
 #: help:stock.warehouse.orderpoint,product_max_qty:0
@@ -5557,7 +5560,7 @@ msgid ""
 "When the virtual stock goes below the Min Quantity, Odoo generates a "
 "procurement to bring the forecasted quantity to the Quantity specified as "
 "Max Quantity."
-msgstr "当计划库存低于指定的最小数量时,将生成补货调整计划库存到最大数量。"
+msgstr "当计划库存低于指定的最低安全库存时,将生成需求调整计划库存到最高安全库存。"
 
 #. module: stock
 #: view:stock.change.product.qty:stock.view_change_product_quantity
@@ -5586,7 +5589,7 @@ msgstr "向导"
 #: view:procurement.orderpoint.compute:stock.view_procurement_compute_wizard
 msgid ""
 "Wizard checks all the stock minimum rules and generate procurement order."
-msgstr "向导检测所有的库存最小规则，并生成补货订单"
+msgstr "检测所有产品的安全库存，并生成需求计划"
 
 #. module: stock
 #: selection:stock.pack.operation,processed:0
@@ -5617,7 +5620,7 @@ msgstr ""
 #: code:addons/stock/stock.py:2400
 #, python-format
 msgid "You can only delete draft moves."
-msgstr "您只能删除草稿状态的调拨。"
+msgstr "您只能删除草稿状态的移转。"
 
 #. module: stock
 #: code:addons/stock/stock.py:2244
@@ -5791,7 +5794,7 @@ msgstr ""
 #. module: stock
 #: view:product.template:stock.view_template_property_form
 msgid "⇒ Request Procurement"
-msgstr "⇒ 请求补货"
+msgstr "⇒ 需求申请"
 
 #. module: stock
 #: view:stock.inventory:stock.view_inventory_form

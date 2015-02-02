@@ -20,7 +20,7 @@ msgstr ""
 #. module: product
 #: field:product.template,product_variant_count:0
 msgid "# of Product Variants"
-msgstr ""
+msgstr "# 產品型號"
 
 #. module: product
 #: code:addons/product/product.py:757
@@ -960,7 +960,7 @@ msgstr "活躍"
 #. module: product
 #: model:product.category,name:product.product_category_all
 msgid "All"
-msgstr ""
+msgstr "所有"
 
 #. module: product
 #: model:product.template,description:product.product_product_37_product_template
@@ -1014,30 +1014,30 @@ msgstr ""
 #: field:product.attribute.line,attribute_id:0
 #: field:product.attribute.value,attribute_id:0
 msgid "Attribute"
-msgstr ""
+msgstr "特性"
 
 #. module: product
 #: field:product.attribute.value,price_extra:0
 msgid "Attribute Price Extra"
-msgstr ""
+msgstr "特性外加價"
 
 #. module: product
 #: field:product.attribute.value,price_ids:0
 msgid "Attribute Prices"
-msgstr ""
+msgstr "特性價格"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.variants_action
 #: model:ir.ui.menu,name:product.menu_variants_action
 msgid "Attribute Values"
-msgstr ""
+msgstr "特性值"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.attribute_action
 #: model:ir.ui.menu,name:product.menu_attribute_action
 #: field:product.product,attribute_value_ids:0
 msgid "Attributes"
-msgstr ""
+msgstr "特性"
 
 #. module: product
 #: view:product.pricelist.item:product.product_pricelist_item_form_view
@@ -1063,12 +1063,12 @@ msgstr "基於"
 #. module: product
 #: field:product.product,image:0
 msgid "Big-sized image"
-msgstr ""
+msgstr "大尺寸圖片"
 
 #. module: product
 #: field:product.uom,factor_inv:0
 msgid "Bigger Ratio"
-msgstr ""
+msgstr "較大比率"
 
 #. module: product
 #: selection:product.uom,uom_type:0
@@ -1152,7 +1152,7 @@ msgstr "無法變更現有量度單位的類別 '%s'."
 #. module: product
 #: model:product.public.category,name:product.case
 msgid "Case"
-msgstr ""
+msgstr "箱"
 
 #. module: product
 #: view:product.template:product.product_template_search_view
@@ -1339,8 +1339,7 @@ msgstr ""
 #. module: product
 #: model:ir.model,name:product.model_res_currency
 #: field:product.price.type,currency_id:0
-#: field:product.pricelist,currency_id:0
-#: view:website:product.report_pricelist
+#: field:product.pricelist,currency_id:0 view:website:product.report_pricelist
 msgid "Currency"
 msgstr "貨幣"
 
@@ -1404,10 +1403,8 @@ msgid "Delivery Lead Time"
 msgstr "交貨前置時間"
 
 #. module: product
-#: field:pricelist.partnerinfo,name:0
-#: field:product.packaging,name:0
-#: field:product.template,description:0
-#: view:website:product.report_pricelist
+#: field:pricelist.partnerinfo,name:0 field:product.packaging,name:0
+#: field:product.template,description:0 view:website:product.report_pricelist
 msgid "Description"
 msgstr "說明"
 
@@ -1442,8 +1439,7 @@ msgid "EAN"
 msgstr "EAN"
 
 #. module: product
-#: field:product.product,ean13:0
-#: field:product.template,ean13:0
+#: field:product.product,ean13:0 field:product.template,ean13:0
 msgid "EAN13 Barcode"
 msgstr "EAN13 條碼"
 
@@ -1594,8 +1590,7 @@ msgstr ""
 
 #. module: product
 #: help:product.category,sequence:0
-msgid ""
-"Gives the sequence order when displaying a list of product categories."
+msgid "Gives the sequence order when displaying a list of product categories."
 msgstr "請指定排序以便顯示產品類別表。"
 
 #. module: product
@@ -1719,29 +1714,20 @@ msgid ""
 "Measure for this category:\n"
 "1 * (reference unit) = ratio * (this unit)"
 msgstr ""
+"在此類別的問題追中，此單位與參考單位比較大多少或小多少:\n"
+"1 * (參考單位) = 比率 * (此單位)"
 
 #. module: product
-#: field:pricelist.partnerinfo,id:0
-#: field:product.attribute,id:0
-#: field:product.attribute.line,id:0
-#: field:product.attribute.price,id:0
-#: field:product.attribute.value,id:0
-#: field:product.category,id:0
-#: field:product.packaging,id:0
-#: field:product.price.history,id:0
-#: field:product.price.type,id:0
-#: field:product.price_list,id:0
-#: field:product.pricelist,id:0
-#: field:product.pricelist.item,id:0
-#: field:product.pricelist.type,id:0
-#: field:product.pricelist.version,id:0
-#: field:product.product,id:0
-#: field:product.supplierinfo,id:0
-#: field:product.template,id:0
-#: field:product.ul,id:0
-#: field:product.uom,id:0
-#: field:product.uom.categ,id:0
-#: field:report.product.report_pricelist,id:0
+#: field:pricelist.partnerinfo,id:0 field:product.attribute,id:0
+#: field:product.attribute.line,id:0 field:product.attribute.price,id:0
+#: field:product.attribute.value,id:0 field:product.category,id:0
+#: field:product.packaging,id:0 field:product.price.history,id:0
+#: field:product.price.type,id:0 field:product.price_list,id:0
+#: field:product.pricelist,id:0 field:product.pricelist.item,id:0
+#: field:product.pricelist.type,id:0 field:product.pricelist.version,id:0
+#: field:product.product,id:0 field:product.supplierinfo,id:0
+#: field:product.template,id:0 field:product.ul,id:0 field:product.uom,id:0
+#: field:product.uom.categ,id:0 field:report.product.report_pricelist,id:0
 msgid "ID"
 msgstr ""
 
@@ -1758,8 +1744,7 @@ msgid ""
 msgstr "如未勾選，將允許隱藏價目表而非移除之。"
 
 #. module: product
-#: help:product.product,active:0
-#: help:product.template,active:0
+#: help:product.product,active:0 help:product.template,active:0
 msgid ""
 "If unchecked, it will allow you to hide the product without removing it."
 msgstr "如未勾選，將允許將產品隱藏而不須移除。"
@@ -1781,20 +1766,22 @@ msgid ""
 "It is automatically resized as a 1024x1024px image, with aspect ratio "
 "preserved."
 msgstr ""
+"產品型號的影像（如未設定則使用產品模型中的最大影像）。它會自動調整為"
+"1024x1024px形象，並保持寬高比。"
 
 #. module: product
 #: help:product.product,image_medium:0
 msgid ""
 "Image of the product variant (Medium-sized image of product template if "
 "false)."
-msgstr ""
+msgstr "產品型號的影像（如果未設定而使用產品模型的中等影像）。"
 
 #. module: product
 #: help:product.product,image_small:0
 msgid ""
 "Image of the product variant (Small-sized image of product template if "
 "false)."
-msgstr ""
+msgstr "產品型號的影像（如果未設定則使用產品模型中的小影像）。"
 
 #. module: product
 #: selection:product.template,state:0
@@ -1830,11 +1817,10 @@ msgstr "內部"
 #. module: product
 #: field:product.template,categ_id:0
 msgid "Internal Category"
-msgstr ""
+msgstr "內部類別"
 
 #. module: product
-#: field:product.product,code:0
-#: field:product.product,default_code:0
+#: field:product.product,code:0 field:product.product,default_code:0
 #: field:product.template,default_code:0
 msgid "Internal Reference"
 msgstr "內部編號"
@@ -1874,7 +1860,7 @@ msgstr ""
 #. module: product
 #: view:product.pricelist.version:product.product_pricelist_version_form_view
 msgid "Item List"
-msgstr ""
+msgstr "項目列表"
 
 #. module: product
 #: field:product.pricelist.type,key:0
@@ -1913,26 +1899,20 @@ msgid "Last Message Date"
 msgstr ""
 
 #. module: product
-#: field:pricelist.partnerinfo,write_uid:0
-#: field:product.attribute,write_uid:0
+#: field:pricelist.partnerinfo,write_uid:0 field:product.attribute,write_uid:0
 #: field:product.attribute.line,write_uid:0
 #: field:product.attribute.price,write_uid:0
 #: field:product.attribute.value,write_uid:0
-#: field:product.category,write_uid:0
-#: field:product.packaging,write_uid:0
+#: field:product.category,write_uid:0 field:product.packaging,write_uid:0
 #: field:product.price.history,write_uid:0
-#: field:product.price.type,write_uid:0
-#: field:product.price_list,write_uid:0
+#: field:product.price.type,write_uid:0 field:product.price_list,write_uid:0
 #: field:product.pricelist,write_uid:0
 #: field:product.pricelist.item,write_uid:0
 #: field:product.pricelist.type,write_uid:0
 #: field:product.pricelist.version,write_uid:0
-#: field:product.product,write_uid:0
-#: field:product.supplierinfo,write_uid:0
-#: field:product.template,write_uid:0
-#: field:product.ul,write_uid:0
-#: field:product.uom,write_uid:0
-#: field:product.uom.categ,write_uid:0
+#: field:product.product,write_uid:0 field:product.supplierinfo,write_uid:0
+#: field:product.template,write_uid:0 field:product.ul,write_uid:0
+#: field:product.uom,write_uid:0 field:product.uom.categ,write_uid:0
 msgid "Last Updated by"
 msgstr ""
 
@@ -1942,21 +1922,16 @@ msgstr ""
 #: field:product.attribute.line,write_date:0
 #: field:product.attribute.price,write_date:0
 #: field:product.attribute.value,write_date:0
-#: field:product.category,write_date:0
-#: field:product.packaging,write_date:0
+#: field:product.category,write_date:0 field:product.packaging,write_date:0
 #: field:product.price.history,write_date:0
-#: field:product.price.type,write_date:0
-#: field:product.price_list,write_date:0
+#: field:product.price.type,write_date:0 field:product.price_list,write_date:0
 #: field:product.pricelist,write_date:0
 #: field:product.pricelist.item,write_date:0
 #: field:product.pricelist.type,write_date:0
 #: field:product.pricelist.version,write_date:0
-#: field:product.product,write_date:0
-#: field:product.supplierinfo,write_date:0
-#: field:product.template,write_date:0
-#: field:product.ul,write_date:0
-#: field:product.uom,write_date:0
-#: field:product.uom.categ,write_date:0
+#: field:product.product,write_date:0 field:product.supplierinfo,write_date:0
+#: field:product.template,write_date:0 field:product.ul,write_date:0
+#: field:product.uom,write_date:0 field:product.uom.categ,write_date:0
 msgid "Last Updated on"
 msgstr ""
 
@@ -1972,6 +1947,8 @@ msgid ""
 "receipt of the products in your warehouse. Used by the scheduler for "
 "automatic computation of the purchase order planning."
 msgstr ""
+"交貨時間在採購訂單的確認與您的倉庫在收到產品之間的天。計劃程式將爲採購訂單計"
+"劃的自動計算。"
 
 #. module: product
 #: field:product.category,parent_left:0
@@ -1991,7 +1968,7 @@ msgstr "長度／距離"
 #. module: product
 #: view:product.template:product.product_template_only_form_view
 msgid "List of Variants"
-msgstr ""
+msgstr "型號清單"
 
 #. module: product
 #: model:product.uom,name:product.product_uom_litre
@@ -2001,7 +1978,7 @@ msgstr "公升"
 #. module: product
 #: model:ir.model,name:product.model_product_ul
 msgid "Logistic Unit"
-msgstr ""
+msgstr "物流單位"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_ul_form_action
@@ -2009,7 +1986,7 @@ msgstr ""
 #: view:product.ul:product.product_ul_form_view
 #: view:product.ul:product.product_ul_tree
 msgid "Logistic Units"
-msgstr ""
+msgstr "物流單位"
 
 #. module: product
 #: field:product.template,packaging_ids:0
@@ -2049,12 +2026,12 @@ msgstr "管理次要量度單位"
 #. module: product
 #: view:product.pricelist.item:product.product_pricelist_item_form_view
 msgid "Max. Margin"
-msgstr "最大邊際利潤"
+msgstr "最大利潤"
 
 #. module: product
 #: field:product.pricelist.item,price_max_margin:0
 msgid "Max. Price Margin"
-msgstr ""
+msgstr "最大價格利潤"
 
 #. module: product
 #: field:product.template,mes_type:0
@@ -2062,8 +2039,7 @@ msgid "Measure Type"
 msgstr "量度類型"
 
 #. module: product
-#: field:product.product,image_medium:0
-#: field:product.template,image_medium:0
+#: field:product.product,image_medium:0 field:product.template,image_medium:0
 msgid "Medium-sized image"
 msgstr "中尺寸影像"
 
@@ -2074,6 +2050,8 @@ msgid ""
 "128x128px image, with aspect ratio preserved, only when the image exceeds "
 "one of those sizes. Use this field in form views or some kanban views."
 msgstr ""
+"該產品的中等影象。只有當圖像超出要求的大小時，它被自動調整為128x128px圖像，並"
+"保留寬高比。一般將此欄位用於表單檢視或看板檢視。"
 
 #. module: product
 #: model:product.attribute,name:product.product_attribute_1
@@ -2082,21 +2060,19 @@ msgid "Memory"
 msgstr ""
 
 #. module: product
-#: field:product.product,message_ids:0
-#: field:product.template,message_ids:0
+#: field:product.product,message_ids:0 field:product.template,message_ids:0
 msgid "Messages"
 msgstr "訊息"
 
 #. module: product
-#: help:product.product,message_ids:0
-#: help:product.template,message_ids:0
+#: help:product.product,message_ids:0 help:product.template,message_ids:0
 msgid "Messages and communication history"
 msgstr "訊息及聯絡歷史"
 
 #. module: product
 #: view:product.pricelist.item:product.product_pricelist_item_form_view
 msgid "Min. Margin"
-msgstr "最小邊際利潤"
+msgstr "最小利潤"
 
 #. module: product
 #: field:product.pricelist.item,price_min_margin:0
@@ -2106,12 +2082,12 @@ msgstr ""
 #. module: product
 #: field:product.pricelist.item,min_quantity:0
 msgid "Min. Quantity"
-msgstr "最小量"
+msgstr "最小批量"
 
 #. module: product
 #: field:product.supplierinfo,min_qty:0
 msgid "Minimal Quantity"
-msgstr "最小量"
+msgstr "最小批量"
 
 #. module: product
 #: model:product.public.category,name:product.Modem_Router
@@ -2149,14 +2125,10 @@ msgid "Multimedia Speakers"
 msgstr "喇叭"
 
 #. module: product
-#: field:product.attribute,name:0
-#: field:product.category,complete_name:0
-#: field:product.category,name:0
-#: field:product.pricelist.type,name:0
-#: field:product.pricelist.version,name:0
-#: field:product.template,name:0
-#: field:product.ul,name:0
-#: field:product.uom.categ,name:0
+#: field:product.attribute,name:0 field:product.category,complete_name:0
+#: field:product.category,name:0 field:product.pricelist.type,name:0
+#: field:product.pricelist.version,name:0 field:product.template,name:0
+#: field:product.ul,name:0 field:product.uom.categ,name:0
 msgid "Name"
 msgstr "名稱"
 
@@ -2178,7 +2150,7 @@ msgstr ""
 #. module: product
 #: view:product.pricelist.item:product.product_pricelist_item_form_view
 msgid "New Price ="
-msgstr "新價目 ="
+msgstr "新價格 ="
 
 #. module: product
 #: code:addons/product/product.py:737
@@ -2189,10 +2161,12 @@ msgid ""
 "you may deactivate this product from the 'Procurements' tab and create a new "
 "one."
 msgstr ""
+"新的計量單位 '%s' 必須使用計量單位類別 '%s' 同於舊的計量單位 '%s'. 如果你需要"
+"改變計量單位, 你可能需要在產品表單中的‘資訊'頁停用該產品然後重新創建一個新的"
+"產品."
 
 #. module: product
-#: selection:product.category,type:0
-#: selection:product.template,state:0
+#: selection:product.category,type:0 selection:product.template,state:0
 msgid "Normal"
 msgstr "普通"
 
@@ -2234,6 +2208,11 @@ msgid "On demand hard-disk having capacity based on requirement."
 msgstr "On demand hard-disk having capacity based on requirement."
 
 #. module: product
+#: field:product.template,is_product_variant:0
+msgid "Only one product variant"
+msgstr "只有一個產品型號"
+
+#. module: product
 #: view:product.packaging:product.product_packaging_form_view
 #: view:product.packaging:product.product_packaging_form_view_without_product
 msgid "Other Info"
@@ -2269,7 +2248,7 @@ msgstr "包裝"
 #. module: product
 #: field:product.packaging,ul:0
 msgid "Package Logistic Unit"
-msgstr ""
+msgstr "包裝物流單元"
 
 #. module: product
 #: field:product.packaging,ul_qty:0
@@ -2294,7 +2273,7 @@ msgstr "卡板"
 #. module: product
 #: field:product.packaging,ul_container:0
 msgid "Pallet Logistic Unit"
-msgstr ""
+msgstr "托盤物流單元"
 
 #. module: product
 #: view:product.packaging:product.product_packaging_form_view
@@ -2333,8 +2312,7 @@ msgid "Pen drive, SP-4"
 msgstr "Pen drive, SP-4"
 
 #. module: product
-#: field:product.product,price:0
-#: field:product.template,price:0
+#: field:product.product,price:0 field:product.template,price:0
 msgid "Price"
 msgstr "價格"
 
@@ -2351,7 +2329,7 @@ msgstr "價格折扣"
 #. module: product
 #: field:product.attribute.price,price_extra:0
 msgid "Price Extra"
-msgstr ""
+msgstr "外加價"
 
 #. module: product
 #: help:product.attribute.value,price_extra:0
@@ -2359,6 +2337,8 @@ msgid ""
 "Price Extra: Extra price for the variant with this attribute value on sale "
 "price. eg. 200 price extra, 1000 + 200 = 1200."
 msgstr ""
+"附加價格：附加的價格與銷售價格這個屬性值的變量。例如。 200附加價格，"
+"1000+200= 1200。"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.action_product_price_list
@@ -2471,7 +2451,7 @@ msgstr "價目表"
 #. module: product
 #: view:res.partner:product.view_partner_property_form
 msgid "Pricelists are managed on"
-msgstr ""
+msgstr "價格表被管理在"
 
 #. module: product
 #: view:product.price_list:product.view_product_price_list
@@ -2528,18 +2508,18 @@ msgstr "產品"
 #. module: product
 #: model:ir.model,name:product.model_product_attribute
 msgid "Product Attribute"
-msgstr ""
+msgstr "產品特性"
 
 #. module: product
 #: field:product.attribute.line,value_ids:0
 #: field:product.attribute.price,value_id:0
 msgid "Product Attribute Value"
-msgstr ""
+msgstr "產品特性值"
 
 #. module: product
 #: field:product.template,attribute_line_ids:0
 msgid "Product Attributes"
-msgstr ""
+msgstr "產品特性"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_category_action_form
@@ -2554,12 +2534,11 @@ msgstr "產品分類"
 #. module: product
 #: model:ir.ui.menu,name:product.prod_config_main
 msgid "Product Categories & Attributes"
-msgstr ""
+msgstr "產品類別 & 特性"
 
 #. module: product
 #: model:ir.model,name:product.model_product_category
-#: field:product.pricelist.item,categ_id:0
-#: field:product.uom,category_id:0
+#: field:product.pricelist.item,categ_id:0 field:product.uom,category_id:0
 msgid "Product Category"
 msgstr "產品分類"
 
@@ -2589,7 +2568,7 @@ msgstr "產品名稱"
 #: field:product.supplierinfo,product_tmpl_id:0
 #: view:product.template:product.product_template_only_form_view
 msgid "Product Template"
-msgstr "產品範本"
+msgstr "產品模型"
 
 #. module: product
 #: field:product.template,type:0
@@ -2605,7 +2584,7 @@ msgstr "產品量度單位"
 #: view:product.product:product.product_normal_form_view
 #: view:product.template:product.product_template_search_view
 msgid "Product Variant"
-msgstr "產品系列"
+msgstr "產品型號"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_normal_action
@@ -2615,7 +2594,7 @@ msgstr "產品系列"
 #: model:ir.ui.menu,name:product.menu_products
 #: view:product.product:product.product_product_tree_view
 msgid "Product Variants"
-msgstr ""
+msgstr "產品型號"
 
 #. module: product
 #: model:ir.model,name:product.model_product_uom_categ
@@ -2675,8 +2654,7 @@ msgstr "產品： "
 
 #. module: product
 #: model:product.price.type,name:product.list_price
-#: field:product.product,lst_price:0
-#: field:product.template,lst_price:0
+#: field:product.product,lst_price:0 field:product.template,lst_price:0
 msgid "Public Price"
 msgstr "公開價格"
 
@@ -2706,8 +2684,7 @@ msgid "Purchase Unit of Measure"
 msgstr "採購量度單位"
 
 #. module: product
-#: field:pricelist.partnerinfo,min_quantity:0
-#: field:product.supplierinfo,qty:0
+#: field:pricelist.partnerinfo,min_quantity:0 field:product.supplierinfo,qty:0
 msgid "Quantity"
 msgstr "數量"
 
@@ -2848,13 +2825,11 @@ msgid "Select category for the current product"
 msgstr "為當前商品選取分類"
 
 #. module: product
-#: field:product.attribute.value,sequence:0
-#: field:product.category,sequence:0
-#: field:product.packaging,sequence:0
-#: field:product.pricelist.item,sequence:0
+#: field:product.attribute.value,sequence:0 field:product.category,sequence:0
+#: field:product.packaging,sequence:0 field:product.pricelist.item,sequence:0
 #: field:product.supplierinfo,sequence:0
 msgid "Sequence"
-msgstr "序列"
+msgstr "項次"
 
 #. module: product
 #: model:product.public.category,name:product.server
@@ -2883,8 +2858,7 @@ msgid ""
 msgstr ""
 
 #. module: product
-#: field:product.product,image_small:0
-#: field:product.template,image_small:0
+#: field:product.product,image_small:0 field:product.template,image_small:0
 msgid "Small-sized image"
 msgstr "小尺寸影像"
 
@@ -2985,8 +2959,7 @@ msgid "Summary"
 msgstr "摘要"
 
 #. module: product
-#: field:product.supplierinfo,name:0
-#: field:product.template,seller_ids:0
+#: field:product.supplierinfo,name:0 field:product.template,seller_ids:0
 msgid "Supplier"
 msgstr "供應商"
 
@@ -3010,7 +2983,7 @@ msgstr "供應商價目表"
 #: code:addons/product/pricelist.py:433
 #, python-format
 msgid "Supplier Prices on the product form"
-msgstr ""
+msgstr "產品表單上的供應商價格"
 
 #. module: product
 #: field:product.supplierinfo,product_code:0
@@ -3055,7 +3028,7 @@ msgstr "Switch, 24 ports"
 #. module: product
 #: field:product.product,name_template:0
 msgid "Template Name"
-msgstr ""
+msgstr "模型名稱"
 
 #. module: product
 #: help:product.packaging,ean:0
@@ -3144,6 +3117,8 @@ msgid ""
 "You trying to delete an attribute value with a reference on a product "
 "variant."
 msgstr ""
+"此操作無法被完成:\n"
+"你正試圖刪除一個被產品型號引用的特性值。"
 
 #. module: product
 #: view:product.supplierinfo:product.product_supplierinfo_form_view
@@ -3194,7 +3169,7 @@ msgstr "來自產品表單。"
 msgid ""
 "This field holds the image used as image for the product variant, limited to "
 "1024x1024px."
-msgstr ""
+msgstr "此欄位的影像用於產品型號，限制大小爲1024x1024px."
 
 #. module: product
 #: help:product.template,image:0
@@ -3289,8 +3264,7 @@ msgstr "包裝盒總重"
 
 #. module: product
 #: view:product.template:product.product_template_search_view
-#: field:product.ul,type:0
-#: field:product.uom,uom_type:0
+#: field:product.ul,type:0 field:product.uom,uom_type:0
 msgid "Type"
 msgstr "類型"
 
@@ -3312,15 +3286,14 @@ msgstr "單價"
 
 #. module: product
 #: view:product.template:product.product_template_form_view
-#: field:product.template,uom_id:0
-#: field:product.uom,name:0
+#: field:product.template,uom_id:0 field:product.uom,name:0
 msgid "Unit of Measure"
 msgstr "量度單位"
 
 #. module: product
 #: field:product.template,uos_coeff:0
 msgid "Unit of Measure -> UOS Coeff"
-msgstr ""
+msgstr "銷售單位換算率"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_uom_categ_form_action
@@ -3374,12 +3347,12 @@ msgstr ""
 #. module: product
 #: field:product.attribute.value,name:0
 msgid "Value"
-msgstr ""
+msgstr "值"
 
 #. module: product
 #: field:product.attribute,value_ids:0
 msgid "Values"
-msgstr ""
+msgstr "值"
 
 #. module: product
 #: selection:product.template,mes_type:0
@@ -3389,17 +3362,17 @@ msgstr "變數"
 #. module: product
 #: field:product.product,price_extra:0
 msgid "Variant Extra Price"
-msgstr ""
+msgstr "型號外加價"
 
 #. module: product
 #: field:product.product,image_variant:0
 msgid "Variant Image"
-msgstr ""
+msgstr "型號影像"
 
 #. module: product
 #: view:product.template:product.product_template_only_form_view
 msgid "Variant Prices"
-msgstr ""
+msgstr "型號單價"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.variants_template_action
@@ -3407,14 +3380,14 @@ msgstr ""
 #: view:product.attribute.value:product.variants_template_tree_view
 #: view:product.attribute.value:product.variants_tree_view
 msgid "Variant Values"
-msgstr ""
+msgstr "型號配置"
 
 #. module: product
 #: field:product.attribute.value,product_ids:0
 #: view:product.template:product.product_template_kanban_view
 #: view:product.template:product.product_template_only_form_view
 msgid "Variants"
-msgstr "變動"
+msgstr "規格/型號"
 
 #. module: product
 #: model:product.public.category,name:product.video_acquisition
@@ -3636,9 +3609,9 @@ msgstr ""
 #. module: product
 #: view:res.partner:product.view_partner_property_form
 msgid "the parent company"
-msgstr ""
+msgstr "上級公司"
 
 #. module: product
 #: field:product.price.history,company_id:0
 msgid "unknown"
-msgstr ""
+msgstr "未知"

@@ -109,7 +109,7 @@ msgstr "已送货"
 #: model:ir.actions.act_window,name:sale_stock.outgoing_picking_list_to_invoice
 #: model:ir.ui.menu,name:sale_stock.menu_action_picking_list_to_invoice
 msgid "Deliveries to Invoice"
-msgstr "已交付部分开票"
+msgstr "已交货待开票"
 
 #. module: sale_stock
 #: model:res.groups,name:sale_stock.group_invoice_deli_orders
@@ -312,7 +312,7 @@ msgstr "已送货"
 #. module: sale_stock
 #: field:sale.order,picking_policy:0
 msgid "Shipping Policy"
-msgstr "运送方式"
+msgstr "交货方式"
 
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_stock_move
@@ -327,7 +327,7 @@ msgstr "默认的开票方法"
 #. module: sale_stock
 #: view:stock.picking:sale_stock.view_picking_internal_search_inherit
 msgid "To Invoice"
-msgstr "待开发票"
+msgstr "已交货待开发票"
 
 #. module: sale_stock
 #: help:sale.config.settings,group_invoice_deli_orders:0

@@ -488,7 +488,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.filters,name:purchase.filter_purchase_order_average_delivery_time
 msgid "Average Delivery Time"
-msgstr ""
+msgstr "平均到貨時間"
 
 #. module: purchase
 #: field:purchase.report,price_average:0
@@ -524,7 +524,7 @@ msgstr "基於產生之發票草稿"
 #: selection:purchase.config.settings,default_invoice_method:0
 #: selection:purchase.order,invoice_method:0
 msgid "Based on incoming shipments"
-msgstr "依入庫貨品清單"
+msgstr "依進貨清單"
 
 #. module: purchase
 #: selection:purchase.config.settings,default_invoice_method:0
@@ -535,24 +535,24 @@ msgstr "依採購訂單細項"
 #: view:purchase.order:purchase.purchase_order_form
 #: selection:purchase.order,state:0
 msgid "Bid Received"
-msgstr ""
+msgstr "收到報價"
 
 #. module: purchase
 #: field:purchase.order,bid_date:0
 msgid "Bid Received On"
-msgstr ""
+msgstr "報價時間"
 
 #. module: purchase
 #: field:purchase.order,bid_validity:0
 msgid "Bid Valid Until"
-msgstr ""
+msgstr "報價有效期"
 
 #. module: purchase
 #: code:addons/purchase/purchase.py:1171
 #: code:addons/purchase/stock.py:192
 #, python-format
 msgid "Buy"
-msgstr ""
+msgstr "購買"
 
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_calendar
@@ -790,12 +790,12 @@ msgstr "定義此公司之採購日記帳 \"%s\" (id:%d)."
 #. module: purchase
 #: field:purchase.order,picking_type_id:0
 msgid "Deliver To"
-msgstr ""
+msgstr "運送到"
 
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_form
 msgid "Deliveries & Invoices"
-msgstr ""
+msgstr "運送 & 發票"
 
 #. module: purchase
 #: help:purchase.order,date_order:0
@@ -897,7 +897,7 @@ msgstr "預計日期"
 #. module: purchase
 #: view:purchase.order:purchase.view_purchase_order_filter
 msgid "Expected Month"
-msgstr ""
+msgstr "預計月份"
 
 #. module: purchase
 #: view:purchase.report:purchase.view_purchase_order_search
@@ -957,7 +957,7 @@ msgstr "如新訊息需要關注者，請勾選。"
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_2_stock_picking
 msgid "In Shipments"
-msgstr ""
+msgstr "運送中"
 
 #. module: purchase
 #: code:addons/purchase/purchase.py:337
@@ -992,7 +992,7 @@ msgstr "進貨"
 #. module: purchase
 #: view:stock.picking:purchase.view_picking_in_search_picking_inherit
 msgid "Incoming Shipments to Invoice"
-msgstr ""
+msgstr "待接收進貨發票"
 
 #. module: purchase
 #: field:purchase.order,incoterm_id:0
@@ -1077,7 +1077,7 @@ msgstr "發票"
 #. module: purchase
 #: view:purchase.order.line:purchase.purchase_order_line_form
 msgid "Invoices and Incoming Shipments"
-msgstr ""
+msgstr "進貨及發票"
 
 #. module: purchase
 #: help:purchase.order,invoice_ids:0
@@ -1145,7 +1145,7 @@ msgstr ""
 #. module: purchase
 #: view:purchase.config.settings:purchase.view_purchase_configuration
 msgid "Location & Warehouse"
-msgstr ""
+msgstr "倉庫及貨位"
 
 #. module: purchase
 #: code:addons/purchase/purchase.py:159
@@ -1156,7 +1156,7 @@ msgstr ""
 #. module: purchase
 #: field:purchase.config.settings,module_purchase_requisition:0
 msgid "Manage calls for bids"
-msgstr ""
+msgstr "管理詢價招標"
 
 #. module: purchase
 #: field:purchase.config.settings,group_uom:0
@@ -1166,7 +1166,7 @@ msgstr "管理產品之不同衡量單位"
 #. module: purchase
 #: field:purchase.config.settings,module_stock_dropshipping:0
 msgid "Manage dropshipping"
-msgstr ""
+msgstr "管理代發貨"
 
 #. module: purchase
 #: field:purchase.config.settings,group_purchase_pricelist:0
@@ -1229,7 +1229,7 @@ msgstr "淨價"
 #. module: purchase
 #: view:purchase.order:purchase.view_purchase_order_filter
 msgid "New Mail"
-msgstr ""
+msgstr "新消息"
 
 #. module: purchase
 #: code:addons/purchase/purchase.py:1222
@@ -1264,13 +1264,13 @@ msgstr "備註"
 #: model:ir.actions.act_window,name:purchase.action_invoice_pending
 #: model:ir.ui.menu,name:purchase.menu_procurement_management_pending_invoice
 msgid "On Draft Invoices"
-msgstr ""
+msgstr "草稿發票"
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.action_picking_tree_picking_to_invoice
 #: model:ir.ui.menu,name:purchase.menu_action_picking_tree_picking_to_invoice
 msgid "On Incoming Shipments"
-msgstr ""
+msgstr "進貨"
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.purchase_line_form_action2
@@ -1294,7 +1294,7 @@ msgstr "訂單日期"
 #. module: purchase
 #: view:website:purchase.report_purchaseorder_document
 msgid "Order Date:"
-msgstr ""
+msgstr "訂單日期："
 
 #. module: purchase
 #: field:purchase.order,order_line:0
@@ -1305,7 +1305,7 @@ msgstr "訂單行"
 #: view:purchase.order:purchase.view_purchase_order_filter
 #: view:purchase.report:purchase.view_purchase_order_search
 msgid "Order Month"
-msgstr ""
+msgstr "訂單月份"
 
 #. module: purchase
 #: field:purchase.order,name:0
@@ -1439,7 +1439,7 @@ msgstr "價目表"
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_form
 msgid "Print RFQ"
-msgstr ""
+msgstr "列印詢價單"
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_procurement_order
@@ -1473,7 +1473,7 @@ msgstr "產品範本"
 #. module: purchase
 #: field:purchase.order.line,product_uom:0
 msgid "Product Unit of Measure"
-msgstr "產品量度單位"
+msgstr "計量單位"
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.product_normal_action_puchased
@@ -1530,7 +1530,7 @@ msgstr ""
 #. module: purchase
 #: selection:purchase.order,state:0
 msgid "Purchase Confirmed"
-msgstr ""
+msgstr "採購確認"
 
 #. module: purchase
 #: field:res.company,po_lead:0
@@ -1676,12 +1676,12 @@ msgstr "詢價單"
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_form
 msgid "RFQ & Bid"
-msgstr ""
+msgstr "詢價 & 報價"
 
 #. module: purchase
 #: model:mail.message.subtype,name:purchase.mt_rfq_approved
 msgid "RFQ Approved"
-msgstr "已核可詢價單"
+msgstr "詢價單已審核"
 
 #. module: purchase
 #: model:mail.message.subtype,name:purchase.mt_rfq_confirmed
@@ -1691,14 +1691,14 @@ msgstr "已確認詢價單"
 #. module: purchase
 #: model:mail.message.subtype,name:purchase.mt_rfq_done
 msgid "RFQ Done"
-msgstr ""
+msgstr "詢價完成"
 
 #. module: purchase
 #: code:addons/purchase/purchase.py:327
 #: code:addons/purchase/purchase.py:945
 #, python-format
 msgid "RFQ created"
-msgstr ""
+msgstr "詢價單被創建"
 
 #. module: purchase
 #: model:email.template,report_name:purchase.email_template_edi_purchase
@@ -1713,12 +1713,12 @@ msgstr "詢價單及採購"
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_form
 msgid "Re-Print RFQ"
-msgstr ""
+msgstr "重新列印詢價單"
 
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_form
 msgid "Re-Send RFQ by Email"
-msgstr ""
+msgstr "重新發送詢價單"
 
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_form
@@ -1794,7 +1794,7 @@ msgstr "詢價 N\""
 #: model:ir.actions.act_window,name:purchase.purchase_rfq
 #: model:ir.ui.menu,name:purchase.menu_purchase_rfq
 msgid "Requests for Quotation"
-msgstr ""
+msgstr "詢價單"
 
 #. module: purchase
 #: field:purchase.order.line,move_ids:0
@@ -1846,7 +1846,7 @@ msgstr ""
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_form
 msgid "Send RFQ by Email"
-msgstr ""
+msgstr "發送詢價單"
 
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_form
@@ -1917,7 +1917,7 @@ msgstr "供應商"
 #. module: purchase
 #: view:purchase.config.settings:purchase.view_purchase_configuration
 msgid "Supplier Features"
-msgstr ""
+msgstr "供應商"
 
 #. module: purchase
 #: view:res.partner:purchase.res_partner_view_purchase_account_buttons
@@ -2128,7 +2128,7 @@ msgstr "未稅金額"
 #. module: purchase
 #: field:purchase.config.settings,group_costing_method:0
 msgid "Use 'Real Price' or 'Average' costing methods."
-msgstr ""
+msgstr "使用 '實際價格' or '平均價格' 核算方法"
 
 #. module: purchase
 #: field:account.config.settings,module_purchase_analytic_plans:0

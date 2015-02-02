@@ -92,7 +92,7 @@ msgstr "取消(&C)"
 #. module: procurement
 #: view:procurement.order:procurement.procurement_form_view
 msgid "Cancel Procurement"
-msgstr "取消补货"
+msgstr "取消需求计划"
 
 #. module: procurement
 #: selection:procurement.order,state:0
@@ -103,12 +103,12 @@ msgstr "已取消"
 #: code:addons/procurement/procurement.py:156
 #, python-format
 msgid "Cannot delete Procurement Order(s) which are in %s state."
-msgstr "不能删除%s 状态的补货订单"
+msgstr "不能删除%s 状态的需求计划订单"
 
 #. module: procurement
 #: view:procurement.order:procurement.procurement_form_view
 msgid "Check Procurement"
-msgstr ""
+msgstr "运行需求计划"
 
 #. module: procurement
 #: help:procurement.order,rule_id:0
@@ -126,12 +126,12 @@ msgstr "公司"
 #. module: procurement
 #: view:procurement.order.compute.all:procurement.view_compute_schedulers_wizard
 msgid "Compute all procurements in the background."
-msgstr "于服务器后台计算所有需求单，并根据设定产生相应的供给。"
+msgstr "于服务器后台计算所有需求计划，并根据设定产生相应的供给。"
 
 #. module: procurement
 #: model:ir.model,name:procurement.model_procurement_order_compute_all
 msgid "Compute all schedulers"
-msgstr "计算所有排程"
+msgstr "计算所有需求计划"
 
 #. module: procurement
 #: selection:procurement.order,state:0
@@ -202,7 +202,7 @@ msgstr "固定"
 #. module: procurement
 #: field:procurement.rule,group_id:0
 msgid "Fixed Procurement Group"
-msgstr "固定的补货组"
+msgstr "固定的需求计划组"
 
 #. module: procurement
 #: field:procurement.order,message_follower_ids:0
@@ -223,7 +223,7 @@ msgstr "分组"
 #: model:ir.actions.act_window,name:procurement.do_view_procurements
 #: view:procurement.order:procurement.procurement_form_view
 msgid "Group's Procurements"
-msgstr "同组的补货"
+msgstr "同组的需求计划"
 
 #. module: procurement
 #: help:procurement.order,message_summary:0
@@ -316,7 +316,7 @@ msgstr "名称"
 #: code:addons/procurement/procurement.py:212
 #, python-format
 msgid "No rule matching this procurement"
-msgstr "没有规则匹配到此补货"
+msgstr "没有规则匹配到此需求计划"
 
 #. module: procurement
 #: selection:procurement.order,priority:0
@@ -348,13 +348,13 @@ msgstr "优先级"
 #: view:procurement.order:procurement.procurement_form_view
 #: view:procurement.order:procurement.view_procurement_filter
 msgid "Procurement"
-msgstr "补货"
+msgstr "需求计划"
 
 #. module: procurement
 #: model:ir.actions.act_window,name:procurement.procurement_action5
 #: view:procurement.order:procurement.view_procurement_filter
 msgid "Procurement Exceptions"
-msgstr "补货异常"
+msgstr "需求计划异常"
 
 #. module: procurement
 #: field:procurement.order,group_id:0
@@ -364,39 +364,39 @@ msgstr "需求群组"
 #. module: procurement
 #: view:procurement.order:procurement.procurement_tree_view
 msgid "Procurement Lines"
-msgstr "补货明细"
+msgstr "需求计划明细"
 
 #. module: procurement
 #: model:ir.actions.act_window,name:procurement.procurement_action
 msgid "Procurement Orders"
-msgstr "补货订单"
+msgstr "需求计划订单"
 
 #. module: procurement
 #: model:ir.model,name:procurement.model_procurement_group
 msgid "Procurement Requisition"
-msgstr "补货申请"
+msgstr "需求计划申请"
 
 #. module: procurement
 #: model:ir.model,name:procurement.model_procurement_rule
 msgid "Procurement Rule"
-msgstr "补货规则"
+msgstr "需求计划规则"
 
 #. module: procurement
 #: view:procurement.group:procurement.procurement_group_form_view
 msgid "Procurement group"
-msgstr "补货组"
+msgstr "需求计划组"
 
 #. module: procurement
 #: view:procurement.order:procurement.view_procurement_filter
 msgid "Procurement started late"
-msgstr "没有如期开始的补货单"
+msgstr "没有如期开始的需求计划单"
 
 #. module: procurement
 #: model:ir.actions.act_window,name:procurement.procurement_exceptions
 #: view:procurement.group:procurement.procurement_group_form_view
 #: field:procurement.group,procurement_ids:0
 msgid "Procurements"
-msgstr "补货"
+msgstr "需求计划"
 
 #. module: procurement
 #: view:procurement.order:procurement.view_procurement_filter
@@ -407,7 +407,7 @@ msgstr "产品"
 #. module: procurement
 #: field:procurement.order,product_uom:0
 msgid "Product Unit of Measure"
-msgstr "产品计量单位"
+msgstr "计量单位"
 
 #. module: procurement
 #: field:procurement.order,product_uos:0
@@ -427,7 +427,7 @@ msgstr "沿用选项"
 #. module: procurement
 #: field:procurement.rule,group_propagation_option:0
 msgid "Propagation of Procurement Group"
-msgstr "补货组的沿用"
+msgstr "需求计划组的沿用"
 
 #. module: procurement
 #: view:procurement.rule:procurement.view_procurement_rule_form
@@ -447,7 +447,7 @@ msgstr "数量"
 #. module: procurement
 #: view:procurement.order:procurement.procurement_form_view
 msgid "Reconfirm Procurement"
-msgstr "再次确认补货"
+msgstr "再次确认需求计划"
 
 #. module: procurement
 #: field:procurement.group,name:0
@@ -469,13 +469,13 @@ msgstr "需求规则"
 #. module: procurement
 #: view:procurement.order:procurement.procurement_form_view
 msgid "Run Procurement"
-msgstr "运行补货"
+msgstr "运行需求计划"
 
 #. module: procurement
 #: model:ir.actions.act_window,name:procurement.action_compute_schedulers
 #: view:procurement.order.compute.all:procurement.view_compute_schedulers_wizard
 msgid "Run Schedulers"
-msgstr "计划运行"
+msgstr "需求计划运行"
 
 #. module: procurement
 #: selection:procurement.order,state:0
@@ -495,7 +495,7 @@ msgstr "计划（月）"
 #. module: procurement
 #: view:procurement.order.compute.all:procurement.view_compute_schedulers_wizard
 msgid "Scheduler Parameters"
-msgstr "排程参数"
+msgstr "计划参数"
 
 #. module: procurement
 #: view:procurement.order:procurement.procurement_form_view
@@ -505,7 +505,7 @@ msgstr "计划"
 #. module: procurement
 #: view:procurement.order:procurement.view_procurement_filter
 msgid "Search Procurement"
-msgstr "搜索补货"
+msgstr "搜索需求计划"
 
 #. module: procurement
 #: field:procurement.rule,sequence:0

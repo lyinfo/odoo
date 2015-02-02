@@ -21,30 +21,30 @@ msgstr ""
 #: code:addons/mrp/stock.py:262
 #, python-format
 msgid " Manufacture"
-msgstr ""
+msgstr "生產"
 
 #. module: mrp
 #: field:product.template,bom_count:0
 msgid "# Bill of Material"
-msgstr ""
+msgstr "# 物料清單"
 
 #. module: mrp
 #: field:product.product,mo_count:0
 #: field:product.template,mo_count:0
 msgid "# Manufacturing Orders"
-msgstr ""
+msgstr "生產訂單"
 
 #. module: mrp
 #: code:addons/mrp/mrp.py:323
 #, python-format
 msgid "%s (copy)"
-msgstr ""
+msgstr "%s (復本)"
 
 #. module: mrp
 #: code:addons/mrp/mrp.py:977
 #, python-format
 msgid "%s produced"
-msgstr ""
+msgstr "已產出 %s"
 
 #. module: mrp
 #: help:mrp.product.produce,mode:0
@@ -241,7 +241,7 @@ msgstr "允許對工作中心的詳細規劃"
 #. module: mrp
 #: field:mrp.config.settings,group_mrp_properties:0
 msgid "Allow several bill of materials per products using properties"
-msgstr ""
+msgstr "允許每個產品通過產品屬性設定多個物料清單"
 
 #. module: mrp
 #: help:mrp.config.settings,module_mrp_repair:0
@@ -296,7 +296,7 @@ msgstr ""
 #. module: mrp
 #: selection:mrp.production,state:0
 msgid "Awaiting Raw Materials"
-msgstr ""
+msgstr "待料"
 
 #. module: mrp
 #: view:website:mrp.report_mrpbomstructure
@@ -399,7 +399,7 @@ msgstr ""
 #. module: mrp
 #: field:mrp.bom.line,type:0
 msgid "BoM Line Type"
-msgstr ""
+msgstr "類型"
 
 #. module: mrp
 #: field:mrp.bom,bom_line_ids:0
@@ -430,12 +430,12 @@ msgstr "取消"
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
 msgid "Cancel Production"
-msgstr ""
+msgstr "取消生產"
 
 #. module: mrp
 #: selection:mrp.production,state:0
 msgid "Cancelled"
-msgstr ""
+msgstr "已取消"
 
 #. module: mrp
 #: code:addons/mrp/stock.py:183
@@ -447,13 +447,13 @@ msgstr ""
 #: code:addons/mrp/mrp.py:605
 #, python-format
 msgid "Cannot delete a manufacturing order in state '%s'."
-msgstr ""
+msgstr "不允許刪除一個 '%s' 狀態的生產訂單."
 
 #. module: mrp
 #: code:addons/mrp/mrp.py:679
 #, python-format
 msgid "Cannot find a bill of material for this product."
-msgstr ""
+msgstr "未找到"
 
 #. module: mrp
 #: code:addons/mrp/wizard/change_production_qty.py:83
@@ -491,7 +491,7 @@ msgstr ""
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
 msgid "Check Availability"
-msgstr ""
+msgstr "檢查料況"
 
 #. module: mrp
 #: field:mrp.routing,code:0
@@ -521,7 +521,7 @@ msgstr ""
 #: view:product.template:mrp.product_template_search_view_procurment
 #, python-format
 msgid "Components"
-msgstr ""
+msgstr "組件"
 
 #. module: mrp
 #: code:addons/mrp/report/price.py:189
@@ -533,17 +533,17 @@ msgstr ""
 #: code:addons/mrp/report/price.py:141
 #, python-format
 msgid "Components suppliers"
-msgstr ""
+msgstr "組件供應商"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
 msgid "Compute Data"
-msgstr ""
+msgstr "計算"
 
 #. module: mrp
 #: model:ir.ui.menu,name:mrp.menu_mrp_configuration
 msgid "Configuration"
-msgstr ""
+msgstr "設定"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.action_mrp_configuration
@@ -554,7 +554,7 @@ msgstr ""
 #. module: mrp
 #: view:mrp.product.produce:mrp.view_mrp_product_produce_wizard
 msgid "Confirm"
-msgstr ""
+msgstr "確認"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
@@ -594,7 +594,7 @@ msgstr ""
 #: field:mrp.production,move_lines2:0
 #: view:website:mrp.report_mrporder
 msgid "Consumed Products"
-msgstr "耗損性產品"
+msgstr "已投料"
 
 #. module: mrp
 #: field:stock.move,consumed_for:0
@@ -734,7 +734,7 @@ msgstr "目標貨位"
 #. module: mrp
 #: selection:mrp.production,state:0
 msgid "Done"
-msgstr ""
+msgstr "已完工"
 
 #. module: mrp
 #: field:mrp.production,date_finished:0
@@ -754,7 +754,7 @@ msgstr ""
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
 msgid "Extra Information"
-msgstr ""
+msgstr "其他資訊"
 
 #. module: mrp
 #: help:mrp.workcenter,costs_cycle_account_id:0
@@ -779,7 +779,7 @@ msgstr "成品"
 #. module: mrp
 #: field:mrp.production,location_dest_id:0
 msgid "Finished Products Location"
-msgstr ""
+msgstr "入庫貨位"
 
 #. module: mrp
 #: field:mrp.bom,message_follower_ids:0
@@ -1039,7 +1039,7 @@ msgstr "管理製程"
 #. module: mrp
 #: field:mrp.config.settings,module_mrp_repair:0
 msgid "Manage repairs of products "
-msgstr ""
+msgstr "管理產品維修"
 
 #. module: mrp
 #: field:mrp.config.settings,group_mrp_routings:0
@@ -1056,7 +1056,7 @@ msgstr ""
 #: code:addons/mrp/stock.py:256
 #, python-format
 msgid "Manufacture"
-msgstr ""
+msgstr "生產"
 
 #. module: mrp
 #: field:stock.warehouse,manufacture_pull_id:0
@@ -1074,13 +1074,13 @@ msgstr ""
 #: view:product.product:mrp.product_product_form_view_bom_button
 #: view:product.template:mrp.product_template_form_view_bom_button
 msgid "Manufacturing"
-msgstr ""
+msgstr "生產"
 
 #. module: mrp
 #: field:mrp.bom,product_efficiency:0
 #: field:mrp.bom.line,product_efficiency:0
 msgid "Manufacturing Efficiency"
-msgstr ""
+msgstr "生產效率"
 
 #. module: mrp
 #: field:product.template,produce_delay:0
@@ -1095,7 +1095,7 @@ msgstr ""
 #: field:mrp.production.workcenter.line,production_id:0
 #: field:procurement.order,production_id:0
 msgid "Manufacturing Order"
-msgstr "製造命令"
+msgstr "生產訂單"
 
 #. module: mrp
 #: code:addons/mrp/procurement.py:131
@@ -1113,7 +1113,7 @@ msgstr "工令 <em>%s</em> 已建立。"
 #: view:mrp.production:mrp.view_production_calendar
 #: view:mrp.production:mrp.view_production_graph
 msgid "Manufacturing Orders"
-msgstr "製造命令"
+msgstr "生產訂單"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.mrp_production_action2
@@ -1128,7 +1128,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.mrp_production_action3
 msgid "Manufacturing Orders in Progress"
-msgstr "製造命令進行中"
+msgstr "生產訂單進行中"
 
 #. module: mrp
 #: view:mrp.production:mrp.view_mrp_production_filter
@@ -1158,7 +1158,7 @@ msgstr "主物料清單"
 #. module: mrp
 #: view:mrp.config.settings:mrp.view_mrp_config
 msgid "Master Data"
-msgstr ""
+msgstr "主檔"
 
 #. module: mrp
 #: field:mrp.bom,message_ids:0
@@ -1221,7 +1221,7 @@ msgstr "小時數"
 #: selection:mrp.bom.line,type:0
 #: selection:mrp.production,priority:0
 msgid "Normal"
-msgstr ""
+msgstr "正常"
 
 #. module: mrp
 #: selection:mrp.production,priority:0
@@ -1250,7 +1250,7 @@ msgstr "周期數"
 #: field:mrp.routing.workcenter,hour_nbr:0
 #: field:report.workcenter.load,hour:0
 msgid "Number of Hours"
-msgstr ""
+msgstr "工時"
 
 #. module: mrp
 #: help:mrp.routing.workcenter,cycle_nbr:0
@@ -1279,7 +1279,7 @@ msgstr ""
 #. module: mrp
 #: view:mrp.config.settings:mrp.view_mrp_config
 msgid "Order"
-msgstr ""
+msgstr "訂單"
 
 #. module: mrp
 #: model:ir.ui.menu,name:mrp.menu_mrp_production_order_action
@@ -1299,7 +1299,7 @@ msgstr "父系物料清單"
 #. module: mrp
 #: field:mrp.routing.workcenter,routing_id:0
 msgid "Parent Routing"
-msgstr ""
+msgstr "父階"
 
 #. module: mrp
 #: view:website:mrp.report_mrporder
@@ -1309,7 +1309,7 @@ msgstr ""
 #. module: mrp
 #: view:mrp.production:mrp.view_mrp_production_filter
 msgid "Pending"
-msgstr ""
+msgstr "暫停"
 
 #. module: mrp
 #: selection:mrp.workcenter.load,time_unit:0
@@ -1365,7 +1365,7 @@ msgstr ""
 #. module: mrp
 #: field:mrp.production,priority:0
 msgid "Priority"
-msgstr ""
+msgstr "優先級"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_procurement_order
@@ -1387,13 +1387,13 @@ msgstr ""
 #. module: mrp
 #: field:mrp.config.settings,module_mrp_byproduct:0
 msgid "Produce several products from one manufacturing order"
-msgstr ""
+msgstr "允許一張生產訂單產出多個產品"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
 #: field:mrp.production,move_created_ids2:0
 msgid "Produced Products"
-msgstr ""
+msgstr "已完工"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_product_product
@@ -1408,23 +1408,23 @@ msgstr ""
 #: field:stock.move.consume,product_id:0
 #: view:website:mrp.report_mrporder
 msgid "Product"
-msgstr ""
+msgstr "產品"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.action_view_mrp_product_price_wizard
 #: view:mrp.product_price:mrp.view_mrp_product_price_wizard
 msgid "Product Cost Structure"
-msgstr ""
+msgstr "產品成本結構"
 
 #. module: mrp
 #: field:mrp.production,move_prod_id:0
 msgid "Product Move"
-msgstr ""
+msgstr "產品調動"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_mrp_product_price
 msgid "Product Price"
-msgstr ""
+msgstr "產品單價"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_mrp_product_produce
@@ -1453,7 +1453,7 @@ msgstr "產品數量"
 #: field:mrp.bom,product_rounding:0
 #: field:mrp.bom.line,product_rounding:0
 msgid "Product Rounding"
-msgstr ""
+msgstr "精度"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_product_template
@@ -1476,12 +1476,12 @@ msgstr ""
 #. module: mrp
 #: field:mrp.bom.line,product_uos_qty:0
 msgid "Product UOS Qty"
-msgstr ""
+msgstr "銷售數量"
 
 #. module: mrp
 #: field:mrp.production.product.line,product_uos_qty:0
 msgid "Product UOS Quantity"
-msgstr ""
+msgstr "銷售數量"
 
 #. module: mrp
 #: field:mrp.bom,product_uom:0
@@ -1490,27 +1490,27 @@ msgstr ""
 #: field:mrp.production.product.line,product_uom:0
 #: field:stock.move.consume,product_uom:0
 msgid "Product Unit of Measure"
-msgstr ""
+msgstr "計量單位"
 
 #. module: mrp
 #: field:mrp.production,product_uos:0
 msgid "Product UoS"
-msgstr ""
+msgstr "銷售計量單位"
 
 #. module: mrp
 #: field:mrp.production,product_uos_qty:0
 msgid "Product UoS Quantity"
-msgstr ""
+msgstr "銷售數量"
 
 #. module: mrp
 #: field:mrp.bom,product_id:0
 msgid "Product Variant"
-msgstr ""
+msgstr "產品型號"
 
 #. module: mrp
 #: view:website:mrp.report_mrporder
 msgid "Product:"
-msgstr ""
+msgstr "產品："
 
 #. module: mrp
 #: view:mrp.production:mrp.view_mrp_production_filter
@@ -1547,12 +1547,12 @@ msgstr ""
 #. module: mrp
 #: model:ir.model,name:mrp.model_mrp_production_product_line
 msgid "Production Scheduled Product"
-msgstr ""
+msgstr "備料"
 
 #. module: mrp
 #: selection:mrp.production,state:0
 msgid "Production Started"
-msgstr ""
+msgstr "已開始生產"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
@@ -1580,30 +1580,30 @@ msgstr ""
 #: model:ir.ui.menu,name:mrp.menu_mrp_product_form
 #: view:mrp.config.settings:mrp.view_mrp_config
 msgid "Products"
-msgstr ""
+msgstr "產品"
 
 #. module: mrp
 #: field:mrp.product.produce,consume_lines:0
 msgid "Products Consumed"
-msgstr ""
+msgstr "已投料"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
 #: field:mrp.production,move_lines:0
 #: view:website:mrp.report_mrporder
 msgid "Products to Consume"
-msgstr ""
+msgstr "待投料"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
 msgid "Products to Finish"
-msgstr ""
+msgstr "待完工"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
 #: field:mrp.production,move_created_ids:0
 msgid "Products to Produce"
-msgstr ""
+msgstr "待完工"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.mrp_property_action
@@ -1615,12 +1615,12 @@ msgstr ""
 #: view:mrp.property:mrp.mrp_property_tree_view
 #: field:procurement.order,property_ids:0
 msgid "Properties"
-msgstr ""
+msgstr "屬性"
 
 #. module: mrp
 #: view:mrp.property.group:mrp.mrp_property_group_form_view
 msgid "Properties categories"
-msgstr ""
+msgstr "屬性類別"
 
 #. module: mrp
 #: field:mrp.property,composition:0
@@ -1630,7 +1630,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.model,name:mrp.model_mrp_property
 msgid "Property"
-msgstr ""
+msgstr "屬性"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_mrp_property_group
@@ -1638,13 +1638,13 @@ msgstr ""
 #: field:mrp.property,group_id:0
 #: field:mrp.property.group,name:0
 msgid "Property Group"
-msgstr "屬性組別"
+msgstr "屬性組"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.mrp_property_group_action
 #: model:ir.ui.menu,name:mrp.menu_mrp_property_group_action
 msgid "Property Groups"
-msgstr ""
+msgstr "屬性組"
 
 #. module: mrp
 #: code:addons/mrp/report/price.py:141
@@ -1671,7 +1671,7 @@ msgstr ""
 #. module: mrp
 #: field:mrp.production,location_src_id:0
 msgid "Raw Materials Location"
-msgstr ""
+msgstr "原料貨位"
 
 #. module: mrp
 #: view:mrp.production:mrp.view_mrp_production_filter
@@ -1724,7 +1724,7 @@ msgstr "資源"
 #. module: mrp
 #: field:mrp.production,user_id:0
 msgid "Responsible"
-msgstr ""
+msgstr "負責人"
 
 #. module: mrp
 #: help:mrp.bom,product_rounding:0
@@ -1788,24 +1788,24 @@ msgstr "預定日期"
 #. module: mrp
 #: view:mrp.production:mrp.view_mrp_production_filter
 msgid "Scheduled Date by Month"
-msgstr ""
+msgstr "按預計日期的月份"
 
 #. module: mrp
 #: view:website:mrp.report_mrporder
 msgid "Scheduled Date:"
-msgstr ""
+msgstr "預定日期："
 
 #. module: mrp
 #: view:mrp.production:mrp.view_mrp_production_filter
 msgid "Scheduled Month"
-msgstr ""
+msgstr "預定月份"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
 #: view:mrp.production.product.line:mrp.mrp_production_product_form_view
 #: view:mrp.production.product.line:mrp.mrp_production_product_tree_view
 msgid "Scheduled Products"
-msgstr ""
+msgstr "備料"
 
 #. module: mrp
 #: field:mrp.production,product_lines:0
@@ -1864,7 +1864,7 @@ msgstr ""
 #: field:mrp.routing.workcenter,sequence:0
 #: view:website:mrp.report_mrporder
 msgid "Sequence"
-msgstr ""
+msgstr "項次"
 
 #. module: mrp
 #: selection:mrp.bom,type:0
@@ -1881,17 +1881,17 @@ msgstr ""
 #. module: mrp
 #: field:mrp.production,origin:0
 msgid "Source Document"
-msgstr ""
+msgstr "來源文件"
 
 #. module: mrp
 #: view:website:mrp.report_mrporder
 msgid "Source Document:"
-msgstr ""
+msgstr "來源文件："
 
 #. module: mrp
 #: view:website:mrp.report_mrporder
 msgid "Source Location"
-msgstr ""
+msgstr "來源貨位"
 
 #. module: mrp
 #: help:mrp.workcenter,costs_cycle:0
@@ -1913,7 +1913,7 @@ msgstr ""
 #. module: mrp
 #: field:mrp.production,date_start:0
 msgid "Start Date"
-msgstr ""
+msgstr "開始日期"
 
 #. module: mrp
 #: view:mrp.production:mrp.view_mrp_production_filter
@@ -2070,22 +2070,22 @@ msgstr "週期總數"
 #: view:mrp.production:mrp.mrp_production_tree_view
 #: field:mrp.production,hour_total:0
 msgid "Total Hours"
-msgstr ""
+msgstr "總工時"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_tree_view
 msgid "Total Qty"
-msgstr ""
+msgstr "總數量"
 
 #. module: mrp
 #: field:product.template,track_production:0
 msgid "Track Manufacturing Lots"
-msgstr ""
+msgstr "追蹤生產批"
 
 #. module: mrp
 #: field:mrp.product.produce,track_production:0
 msgid "Track production"
-msgstr ""
+msgstr "追蹤生產批"
 
 #. module: mrp
 #: view:mrp.bom:mrp.view_mrp_bom_filter
@@ -2097,7 +2097,7 @@ msgstr "類型"
 #. module: mrp
 #: field:mrp.workcenter.load,time_unit:0
 msgid "Type of period"
-msgstr ""
+msgstr "時間單位"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
@@ -2138,25 +2138,25 @@ msgstr ""
 #: field:mrp.bom,date_start:0
 #: field:mrp.bom.line,date_start:0
 msgid "Valid From"
-msgstr ""
+msgstr "有效期起"
 
 #. module: mrp
 #: view:mrp.bom:mrp.view_mrp_bom_filter
 #: view:mrp.bom.line:mrp.view_mrp_bom_line_filter
 msgid "Valid From Date by Month"
-msgstr ""
+msgstr "有效期按月"
 
 #. module: mrp
 #: view:mrp.bom:mrp.view_mrp_bom_filter
 #: view:mrp.bom.line:mrp.view_mrp_bom_line_filter
 msgid "Valid From Month"
-msgstr ""
+msgstr "有效期按月"
 
 #. module: mrp
 #: field:mrp.bom,date_stop:0
 #: field:mrp.bom.line,date_stop:0
 msgid "Valid Until"
-msgstr ""
+msgstr "有效期迄"
 
 #. module: mrp
 #: help:mrp.bom.line,date_start:0
@@ -2276,7 +2276,7 @@ msgstr ""
 #: view:mrp.workcenter:mrp.mrp_workcenter_view
 #: field:report.workcenter.load,workcenter_id:0
 msgid "Work Center"
-msgstr ""
+msgstr "工作中心"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.action_mrp_workcenter_load_wizard
@@ -2345,13 +2345,13 @@ msgstr ""
 #: model:ir.model,name:mrp.model_mrp_production_workcenter_line
 #: field:mrp.production.workcenter.line,name:0
 msgid "Work Order"
-msgstr ""
+msgstr "工序"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
 #: view:website:mrp.report_mrporder
 msgid "Work Orders"
-msgstr ""
+msgstr "工序"
 
 #. module: mrp
 #: view:website:mrp.report_mrporder

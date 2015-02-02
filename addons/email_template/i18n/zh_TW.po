@@ -21,12 +21,12 @@ msgstr ""
 #: code:addons/email_template/email_template.py:365
 #, python-format
 msgid "%s (copy)"
-msgstr ""
+msgstr "%s (副本)"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
 msgid "Add"
-msgstr ""
+msgstr "增加"
 
 #. module: email_template
 #: field:email.template,user_signature:0
@@ -37,13 +37,12 @@ msgstr "加入簽名"
 #. module: email_template
 #: view:email.template:email_template.email_template_form
 msgid "Advanced Settings"
-msgstr ""
+msgstr "進階設定"
 
 #. module: email_template
-#: field:email.template,model_id:0
-#: field:email_template.preview,model_id:0
+#: field:email.template,model_id:0 field:email_template.preview,model_id:0
 msgid "Applies to"
-msgstr ""
+msgstr "適用於"
 
 #. module: email_template
 #: field:email.template,attachment_ids:0
@@ -68,66 +67,61 @@ msgid "Available for mass mailing"
 msgstr ""
 
 #. module: email_template
-#: field:email.template,body_html:0
-#: field:email_template.preview,body_html:0
+#: field:email.template,body_html:0 field:email_template.preview,body_html:0
 #: field:ir.actions.server,body_html:0
 msgid "Body"
-msgstr ""
+msgstr "內文"
 
 #. module: email_template
-#: help:email.template,email_cc:0
-#: help:email_template.preview,email_cc:0
+#: help:email.template,email_cc:0 help:email_template.preview,email_cc:0
 msgid "Carbon copy recipients (placeholders may be used here)"
 msgstr "副本收件人 (佔位符可在這裡使用)"
 
 #. module: email_template
-#: field:email.template,email_cc:0
-#: field:email_template.preview,email_cc:0
+#: field:email.template,email_cc:0 field:email_template.preview,email_cc:0
 msgid "Cc"
 msgstr "副本"
 
 #. module: email_template
 #: view:ir.actions.server:email_template.view_server_action_form_template
 msgid "Choose a template to display its values."
-msgstr ""
+msgstr "選擇一個模板，以顯示實際值。"
 
 #. module: email_template
 #: view:email_template.preview:email_template.email_template_preview_form
 msgid "Choose an example"
-msgstr ""
+msgstr "選擇一個例子"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
 msgid "Comma-separated carbon copy recipients addresses"
-msgstr ""
+msgstr "逗號分隔的抄送收件人地址"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
 msgid "Comma-separated ids of recipient partners"
-msgstr ""
+msgstr "逗號分隔收件人的夥伴IDS"
 
 #. module: email_template
-#: help:email.template,partner_to:0
-#: help:email_template.preview,partner_to:0
+#: help:email.template,partner_to:0 help:email_template.preview,partner_to:0
 msgid ""
 "Comma-separated ids of recipient partners (placeholders may be used here)"
-msgstr ""
+msgstr "逗號分隔收件人夥伴的標識（佔位符可以被用在這裡）"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
 msgid "Comma-separated recipient addresses"
-msgstr ""
+msgstr "逗號分隔的收件人地址"
 
 #. module: email_template
-#: help:email.template,email_to:0
-#: help:email_template.preview,email_to:0
+#: help:email.template,email_to:0 help:email_template.preview,email_to:0
 msgid "Comma-separated recipient addresses (placeholders may be used here)"
 msgstr "逗號分隔的收件人地址（佔位符可以用在這裡）"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
 msgid "Content"
-msgstr ""
+msgstr "內文"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
@@ -135,8 +129,7 @@ msgid "Context Action"
 msgstr ""
 
 #. module: email_template
-#: field:email.template,create_uid:0
-#: field:email_template.preview,create_uid:0
+#: field:email.template,create_uid:0 field:email_template.preview,create_uid:0
 msgid "Created by"
 msgstr ""
 
@@ -147,16 +140,15 @@ msgid "Created on"
 msgstr ""
 
 #. module: email_template
-#: field:email.template,null_value:0
-#: field:email_template.preview,null_value:0
+#: field:email.template,null_value:0 field:email_template.preview,null_value:0
 msgid "Default Value"
-msgstr ""
+msgstr "默認值"
 
 #. module: email_template
 #: field:email.template,use_default_to:0
 #: field:email_template.preview,use_default_to:0
 msgid "Default recipients"
-msgstr ""
+msgstr "默認收件人"
 
 #. module: email_template
 #: help:email.template,use_default_to:0
@@ -166,6 +158,9 @@ msgid ""
 "- partner (using id on a partner or the partner_id field) OR\n"
 "- email (using email_from or email field)"
 msgstr ""
+"資料的默認收到人:\n"
+"- 夥伴 (使用夥伴ID或 partner_id 欄位) 或\n"
+"- 郵件 (使用 email_from 或郵件欄位)"
 
 #. module: email_template
 #: code:addons/email_template/email_template.py:355
@@ -178,22 +173,22 @@ msgstr "刪除的動作記錄失敗"
 msgid ""
 "Display an option on related documents to open a composition wizard with "
 "this template"
-msgstr ""
+msgstr "顯示在相關資料的選項打開一個使用該模組的嚮導"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
 msgid "Dynamic Placeholder Generator"
-msgstr ""
+msgstr "動態生成的佔位符"
 
 #. module: email_template
 #: view:ir.actions.server:email_template.view_server_action_form_template
 msgid "Email"
-msgstr ""
+msgstr "電子郵件"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
 msgid "Email Configuration"
-msgstr ""
+msgstr "電子郵件設定"
 
 #. module: email_template
 #: view:email_template.preview:email_template.email_template_preview_form
@@ -203,7 +198,7 @@ msgstr "預覽郵件"
 #. module: email_template
 #: field:ir.actions.server,template_id:0
 msgid "Email Template"
-msgstr ""
+msgstr "電子郵件模板"
 
 #. module: email_template
 #: model:ir.model,name:email_template.model_email_template_preview
@@ -227,16 +222,14 @@ msgid "Field"
 msgstr "欄位"
 
 #. module: email_template
-#: help:email.template,copyvalue:0
-#: help:email_template.preview,copyvalue:0
+#: help:email.template,copyvalue:0 help:email_template.preview,copyvalue:0
 msgid ""
 "Final placeholder expression, to be copy-pasted in the desired template "
 "field."
 msgstr "最後的模板欄位，找到要複製-貼上的區塊"
 
 #. module: email_template
-#: field:email.template,email_from:0
-#: field:email_template.preview,email_from:0
+#: field:email.template,email_from:0 field:email_template.preview,email_from:0
 #: field:ir.actions.server,email_from:0
 msgid "From"
 msgstr "從"
@@ -247,8 +240,7 @@ msgid "Group by..."
 msgstr "分類方式..."
 
 #. module: email_template
-#: field:email.template,id:0
-#: field:email_template.preview,id:0
+#: field:email.template,id:0 field:email_template.preview,id:0
 msgid "ID"
 msgstr ""
 
@@ -267,22 +259,21 @@ msgid ""
 "mailing and marketing campaign. Filter 'Available for Mass Mailing' allows "
 "users to filter the partners when performing mass mailing."
 msgstr ""
+"如果不參加被選中，該聯繫人拒絕接收電子郵件的郵件群發和市場營銷活動。過濾器“可"
+"用於群發郵件”允許用戶進行群發郵件時，篩選合作夥伴。"
 
 #. module: email_template
-#: field:email.template,lang:0
-#: field:email_template.preview,lang:0
+#: field:email.template,lang:0 field:email_template.preview,lang:0
 msgid "Language"
-msgstr ""
+msgstr "語言"
 
 #. module: email_template
-#: field:email.template,write_uid:0
-#: field:email_template.preview,write_uid:0
+#: field:email.template,write_uid:0 field:email_template.preview,write_uid:0
 msgid "Last Updated by"
 msgstr ""
 
 #. module: email_template
-#: field:email.template,write_date:0
-#: field:email_template.preview,write_date:0
+#: field:email.template,write_date:0 field:email_template.preview,write_date:0
 msgid "Last Updated on"
 msgstr ""
 
@@ -292,14 +283,12 @@ msgid "Model"
 msgstr "型號"
 
 #. module: email_template
-#: field:email.template,name:0
-#: field:email_template.preview,name:0
+#: field:email.template,name:0 field:email_template.preview,name:0
 msgid "Name"
 msgstr "名稱"
 
 #. module: email_template
-#: help:email.template,report_name:0
-#: help:email_template.preview,report_name:0
+#: help:email.template,report_name:0 help:email_template.preview,report_name:0
 msgid ""
 "Name to use for the generated report file (may contain placeholders)\n"
 "The extension can be omitted and will then come from the report type."
@@ -327,8 +316,7 @@ msgid "Optional report to print and attach"
 msgstr "選擇報表列印與附加"
 
 #. module: email_template
-#: help:email.template,lang:0
-#: help:email_template.preview,lang:0
+#: help:email.template,lang:0 help:email_template.preview,lang:0
 msgid ""
 "Optional translation language (ISO code) to select when sending out an "
 "email. If not set, the english version will be used. This should usually be "
@@ -337,8 +325,7 @@ msgid ""
 msgstr ""
 
 #. module: email_template
-#: help:email.template,null_value:0
-#: help:email_template.preview,null_value:0
+#: help:email.template,null_value:0 help:email_template.preview,null_value:0
 msgid "Optional value to use if the target field is empty"
 msgstr "若欄位是空的需選擇使用值"
 
@@ -360,21 +347,18 @@ msgstr "業務夥伴"
 
 #. module: email_template
 #: view:res.partner:email_template.res_partner_opt_out_search
-msgid ""
-"Partners that did not ask not to be included in mass mailing campaigns"
+msgid "Partners that did not ask not to be included in mass mailing campaigns"
 msgstr ""
 
 #. module: email_template
-#: help:email.template,auto_delete:0
-#: help:email_template.preview,auto_delete:0
+#: help:email.template,auto_delete:0 help:email_template.preview,auto_delete:0
 msgid "Permanently delete this email after sending it, to save space"
 msgstr "永久刪除已發送的郵件以節省空間"
 
 #. module: email_template
-#: field:email.template,copyvalue:0
-#: field:email_template.preview,copyvalue:0
+#: field:email.template,copyvalue:0 field:email_template.preview,copyvalue:0
 msgid "Placeholder Expression"
-msgstr ""
+msgstr "點位符表達式"
 
 #. module: email_template
 #: view:ir.actions.server:email_template.view_server_action_form_template
@@ -387,46 +371,42 @@ msgid "Preferred reply address"
 msgstr ""
 
 #. module: email_template
-#: help:email.template,reply_to:0
-#: help:email_template.preview,reply_to:0
+#: help:email.template,reply_to:0 help:email_template.preview,reply_to:0
 msgid "Preferred response address (placeholders may be used here)"
 msgstr "首選的回覆地址（佔位符可以用在這裡）"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
 msgid "Preview"
-msgstr ""
+msgstr "預覽"
 
 #. module: email_template
 #: view:email_template.preview:email_template.email_template_preview_form
 msgid "Preview of"
-msgstr ""
+msgstr "預覽"
 
 #. module: email_template
 #: field:email_template.preview,partner_ids:0
 msgid "Recipients"
-msgstr ""
+msgstr "收件人"
 
 #. module: email_template
-#: field:email.template,model:0
-#: field:email_template.preview,model:0
+#: field:email.template,model:0 field:email_template.preview,model:0
 msgid "Related Document Model"
 msgstr "相關文檔模型"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
 msgid "Remove"
-msgstr ""
+msgstr "移除"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
-msgid ""
-"Remove the contextual action to use this template on related documents"
+msgid "Remove the contextual action to use this template on related documents"
 msgstr ""
 
 #. module: email_template
-#: field:email.template,reply_to:0
-#: field:email_template.preview,reply_to:0
+#: field:email.template,reply_to:0 field:email_template.preview,reply_to:0
 msgid "Reply-To"
 msgstr "回覆給"
 
@@ -437,8 +417,7 @@ msgid "Report Filename"
 msgstr "報表檔名"
 
 #. module: email_template
-#: help:email.template,body_html:0
-#: help:email_template.preview,body_html:0
+#: help:email.template,body_html:0 help:email_template.preview,body_html:0
 msgid "Rich-text/HTML version of the message (placeholders may be used here)"
 msgstr "Rich-text/HTML版本的消息（佔位符可以用在這裡）"
 
@@ -460,7 +439,7 @@ msgstr "另存新的範本"
 #. module: email_template
 #: view:mail.compose.message:email_template.email_compose_message_wizard_inherit_form
 msgid "Save as new template"
-msgstr ""
+msgstr "保存爲新的模板"
 
 #. module: email_template
 #: help:email.template,model_object_field:0
@@ -480,12 +459,13 @@ msgid "Send Mail (%s)"
 msgstr "傳送郵件 (%s)"
 
 #. module: email_template
-#: help:email.template,email_from:0
-#: help:email_template.preview,email_from:0
+#: help:email.template,email_from:0 help:email_template.preview,email_from:0
 msgid ""
 "Sender address (placeholders may be used here). If not set, the default "
 "value will be the author's email alias if configured, or email address."
 msgstr ""
+"發送方地址（佔位符可以被用在這裡）。如果沒有設定，默認值是，如果配置了編寫者"
+"的電子郵件網關或電子郵件地址。"
 
 #. module: email_template
 #: code:addons/email_template/email_template.py:551
@@ -493,7 +473,7 @@ msgstr ""
 msgid ""
 "Sender email is missing or empty after template rendering. Specify one to "
 "deliver your message"
-msgstr ""
+msgstr "發件人郵件丟失或模板後呈現爲空。請指定一個準備傳送你的消息"
 
 #. module: email_template
 #: field:email.template,ref_ir_value:0
@@ -528,29 +508,26 @@ msgid "Sub-field"
 msgstr "子欄位"
 
 #. module: email_template
-#: field:email.template,sub_object:0
-#: field:email_template.preview,sub_object:0
+#: field:email.template,sub_object:0 field:email_template.preview,sub_object:0
 msgid "Sub-model"
 msgstr "子類型"
 
 #. module: email_template
-#: field:email.template,subject:0
-#: field:email_template.preview,subject:0
+#: field:email.template,subject:0 field:email_template.preview,subject:0
 #: field:ir.actions.server,subject:0
 msgid "Subject"
 msgstr "主旨"
 
 #. module: email_template
 #: view:email.template:email_template.email_template_form
-#: help:email.template,subject:0
-#: help:email_template.preview,subject:0
+#: help:email.template,subject:0 help:email_template.preview,subject:0
 msgid "Subject (placeholders may be used here)"
 msgstr "主旨 (佔位符可在這裡使用)"
 
 #. module: email_template
 #: view:res.partner:email_template.res_partner_opt_out_search
 msgid "Suppliers"
-msgstr ""
+msgstr "供應商"
 
 #. module: email_template
 #: model:ir.actions.act_window,name:email_template.wizard_email_template_preview
@@ -567,8 +544,7 @@ msgid "Templates"
 msgstr "範本"
 
 #. module: email_template
-#: help:email.template,model_id:0
-#: help:email_template.preview,model_id:0
+#: help:email.template,model_id:0 help:email_template.preview,model_id:0
 msgid "The kind of document with with this template can be used"
 msgstr ""
 
@@ -581,24 +557,22 @@ msgid ""
 msgstr ""
 
 #. module: email_template
-#: field:email.template,email_to:0
-#: field:email_template.preview,email_to:0
+#: field:email.template,email_to:0 field:email_template.preview,email_to:0
 #: field:ir.actions.server,email_to:0
 msgid "To (Emails)"
-msgstr ""
+msgstr "收件者 (電子郵件)"
 
 #. module: email_template
-#: field:email.template,partner_to:0
-#: field:email_template.preview,partner_to:0
+#: field:email.template,partner_to:0 field:email_template.preview,partner_to:0
 #: field:ir.actions.server,partner_to:0
 msgid "To (Partners)"
-msgstr ""
+msgstr "收件者 (夥伴)"
 
 #. module: email_template
 #: view:mail.compose.message:email_template.email_compose_message_wizard_inherit_form
 #: field:mail.compose.message,template_id:0
 msgid "Use template"
-msgstr ""
+msgstr "使用模板"
 
 #. module: email_template
 #: code:addons/email_template/email_template.py:355
@@ -610,7 +584,7 @@ msgstr "警告"
 #: code:addons/email_template/email_template.py:551
 #, python-format
 msgid "Warning!"
-msgstr ""
+msgstr "警告！"
 
 #. module: email_template
 #: help:email.template,sub_model_object_field:0
@@ -618,16 +592,18 @@ msgstr ""
 msgid ""
 "When a relationship field is selected as first field, this field lets you "
 "select the target field within the destination document model (sub-model)."
-msgstr "當相關欄位已被選擇為第一欄位, 這欄位，讓您選擇目標欄位內的目標文件類型（子類型型）。"
+msgstr ""
+"當相關欄位已被選擇為第一欄位, 這欄位，讓您選擇目標欄位內的目標文件類型（子類"
+"型型）。"
 
 #. module: email_template
-#: help:email.template,sub_object:0
-#: help:email_template.preview,sub_object:0
+#: help:email.template,sub_object:0 help:email_template.preview,sub_object:0
 msgid ""
 "When a relationship field is selected as first field, this field shows the "
 "document model the relationship goes to."
 msgstr ""
-"當這相關欄位是選為第一欄位, this field shows the document model the relationship goes to."
+"當這相關欄位是選為第一欄位, this field shows the document model the "
+"relationship goes to."
 
 #. module: email_template
 #: help:email.template,attachment_ids:0
@@ -641,7 +617,7 @@ msgstr "這個範本您可以加入附件, 從這範本新建所有郵件"
 #: view:ir.actions.server:email_template.view_server_action_form_template
 msgid ""
 "Your template does not defined any email_from. Please update your template."
-msgstr ""
+msgstr "你的模板未定義任何來源地址。請更新您的模板。"
 
 #. module: email_template
 #: view:email_template.preview:email_template.email_template_preview_form

@@ -205,7 +205,7 @@ msgstr ""
 #. module: base_setup
 #: field:sale.config.settings,module_mass_mailing:0
 msgid "Manage mass mailing campaigns"
-msgstr ""
+msgstr "管理邮件群发"
 
 #. module: base_setup
 #: field:base.config.settings,module_multi_company:0
@@ -265,7 +265,7 @@ msgstr "报价和销售订单"
 #. module: base_setup
 #: field:base.config.settings,font:0
 msgid "Report Font"
-msgstr ""
+msgstr "报表字体"
 
 #. module: base_setup
 #: field:sale.config.settings,module_sale:0
@@ -371,7 +371,7 @@ msgstr "你能在你的公司明细里找到多个选项：用于页首和页脚
 #: view:base.config.settings:base_setup.view_general_configuration
 #: view:sale.config.settings:base_setup.view_sale_config_settings
 msgid "or"
-msgstr "or"
+msgstr "或"
 
 #. module: base_setup
 #: view:base.setup.terminology:base_setup.base_setup_terminology_form

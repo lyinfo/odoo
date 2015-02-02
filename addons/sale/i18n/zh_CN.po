@@ -650,7 +650,7 @@ msgstr "生成并查看发票"
 #: field:sale.order,order_policy:0
 #: view:sale.order.line:sale.view_order_line_form2
 msgid "Create Invoice"
-msgstr "生成发票"
+msgstr "开立发票"
 
 #. module: sale
 #: view:sale.make.invoice:sale.view_sale_order_make_invoice
@@ -816,7 +816,7 @@ msgstr "显示利润在销售订单"
 #. module: sale
 #: view:sale.make.invoice:sale.view_sale_order_make_invoice
 msgid "Do you really want to create the invoice(s)?"
-msgstr "你真的要生成发票吗 ？"
+msgstr "你真的要开立发票吗 ？"
 
 #. module: sale
 #: view:sale.order:sale.view_sales_order_filter
@@ -941,7 +941,7 @@ msgstr ""
 #. module: sale
 #: field:sale.config.settings,group_invoice_so_lines:0
 msgid "Generate invoices based on the sales order lines"
-msgstr "基于销售订单行生成发票"
+msgstr "基于销售订单行开立发票"
 
 #. module: sale
 #: help:sale.order.line,sequence:0
@@ -1115,7 +1115,7 @@ msgid ""
 "1.The state of this sales order line is either \"draft\" or \"cancel\"!\n"
 "2.The Sales Order Line is Invoiced!"
 msgstr ""
-"由于以下原因不能为此销售订单明细生成发票：\n"
+"由于以下原因不能为此销售订单明细开立发票：\n"
 "1. 销售订单明细的状态是“草稿”或者“取消”！\n"
 "2. 销售订单明细已经开票！"
 
@@ -1178,7 +1178,7 @@ msgstr "是一个关注者"
 #. module: sale
 #: help:sale.order,invoiced:0
 msgid "It indicates that an invoice has been paid."
-msgstr "它表示发票已经支付。"
+msgstr "它表示发票已经收款。"
 
 #. module: sale
 #: help:sale.order,invoice_exists:0
@@ -1211,7 +1211,7 @@ msgstr ""
 #. module: sale
 #: model:ir.actions.act_window,name:sale.action_sale_order_make_invoice
 msgid "Make Invoices"
-msgstr "生成发票"
+msgstr "开立发票"
 
 #. module: sale
 #: selection:sale.report,state:0
@@ -1380,7 +1380,7 @@ msgstr "其它信息"
 #. module: sale
 #: field:sale.order,invoiced:0
 msgid "Paid"
-msgstr "支付"
+msgstr "已收款"
 
 #. module: sale
 #: model:ir.model,name:sale.model_res_partner
@@ -1396,7 +1396,7 @@ msgstr "付款条款"
 #. module: sale
 #: view:website:sale.report_saleorder_document
 msgid "Payment Term:"
-msgstr ""
+msgstr "付款条款"
 
 #. module: sale
 #: field:sale.order,paypal_url:0
@@ -1616,7 +1616,7 @@ msgstr ""
 #. module: sale
 #: view:sale.order:sale.view_order_form
 msgid "Recreate Invoice"
-msgstr "重新生成发票"
+msgstr "重新开立发票"
 
 #. module: sale
 #: help:sale.order,origin:0
@@ -1691,7 +1691,7 @@ msgstr "销售管线"
 #. module: sale
 #: model:ir.model,name:sale.model_sale_make_invoice
 msgid "Sales Make Invoice"
-msgstr "销售订单生成发票"
+msgstr "销售订单开立发票"
 
 #. module: sale
 #: code:addons/sale/sale.py:284

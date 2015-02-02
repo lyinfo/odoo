@@ -1385,7 +1385,7 @@ msgstr "允許多幣別"
 #. module: account
 #: field:account.config.settings,group_proforma_invoices:0
 msgid "Allow pro-forma invoices"
-msgstr ""
+msgstr "允許預估發票"
 
 #. module: account
 #: field:account.automatic.reconcile,allow_write_off:0
@@ -2091,7 +2091,7 @@ msgstr ""
 #. module: account
 #: model:ir.filters,name:account.filter_invoice_product_category
 msgid "By Product Category"
-msgstr ""
+msgstr "按產品類別"
 
 #. module: account
 #: model:ir.filters,name:account.filter_invoice_refund
@@ -2171,7 +2171,7 @@ msgstr ""
 #. module: account
 #: view:account.move:account.view_move_form
 msgid "Cancel Entry"
-msgstr ""
+msgstr "取消"
 
 #. module: account
 #: view:account.open.closed.fiscalyear:account.view_account_open_closed_fiscalyear
@@ -2198,7 +2198,7 @@ msgstr "取消選擇的發票"
 #. module: account
 #: view:account.bank.statement:account.view_bank_statement_form
 msgid "Cancel Statement"
-msgstr ""
+msgstr "取消"
 
 #. module: account
 #: model:ir.model,name:account.model_account_invoice_cancel
@@ -2365,7 +2365,7 @@ msgstr ""
 #. module: account
 #: view:product.template:account.product_template_search_view
 msgid "Category"
-msgstr ""
+msgstr "產品類別"
 
 #. module: account
 #: view:account.invoice.report:account.view_account_invoice_report_search
@@ -3505,7 +3505,7 @@ msgstr "客戶發票"
 #. module: account
 #: field:res.partner,property_payment_term:0
 msgid "Customer Payment Term"
-msgstr ""
+msgstr "客戶付款條件"
 
 #. module: account
 #: selection:account.invoice,type:0
@@ -3991,12 +3991,12 @@ msgstr "計算截至日期"
 #: view:account.invoice:account.view_account_invoice_filter
 #: view:account.invoice.report:account.view_account_invoice_report_search
 msgid "Due Month"
-msgstr ""
+msgstr "完成月份"
 
 #. module: account
 #: model:ir.actions.report.xml,name:account.action_report_print_overdue
 msgid "Due Payments"
-msgstr ""
+msgstr "已完成付款"
 
 #. module: account
 #: field:account.move.line,date_maturity:0
@@ -5363,7 +5363,7 @@ msgstr "若您希望在開帳/關賬時，日記帳可以被控管，請勾選�
 #: model:account.payment.term,name:account.account_payment_term_immediate
 #: model:account.payment.term,note:account.account_payment_term_immediate
 msgid "Immediate Payment"
-msgstr ""
+msgstr "直接付款"
 
 #. module: account
 #: view:account.statement.from.invoice.lines:account.view_account_statement_from_invoice_lines
@@ -5514,7 +5514,7 @@ msgstr "Int.Type"
 #. module: account
 #: view:product.template:account.product_template_form_view
 msgid "Internal Category"
-msgstr ""
+msgstr "產品類別"
 
 #. module: account
 #: field:account.tax.template,description:0
@@ -6480,17 +6480,17 @@ msgstr "主標題 （加粗，下劃線）"
 #. module: account
 #: help:account.config.settings,currency_id:0
 msgid "Main currency of the company."
-msgstr ""
+msgstr "公司的本位幣"
 
 #. module: account
 #: field:account.config.settings,module_account_followup:0
 msgid "Manage customer payment follow-ups"
-msgstr ""
+msgstr "管理客戶付款的後續活動"
 
 #. module: account
 #: field:account.config.settings,module_account_voucher:0
 msgid "Manage customer payments"
-msgstr ""
+msgstr "管理客戶付款"
 
 #. module: account
 #: field:account.config.settings,module_account_payment:0
@@ -6708,7 +6708,7 @@ msgstr "我的分錄"
 #. module: account
 #: view:account.invoice:account.view_account_invoice_filter
 msgid "My Invoices"
-msgstr ""
+msgstr "我的發票"
 
 #. module: account
 #: field:account.account,name:0
@@ -6780,7 +6780,7 @@ msgstr "下一張折讓單號碼"
 #. module: account
 #: field:account.config.settings,sale_sequence_next:0
 msgid "Next invoice number"
-msgstr ""
+msgstr "下一個發票編號"
 
 #. module: account
 #: field:account.config.settings,purchase_refund_sequence_next:0
@@ -7504,7 +7504,7 @@ msgstr "付款日期"
 #. module: account
 #: field:account.invoice,reference_type:0
 msgid "Payment Reference"
-msgstr ""
+msgstr "付款單號"
 
 #. module: account
 #: field:account.invoice.report,payment_term:0
@@ -7920,7 +7920,7 @@ msgstr "產品"
 #. module: account
 #: model:ir.model,name:account.model_product_category
 msgid "Product Category"
-msgstr "產品分類"
+msgstr "產品類別"
 
 #. module: account
 #: view:account.analytic.line:account.account_analytic_line_extended_form
@@ -8559,7 +8559,7 @@ msgstr ""
 #: view:account.invoice:account.invoice_supplier_form
 #: view:account.invoice:account.invoice_tree
 msgid "Responsible"
-msgstr "Responsible"
+msgstr "責任人"
 
 #. module: account
 #: selection:account.financial.report,sign:0
@@ -8946,12 +8946,12 @@ msgstr "以電子郵件傳送"
 #. module: account
 #: field:account.config.settings,module_product_email_template:0
 msgid "Send products tools and information at the invoice confirmation"
-msgstr ""
+msgstr "在發票確認時，發送產品相關信息"
 
 #. module: account
 #: field:account.invoice,sent:0
 msgid "Sent"
-msgstr ""
+msgstr "已發送"
 
 #. module: account
 #: selection:report.account.sales,month:0
@@ -9323,7 +9323,7 @@ msgstr "統計"
 #: field:account.subscription,state:0
 #: field:report.invoice.created,state:0
 msgid "Status"
-msgstr ""
+msgstr "狀態"
 
 #. module: account
 #: view:website:account.report_overdue_document
@@ -9393,7 +9393,7 @@ msgstr "供應商發票"
 #. module: account
 #: field:account.invoice,supplier_invoice_number:0
 msgid "Supplier Invoice Number"
-msgstr ""
+msgstr "供應商發票號碼"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_invoice_tree2
