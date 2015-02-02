@@ -110,7 +110,7 @@ msgstr " 装箱序列"
 #: code:addons/stock/stock.py:3501
 #, python-format
 msgid " Sequence picking"
-msgstr "拣货单序列"
+msgstr " 分拣序列"
 
 #. module: stock
 #: field:stock.inventory,move_ids_exist:0
@@ -148,10 +148,8 @@ msgid ""
 "* Done: When the shipment is processed, the state is 'Done'."
 msgstr ""
 "* 新建: 当移库被创建还没被确实时。\n"
-"* 等待另外的移库: 当需要等待另外一个移库完成时，出现该状态。例如：链式物"
-"流。\n"
-"* 等待可用: 当补货还不能被直接了当地解决时，出现该状态。可能需要等调度程序被"
-"运行，有个部件在制造等等...\n"
+"* 等待另外的移库: 当需要等待另外一个移库完成时，出现该状态。例如：链式物流。\n"
+"* 等待可用: 当补货还不能被直接了当地解决时，出现该状态。可能需要等调度程序被运行，有个部件在制造等等...\n"
 "* 可用: 当产品被保留，状态就被设置为 可用。\n"
 "* 完成: 当装运处理好，状态就是“完成”。"
 
@@ -225,8 +223,7 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                单击新增一个产品的发货单。\n"
 "              </p><p>\n"
-"                你在此处会发现该产品相关的所有调拨历史，以及所有你需要发货给"
-"客户的产品。\n"
+"                你在此处会发现该产品相关的所有调拨历史，以及所有你需要发货给客户的产品。\n"
 "              </p>\n"
 "            "
 
@@ -409,9 +406,8 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                单击开始一次盘点。\n"
 "              </p><p>\n"
-"                定期盘点通常用于清点每个库位的商品数量。你可以每年定期使用本"
-"功能一次来做总体盘点，也可以在任何你需要的时候进行以便符合当前某个产品的存量"
-"级别。\n"
+"                "
+"定期盘点通常用于清点每个库位的商品数量。你可以每年定期使用本功能一次来做总体盘点，也可以在任何你需要的时候进行以便符合当前某个产品的存量级别。\n"
 "              </p>\n"
 "            "
 
@@ -429,10 +425,10 @@ msgstr ""
 
 #. module: stock
 #. openerp-web
-#: code:addons/stock/static/src/js/widgets.js:656
+#: code:addons/stock/static/src/js/widgets.js:654
 #, python-format
 msgid "<p>We could not find a picking to display.</p>"
-msgstr "<p>找不到要显示的拣货单。</p>"
+msgstr "<p>找不到要显示的分拣。</p>"
 
 #. module: stock
 #: code:addons/stock/stock.py:2556
@@ -441,9 +437,12 @@ msgid "A Pack"
 msgstr ""
 
 #. module: stock
-#: field:report.stock.lines.date,active:0 field:stock.incoterms,active:0
-#: field:stock.location,active:0 field:stock.location.path,active:0
-#: field:stock.location.route,active:0 field:stock.picking.type,active:0
+#: field:report.stock.lines.date,active:0
+#: field:stock.incoterms,active:0
+#: field:stock.location,active:0
+#: field:stock.location.path,active:0
+#: field:stock.location.route,active:0
+#: field:stock.picking.type,active:0
 #: field:stock.warehouse.orderpoint,active:0
 msgid "Active"
 msgstr "有效"
@@ -464,7 +463,8 @@ msgid "Additional Info"
 msgstr "附加信息"
 
 #. module: stock
-#: view:stock.location:stock.view_location_form field:stock.location,comment:0
+#: view:stock.location:stock.view_location_form
+#: field:stock.location,comment:0
 msgid "Additional Information"
 msgstr "附加信息"
 
@@ -577,9 +577,7 @@ msgstr "应用"
 msgid ""
 "As an example, a decimal precision of 2 will allow weights like: 9.99 kg, "
 "whereas a decimal precision of 4 will allow weights like:  0.0231 kg."
-msgstr ""
-"作为一个例子，十进制精度为2允许重量是这样的：9.99千克，而一个十进制精度为4，"
-"将允许重量是这样的，如：0.0231千克。"
+msgstr "作为一个例子，十进制精度为2允许重量是这样的：9.99千克，而一个十进制精度为4，将允许重量是这样的，如：0.0231千克。"
 
 #. module: stock
 #: view:make.procurement:stock.view_make_procurment_wizard
@@ -597,7 +595,8 @@ msgid "Assigned Moves"
 msgstr ""
 
 #. module: stock
-#: field:stock.location.path,auto:0 selection:stock.location.path,auto:0
+#: field:stock.location.path,auto:0
+#: selection:stock.location.path,auto:0
 msgid "Automatic Move"
 msgstr "自动流转"
 
@@ -627,7 +626,8 @@ msgid "Available Products"
 msgstr "可用产品"
 
 #. module: stock
-#: field:stock.move,backorder_id:0 field:stock.picking,backorder_id:0
+#: field:stock.move,backorder_id:0
+#: field:stock.picking,backorder_id:0
 msgid "Back Order of"
 msgstr "延交"
 
@@ -635,7 +635,7 @@ msgstr "延交"
 #: code:addons/stock/stock.py:952
 #, python-format
 msgid "Back order <em>%s</em> <b>created</b>."
-msgstr "延交 <em>%s</em> <b>已创建</b>。"
+msgstr "退货单 <em>%s</em> <b>已创建</b>。"
 
 #. module: stock
 #: code:addons/stock/stock.py:4193
@@ -763,7 +763,8 @@ msgid "Cancel Transfer"
 msgstr "取消流转"
 
 #. module: stock
-#: selection:stock.inventory,state:0 selection:stock.move,state:0
+#: selection:stock.inventory,state:0
+#: selection:stock.move,state:0
 #: selection:stock.picking,state:0
 msgid "Cancelled"
 msgstr "已取消"
@@ -869,14 +870,19 @@ msgid "Companies"
 msgstr "公司"
 
 #. module: stock
-#: field:stock.config.settings,company_id:0 field:stock.inventory,company_id:0
-#: field:stock.inventory.line,company_id:0 field:stock.location,company_id:0
+#: field:stock.config.settings,company_id:0
+#: field:stock.inventory,company_id:0
+#: field:stock.inventory.line,company_id:0
+#: field:stock.location,company_id:0
 #: field:stock.location.path,company_id:0
-#: field:stock.location.route,company_id:0 field:stock.move,company_id:0
-#: field:stock.picking,company_id:0 view:stock.quant:stock.quant_search_view
+#: field:stock.location.route,company_id:0
+#: field:stock.move,company_id:0
+#: field:stock.picking,company_id:0
+#: view:stock.quant:stock.quant_search_view
 #: field:stock.quant,company_id:0
 #: view:stock.quant.package:stock.quant_package_search_view
-#: field:stock.quant.package,company_id:0 field:stock.warehouse,company_id:0
+#: field:stock.quant.package,company_id:0
+#: field:stock.warehouse,company_id:0
 #: field:stock.warehouse.orderpoint,company_id:0
 msgid "Company"
 msgstr "公司"
@@ -1007,18 +1013,25 @@ msgstr "创建补货"
 #. module: stock
 #: field:make.procurement,create_uid:0
 #: field:procurement.orderpoint.compute,create_uid:0
-#: field:product.putaway,create_uid:0 field:product.removal,create_uid:0
+#: field:product.putaway,create_uid:0
+#: field:product.removal,create_uid:0
 #: field:stock.change.product.qty,create_uid:0
 #: field:stock.config.settings,create_uid:0
 #: field:stock.fixed.putaway.strat,create_uid:0
-#: field:stock.incoterms,create_uid:0 field:stock.inventory,create_uid:0
-#: field:stock.inventory.line,create_uid:0 field:stock.location,create_uid:0
+#: field:stock.incoterms,create_uid:0
+#: field:stock.inventory,create_uid:0
+#: field:stock.inventory.line,create_uid:0
+#: field:stock.location,create_uid:0
 #: field:stock.location.path,create_uid:0
-#: field:stock.location.route,create_uid:0 field:stock.move,create_uid:0
+#: field:stock.location.route,create_uid:0
+#: field:stock.move,create_uid:0
 #: field:stock.move.operation.link,create_uid:0
-#: field:stock.move.scrap,create_uid:0 field:stock.pack.operation,create_uid:0
-#: field:stock.picking,create_uid:0 field:stock.picking.type,create_uid:0
-#: field:stock.production.lot,create_uid:0 field:stock.quant,create_uid:0
+#: field:stock.move.scrap,create_uid:0
+#: field:stock.pack.operation,create_uid:0
+#: field:stock.picking,create_uid:0
+#: field:stock.picking.type,create_uid:0
+#: field:stock.production.lot,create_uid:0
+#: field:stock.quant,create_uid:0
 #: field:stock.quant.package,create_uid:0
 #: field:stock.return.picking,create_uid:0
 #: field:stock.return.picking.line,create_uid:0
@@ -1032,17 +1045,21 @@ msgstr "创建者"
 #. module: stock
 #: field:make.procurement,create_date:0
 #: field:procurement.orderpoint.compute,create_date:0
-#: field:product.putaway,create_date:0 field:product.removal,create_date:0
+#: field:product.putaway,create_date:0
+#: field:product.removal,create_date:0
 #: field:stock.change.product.qty,create_date:0
 #: field:stock.config.settings,create_date:0
 #: field:stock.fixed.putaway.strat,create_date:0
-#: field:stock.incoterms,create_date:0 field:stock.inventory,create_date:0
-#: field:stock.inventory.line,create_date:0 field:stock.location,create_date:0
+#: field:stock.incoterms,create_date:0
+#: field:stock.inventory,create_date:0
+#: field:stock.inventory.line,create_date:0
+#: field:stock.location,create_date:0
 #: field:stock.location.path,create_date:0
 #: field:stock.location.route,create_date:0
 #: field:stock.move.operation.link,create_date:0
 #: field:stock.move.scrap,create_date:0
-#: field:stock.pack.operation,create_date:0 field:stock.picking,create_date:0
+#: field:stock.pack.operation,create_date:0
+#: field:stock.picking,create_date:0
 #: field:stock.picking.type,create_date:0
 #: field:stock.quant.package,create_date:0
 #: field:stock.return.picking,create_date:0
@@ -1060,8 +1077,10 @@ msgid "Creation"
 msgstr "创建"
 
 #. module: stock
-#: field:stock.move,create_date:0 field:stock.picking,date:0
-#: field:stock.production.lot,create_date:0 field:stock.quant,create_date:0
+#: field:stock.move,create_date:0
+#: field:stock.picking,date:0
+#: field:stock.production.lot,create_date:0
+#: field:stock.quant,create_date:0
 msgid "Creation Date"
 msgstr "创建日期"
 
@@ -1152,8 +1171,10 @@ msgid "Customers"
 msgstr "客户"
 
 #. module: stock
-#: view:stock.move:stock.stock_move_tree field:stock.move,date:0
-#: field:stock.pack.operation,date:0 field:stock.transfer_details_items,date:0
+#: view:stock.move:stock.stock_move_tree
+#: field:stock.move,date:0
+#: field:stock.pack.operation,date:0
+#: field:stock.transfer_details_items,date:0
 #: view:website:stock.report_inventory
 msgid "Date"
 msgstr "日期"
@@ -1312,7 +1333,7 @@ msgid "Delete"
 msgstr "删除"
 
 #. module: stock
-#: code:addons/stock/product.py:264
+#: code:addons/stock/product.py:259
 #, python-format
 msgid "Delivered Qty"
 msgstr "已配送数量"
@@ -1365,7 +1386,8 @@ msgid "Description"
 msgstr "说明"
 
 #. module: stock
-#: view:stock.move:stock.view_move_form view:stock.move:stock.view_move_search
+#: view:stock.move:stock.view_move_form
+#: view:stock.move:stock.view_move_search
 #: view:website:stock.report_picking
 msgid "Destination"
 msgstr "目的库位"
@@ -1385,7 +1407,8 @@ msgid "Destination Location"
 msgstr "目标库位"
 
 #. module: stock
-#: field:procurement.order,move_dest_id:0 field:stock.move,move_dest_id:0
+#: field:procurement.order,move_dest_id:0
+#: field:stock.move,move_dest_id:0
 msgid "Destination Move"
 msgstr "调拨目的地"
 
@@ -1429,7 +1452,8 @@ msgid ""
 msgstr ""
 
 #. module: stock
-#: view:stock.move:stock.view_move_search view:stock.move:stock.view_move_tree
+#: view:stock.move:stock.view_move_search
+#: view:stock.move:stock.view_move_tree
 #: view:stock.move:stock.view_move_tree_receipt_picking
 #: selection:stock.move,state:0
 #: view:stock.picking:stock.view_picking_internal_search
@@ -1637,37 +1661,37 @@ msgid "Full Lots Traceability"
 msgstr "完全批次跟踪"
 
 #. module: stock
-#: code:addons/stock/product.py:262
+#: code:addons/stock/product.py:257
 #, python-format
 msgid "Future Deliveries"
 msgstr "未来送货"
 
 #. module: stock
-#: code:addons/stock/product.py:268
+#: code:addons/stock/product.py:263
 #, python-format
 msgid "Future P&L"
 msgstr "未来的产品和库位"
 
 #. module: stock
-#: code:addons/stock/product.py:280
+#: code:addons/stock/product.py:275
 #, python-format
 msgid "Future Productions"
 msgstr "未来生产"
 
 #. module: stock
-#: code:addons/stock/product.py:274
+#: code:addons/stock/product.py:269
 #, python-format
 msgid "Future Qty"
 msgstr "未来数量"
 
 #. module: stock
-#: code:addons/stock/product.py:252
+#: code:addons/stock/product.py:247
 #, python-format
 msgid "Future Receipts"
 msgstr "未来收货"
 
 #. module: stock
-#: code:addons/stock/product.py:258
+#: code:addons/stock/product.py:253
 #, python-format
 msgid "Future Stock"
 msgstr "未来库存"
@@ -1745,24 +1769,37 @@ msgstr "层(Z)"
 msgid ""
 "Holds the Chatter summary (number of messages, ...). This summary is "
 "directly in html format in order to be inserted in kanban views."
-msgstr ""
-"保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
+msgstr "保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
 
 #. module: stock
-#: field:make.procurement,id:0 field:procurement.orderpoint.compute,id:0
-#: field:product.putaway,id:0 field:product.removal,id:0
-#: field:report.stock.lines.date,id:0 field:stock.change.product.qty,id:0
-#: field:stock.config.settings,id:0 field:stock.fixed.putaway.strat,id:0
-#: field:stock.incoterms,id:0 field:stock.inventory,id:0
-#: field:stock.inventory.line,id:0 field:stock.location,id:0
-#: field:stock.location.path,id:0 field:stock.location.route,id:0
-#: field:stock.move,id:0 field:stock.move.operation.link,id:0
-#: field:stock.move.scrap,id:0 field:stock.pack.operation,id:0
-#: field:stock.picking,id:0 field:stock.picking.type,id:0
-#: field:stock.production.lot,id:0 field:stock.quant,id:0
-#: field:stock.quant.package,id:0 field:stock.return.picking,id:0
-#: field:stock.return.picking.line,id:0 field:stock.transfer_details,id:0
-#: field:stock.transfer_details_items,id:0 field:stock.warehouse,id:0
+#: field:make.procurement,id:0
+#: field:procurement.orderpoint.compute,id:0
+#: field:product.putaway,id:0
+#: field:product.removal,id:0
+#: field:report.stock.lines.date,id:0
+#: field:stock.change.product.qty,id:0
+#: field:stock.config.settings,id:0
+#: field:stock.fixed.putaway.strat,id:0
+#: field:stock.incoterms,id:0
+#: field:stock.inventory,id:0
+#: field:stock.inventory.line,id:0
+#: field:stock.location,id:0
+#: field:stock.location.path,id:0
+#: field:stock.location.route,id:0
+#: field:stock.move,id:0
+#: field:stock.move.operation.link,id:0
+#: field:stock.move.scrap,id:0
+#: field:stock.pack.operation,id:0
+#: field:stock.picking,id:0
+#: field:stock.picking.type,id:0
+#: field:stock.production.lot,id:0
+#: field:stock.quant,id:0
+#: field:stock.quant.package,id:0
+#: field:stock.return.picking,id:0
+#: field:stock.return.picking.line,id:0
+#: field:stock.transfer_details,id:0
+#: field:stock.transfer_details_items,id:0
+#: field:stock.warehouse,id:0
 #: field:stock.warehouse.orderpoint,id:0
 msgid "ID"
 msgstr "标识"
@@ -1910,7 +1947,8 @@ msgid ""
 msgstr ""
 
 #. module: stock
-#: field:product.product,incoming_qty:0 field:product.template,incoming_qty:0
+#: field:product.product,incoming_qty:0
+#: field:product.template,incoming_qty:0
 msgid "Incoming"
 msgstr "计划入库"
 
@@ -2070,8 +2108,10 @@ msgstr "已盘点月份"
 #. module: stock
 #: model:ir.actions.report.xml,name:stock.action_report_inventory
 #: model:ir.model,name:stock.model_stock_inventory
-#: field:stock.inventory.line,inventory_id:0 selection:stock.location,usage:0
-#: field:stock.move,inventory_id:0 view:website:stock.report_inventory
+#: field:stock.inventory.line,inventory_id:0
+#: selection:stock.location,usage:0
+#: field:stock.move,inventory_id:0
+#: view:website:stock.report_inventory
 msgid "Inventory"
 msgstr "盘点"
 
@@ -2217,18 +2257,25 @@ msgstr "最新消息日期"
 #. module: stock
 #: field:make.procurement,write_uid:0
 #: field:procurement.orderpoint.compute,write_uid:0
-#: field:product.putaway,write_uid:0 field:product.removal,write_uid:0
+#: field:product.putaway,write_uid:0
+#: field:product.removal,write_uid:0
 #: field:stock.change.product.qty,write_uid:0
 #: field:stock.config.settings,write_uid:0
 #: field:stock.fixed.putaway.strat,write_uid:0
-#: field:stock.incoterms,write_uid:0 field:stock.inventory,write_uid:0
-#: field:stock.inventory.line,write_uid:0 field:stock.location,write_uid:0
+#: field:stock.incoterms,write_uid:0
+#: field:stock.inventory,write_uid:0
+#: field:stock.inventory.line,write_uid:0
+#: field:stock.location,write_uid:0
 #: field:stock.location.path,write_uid:0
-#: field:stock.location.route,write_uid:0 field:stock.move,write_uid:0
+#: field:stock.location.route,write_uid:0
+#: field:stock.move,write_uid:0
 #: field:stock.move.operation.link,write_uid:0
-#: field:stock.move.scrap,write_uid:0 field:stock.pack.operation,write_uid:0
-#: field:stock.picking,write_uid:0 field:stock.picking.type,write_uid:0
-#: field:stock.production.lot,write_uid:0 field:stock.quant,write_uid:0
+#: field:stock.move.scrap,write_uid:0
+#: field:stock.pack.operation,write_uid:0
+#: field:stock.picking,write_uid:0
+#: field:stock.picking.type,write_uid:0
+#: field:stock.production.lot,write_uid:0
+#: field:stock.quant,write_uid:0
 #: field:stock.quant.package,write_uid:0
 #: field:stock.return.picking,write_uid:0
 #: field:stock.return.picking.line,write_uid:0
@@ -2242,18 +2289,25 @@ msgstr "最近更新者"
 #. module: stock
 #: field:make.procurement,write_date:0
 #: field:procurement.orderpoint.compute,write_date:0
-#: field:product.putaway,write_date:0 field:product.removal,write_date:0
+#: field:product.putaway,write_date:0
+#: field:product.removal,write_date:0
 #: field:stock.change.product.qty,write_date:0
 #: field:stock.config.settings,write_date:0
 #: field:stock.fixed.putaway.strat,write_date:0
-#: field:stock.incoterms,write_date:0 field:stock.inventory,write_date:0
-#: field:stock.inventory.line,write_date:0 field:stock.location,write_date:0
+#: field:stock.incoterms,write_date:0
+#: field:stock.inventory,write_date:0
+#: field:stock.inventory.line,write_date:0
+#: field:stock.location,write_date:0
 #: field:stock.location.path,write_date:0
-#: field:stock.location.route,write_date:0 field:stock.move,write_date:0
+#: field:stock.location.route,write_date:0
+#: field:stock.move,write_date:0
 #: field:stock.move.operation.link,write_date:0
-#: field:stock.move.scrap,write_date:0 field:stock.pack.operation,write_date:0
-#: field:stock.picking,write_date:0 field:stock.picking.type,write_date:0
-#: field:stock.production.lot,write_date:0 field:stock.quant,write_date:0
+#: field:stock.move.scrap,write_date:0
+#: field:stock.pack.operation,write_date:0
+#: field:stock.picking,write_date:0
+#: field:stock.picking.type,write_date:0
+#: field:stock.production.lot,write_date:0
+#: field:stock.quant,write_date:0
 #: field:stock.quant.package,write_date:0
 #: field:stock.return.picking,write_date:0
 #: field:stock.return.picking.line,write_date:0
@@ -2289,7 +2343,8 @@ msgid "Latest Inventories & Moves"
 msgstr "最近的盘点与调拨"
 
 #. module: stock
-#: field:stock.location,parent_left:0 field:stock.quant.package,parent_left:0
+#: field:stock.location,parent_left:0
+#: field:stock.quant.package,parent_left:0
 msgid "Left Parent"
 msgstr "左父项"
 
@@ -2333,8 +2388,10 @@ msgstr "本地化"
 #: field:stock.change.product.qty,location_id:0
 #: field:stock.fixed.putaway.strat,fixed_location_id:0
 #: field:stock.inventory.line,location_id:0
-#: view:stock.move:stock.view_move_search field:stock.move.scrap,location_id:0
-#: field:stock.picking,location_id:0 view:stock.quant:stock.quant_search_view
+#: view:stock.move:stock.view_move_search
+#: field:stock.move.scrap,location_id:0
+#: field:stock.picking,location_id:0
+#: view:stock.quant:stock.quant_search_view
 #: field:stock.quant,location_id:0
 #: view:stock.quant.package:stock.quant_package_search_view
 #: field:stock.quant.package,location_id:0
@@ -2361,7 +2418,8 @@ msgstr "库位条码"
 
 #. module: stock
 #: field:stock.inventory.line,location_name:0
-#: field:stock.location,complete_name:0 field:stock.location,name:0
+#: field:stock.location,complete_name:0
+#: field:stock.location,name:0
 msgid "Location Name"
 msgstr "库位名称"
 
@@ -2417,9 +2475,10 @@ msgid "Logistics"
 msgstr "物流"
 
 #. module: stock
-#: field:stock.move,restrict_lot_id:0 field:stock.move.scrap,restrict_lot_id:0
-#: view:stock.quant:stock.quant_search_view field:stock.quant,lot_id:0
-#: view:stock.transfer_details:stock.view_stock_enter_transfer_details
+#: field:stock.move,restrict_lot_id:0
+#: field:stock.move.scrap,restrict_lot_id:0
+#: view:stock.quant:stock.quant_search_view
+#: field:stock.quant,lot_id:0
 #: view:website:stock.report_lot_barcode
 #: view:website:stock.report_package_barcode
 msgid "Lot"
@@ -2563,23 +2622,27 @@ msgid "Menu"
 msgstr "菜单"
 
 #. module: stock
-#: field:stock.picking,message_ids:0 field:stock.production.lot,message_ids:0
+#: field:stock.picking,message_ids:0
+#: field:stock.production.lot,message_ids:0
 msgid "Messages"
 msgstr "消息"
 
 #. module: stock
-#: help:stock.picking,message_ids:0 help:stock.production.lot,message_ids:0
+#: help:stock.picking,message_ids:0
+#: help:stock.production.lot,message_ids:0
 msgid "Messages and communication history"
 msgstr "消息和通信记录"
 
 #. module: stock
-#: field:product.putaway,method:0 field:product.removal,method:0
+#: field:product.putaway,method:0
+#: field:product.removal,method:0
 msgid "Method"
 msgstr "方法"
 
 #. module: stock
 #: field:res.company,propagation_minimum_delta:0
-msgid "Minimum Delta for Propagation of a Date Change on moves linked together"
+msgid ""
+"Minimum Delta for Propagation of a Date Change on moves linked together"
 msgstr ""
 
 #. module: stock
@@ -2645,8 +2708,7 @@ msgstr "调拨供应方法"
 msgid ""
 "Move date: scheduled date until move is done, then date of actual move "
 "processing"
-msgstr ""
-"调拨日期: 安排的日期直到调拨完成的日期，这日期是调拨实际处理完成的日期."
+msgstr "调拨日期: 安排的日期直到调拨完成的日期，这日期是调拨实际处理完成的日期."
 
 #. module: stock
 #: help:procurement.order,move_dest_id:0
@@ -2663,7 +2725,8 @@ msgstr "已处理的库存量"
 #: field:procurement.order,move_ids:0
 #: view:product.product:stock.product_form_view_procurement_button
 #: view:product.template:stock.product_template_form_view_procurement_button
-#: view:stock.move:stock.stock_move_tree view:stock.move:stock.view_move_tree
+#: view:stock.move:stock.stock_move_tree
+#: view:stock.move:stock.view_move_tree
 #: view:stock.move:stock.view_move_tree_receipt_picking
 #: view:stock.move:stock.view_move_tree_receipt_picking_board
 #: field:stock.quant,history_ids:0
@@ -2702,8 +2765,10 @@ msgid "Moving Options"
 msgstr "调拨选项"
 
 #. module: stock
-#: field:product.putaway,name:0 field:product.removal,name:0
-#: field:stock.incoterms,name:0 field:stock.picking.type,complete_name:0
+#: field:product.putaway,name:0
+#: field:product.removal,name:0
+#: field:stock.incoterms,name:0
+#: field:stock.picking.type,complete_name:0
 #: field:stock.warehouse.orderpoint,name:0
 msgid "Name"
 msgstr "名称"
@@ -2747,7 +2812,7 @@ msgstr ""
 
 #. module: stock
 #. openerp-web
-#: code:addons/stock/static/src/js/widgets.js:649
+#: code:addons/stock/static/src/js/widgets.js:647
 #, python-format
 msgid "No Picking Available"
 msgstr "无可用操作"
@@ -2784,17 +2849,20 @@ msgid "Non European Customers"
 msgstr "非欧洲客户"
 
 #. module: stock
-#: selection:stock.move,priority:0 selection:stock.picking,priority:0
+#: selection:stock.move,priority:0
+#: selection:stock.picking,priority:0
 msgid "Normal"
-msgstr "正常"
+msgstr ""
 
 #. module: stock
-#: selection:stock.move,priority:0 selection:stock.picking,priority:0
+#: selection:stock.move,priority:0
+#: selection:stock.picking,priority:0
 msgid "Not urgent"
 msgstr "不紧急"
 
 #. module: stock
-#: view:stock.inventory:stock.view_inventory_form field:stock.move,note:0
+#: view:stock.inventory:stock.view_inventory_form
+#: field:stock.move,note:0
 #: field:stock.picking,note:0
 msgid "Notes"
 msgstr "备注"
@@ -2823,7 +2891,7 @@ msgstr "确定"
 
 #. module: stock
 #. openerp-web
-#: code:addons/stock/static/src/js/widgets.js:651
+#: code:addons/stock/static/src/js/widgets.js:649
 #, python-format
 msgid "Ok"
 msgstr "确定"
@@ -2916,7 +2984,8 @@ msgid ""
 msgstr "送货的可选地址,专门用于配发"
 
 #. module: stock
-#: help:stock.location,posx:0 help:stock.location,posy:0
+#: help:stock.location,posx:0
+#: help:stock.location,posy:0
 #: help:stock.location,posz:0
 msgid "Optional localization details, for information purpose only"
 msgstr "可选库位，仅供参考"
@@ -2983,7 +3052,8 @@ msgid "Out Type"
 msgstr ""
 
 #. module: stock
-#: field:product.product,outgoing_qty:0 field:product.template,outgoing_qty:0
+#: field:product.product,outgoing_qty:0
+#: field:product.template,outgoing_qty:0
 msgid "Outgoing"
 msgstr "出库"
 
@@ -3005,9 +3075,12 @@ msgid "Output Location"
 msgstr "发货库位"
 
 #. module: stock
-#: field:stock.inventory.line,partner_id:0 field:stock.location,partner_id:0
-#: field:stock.pack.operation,owner_id:0 field:stock.picking,owner_id:0
-#: view:stock.quant:stock.quant_search_view field:stock.quant,owner_id:0
+#: field:stock.inventory.line,partner_id:0
+#: field:stock.location,partner_id:0
+#: field:stock.pack.operation,owner_id:0
+#: field:stock.picking,owner_id:0
+#: view:stock.quant:stock.quant_search_view
+#: field:stock.quant,owner_id:0
 #: field:stock.quant.package,owner_id:0
 #: field:stock.transfer_details_items,owner_id:0
 msgid "Owner"
@@ -3030,7 +3103,7 @@ msgid "Owner of the quants"
 msgstr "份的所有者"
 
 #. module: stock
-#: code:addons/stock/product.py:270
+#: code:addons/stock/product.py:265
 #, python-format
 msgid "P&L Qty"
 msgstr "损益数量"
@@ -3054,7 +3127,8 @@ msgid "Pack Type"
 msgstr "包装类型"
 
 #. module: stock
-#: view:stock.quant:stock.quant_search_view field:stock.quant,package_id:0
+#: view:stock.quant:stock.quant_search_view
+#: field:stock.quant,package_id:0
 #: view:stock.quant.package:stock.quant_package_search_view
 #: view:stock.quant.package:stock.view_quant_package_form
 #: view:stock.quant.package:stock.view_quant_package_tree
@@ -3153,13 +3227,15 @@ msgid "Partial"
 msgstr "部分"
 
 #. module: stock
-#: field:stock.move,partially_available:0 selection:stock.picking,state:0
+#: field:stock.move,partially_available:0
+#: selection:stock.picking,state:0
 msgid "Partially Available"
 msgstr "部分可用"
 
 #. module: stock
 #: model:ir.model,name:stock.model_res_partner
-#: field:procurement.group,partner_id:0 view:stock.move:stock.view_move_search
+#: field:procurement.group,partner_id:0
+#: view:stock.move:stock.view_move_search
 #: field:stock.picking,partner_id:0
 msgid "Partner"
 msgstr "业务伙伴"
@@ -3231,7 +3307,8 @@ msgid "Picking Lists"
 msgstr "操作清单"
 
 #. module: stock
-#: field:procurement.rule,picking_type_id:0 field:stock.move,picking_type_id:0
+#: field:procurement.rule,picking_type_id:0
+#: field:stock.move,picking_type_id:0
 #: view:stock.picking:stock.view_picking_internal_search
 #: field:stock.picking,picking_type_id:0
 #: view:stock.picking.type:stock.view_pickingtype_filter
@@ -3373,7 +3450,8 @@ msgid "Print package label"
 msgstr "打印包裹标签"
 
 #. module: stock
-#: field:stock.fixed.putaway.strat,sequence:0 field:stock.move,priority:0
+#: field:stock.fixed.putaway.strat,sequence:0
+#: field:stock.move,priority:0
 #: field:stock.picking,priority:0
 msgid "Priority"
 msgstr "优先级"
@@ -3402,19 +3480,22 @@ msgstr "稍候处理"
 
 #. module: stock
 #: model:ir.model,name:stock.model_procurement_order
-#: selection:stock.location,usage:0 field:stock.move,procurement_id:0
+#: selection:stock.location,usage:0
+#: field:stock.move,procurement_id:0
 msgid "Procurement"
 msgstr "补货"
 
 #. module: stock
 #: field:stock.move,group_id:0
 #: view:stock.picking:stock.view_picking_internal_search
-#: field:stock.picking,group_id:0 field:stock.warehouse.orderpoint,group_id:0
+#: field:stock.picking,group_id:0
+#: field:stock.warehouse.orderpoint,group_id:0
 msgid "Procurement Group"
 msgstr "补货组"
 
 #. module: stock
-#: field:procurement.order,location_id:0 field:procurement.rule,location_id:0
+#: field:procurement.order,location_id:0
+#: field:procurement.rule,location_id:0
 #: field:product.template,property_stock_procurement:0
 msgid "Procurement Location"
 msgstr "补货库位"
@@ -3436,7 +3517,8 @@ msgid "Procurement Requisition"
 msgstr "补货申请"
 
 #. module: stock
-#: model:ir.model,name:stock.model_procurement_rule field:stock.move,rule_id:0
+#: model:ir.model,name:stock.model_procurement_rule
+#: field:stock.move,rule_id:0
 msgid "Procurement Rule"
 msgstr "补货规则"
 
@@ -3452,7 +3534,7 @@ msgid "Procurements"
 msgstr "补货"
 
 #. module: stock
-#: code:addons/stock/product.py:282
+#: code:addons/stock/product.py:277
 #, python-format
 msgid "Produced Qty"
 msgstr "产品数量"
@@ -3465,17 +3547,22 @@ msgstr "产品数量"
 #: field:report.stock.lines.date,product_id:0
 #: field:stock.change.product.qty,product_id:0
 #: field:stock.inventory.line,product_id:0
-#: view:stock.move:stock.view_move_search field:stock.move,product_id:0
-#: field:stock.move.scrap,product_id:0 field:stock.pack.operation,product_id:0
+#: view:stock.move:stock.view_move_search
+#: field:stock.move,product_id:0
+#: field:stock.move.scrap,product_id:0
+#: field:stock.pack.operation,product_id:0
 #: field:stock.picking,product_id:0
 #: view:stock.production.lot:stock.search_product_lot_filter
 #: field:stock.production.lot,product_id:0
-#: view:stock.quant:stock.quant_search_view field:stock.quant,product_id:0
+#: view:stock.quant:stock.quant_search_view
+#: field:stock.quant,product_id:0
 #: field:stock.return.picking.line,product_id:0
 #: field:stock.transfer_details_items,product_id:0
 #: field:stock.warehouse.orderpoint,product_id:0
-#: view:website:stock.report_inventory view:website:stock.report_lot_barcode
-#: view:website:stock.report_package_barcode view:website:stock.report_picking
+#: view:website:stock.report_inventory
+#: view:website:stock.report_lot_barcode
+#: view:website:stock.report_package_barcode
+#: view:website:stock.report_picking
 #, python-format
 msgid "Product"
 msgstr "产品"
@@ -3519,7 +3606,6 @@ msgstr ""
 
 #. module: stock
 #: model:ir.model,name:stock.model_product_template
-#: field:stock.move,product_tmpl_id:0
 msgid "Product Template"
 msgstr "产品模板"
 
@@ -3584,7 +3670,7 @@ msgid "Products by Category"
 msgstr "产品类别"
 
 #. module: stock
-#: code:addons/stock/product.py:60
+#: code:addons/stock/product.py:59
 #, python-format
 msgid "Products: "
 msgstr "产品： "
@@ -3596,7 +3682,8 @@ msgid "Programming Error!"
 msgstr ""
 
 #. module: stock
-#: field:procurement.rule,propagate:0 field:stock.location.path,propagate:0
+#: field:procurement.rule,propagate:0
+#: field:stock.location.path,propagate:0
 #: field:stock.move,propagate:0
 msgid "Propagate cancel and split"
 msgstr "同步取消及拆单"
@@ -3696,18 +3783,21 @@ msgstr ""
 msgid ""
 "Quantities, Units of Measure, Products and Locations cannot be modified on "
 "stock moves that have already been processed (except by the Administrator)."
-msgstr ""
-"已经被处理过的调拨单中，数量，计量单位，产品和库位不能修改（除非是 管理员）"
+msgstr "已经被处理过的调拨单中，数量，计量单位，产品和库位不能修改（除非是 管理员）"
 
 #. module: stock
-#: field:make.procurement,qty:0 field:stock.move,product_qty:0
-#: field:stock.move,product_uom_qty:0 field:stock.move.operation.link,qty:0
+#: field:make.procurement,qty:0
+#: field:stock.move,product_qty:0
+#: field:stock.move,product_uom_qty:0
+#: field:stock.move.operation.link,qty:0
 #: field:stock.move.scrap,product_qty:0
-#: field:stock.pack.operation,product_qty:0 field:stock.quant,qty:0
+#: field:stock.pack.operation,product_qty:0
+#: field:stock.quant,qty:0
 #: field:stock.return.picking.line,quantity:0
 #: field:stock.transfer_details_items,quantity:0
 #: view:website:stock.report_inventory
-#: view:website:stock.report_package_barcode view:website:stock.report_picking
+#: view:website:stock.report_package_barcode
+#: view:website:stock.report_picking
 msgid "Quantity"
 msgstr "数量"
 
@@ -3717,7 +3807,8 @@ msgid "Quantity (UOS)"
 msgstr "数量(销售单位)"
 
 #. module: stock
-#: field:product.template,virtual_available:0 field:stock.move,availability:0
+#: field:product.template,virtual_available:0
+#: field:stock.move,availability:0
 msgid "Quantity Available"
 msgstr "计划库存"
 
@@ -3894,15 +3985,10 @@ msgid "Receive goods directly in stock (1 step)"
 msgstr ""
 
 #. module: stock
-#: code:addons/stock/product.py:254
+#: code:addons/stock/product.py:249
 #, python-format
 msgid "Received Qty"
 msgstr "已接收数量"
-
-#. module: stock
-#: view:stock.picking:stock.view_picking_form
-msgid "Recheck Availability"
-msgstr "重新检查可用"
 
 #. module: stock
 #. openerp-web
@@ -3917,10 +4003,12 @@ msgid "Recompute pack operation?"
 msgstr ""
 
 #. module: stock
-#: view:stock.move:stock.view_move_search view:stock.move:stock.view_move_tree
+#: view:stock.move:stock.view_move_search
+#: view:stock.move:stock.view_move_tree
 #: view:stock.move:stock.view_move_tree_receipt_picking
 #: view:stock.move:stock.view_move_tree_receipt_picking_board
-#: field:stock.move,picking_id:0 field:stock.picking,name:0
+#: field:stock.move,picking_id:0
+#: field:stock.picking,name:0
 msgid "Reference"
 msgstr "相关单号"
 
@@ -3955,22 +4043,8 @@ msgid "Remaining Quantity"
 msgstr ""
 
 #. module: stock
-#: help:stock.move,remaining_qty:0
-msgid ""
-"Remaining Quantity in default UoM according to operations matched with this "
-"move"
-msgstr ""
-
-#. module: stock
 #: view:stock.picking:stock.view_picking_internal_search
 msgid "Remaining parts of picking partially processed"
-msgstr ""
-
-#. module: stock
-#: help:stock.pack.operation,remaining_qty:0
-msgid ""
-"Remaining quantity in default UoM according to moves matched with this "
-"operation. "
 msgstr ""
 
 #. module: stock
@@ -4099,7 +4173,8 @@ msgid "Right Parent"
 msgstr "右父项"
 
 #. module: stock
-#: field:procurement.rule,route_id:0 field:stock.location.path,route_id:0
+#: field:procurement.rule,route_id:0
+#: field:stock.location.path,route_id:0
 #: view:stock.location.route:stock.stock_location_route_form_view
 msgid "Route"
 msgstr "物流路线"
@@ -4123,7 +4198,8 @@ msgstr ""
 #: view:product.template:stock.product_template_form_view_procurement_button
 #: field:product.template,route_ids:0
 #: view:stock.location.route:stock.stock_location_route_tree
-#: view:stock.warehouse:stock.view_warehouse field:stock.warehouse,route_ids:0
+#: view:stock.warehouse:stock.view_warehouse
+#: field:stock.warehouse,route_ids:0
 msgid "Routes"
 msgstr "物流路线"
 
@@ -4160,7 +4236,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/stock/static/src/xml/picking.xml:38
 #, python-format
-msgid "Scan a lot or type it below (leave empty to generate one automatically)"
+msgid ""
+"Scan a lot or type it below (leave empty to generate one automatically)"
 msgstr ""
 
 #. module: stock
@@ -4175,7 +4252,7 @@ msgstr ""
 #: code:addons/stock/static/src/xml/picking.xml:226
 #, python-format
 msgid "Scanned picking could not be found"
-msgstr "找不到扫描的操作"
+msgstr "找不到扫描的分拣"
 
 #. module: stock
 #: view:stock.move:stock.view_move_search
@@ -4183,7 +4260,8 @@ msgid "Scheduled"
 msgstr "计划"
 
 #. module: stock
-#: field:stock.picking,min_date:0 view:website:stock.report_picking
+#: field:stock.picking,min_date:0
+#: view:website:stock.report_picking
 msgid "Scheduled Date"
 msgstr "计划日期"
 
@@ -4281,7 +4359,8 @@ msgstr ""
 #. module: stock
 #: field:stock.location.path,sequence:0
 #: view:stock.location.route:stock.stock_location_route_form_view
-#: field:stock.location.route,sequence:0 field:stock.picking.type,sequence:0
+#: field:stock.location.route,sequence:0
+#: field:stock.picking.type,sequence:0
 msgid "Sequence"
 msgstr "序号"
 
@@ -4291,7 +4370,8 @@ msgstr "序号"
 #: field:stock.inventory.line,prod_lot_id:0
 #: view:stock.production.lot:stock.view_production_lot_form
 #: view:stock.production.lot:stock.view_production_lot_tree
-#: field:stock.production.lot,name:0 field:stock.return.picking.line,lot_id:0
+#: field:stock.production.lot,name:0
+#: field:stock.return.picking.line,lot_id:0
 msgid "Serial Number"
 msgstr "序列号"
 
@@ -4333,9 +4413,7 @@ msgstr "设为草稿"
 msgid ""
 "Sets a location if you produce at a fixed location. This can be a partner "
 "location if you subcontract the manufacturing operations."
-msgstr ""
-"如果您的产品在一个固定的库位设置一个库位,如果您转包生产这可以是业务伙伴的库"
-"位."
+msgstr "如果您的产品在一个固定的库位设置一个库位,如果您转包生产这可以是业务伙伴的库位."
 
 #. module: stock
 #: view:stock.transfer_details:stock.view_stock_enter_transfer_details
@@ -4391,7 +4469,8 @@ msgid "Small Refrigerator"
 msgstr "小型冷藏库"
 
 #. module: stock
-#: view:stock.move:stock.view_move_search field:stock.move,origin:0
+#: view:stock.move:stock.view_move_search
+#: field:stock.move,origin:0
 #: view:website:stock.report_picking
 msgid "Source"
 msgstr "源"
@@ -4403,7 +4482,8 @@ msgstr "源单据"
 
 #. module: stock
 #: field:procurement.rule,location_src_id:0
-#: field:stock.location.path,location_from_id:0 field:stock.move,location_id:0
+#: field:stock.location.path,location_from_id:0
+#: field:stock.move,location_id:0
 #: field:stock.pack.operation,location_id:0
 #: field:stock.transfer_details_items,sourceloc_id:0
 msgid "Source Location"
@@ -4463,8 +4543,10 @@ msgstr "状态"
 
 #. module: stock
 #: view:stock.inventory:stock.view_inventory_filter
-#: field:stock.inventory,state:0 field:stock.inventory.line,state:0
-#: view:stock.move:stock.view_move_search field:stock.move,state:0
+#: field:stock.inventory,state:0
+#: field:stock.inventory.line,state:0
+#: view:stock.move:stock.view_move_search
+#: field:stock.move,state:0
 #: view:stock.picking:stock.view_picking_internal_search
 #: field:stock.picking,state:0
 msgid "Status"
@@ -4712,8 +4794,7 @@ msgid ""
 "The average delay in days between the confirmation of the customer order and "
 "the delivery of the finished products. It's the time you promise to your "
 "customers."
-msgstr ""
-"在客户订单确认和完工产品交付之间的平均的延期日子。这是你承诺给客户的日期。"
+msgstr "在客户订单确认和完工产品交付之间的平均的延期日子。这是你承诺给客户的日期。"
 
 #. module: stock
 #: sql_constraint:stock.location:0
@@ -4870,8 +4951,6 @@ msgid ""
 "different of the warehouse this rule is for (e.g for resupplying rules from "
 "another warehouse)"
 msgstr ""
-"在创建新的调拨或补充货时传递一个不同于当前规则的仓库(例如：为其他仓库提供补"
-"给）"
 
 #. module: stock
 #: field:stock.inventory.line,theoretical_qty:0
@@ -4938,8 +5017,7 @@ msgid ""
 "this quantity on assigned moves affects the product reservation, and should "
 "be done with care."
 msgstr ""
-"这是一个库存点的产品数量。对于状态为“完成”的调拨单，这就是真正完成了调拨的产"
-"品数量。对于其它调拨单，就是计划进行调拨的数量。降低这个数量不会生成延期交货"
+"这是一个库存点的产品数量。对于状态为“完成”的调拨单，这就是真正完成了调拨的产品数量。对于其它调拨单，就是计划进行调拨的数量。降低这个数量不会生成延期交货"
 "单。改变这个指定的调拨数量将影响产品预订，应该慎之又慎。"
 
 #. module: stock
@@ -5006,8 +5084,7 @@ msgstr "该库位将被使用以替换默认的，同样的，库存调拨的源
 msgid ""
 "This stock location will be used, instead of the default one, as the source "
 "location for stock moves generated when you do an inventory."
-msgstr ""
-"该库位将被使用以替换默认的，同样当你做盘点时，库存调拨的源库位将被生成。"
+msgstr "该库位将被使用以替换默认的，同样当你做盘点时，库存调拨的源库位将被生成。"
 
 #. module: stock
 #: help:stock.config.settings,group_stock_tracking_owner:0
@@ -5224,7 +5301,7 @@ msgid "Unpack"
 msgstr "拆包"
 
 #. module: stock
-#: code:addons/stock/product.py:276
+#: code:addons/stock/product.py:271
 #, python-format
 msgid "Unplanned Qty"
 msgstr "计划外数量"
@@ -5238,7 +5315,7 @@ msgstr "未读消息"
 #. module: stock
 #: view:stock.picking:stock.view_picking_form
 msgid "Unreserve"
-msgstr "取消保留"
+msgstr ""
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_view_change_product_quantity
@@ -5247,7 +5324,8 @@ msgid "Update Product Quantity"
 msgstr "更新产品数量"
 
 #. module: stock
-#: selection:stock.move,priority:0 selection:stock.picking,priority:0
+#: selection:stock.move,priority:0
+#: selection:stock.picking,priority:0
 msgid "Urgent"
 msgstr "紧急"
 
@@ -5311,7 +5389,8 @@ msgid "Validated"
 msgstr "已验证"
 
 #. module: stock
-#: selection:stock.move,priority:0 selection:stock.picking,priority:0
+#: selection:stock.move,priority:0
+#: selection:stock.picking,priority:0
 msgid "Very Urgent"
 msgstr "非常紧急"
 
@@ -5369,8 +5448,10 @@ msgstr "等待调拨"
 #: model:ir.ui.menu,name:stock.menu_stock_root
 #: model:ir.ui.menu,name:stock.next_id_61
 #: field:make.procurement,warehouse_id:0
-#: field:procurement.order,warehouse_id:0 field:product.product,warehouse_id:0
-#: field:stock.location.path,warehouse_id:0 field:stock.move,warehouse_id:0
+#: field:procurement.order,warehouse_id:0
+#: field:product.product,warehouse_id:0
+#: field:stock.location.path,warehouse_id:0
+#: field:stock.move,warehouse_id:0
 #: field:stock.picking.type,warehouse_id:0
 #: view:stock.warehouse:stock.view_warehouse
 #: view:stock.warehouse:stock.view_warehouse_tree
@@ -5573,7 +5654,8 @@ msgstr ""
 #. module: stock
 #: code:addons/stock/wizard/stock_return_picking.py:132
 #, python-format
-msgid "You have manually created product lines, please delete them to proceed"
+msgid ""
+"You have manually created product lines, please delete them to proceed"
 msgstr "有些手动创建的产品明细需要删掉才能继续"
 
 #. module: stock
@@ -5637,38 +5719,11 @@ msgid "move that created the return move"
 msgstr ""
 
 #. module: stock
-#: view:make.procurement:stock.view_make_procurment_wizard
-#: view:procurement.orderpoint.compute:stock.view_procurement_compute_wizard
-#: view:stock.change.product.qty:stock.view_change_product_quantity
-#: view:stock.config.settings:stock.view_stock_config_settings
-#: view:stock.move.scrap:stock.view_stock_move_scrap_wizard
-#: view:stock.return.picking:stock.view_stock_return_picking_form
-#: view:stock.transfer_details:stock.view_stock_enter_transfer_details
-msgid "or"
-msgstr "或"
-
-#. module: stock
 #. openerp-web
 #: code:addons/stock/static/src/xml/picking.xml:243
 #, python-format
 msgid "picking(s)"
 msgstr "操作"
-
-#. module: stock
-#: view:product.template:stock.view_stock_product_template_tree
-msgid ""
-"red:virtual_available<0;blue:virtual_available>=0 and state in ('draft', "
-"'end', 'obsolete');black:virtual_available>=0 and state not in ('draft', "
-"'end', 'obsolete')"
-msgstr ""
-
-#. module: stock
-#: view:product.template:stock.view_stock_product_template_tree
-msgid ""
-"red:virtual_available<0;blue:virtual_available>=0 and state in ('draft', "
-"'end', 'obsolete');black:virtual_available>=0 and state not in ('draft', "
-"'end', 'obsolete')"
-msgstr ""
 
 #. module: stock
 #: view:stock.return.picking:stock.view_stock_return_picking_form
@@ -5705,7 +5760,8 @@ msgstr ""
 #. module: stock
 #: field:product.product,qty_available_text:0
 #: field:product.template,qty_available_text:0
-#: field:stock.inventory,total_qty:0 field:stock.picking.type,count_picking:0
+#: field:stock.inventory,total_qty:0
+#: field:stock.picking.type,count_picking:0
 #: field:stock.picking.type,count_picking_backorders:0
 #: field:stock.picking.type,count_picking_draft:0
 #: field:stock.picking.type,count_picking_late:0
@@ -5719,12 +5775,13 @@ msgstr "未知"
 #. module: stock
 #: view:product.template:stock.view_template_property_form
 msgid ""
-"{'default_groups_ref': ['base.group_user', 'base.group_sale_manager', 'stock."
-"group_stock_manager']}"
+"{'default_groups_ref': ['base.group_user', 'base.group_sale_manager', "
+"'stock.group_stock_manager']}"
 msgstr ""
 
 #. module: stock
 #: view:product.product:stock.view_stock_product_tree
+#: view:product.template:stock.view_stock_product_template_tree
 msgid ""
 "{'red':virtual_available<0, 'blue':virtual_available>=0 and state in "
 "('draft', 'end', 'obsolete'), 'black':virtual_available>=0 and state not in "

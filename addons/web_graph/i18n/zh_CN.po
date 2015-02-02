@@ -110,9 +110,7 @@ msgid ""
 "No data available for this graph.  Try to add some records, or make sure\n"
 "                    that there is at least one measure and no active filter "
 "in the search bar."
-msgstr ""
-"此图表无数据可供显示。请试着添加一些记录或者确保至少有一个计量值并且搜索栏里"
-"没有激活的过滤器。"
+msgstr "此图表无数据可供显示。请试着添加一些记录或者确保至少有一个计量值并且搜索栏里没有激活的过滤器。"
 
 #. module: web_graph
 #. openerp-web

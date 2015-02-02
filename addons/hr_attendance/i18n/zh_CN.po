@@ -20,12 +20,14 @@ msgstr ""
 
 #. module: hr_attendance
 #: view:website:hr_attendance.report_attendanceerrors
-msgid "(*) A negative delay means that the employee worked more than encoded."
+msgid ""
+"(*) A negative delay means that the employee worked more than encoded."
 msgstr "(*)负数延期表示员工的工作时间超过记录的时间"
 
 #. module: hr_attendance
 #: view:website:hr_attendance.report_attendanceerrors
-msgid "(*) A positive delay means that the employee worked less than recorded."
+msgid ""
+"(*) A positive delay means that the employee worked less than recorded."
 msgstr "(*)正数表示员工工作时间小于记录的时间"
 
 #. module: hr_attendance
@@ -34,7 +36,8 @@ msgid "Absent"
 msgstr "缺勤"
 
 #. module: hr_attendance
-#: field:hr.attendance,action:0 selection:hr.attendance,action:0
+#: field:hr.attendance,action:0
+#: selection:hr.attendance,action:0
 msgid "Action"
 msgstr "操作"
 
@@ -125,13 +128,15 @@ msgid "Click to Sign In at %s."
 msgstr "单击登录在 %s."
 
 #. module: hr_attendance
-#: field:hr.action.reason,create_uid:0 field:hr.attendance,create_uid:0
+#: field:hr.action.reason,create_uid:0
+#: field:hr.attendance,create_uid:0
 #: field:hr.attendance.error,create_uid:0
 msgid "Created by"
 msgstr ""
 
 #. module: hr_attendance
-#: field:hr.action.reason,create_date:0 field:hr.attendance,create_date:0
+#: field:hr.action.reason,create_date:0
+#: field:hr.attendance,create_date:0
 #: field:hr.attendance.error,create_date:0
 msgid "Created on"
 msgstr ""
@@ -201,7 +206,8 @@ msgid "Hr Attendance Search"
 msgstr "人力资源考勤搜索"
 
 #. module: hr_attendance
-#: field:hr.action.reason,id:0 field:hr.attendance,id:0
+#: field:hr.action.reason,id:0
+#: field:hr.attendance,id:0
 #: field:hr.attendance.error,id:0
 #: field:report.hr_attendance.report_attendanceerrors,id:0
 msgid "ID"
@@ -213,13 +219,15 @@ msgid "Last Sign"
 msgstr "上次签到"
 
 #. module: hr_attendance
-#: field:hr.action.reason,write_uid:0 field:hr.attendance,write_uid:0
+#: field:hr.action.reason,write_uid:0
+#: field:hr.attendance,write_uid:0
 #: field:hr.attendance.error,write_uid:0
 msgid "Last Updated by"
 msgstr ""
 
 #. module: hr_attendance
-#: field:hr.action.reason,write_date:0 field:hr.attendance,write_date:0
+#: field:hr.action.reason,write_date:0
+#: field:hr.attendance,write_date:0
 #: field:hr.attendance.error,write_date:0
 msgid "Last Updated on"
 msgstr ""
@@ -321,7 +329,8 @@ msgstr "签出"
 
 #. module: hr_attendance
 #: help:hr.attendance,action_desc:0
-msgid "Specifies the reason for Signing In/Signing Out in case of extra hours."
+msgid ""
+"Specifies the reason for Signing In/Signing Out in case of extra hours."
 msgstr "为额外时间的签入/签出指定原因"
 
 #. module: hr_attendance

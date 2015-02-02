@@ -251,7 +251,7 @@
                     <field name="section_id" string="Sales Team" groups="base.group_multi_salesteams"/>
                     <field name="project_id"/>
                     <field name="product_id"/>
-                    <filter string="Mine" domain="[('user_id','=',uid)]" name="my_sale_orders_filter"/>
+                    <filter string="My" domain="[('user_id','=',uid)]" name="my_sale_orders_filter"/>
                     <separator/>
                     <filter string="Quotations" name="draft" domain="[('state','in',('draft','sent'))]" help="Sales Order that haven't yet been confirmed"/>
                     <filter string="Sales" name="sales" domain="[('state','in',('manual','progress'))]"/>

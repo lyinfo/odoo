@@ -158,14 +158,17 @@ msgstr "配置错误！"
 #. module: hr_timesheet_invoice
 #: code:addons/hr_timesheet_invoice/hr_timesheet_invoice.py:180
 #, python-format
-msgid "Contract incomplete. Please fill in the Customer and Pricelist fields."
-msgstr "合约未完整。请填写客户及价格表字段。"
+msgid ""
+"Contract incomplete. Please fill in the Customer and Pricelist fields."
+msgstr 
+"合约未完整。请填写客户及价格表字段。"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create,price:0
 #: field:hr.timesheet.invoice.create.final,price:0
 #: view:report.timesheet.line:hr_timesheet_invoice.view_timesheet_line_tree
-#: field:report.timesheet.line,cost:0 field:report_timesheet.user,cost:0
+#: field:report.timesheet.line,cost:0
+#: field:report_timesheet.user,cost:0
 #: view:website:hr_timesheet_invoice.report_analyticprofit
 msgid "Cost"
 msgstr "成本"
@@ -399,9 +402,11 @@ msgstr "分组方式"
 #: field:report.account.analytic.line.to.invoice,id:0
 #: field:report.analytic.account.close,id:0
 #: field:report.hr_timesheet_invoice.report_analyticprofit,id:0
-#: field:report.timesheet.line,id:0 field:report_timesheet.account,id:0
+#: field:report.timesheet.line,id:0
+#: field:report_timesheet.account,id:0
 #: field:report_timesheet.account.date,id:0
-#: field:report_timesheet.invoice,id:0 field:report_timesheet.user,id:0
+#: field:report_timesheet.invoice,id:0
+#: field:report_timesheet.user,id:0
 msgid "ID"
 msgstr ""
 
@@ -594,7 +599,8 @@ msgstr "5月"
 #. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,month:0
 #: view:report.timesheet.line:hr_timesheet_invoice.view_timesheet_line_search
-#: field:report.timesheet.line,month:0 field:report_timesheet.account,month:0
+#: field:report.timesheet.line,month:0
+#: field:report_timesheet.account,month:0
 #: field:report_timesheet.account.date,month:0
 #: field:report_timesheet.user,month:0
 msgid "Month"
@@ -962,7 +968,8 @@ msgstr ""
 #. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,name:0
 #: view:report.timesheet.line:hr_timesheet_invoice.view_timesheet_line_search
-#: field:report.timesheet.line,name:0 field:report_timesheet.account,name:0
+#: field:report.timesheet.line,name:0
+#: field:report_timesheet.account,name:0
 #: field:report_timesheet.account.date,name:0
 #: field:report_timesheet.user,name:0
 msgid "Year"

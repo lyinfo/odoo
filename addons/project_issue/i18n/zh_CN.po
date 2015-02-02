@@ -89,7 +89,8 @@ msgid ""
 msgstr ""
 
 #. module: project_issue
-#: field:project.issue,active:0 field:project.issue.version,active:0
+#: field:project.issue,active:0
+#: field:project.issue.version,active:0
 msgid "Active"
 msgstr "生效"
 
@@ -159,7 +160,8 @@ msgid "Category:"
 msgstr "分类:"
 
 #. module: project_issue
-#: field:project.issue,channel:0 field:project.issue.report,channel:0
+#: field:project.issue,channel:0
+#: field:project.issue.report,channel:0
 msgid "Channel"
 msgstr "渠道"
 
@@ -207,7 +209,8 @@ msgid "Configure"
 msgstr "设置"
 
 #. module: project_issue
-#: field:project.issue,partner_id:0 field:project.issue.report,partner_id:0
+#: field:project.issue,partner_id:0
+#: field:project.issue.report,partner_id:0
 msgid "Contact"
 msgstr "联系方式"
 
@@ -230,7 +233,8 @@ msgid "Create issues from an incoming email account "
 msgstr ""
 
 #. module: project_issue
-#: field:project.issue,create_uid:0 field:project.issue.version,create_uid:0
+#: field:project.issue,create_uid:0
+#: field:project.issue.version,create_uid:0
 msgid "Created by"
 msgstr ""
 
@@ -391,7 +395,8 @@ msgid ""
 msgstr "保存聊天汇总（消息数，...）。本摘要是直接在html格式以便在看板次插入。"
 
 #. module: project_issue
-#: field:project.issue,id:0 field:project.issue.report,id:0
+#: field:project.issue,id:0
+#: field:project.issue.report,id:0
 #: field:project.issue.version,id:0
 msgid "ID"
 msgstr "ID"
@@ -528,7 +533,8 @@ msgid "Last Stage Update"
 msgstr ""
 
 #. module: project_issue
-#: field:project.issue,write_uid:0 field:project.issue.version,write_uid:0
+#: field:project.issue,write_uid:0
+#: field:project.issue.version,write_uid:0
 msgid "Last Updated by"
 msgstr ""
 
@@ -587,7 +593,8 @@ msgid "No Subject"
 msgstr "未指定主题"
 
 #. module: project_issue
-#: selection:project.issue,kanban_state:0 selection:project.issue,priority:0
+#: selection:project.issue,kanban_state:0
+#: selection:project.issue,priority:0
 #: selection:project.issue.report,priority:0
 msgid "Normal"
 msgstr "普通"
@@ -747,8 +754,7 @@ msgid ""
 "These email addresses will be added to the CC field of all inbound and "
 "outbound emails for this record before being sent. Separate multiple email "
 "addresses with a comma"
-msgstr ""
-"这些邮箱地址将添加到所有接收的发送邮件的抄送字段，用逗号分隔多个邮件地址。"
+msgstr "这些邮箱地址将添加到所有接收的发送邮件的抄送字段，用逗号分隔多个邮件地址。"
 
 #. module: project_issue
 #: help:project.issue,email_from:0
@@ -762,9 +768,7 @@ msgid ""
 "support or after-sales services. You can track the issues per age. You can "
 "analyse the time required to open or close an issue, the number of email to "
 "exchange and the time spent on average by issues."
-msgstr ""
-"缺陷报表用于分析你的支持或售后服务的数量。报表自动分页。可以分析开始处理或关"
-"闭一个缺陷需要的时间，邮件的数量和处理缺陷的平均时间。"
+msgstr "缺陷报表用于分析你的支持或售后服务的数量。报表自动分页。可以分析开始处理或关闭一个缺陷需要的时间，邮件的数量和处理缺陷的平均时间。"
 
 #. module: project_issue
 #: view:project.issue:project_issue.view_project_issue_filter
@@ -788,7 +792,8 @@ msgid "User Email"
 msgstr "用户电子邮件"
 
 #. module: project_issue
-#: field:project.issue,version_id:0 field:project.issue.report,version_id:0
+#: field:project.issue,version_id:0
+#: field:project.issue.report,version_id:0
 msgid "Version"
 msgstr "版本"
 

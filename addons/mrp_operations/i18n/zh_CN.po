@@ -37,8 +37,7 @@ msgid ""
 msgstr ""
 "* 工单被创建时，“草稿“状态。\n"
 "* 从工单被用户进入开始模式后，设为”在进行中“模式。\n"
-"* 当工单是运行模式，在此期间，如果用户要停止或作出改变，可设置为”挂起“状"
-"态。\n"
+"* 当工单是运行模式，在此期间，如果用户要停止或作出改变，可设置为”挂起“状态。\n"
 "* 当用户取消工单，设置为”取消状态“。\n"
 "* 从工单被完成的时候开始，设置为”完成“状态。"
 
@@ -253,7 +252,8 @@ msgid "Hours by Work Center"
 msgstr "按工作中心工时合计"
 
 #. module: mrp_operations
-#: field:mrp.workorder,id:0 field:mrp_operations.operation,id:0
+#: field:mrp.workorder,id:0
+#: field:mrp_operations.operation,id:0
 #: field:mrp_operations.operation.code,id:0
 msgid "ID"
 msgstr ""

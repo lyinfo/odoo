@@ -118,7 +118,8 @@ msgid ""
 msgstr ""
 
 #. module: procurement
-#: field:procurement.order,company_id:0 field:procurement.rule,company_id:0
+#: field:procurement.order,company_id:0
+#: field:procurement.rule,company_id:0
 msgid "Company"
 msgstr "公司"
 
@@ -138,14 +139,16 @@ msgid "Confirmed"
 msgstr "已确认"
 
 #. module: procurement
-#: field:procurement.group,create_uid:0 field:procurement.order,create_uid:0
+#: field:procurement.group,create_uid:0
+#: field:procurement.order,create_uid:0
 #: field:procurement.order.compute.all,create_uid:0
 #: field:procurement.rule,create_uid:0
 msgid "Created by"
 msgstr ""
 
 #. module: procurement
-#: field:procurement.group,create_date:0 field:procurement.order,create_date:0
+#: field:procurement.group,create_date:0
+#: field:procurement.order,create_date:0
 #: field:procurement.order.compute.all,create_date:0
 #: field:procurement.rule,create_date:0
 msgid "Created on"
@@ -227,12 +230,13 @@ msgstr "同组的补货"
 msgid ""
 "Holds the Chatter summary (number of messages, ...). This summary is "
 "directly in html format in order to be inserted in kanban views."
-msgstr ""
-"保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
+msgstr "保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
 
 #. module: procurement
-#: field:procurement.group,id:0 field:procurement.order,id:0
-#: field:procurement.order.compute.all,id:0 field:procurement.rule,id:0
+#: field:procurement.group,id:0
+#: field:procurement.order,id:0
+#: field:procurement.order.compute.all,id:0
+#: field:procurement.rule,id:0
 msgid "ID"
 msgstr "ID"
 
@@ -263,14 +267,16 @@ msgid "Last Message Date"
 msgstr "最新消息日期"
 
 #. module: procurement
-#: field:procurement.group,write_uid:0 field:procurement.order,write_uid:0
+#: field:procurement.group,write_uid:0
+#: field:procurement.order,write_uid:0
 #: field:procurement.order.compute.all,write_uid:0
 #: field:procurement.rule,write_uid:0
 msgid "Last Updated by"
 msgstr "最近更新者"
 
 #. module: procurement
-#: field:procurement.group,write_date:0 field:procurement.order,write_date:0
+#: field:procurement.group,write_date:0
+#: field:procurement.order,write_date:0
 #: field:procurement.order.compute.all,write_date:0
 #: field:procurement.rule,write_date:0
 msgid "Last Updated on"

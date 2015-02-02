@@ -179,8 +179,7 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                单击增加一个新的计量单位类别。\n"
 "              </p><p>\n"
-"                属于相同类别的计量单位能互相转换。例如，，在“时间”类别中，你"
-"有下列单位: 小时数、天数。\n"
+"                属于相同类别的计量单位能互相转换。例如，，在“时间”类别中，你有下列单位: 小时数、天数。\n"
 "\n"
 "              </p>\n"
 "            "
@@ -281,8 +280,7 @@ msgstr ""
 "              </p><p>\n"
 "                价格列表包括待评审的规则来计算产品价格。\n"
 "              </p><p>\n"
-"                价格列表可能有不同版本（2010, 2011, 2010年2月促销等等） ，每"
-"个版本可能有几个不同的规则。\n"
+"                价格列表可能有不同版本（2010, 2011, 2010年2月促销等等） ，每个版本可能有几个不同的规则。\n"
 "                （例如：给顾客的产品价格按照供应商价格的1.8倍提交。\n"
 "              </p>\n"
 "            "
@@ -302,8 +300,7 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\"> \n"
 "               单击定义一个新产品\n"
 "              </p><p>\n"
-"                你必须为买卖的的每一样都定义一个产品。可以是物理产品、消耗"
-"品、或者服务。\n"
+"                你必须为买卖的的每一样都定义一个产品。可以是物理产品、消耗品、或者服务。\n"
 "              </p>\n"
 "            "
 
@@ -327,11 +324,9 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                单击定义一个新产品\n"
 "              </p><p>\n"
-"                你必须为销售的每一样都定义一个产品。可以是物理产品、消耗品、"
-"或者你提供给客户的服务。\n"
+"                你必须为销售的每一样都定义一个产品。可以是物理产品、消耗品、或者你提供给客户的服务。\n"
 "              </p><p>\n"
-"                产品表单包括下面的信息以简化销售处理：价格、报价事项，会计数"
-"据，供应方法等等。\n"
+"                产品表单包括下面的信息以简化销售处理：价格、报价事项，会计数据，供应方法等等。\n"
 "               </p>\n"
 "            "
 
@@ -348,8 +343,7 @@ msgid ""
 "            "
 msgstr ""
 "<p>\n"
-"                这是你所有产品根据类别进行的分类列表。你能单击分类 获得关联到"
-"这个类别极其子类的所有产品列表。\n"
+"                这是你所有产品根据类别进行的分类列表。你能单击分类 获得关联到这个类别极其子类的所有产品列表。\n"
 "              </p>\n"
 "            "
 
@@ -984,8 +978,7 @@ msgstr ""
 msgid ""
 "A category of the view type is a virtual category that can be used as the "
 "parent of another category to create a hierarchical structure."
-msgstr ""
-"视图类型的分类是一个可视分类，用来做其它分类的上级，以此建立一个分层结构。"
+msgstr "视图类型的分类是一个可视分类，用来做其它分类的上级，以此建立一个分层结构。"
 
 #. module: product
 #: help:product.template,description_sale:0
@@ -1016,9 +1009,12 @@ msgid "Accessories"
 msgstr "配件"
 
 #. module: product
-#: field:product.price.type,active:0 field:product.pricelist,active:0
-#: field:product.pricelist.version,active:0 field:product.product,active:0
-#: field:product.template,active:0 field:product.uom,active:0
+#: field:product.price.type,active:0
+#: field:product.pricelist,active:0
+#: field:product.pricelist.version,active:0
+#: field:product.product,active:0
+#: field:product.template,active:0
+#: field:product.uom,active:0
 msgid "Active"
 msgstr "可用"
 
@@ -1277,7 +1273,8 @@ msgstr ""
 #: field:product.pricelist,company_id:0
 #: field:product.pricelist.item,company_id:0
 #: field:product.pricelist.version,company_id:0
-#: field:product.supplierinfo,company_id:0 field:product.template,company_id:0
+#: field:product.supplierinfo,company_id:0
+#: field:product.template,company_id:0
 msgid "Company"
 msgstr "公司"
 
@@ -1364,16 +1361,21 @@ msgstr ""
 #: field:product.attribute.line,create_uid:0
 #: field:product.attribute.price,create_uid:0
 #: field:product.attribute.value,create_uid:0
-#: field:product.category,create_uid:0 field:product.packaging,create_uid:0
+#: field:product.category,create_uid:0
+#: field:product.packaging,create_uid:0
 #: field:product.price.history,create_uid:0
-#: field:product.price.type,create_uid:0 field:product.price_list,create_uid:0
+#: field:product.price.type,create_uid:0
+#: field:product.price_list,create_uid:0
 #: field:product.pricelist,create_uid:0
 #: field:product.pricelist.item,create_uid:0
 #: field:product.pricelist.type,create_uid:0
 #: field:product.pricelist.version,create_uid:0
-#: field:product.product,create_uid:0 field:product.supplierinfo,create_uid:0
-#: field:product.template,create_uid:0 field:product.ul,create_uid:0
-#: field:product.uom,create_uid:0 field:product.uom.categ,create_uid:0
+#: field:product.product,create_uid:0
+#: field:product.supplierinfo,create_uid:0
+#: field:product.template,create_uid:0
+#: field:product.ul,create_uid:0
+#: field:product.uom,create_uid:0
+#: field:product.uom.categ,create_uid:0
 msgid "Created by"
 msgstr "创建者"
 
@@ -1383,7 +1385,8 @@ msgstr "创建者"
 #: field:product.attribute.line,create_date:0
 #: field:product.attribute.price,create_date:0
 #: field:product.attribute.value,create_date:0
-#: field:product.category,create_date:0 field:product.packaging,create_date:0
+#: field:product.category,create_date:0
+#: field:product.packaging,create_date:0
 #: field:product.price.history,create_date:0
 #: field:product.price.type,create_date:0
 #: field:product.price_list,create_date:0
@@ -1393,15 +1396,18 @@ msgstr "创建者"
 #: field:product.pricelist.version,create_date:0
 #: field:product.product,create_date:0
 #: field:product.supplierinfo,create_date:0
-#: field:product.template,create_date:0 field:product.ul,create_date:0
-#: field:product.uom,create_date:0 field:product.uom.categ,create_date:0
+#: field:product.template,create_date:0
+#: field:product.ul,create_date:0
+#: field:product.uom,create_date:0
+#: field:product.uom.categ,create_date:0
 msgid "Created on"
 msgstr "创建时间"
 
 #. module: product
 #: model:ir.model,name:product.model_res_currency
 #: field:product.price.type,currency_id:0
-#: field:product.pricelist,currency_id:0 view:website:product.report_pricelist
+#: field:product.pricelist,currency_id:0
+#: view:website:product.report_pricelist
 msgid "Currency"
 msgstr "货币"
 
@@ -1465,8 +1471,10 @@ msgid "Delivery Lead Time"
 msgstr "送货周期"
 
 #. module: product
-#: field:pricelist.partnerinfo,name:0 field:product.packaging,name:0
-#: field:product.template,description:0 view:website:product.report_pricelist
+#: field:pricelist.partnerinfo,name:0
+#: field:product.packaging,name:0
+#: field:product.template,description:0
+#: view:website:product.report_pricelist
 msgid "Description"
 msgstr "说明"
 
@@ -1501,7 +1509,8 @@ msgid "EAN"
 msgstr "条码"
 
 #. module: product
-#: field:product.product,ean13:0 field:product.template,ean13:0
+#: field:product.product,ean13:0
+#: field:product.template,ean13:0
 msgid "EAN13 Barcode"
 msgstr "EAN13 条码"
 
@@ -1652,7 +1661,8 @@ msgstr "显示包装信息的顺序号"
 
 #. module: product
 #: help:product.category,sequence:0
-msgid "Gives the sequence order when displaying a list of product categories."
+msgid ""
+"Gives the sequence order when displaying a list of product categories."
 msgstr "显示产品列表的顺序号"
 
 #. module: product
@@ -1753,8 +1763,7 @@ msgstr ""
 msgid ""
 "Holds the Chatter summary (number of messages, ...). This summary is "
 "directly in html format in order to be inserted in kanban views."
-msgstr ""
-"保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
+msgstr "保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
 
 #. module: product
 #: model:product.uom,name:product.product_uom_hour
@@ -1782,16 +1791,27 @@ msgstr ""
 "1*（参考单位=比率*（本单位）"
 
 #. module: product
-#: field:pricelist.partnerinfo,id:0 field:product.attribute,id:0
-#: field:product.attribute.line,id:0 field:product.attribute.price,id:0
-#: field:product.attribute.value,id:0 field:product.category,id:0
-#: field:product.packaging,id:0 field:product.price.history,id:0
-#: field:product.price.type,id:0 field:product.price_list,id:0
-#: field:product.pricelist,id:0 field:product.pricelist.item,id:0
-#: field:product.pricelist.type,id:0 field:product.pricelist.version,id:0
-#: field:product.product,id:0 field:product.supplierinfo,id:0
-#: field:product.template,id:0 field:product.ul,id:0 field:product.uom,id:0
-#: field:product.uom.categ,id:0 field:report.product.report_pricelist,id:0
+#: field:pricelist.partnerinfo,id:0
+#: field:product.attribute,id:0
+#: field:product.attribute.line,id:0
+#: field:product.attribute.price,id:0
+#: field:product.attribute.value,id:0
+#: field:product.category,id:0
+#: field:product.packaging,id:0
+#: field:product.price.history,id:0
+#: field:product.price.type,id:0
+#: field:product.price_list,id:0
+#: field:product.pricelist,id:0
+#: field:product.pricelist.item,id:0
+#: field:product.pricelist.type,id:0
+#: field:product.pricelist.version,id:0
+#: field:product.product,id:0
+#: field:product.supplierinfo,id:0
+#: field:product.template,id:0
+#: field:product.ul,id:0
+#: field:product.uom,id:0
+#: field:product.uom.categ,id:0
+#: field:report.product.report_pricelist,id:0
 msgid "ID"
 msgstr "标识"
 
@@ -1808,7 +1828,8 @@ msgid ""
 msgstr "如果不选中，允许你隐藏价格表而无需删除"
 
 #. module: product
-#: help:product.product,active:0 help:product.template,active:0
+#: help:product.product,active:0
+#: help:product.template,active:0
 msgid ""
 "If unchecked, it will allow you to hide the product without removing it."
 msgstr "如果不选中，允许你隐藏这个产品而无需删除。"
@@ -1882,7 +1903,8 @@ msgid "Internal Category"
 msgstr "内部分类"
 
 #. module: product
-#: field:product.product,code:0 field:product.product,default_code:0
+#: field:product.product,code:0
+#: field:product.product,default_code:0
 #: field:product.template,default_code:0
 msgid "Internal Reference"
 msgstr "内部单号"
@@ -1961,20 +1983,26 @@ msgid "Last Message Date"
 msgstr "最新消息日期"
 
 #. module: product
-#: field:pricelist.partnerinfo,write_uid:0 field:product.attribute,write_uid:0
+#: field:pricelist.partnerinfo,write_uid:0
+#: field:product.attribute,write_uid:0
 #: field:product.attribute.line,write_uid:0
 #: field:product.attribute.price,write_uid:0
 #: field:product.attribute.value,write_uid:0
-#: field:product.category,write_uid:0 field:product.packaging,write_uid:0
+#: field:product.category,write_uid:0
+#: field:product.packaging,write_uid:0
 #: field:product.price.history,write_uid:0
-#: field:product.price.type,write_uid:0 field:product.price_list,write_uid:0
+#: field:product.price.type,write_uid:0
+#: field:product.price_list,write_uid:0
 #: field:product.pricelist,write_uid:0
 #: field:product.pricelist.item,write_uid:0
 #: field:product.pricelist.type,write_uid:0
 #: field:product.pricelist.version,write_uid:0
-#: field:product.product,write_uid:0 field:product.supplierinfo,write_uid:0
-#: field:product.template,write_uid:0 field:product.ul,write_uid:0
-#: field:product.uom,write_uid:0 field:product.uom.categ,write_uid:0
+#: field:product.product,write_uid:0
+#: field:product.supplierinfo,write_uid:0
+#: field:product.template,write_uid:0
+#: field:product.ul,write_uid:0
+#: field:product.uom,write_uid:0
+#: field:product.uom.categ,write_uid:0
 msgid "Last Updated by"
 msgstr "最近更新者"
 
@@ -1984,16 +2012,21 @@ msgstr "最近更新者"
 #: field:product.attribute.line,write_date:0
 #: field:product.attribute.price,write_date:0
 #: field:product.attribute.value,write_date:0
-#: field:product.category,write_date:0 field:product.packaging,write_date:0
+#: field:product.category,write_date:0
+#: field:product.packaging,write_date:0
 #: field:product.price.history,write_date:0
-#: field:product.price.type,write_date:0 field:product.price_list,write_date:0
+#: field:product.price.type,write_date:0
+#: field:product.price_list,write_date:0
 #: field:product.pricelist,write_date:0
 #: field:product.pricelist.item,write_date:0
 #: field:product.pricelist.type,write_date:0
 #: field:product.pricelist.version,write_date:0
-#: field:product.product,write_date:0 field:product.supplierinfo,write_date:0
-#: field:product.template,write_date:0 field:product.ul,write_date:0
-#: field:product.uom,write_date:0 field:product.uom.categ,write_date:0
+#: field:product.product,write_date:0
+#: field:product.supplierinfo,write_date:0
+#: field:product.template,write_date:0
+#: field:product.ul,write_date:0
+#: field:product.uom,write_date:0
+#: field:product.uom.categ,write_date:0
 msgid "Last Updated on"
 msgstr "最近更新时间"
 
@@ -2099,7 +2132,8 @@ msgid "Measure Type"
 msgstr "计量类型"
 
 #. module: product
-#: field:product.product,image_medium:0 field:product.template,image_medium:0
+#: field:product.product,image_medium:0
+#: field:product.template,image_medium:0
 msgid "Medium-sized image"
 msgstr "中等尺寸图片"
 
@@ -2109,9 +2143,7 @@ msgid ""
 "Medium-sized image of the product. It is automatically resized as a "
 "128x128px image, with aspect ratio preserved, only when the image exceeds "
 "one of those sizes. Use this field in form views or some kanban views."
-msgstr ""
-"产品的中等尺寸的图片。保持纵横比例，图像超出尺寸后，自动缩放为128x128px ，这"
-"字段通常用于看板视图。"
+msgstr "产品的中等尺寸的图片。保持纵横比例，图像超出尺寸后，自动缩放为128x128px ，这字段通常用于看板视图。"
 
 #. module: product
 #: model:product.attribute,name:product.product_attribute_1
@@ -2120,12 +2152,14 @@ msgid "Memory"
 msgstr "内存"
 
 #. module: product
-#: field:product.product,message_ids:0 field:product.template,message_ids:0
+#: field:product.product,message_ids:0
+#: field:product.template,message_ids:0
 msgid "Messages"
 msgstr "消息"
 
 #. module: product
-#: help:product.product,message_ids:0 help:product.template,message_ids:0
+#: help:product.product,message_ids:0
+#: help:product.template,message_ids:0
 msgid "Messages and communication history"
 msgstr "消息和通信历史"
 
@@ -2185,10 +2219,14 @@ msgid "Multimedia Speakers"
 msgstr "多媒体喇叭"
 
 #. module: product
-#: field:product.attribute,name:0 field:product.category,complete_name:0
-#: field:product.category,name:0 field:product.pricelist.type,name:0
-#: field:product.pricelist.version,name:0 field:product.template,name:0
-#: field:product.ul,name:0 field:product.uom.categ,name:0
+#: field:product.attribute,name:0
+#: field:product.category,complete_name:0
+#: field:product.category,name:0
+#: field:product.pricelist.type,name:0
+#: field:product.pricelist.version,name:0
+#: field:product.template,name:0
+#: field:product.ul,name:0
+#: field:product.uom.categ,name:0
 msgid "Name"
 msgstr "名称"
 
@@ -2221,11 +2259,11 @@ msgid ""
 "you may deactivate this product from the 'Procurements' tab and create a new "
 "one."
 msgstr ""
-"新的计量单位'%s'的类别 '%s'必须跟老单位 '%s' 相同。如果你要改变计量单位，你"
-"要'需求'标签停用这个产品 ，并且创建一个新的。"
+"新的计量单位'%s'的类别 '%s'必须跟老单位 '%s' 相同。如果你要改变计量单位，你要'需求'标签停用这个产品 ，并且创建一个新的。"
 
 #. module: product
-#: selection:product.category,type:0 selection:product.template,state:0
+#: selection:product.category,type:0
+#: selection:product.template,state:0
 msgid "Normal"
 msgstr "常规"
 
@@ -2366,7 +2404,8 @@ msgid "Pen drive, SP-4"
 msgstr "随身存储器, SP-4"
 
 #. module: product
-#: field:product.product,price:0 field:product.template,price:0
+#: field:product.product,price:0
+#: field:product.template,price:0
 msgid "Price"
 msgstr "价格"
 
@@ -2590,7 +2629,8 @@ msgstr "产品类别&属性"
 
 #. module: product
 #: model:ir.model,name:product.model_product_category
-#: field:product.pricelist.item,categ_id:0 field:product.uom,category_id:0
+#: field:product.pricelist.item,categ_id:0
+#: field:product.uom,category_id:0
 msgid "Product Category"
 msgstr "产品类别"
 
@@ -2706,7 +2746,8 @@ msgstr "产品： "
 
 #. module: product
 #: model:product.price.type,name:product.list_price
-#: field:product.product,lst_price:0 field:product.template,lst_price:0
+#: field:product.product,lst_price:0
+#: field:product.template,lst_price:0
 msgid "Public Price"
 msgstr "公开价格"
 
@@ -2736,7 +2777,8 @@ msgid "Purchase Unit of Measure"
 msgstr "采购计量单位"
 
 #. module: product
-#: field:pricelist.partnerinfo,min_quantity:0 field:product.supplierinfo,qty:0
+#: field:pricelist.partnerinfo,min_quantity:0
+#: field:product.supplierinfo,qty:0
 msgid "Quantity"
 msgstr "数量"
 
@@ -2877,8 +2919,10 @@ msgid "Select category for the current product"
 msgstr "为当前产品选择一个类别"
 
 #. module: product
-#: field:product.attribute.value,sequence:0 field:product.category,sequence:0
-#: field:product.packaging,sequence:0 field:product.pricelist.item,sequence:0
+#: field:product.attribute.value,sequence:0
+#: field:product.category,sequence:0
+#: field:product.packaging,sequence:0
+#: field:product.pricelist.item,sequence:0
 #: field:product.supplierinfo,sequence:0
 msgid "Sequence"
 msgstr "序列"
@@ -2912,7 +2956,8 @@ msgstr ""
 "以价格9.99为例四舍五入为10附加费为-0.001."
 
 #. module: product
-#: field:product.product,image_small:0 field:product.template,image_small:0
+#: field:product.product,image_small:0
+#: field:product.template,image_small:0
 msgid "Small-sized image"
 msgstr "小尺寸图片"
 
@@ -2922,8 +2967,7 @@ msgid ""
 "Small-sized image of the product. It is automatically resized as a 64x64px "
 "image, with aspect ratio preserved. Use this field anywhere a small image is "
 "required."
-msgstr ""
-"产品的小尺寸图片。保持纵横比，自动缩放为64x64px。用于任何需要小图片的场合"
+msgstr "产品的小尺寸图片。保持纵横比，自动缩放为64x64px。用于任何需要小图片的场合"
 
 #. module: product
 #: selection:product.uom,uom_type:0
@@ -2946,9 +2990,7 @@ msgstr ""
 msgid ""
 "Specify a product category if this rule only applies to products belonging "
 "to this category or its children categories. Keep empty otherwise."
-msgstr ""
-"指定一个产品分类 ，规则只被应用在与这个分类以及它的子类一致的产品上。其它情况"
-"留空"
+msgstr "指定一个产品分类 ，规则只被应用在与这个分类以及它的子类一致的产品上。其它情况留空"
 
 #. module: product
 #: help:product.pricelist.item,product_id:0
@@ -3016,7 +3058,8 @@ msgid "Summary"
 msgstr "摘要"
 
 #. module: product
-#: field:product.supplierinfo,name:0 field:product.template,seller_ids:0
+#: field:product.supplierinfo,name:0
+#: field:product.template,seller_ids:0
 msgid "Supplier"
 msgstr "供应商"
 
@@ -3109,8 +3152,7 @@ msgstr ""
 msgid ""
 "The computed quantity will be a multiple of this value. Use 1.0 for a Unit "
 "of Measure that cannot be further split, such as a piece."
-msgstr ""
-"计算的数量将是这个值的倍数。  不能进一步分割的单位，比如 1 片，使用1.0 。"
+msgstr "计算的数量将是这个值的倍数。  不能进一步分割的单位，比如 1 片，使用1.0 。"
 
 #. module: product
 #: sql_constraint:product.uom:0
@@ -3143,17 +3185,14 @@ msgid ""
 "The minimal quantity to purchase to this supplier, expressed in the supplier "
 "Product Unit of Measure if not empty, in the default unit of measure of the "
 "product otherwise."
-msgstr ""
-"从供应商采购的最小数量，如果不是空的，就按明示的供应商单位。否则就是默认的计"
-"量单位。"
+msgstr "从供应商采购的最小数量，如果不是空的，就按明示的供应商单位。否则就是默认的计量单位。"
 
 #. module: product
 #: help:pricelist.partnerinfo,min_quantity:0
 msgid ""
 "The minimal quantity to trigger this rule, expressed in the supplier Unit of "
 "Measure if any or in the default Unit of Measure of the product otherrwise."
-msgstr ""
-"最小数量触发这个规则，如果指明了就是供应商单位，否则就是产品的默认计量单位"
+msgstr "最小数量触发这个规则，如果指明了就是供应商单位，否则就是产品的默认计量单位"
 
 #. module: product
 #: help:product.template,weight_net:0
@@ -3323,7 +3362,8 @@ msgstr "包装总重量"
 
 #. module: product
 #: view:product.template:product.product_template_search_view
-#: field:product.ul,type:0 field:product.uom,uom_type:0
+#: field:product.ul,type:0
+#: field:product.uom,uom_type:0
 msgid "Type"
 msgstr "类型"
 
@@ -3345,7 +3385,8 @@ msgstr "单价"
 
 #. module: product
 #: view:product.template:product.product_template_form_view
-#: field:product.template,uom_id:0 field:product.uom,name:0
+#: field:product.template,uom_id:0
+#: field:product.uom,name:0
 msgid "Unit of Measure"
 msgstr "计量单位"
 
@@ -3503,9 +3544,7 @@ msgid ""
 "When a version is duplicated it is set to non active, so that the dates do "
 "not overlaps with original version. You should change the dates and "
 "reactivate the pricelist"
-msgstr ""
-"在复制一个版本时它设为不生效. 这样旧版本日期是不重复的. 你应该修改日期并激活"
-"这价格表"
+msgstr "在复制一个版本时它设为不生效. 这样旧版本日期是不重复的. 你应该修改日期并激活这价格表"
 
 #. module: product
 #: model:product.attribute.value,name:product.product_attribute_value_3

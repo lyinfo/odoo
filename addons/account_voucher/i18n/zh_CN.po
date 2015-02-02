@@ -15,8 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-11-18 07:28+0000\n"
-"X-Generator: Poedit 1.5.4\n"
-"Language: zh_CN\n"
+"X-Generator: Launchpad (build 17241)\n"
 
 #. module: account_voucher
 #: help:account.voucher,state:0
@@ -26,8 +25,8 @@ msgid ""
 "* The 'Pro-forma' when voucher is in Pro-forma status,voucher does not have "
 "an voucher number.                         \n"
 "* The 'Posted' status is used when user create voucher,a voucher number is "
-"generated and voucher entries are created in "
-"account                         \n"
+"generated and voucher entries are created in account                         "
+"\n"
 "* The 'Cancelled' status is used when user cancel voucher."
 msgstr ""
 
@@ -114,7 +113,8 @@ msgid ""
 msgstr ""
 
 #. module: account_voucher
-#: field:account.voucher,account_id:0 field:account.voucher.line,account_id:0
+#: field:account.voucher,account_id:0
+#: field:account.voucher.line,account_id:0
 #: field:sale.receipt.report,account_id:0
 msgid "Account"
 msgstr "科目"
@@ -216,7 +216,8 @@ msgid "Cancel Voucher"
 msgstr "取消收据"
 
 #. module: account_voucher
-#: selection:account.voucher,state:0 selection:sale.receipt.report,state:0
+#: selection:account.voucher,state:0
+#: selection:sale.receipt.report,state:0
 msgid "Cancelled"
 msgstr "已取消"
 
@@ -231,12 +232,11 @@ msgstr "不能删除已经开启或者支付的单据。"
 msgid ""
 "Check this box if you are unsure of that journal entry and if you want to "
 "note it as 'to be reviewed' by an accounting expert."
-msgstr ""
-"勾选这里，如果您不确定凭证是否正确，您可以把它标注为“待审核”状态交由会计师来"
-"确定。"
+msgstr "勾选这里，如果您不确定凭证是否正确，您可以把它标注为“待审核”状态交由会计师来确定。"
 
 #. module: account_voucher
-#: field:account.voucher,company_id:0 field:account.voucher.line,company_id:0
+#: field:account.voucher,company_id:0
+#: field:account.voucher.line,company_id:0
 #: view:sale.receipt.report:account_voucher.view_sale_receipt_report_search
 #: field:sale.receipt.report,company_id:0
 msgid "Company"
@@ -266,7 +266,8 @@ msgid "Counterpart Comment"
 msgstr "对应备注"
 
 #. module: account_voucher
-#: field:account.voucher,create_uid:0 field:account.voucher.line,create_uid:0
+#: field:account.voucher,create_uid:0
+#: field:account.voucher.line,create_uid:0
 msgid "Created by"
 msgstr ""
 
@@ -319,7 +320,8 @@ msgid "Customer Payments"
 msgstr "客户付款"
 
 #. module: account_voucher
-#: field:account.voucher,date:0 field:account.voucher.line,date_original:0
+#: field:account.voucher,date:0
+#: field:account.voucher.line,date_original:0
 #: field:sale.receipt.report,date:0
 msgid "Date"
 msgstr "日期"
@@ -382,7 +384,8 @@ msgid "Draft Vouchers"
 msgstr "草稿凭证"
 
 #. module: account_voucher
-#: field:account.voucher,date_due:0 field:account.voucher.line,date_due:0
+#: field:account.voucher,date_due:0
+#: field:account.voucher.line,date_due:0
 #: field:sale.receipt.report,date_due:0
 msgid "Due Date"
 msgstr "到期日期"
@@ -451,7 +454,7 @@ msgstr ""
 #: view:account.voucher:account_voucher.view_voucher_filter_vendor_pay
 #: view:sale.receipt.report:account_voucher.view_sale_receipt_report_search
 msgid "Group By"
-msgstr "分组方式"
+msgstr ""
 
 #. module: account_voucher
 #: field:account.voucher,currency_help_label:0
@@ -463,11 +466,11 @@ msgstr ""
 msgid ""
 "Holds the Chatter summary (number of messages, ...). This summary is "
 "directly in html format in order to be inserted in kanban views."
-msgstr ""
-"保存复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
+msgstr "保存复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
 
 #. module: account_voucher
-#: field:account.voucher,id:0 field:account.voucher.line,id:0
+#: field:account.voucher,id:0
+#: field:account.voucher.line,id:0
 #: field:sale.receipt.report,id:0
 msgid "ID"
 msgstr ""
@@ -552,12 +555,14 @@ msgid "Last Message Date"
 msgstr ""
 
 #. module: account_voucher
-#: field:account.voucher,write_uid:0 field:account.voucher.line,write_uid:0
+#: field:account.voucher,write_uid:0
+#: field:account.voucher.line,write_uid:0
 msgid "Last Updated by"
 msgstr ""
 
 #. module: account_voucher
-#: field:account.voucher,write_date:0 field:account.voucher.line,write_date:0
+#: field:account.voucher,write_date:0
+#: field:account.voucher.line,write_date:0
 msgid "Last Updated on"
 msgstr ""
 
@@ -650,7 +655,8 @@ msgstr "按公司本位币计的付款金额"
 
 #. module: account_voucher
 #: view:account.voucher:account_voucher.view_voucher_filter
-#: field:account.voucher,partner_id:0 field:account.voucher.line,partner_id:0
+#: field:account.voucher,partner_id:0
+#: field:account.voucher.line,partner_id:0
 #: view:sale.receipt.report:account_voucher.view_sale_receipt_report_search
 #: field:sale.receipt.report,partner_id:0
 msgid "Partner"
@@ -667,7 +673,8 @@ msgid "Pay Bill"
 msgstr "付款"
 
 #. module: account_voucher
-#: selection:account.voucher,pay_now:0 selection:sale.receipt.report,pay_now:0
+#: selection:account.voucher,pay_now:0
+#: selection:sale.receipt.report,pay_now:0
 msgid "Pay Directly"
 msgstr "直接支付"
 
@@ -678,14 +685,17 @@ msgid "Pay Invoice"
 msgstr "支付发票"
 
 #. module: account_voucher
-#: selection:account.voucher,pay_now:0 selection:sale.receipt.report,pay_now:0
+#: selection:account.voucher,pay_now:0
+#: selection:sale.receipt.report,pay_now:0
 msgid "Pay Later or Group Funds"
 msgstr "稍后付款或团购"
 
 #. module: account_voucher
 #: view:account.voucher:account_voucher.view_vendor_receipt_dialog_form
-#: field:account.voucher,pay_now:0 selection:account.voucher,type:0
-#: field:sale.receipt.report,pay_now:0 selection:sale.receipt.report,type:0
+#: field:account.voucher,pay_now:0
+#: selection:account.voucher,type:0
+#: field:sale.receipt.report,pay_now:0
+#: selection:sale.receipt.report,type:0
 msgid "Payment"
 msgstr "付款"
 
@@ -800,7 +810,8 @@ msgid "Pro-forma Vouchers"
 msgstr "收据"
 
 #. module: account_voucher
-#: selection:account.voucher,type:0 selection:sale.receipt.report,type:0
+#: selection:account.voucher,type:0
+#: selection:sale.receipt.report,type:0
 msgid "Purchase"
 msgstr "采购"
 
@@ -822,7 +833,8 @@ msgstr "采购凭证"
 
 #. module: account_voucher
 #: view:account.voucher:account_voucher.view_vendor_receipt_form
-#: selection:account.voucher,type:0 selection:sale.receipt.report,type:0
+#: selection:account.voucher,type:0
+#: selection:sale.receipt.report,type:0
 msgid "Receipt"
 msgstr "收据"
 
@@ -843,7 +855,8 @@ msgid "Register Payment"
 msgstr "登记付款"
 
 #. module: account_voucher
-#: selection:account.voucher,type:0 selection:sale.receipt.report,type:0
+#: selection:account.voucher,type:0
+#: selection:sale.receipt.report,type:0
 msgid "Sale"
 msgstr "销售"
 
@@ -879,7 +892,7 @@ msgstr "销售收据"
 #: view:sale.receipt.report:account_voucher.view_sale_receipt_report_graph
 #: view:sale.receipt.report:account_voucher.view_sale_receipt_report_search
 msgid "Sales Receipts Analysis"
-msgstr "销售收据分析"
+msgstr ""
 
 #. module: account_voucher
 #: field:sale.receipt.report,user_id:0
@@ -985,9 +998,7 @@ msgstr ""
 msgid ""
 "The specific rate that will be used, in this voucher, between the selected "
 "currency (in 'Payment Rate Currency' field)  and the voucher currency."
-msgstr ""
-"手工指定的汇率，适用于这张凭证，用于转换所选货币（在“付款汇率货币”字段输入）"
-"和凭证货币。"
+msgstr "手工指定的汇率，适用于这张凭证，用于转换所选货币（在“付款汇率货币”字段输入）和凭证货币。"
 
 #. module: account_voucher
 #: help:account.voucher,payment_option:0
@@ -996,9 +1007,7 @@ msgid ""
 "difference between the paid amount and the sum of allocated amounts. You can "
 "either choose to keep open this difference on the partner's account, or "
 "reconcile it with the payment(s)"
-msgstr ""
-"此字段用于选择对已支付金额和已分配金额的差异如何处理。可以选择保持欠款状态，"
-"也可以用其他付款来核销。"
+msgstr "此字段用于选择对已支付金额和已分配金额的差异如何处理。可以选择保持欠款状态，也可以用其他付款来核销。"
 
 #. module: account_voucher
 #: help:account.voucher,currency_help_label:0

@@ -33,8 +33,8 @@ msgid ""
 "    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
 "       &nbsp;&nbsp;<strong>REFERENCES</strong><br />\n"
 "       &nbsp;&nbsp;Order number: <strong>${object.name}</strong><br />\n"
-"       &nbsp;&nbsp;Order total: <strong>${object.amount_total} ${object."
-"pricelist_id.currency_id.name}</strong><br />\n"
+"       &nbsp;&nbsp;Order total: <strong>${object.amount_total} "
+"${object.pricelist_id.currency_id.name}</strong><br />\n"
 "       &nbsp;&nbsp;Order date: ${object.date_order}<br />\n"
 "       % if object.origin:\n"
 "       &nbsp;&nbsp;Order reference: ${object.origin}<br />\n"
@@ -47,13 +47,23 @@ msgid ""
 "''}?subject=Order%20${object.name}\">${object.user_id.name}</a>\n"
 "       % endif\n"
 "    </p>\n"
+"    <p>\n"
+"        You can view your quotation online:\n"
+"    </p>\n"
+"    <a style=\"display:block; width: 150px; height:20px; margin-left: 120px; "
+"color: #DDD; font-family: 'Lucida Grande', Helvetica, Arial, sans-serif; "
+"font-size: 13px; font-weight: bold; text-align: center; text-decoration: "
+"none !important; line-height: 1; padding: 5px 0px 0px 0px; background-color: "
+"#8E0000; border-radius: 5px 5px; background-repeat: repeat no-repeat;\"\n"
+"        href=\"/quote/${object.id}/${object.access_token}\">View "
+"${object.state in ('draft', 'sent') and 'Quotation' or 'Order'}</a>\n"
 "\n"
 "    % if object.paypal_url:\n"
 "    <br/>\n"
 "    <p>It is also possible to directly pay with Paypal:</p>\n"
 "        <a style=\"margin-left: 120px;\" href=\"${object.paypal_url}\">\n"
-"            <img class=\"oe_edi_paypal_button\" src=\"/sale/static/img/"
-"btn_paynowcc_lg.gif\"/>\n"
+"            <img class=\"oe_edi_paypal_button\" "
+"src=\"https://www.paypal.com/en_US/i/btn/btn_paynowCC_LG.gif\"/>\n"
 "        </a>\n"
 "    % endif\n"
 "\n"
@@ -67,8 +77,8 @@ msgid ""
 "background-repeat: repeat no-repeat;\">\n"
 "        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: "
 "#DDD;\">\n"
-"            <strong style=\"text-transform:uppercase;\">${object.company_id."
-"name}</strong></h3>\n"
+"            <strong style=\"text-"
+"transform:uppercase;\">${object.company_id.name}</strong></h3>\n"
 "    </div>\n"
 "    <div style=\"width: 347px; margin: 0px; padding: 5px 14px; line-height: "
 "16px; background-color: #F2F2F2;\">\n"
@@ -83,8 +93,9 @@ msgid ""
 "            ${object.company_id.zip} ${object.company_id.city}<br/>\n"
 "        % endif\n"
 "        % if object.company_id.country_id:\n"
-"            ${object.company_id.state_id and ('%s, ' % object.company_id."
-"state_id.name) or ''} ${object.company_id.country_id.name or ''}<br/>\n"
+"            ${object.company_id.state_id and ('%s, ' % "
+"object.company_id.state_id.name) or ''} ${object.company_id.country_id.name "
+"or ''}<br/>\n"
 "        % endif\n"
 "        </span>\n"
 "        % if object.company_id.phone:\n"
@@ -96,8 +107,8 @@ msgid ""
 "        % endif\n"
 "        % if object.company_id.website:\n"
 "            <div>\n"
-"                Web :&nbsp;<a href=\"${object.company_id.website}\">${object."
-"company_id.website}</a>\n"
+"                Web :&nbsp;<a "
+"href=\"${object.company_id.website}\">${object.company_id.website}</a>\n"
 "            </div>\n"
 "        %endif\n"
 "        <p></p>\n"
@@ -107,7 +118,8 @@ msgid ""
 msgstr ""
 
 #. module: sale
-#: field:product.product,sales_count:0 field:product.template,sales_count:0
+#: field:product.product,sales_count:0
+#: field:product.template,sales_count:0
 msgid "# Sales"
 msgstr "笔销售单"
 
@@ -150,14 +162,14 @@ msgstr "（更新）"
 #. module: sale
 #: help:sale.order.line,state:0
 msgid ""
-"* The 'Draft' status is set when the related sales order in draft "
-"status.                     \n"
-"* The 'Confirmed' status is set when the related sales order is "
-"confirmed.                     \n"
+"* The 'Draft' status is set when the related sales order in draft status.    "
+"                 \n"
+"* The 'Confirmed' status is set when the related sales order is confirmed.   "
+"                  \n"
 "* The 'Exception' status is set when the related sales order is set as "
 "exception.                     \n"
-"* The 'Done' status is set when the sales order line has been "
-"picked.                     \n"
+"* The 'Done' status is set when the sales order line has been picked.        "
+"             \n"
 "* The 'Cancelled' status is set when a user cancel the sales order related."
 msgstr ""
 "*一个销售定单是草稿的时候，设置为“草稿”状态\n"
@@ -183,8 +195,7 @@ msgid ""
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                   单击此处创建报价单，并能在之后转换成为销售订单。\n"
-"                </p><p>系统将帮助你高效地处理完整销售流程：报价、销售、发运、"
-"开票及付款。</p>\n"
+"                </p><p>系统将帮助你高效地处理完整销售流程：报价、销售、发运、开票及付款。</p>\n"
 "            "
 
 #. module: sale
@@ -286,7 +297,7 @@ msgid "Advance Amount"
 msgstr "预付款总额"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:207
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:203
 #, python-format
 msgid "Advance Invoice"
 msgstr "预付款发票"
@@ -297,13 +308,14 @@ msgid "Advance Product"
 msgstr "预付款产品"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:62
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:107
 #, python-format
 msgid "Advance of %s %%"
 msgstr "%s%% 的预付款"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:62
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:114
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:116
 #, python-format
 msgid "Advance of %s %s"
 msgstr "预付款：%s %s"
@@ -322,9 +334,7 @@ msgid ""
 "percentage of the sales order\n"
 "                    or a fixed price (for advances) directly from the sales "
 "order form if you prefer."
-msgstr ""
-"这些订单行的所有项目将被开票。你也能按订单的比例开票，如果你喜欢，也能直接从"
-"订单表单的以固定价格（预付款）开票。"
+msgstr "这些订单行的所有项目将被开票。你也能按订单的比例开票，如果你喜欢，也能直接从订单表单的以固定价格（预付款）开票。"
 
 #. module: sale
 #: field:sale.order.line,address_allotment_id:0
@@ -508,7 +518,8 @@ msgid "Cancel Quotation"
 msgstr "取消报价"
 
 #. module: sale
-#: selection:sale.order,state:0 selection:sale.order.line,state:0
+#: selection:sale.order,state:0
+#: selection:sale.order.line,state:0
 #: selection:sale.report,state:0
 msgid "Cancelled"
 msgstr "已取消"
@@ -577,7 +588,8 @@ msgid "Companies"
 msgstr "公司"
 
 #. module: sale
-#: field:sale.order,company_id:0 field:sale.order.line,company_id:0
+#: field:sale.order,company_id:0
+#: field:sale.order.line,company_id:0
 #: view:sale.report:sale.view_order_product_search
 #: field:sale.report,company_id:0
 msgid "Company"
@@ -634,7 +646,8 @@ msgstr "生成并查看发票"
 #. module: sale
 #: model:ir.actions.act_window,name:sale.action_view_sale_order_line_make_invoice
 #: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
-#: view:sale.order:sale.view_order_form field:sale.order,order_policy:0
+#: view:sale.order:sale.view_order_form
+#: field:sale.order,order_policy:0
 #: view:sale.order.line:sale.view_order_line_form2
 msgid "Create Invoice"
 msgstr "生成发票"
@@ -658,7 +671,8 @@ msgstr "创建发票"
 
 #. module: sale
 #: field:sale.advance.payment.inv,create_uid:0
-#: field:sale.make.invoice,create_uid:0 field:sale.order,create_uid:0
+#: field:sale.make.invoice,create_uid:0
+#: field:sale.order,create_uid:0
 #: field:sale.order.line,create_uid:0
 #: field:sale.order.line.make.invoice,create_uid:0
 msgid "Created by"
@@ -666,7 +680,8 @@ msgstr "创建者"
 
 #. module: sale
 #: field:sale.advance.payment.inv,create_date:0
-#: field:sale.make.invoice,create_date:0 field:sale.order.line,create_date:0
+#: field:sale.make.invoice,create_date:0
+#: field:sale.order.line,create_date:0
 #: field:sale.order.line.make.invoice,create_date:0
 msgid "Created on"
 msgstr ""
@@ -682,7 +697,8 @@ msgid "Currency"
 msgstr "币种"
 
 #. module: sale
-#: view:sale.order:sale.view_sales_order_filter field:sale.order,partner_id:0
+#: view:sale.order:sale.view_sales_order_filter
+#: field:sale.order,partner_id:0
 #: field:sale.order.line,order_partner_id:0
 #: view:sale.report:sale.view_order_product_search
 msgid "Customer"
@@ -772,7 +788,8 @@ msgid "Delivery address for current sales order."
 msgstr "当前销售订单的发运地址"
 
 #. module: sale
-#: field:sale.order.line,name:0 view:website:sale.report_saleorder_document
+#: field:sale.order.line,name:0
+#: view:website:sale.report_saleorder_document
 msgid "Description"
 msgstr "说明"
 
@@ -802,10 +819,12 @@ msgid "Do you really want to create the invoice(s)?"
 msgstr "你真的要生成发票吗 ？"
 
 #. module: sale
-#: view:sale.order:sale.view_sales_order_filter selection:sale.order,state:0
+#: view:sale.order:sale.view_sales_order_filter
+#: selection:sale.order,state:0
 #: view:sale.order.line:sale.view_order_line_form2
 #: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
-#: selection:sale.order.line,state:0 selection:sale.report,state:0
+#: selection:sale.order.line,state:0
+#: selection:sale.report,state:0
 msgid "Done"
 msgstr "已完成"
 
@@ -906,8 +925,8 @@ msgstr ""
 msgid ""
 "Forecast of the invoice revenue for the current month. This is the amount "
 "the sales \n"
-"team should invoice this month. It is used to compute the progression "
-"ratio \n"
+"team should invoice this month. It is used to compute the progression ratio "
+"\n"
 " of the current and forecast revenue on the kanban view."
 msgstr ""
 
@@ -933,16 +952,14 @@ msgstr "给出订单行列表显示的排列顺序"
 #: help:sale.order,state:0
 msgid ""
 "Gives the status of the quotation or sales order.              \n"
-"The exception status is automatically set when a cancel operation "
-"occurs               in the invoice validation (Invoice Exception) or in the "
-"picking list process (Shipping Exception).\n"
-"The 'Waiting Schedule' status is set when the invoice is "
-"confirmed               but waiting for the scheduler to run on the order "
-"date."
+"The exception status is automatically set when a cancel operation occurs     "
+"          in the invoice validation (Invoice Exception) or in the picking "
+"list process (Shipping Exception).\n"
+"The 'Waiting Schedule' status is set when the invoice is confirmed           "
+"    but waiting for the scheduler to run on the order date."
 msgstr ""
 "产生报价单或者销售订单的状态。\n"
-"当发票核准时（开票异常）或者 拣货单 处理时（运输异常）发生了取消操作，设置了"
-"异常状态。\n"
+"当发票核准时（开票异常）或者 拣货单 处理时（运输异常）发生了取消操作，设置了异常状态。\n"
 "当发票被确认，但是等待在 订单日期排期的时候，设置为 “等待排期\" 状态。"
 
 #. module: sale
@@ -963,8 +980,7 @@ msgstr "发票组"
 msgid ""
 "Holds the Chatter summary (number of messages, ...). This summary is "
 "directly in html format in order to be inserted in kanban views."
-msgstr ""
-"保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
+msgstr "保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
 
 #. module: sale
 #: code:addons/sale/res_config.py:100
@@ -973,9 +989,12 @@ msgid "Hour"
 msgstr "小时"
 
 #. module: sale
-#: field:sale.advance.payment.inv,id:0 field:sale.make.invoice,id:0
-#: field:sale.order,id:0 field:sale.order.line,id:0
-#: field:sale.order.line.make.invoice,id:0 field:sale.report,id:0
+#: field:sale.advance.payment.inv,id:0
+#: field:sale.make.invoice,id:0
+#: field:sale.order,id:0
+#: field:sale.order.line,id:0
+#: field:sale.order.line.make.invoice,id:0
+#: field:sale.report,id:0
 msgid "ID"
 msgstr ""
 
@@ -1005,11 +1024,12 @@ msgstr "处理中"
 #. module: sale
 #: code:addons/sale/sale.py:274
 #, python-format
-msgid "In order to delete a confirmed sales order, you must cancel it before!"
+msgid ""
+"In order to delete a confirmed sales order, you must cancel it before!"
 msgstr ""
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:105
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:102
 #, python-format
 msgid "Incorrect Data"
 msgstr "错误的数据"
@@ -1023,7 +1043,7 @@ msgid "Invalid Action!"
 msgstr "非法的动作"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_line_invoice.py:127
+#: code:addons/sale/wizard/sale_line_invoice.py:121
 #: model:ir.model,name:sale.model_account_invoice
 #: view:sale.order:sale.view_order_form
 #, python-format
@@ -1041,7 +1061,8 @@ msgid "Invoice Date"
 msgstr "开票日期"
 
 #. module: sale
-#: selection:sale.order,state:0 selection:sale.report,state:0
+#: selection:sale.order,state:0
+#: selection:sale.report,state:0
 msgid "Invoice Exception"
 msgstr "发票异常"
 
@@ -1086,7 +1107,7 @@ msgid "Invoice and shipping address:"
 msgstr ""
 
 #. module: sale
-#: code:addons/sale/wizard/sale_line_invoice.py:113
+#: code:addons/sale/wizard/sale_line_invoice.py:107
 #, python-format
 msgid ""
 "Invoice cannot be created for this Sales Order Line due to one of the "
@@ -1099,7 +1120,7 @@ msgstr ""
 "2. 销售订单明细已经开票！"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_line_invoice.py:102
+#: code:addons/sale/wizard/sale_line_invoice.py:97
 #, python-format
 msgid "Invoice created"
 msgstr ""
@@ -1117,7 +1138,8 @@ msgstr "为整个销售订单开票"
 
 #. module: sale
 #: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
-#: field:sale.order,invoice_exists:0 field:sale.order.line,invoiced:0
+#: field:sale.order,invoice_exists:0
+#: field:sale.order.line,invoiced:0
 msgid "Invoiced"
 msgstr "已开票"
 
@@ -1170,7 +1192,8 @@ msgstr ""
 
 #. module: sale
 #: field:sale.advance.payment.inv,write_uid:0
-#: field:sale.make.invoice,write_uid:0 field:sale.order,write_uid:0
+#: field:sale.make.invoice,write_uid:0
+#: field:sale.order,write_uid:0
 #: field:sale.order.line,write_uid:0
 #: field:sale.order.line.make.invoice,write_uid:0
 msgid "Last Updated by"
@@ -1178,7 +1201,8 @@ msgstr ""
 
 #. module: sale
 #: field:sale.advance.payment.inv,write_date:0
-#: field:sale.make.invoice,write_date:0 field:sale.order,write_date:0
+#: field:sale.make.invoice,write_date:0
+#: field:sale.order,write_date:0
 #: field:sale.order.line,write_date:0
 #: field:sale.order.line.make.invoice,write_date:0
 msgid "Last Updated on"
@@ -1203,11 +1227,6 @@ msgstr "消息"
 #: help:sale.order,message_ids:0
 msgid "Messages and communication history"
 msgstr "消息和通信历史"
-
-#. module: sale
-#: view:sale.order:sale.view_sales_order_filter
-msgid "Mine"
-msgstr "我的"
 
 #. module: sale
 #: view:sale.report:sale.view_order_product_search
@@ -1273,8 +1292,8 @@ msgstr "需求"
 #. module: sale
 #: help:sale.order,order_policy:0
 msgid ""
-"On demand: A draft invoice can be created from the sales order when "
-"needed. \n"
+"On demand: A draft invoice can be created from the sales order when needed. "
+"\n"
 "On delivery order: A draft invoice can be created from the delivery order "
 "when the products have been delivered. \n"
 "Before delivery: A draft invoice is created from the sales order and must be "
@@ -1301,7 +1320,8 @@ msgid "Order"
 msgstr "订单"
 
 #. module: sale
-#: view:sale.order:sale.view_order_form field:sale.order,order_line:0
+#: view:sale.order:sale.view_order_form
+#: field:sale.order,order_line:0
 msgid "Order Lines"
 msgstr "订单明细"
 
@@ -1327,7 +1347,8 @@ msgid "Order N°"
 msgstr "单号"
 
 #. module: sale
-#: field:sale.order,name:0 field:sale.order.line,order_id:0
+#: field:sale.order,name:0
+#: field:sale.order.line,order_id:0
 msgid "Order Reference"
 msgstr "订单关联"
 
@@ -1362,7 +1383,8 @@ msgid "Paid"
 msgstr "支付"
 
 #. module: sale
-#: model:ir.model,name:sale.model_res_partner field:sale.report,partner_id:0
+#: model:ir.model,name:sale.model_res_partner
+#: field:sale.report,partner_id:0
 msgid "Partner"
 msgstr "业务伙伴"
 
@@ -1455,7 +1477,8 @@ msgstr ""
 #: field:sale.order,product_id:0
 #: view:sale.order.line:sale.view_sales_order_line_filter
 #: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
-#: field:sale.order.line,product_id:0 field:sale.report,product_id:0
+#: field:sale.order.line,product_id:0
+#: field:sale.report,product_id:0
 msgid "Product"
 msgstr "产品"
 
@@ -1503,7 +1526,8 @@ msgstr "数量(销售单位)"
 
 #. module: sale
 #: view:sale.order:sale.view_order_form
-#: view:sale.order:sale.view_quotation_tree selection:sale.report,state:0
+#: view:sale.order:sale.view_quotation_tree
+#: selection:sale.report,state:0
 msgid "Quotation"
 msgstr "报价单"
 
@@ -1561,7 +1585,6 @@ msgstr "报价单发送"
 #: model:ir.actions.act_window,name:sale.action_quotations_salesteams
 #: model:ir.ui.menu,name:sale.menu_sale_quotations
 #: view:sale.order:sale.view_sales_order_filter
-#: view:sale.report:sale.view_order_product_search
 msgid "Quotations"
 msgstr "报价单"
 
@@ -1671,11 +1694,13 @@ msgid "Sales Make Invoice"
 msgstr "销售订单生成发票"
 
 #. module: sale
-#: code:addons/sale/sale.py:284 model:ir.model,name:sale.model_sale_order
+#: code:addons/sale/sale.py:284
+#: model:ir.model,name:sale.model_sale_order
 #: field:res.partner,sale_order_ids:0
 #: model:res.request.link,name:sale.req_link_sale_order
 #: view:sale.order:sale.view_order_form
-#: view:sale.order:sale.view_sales_order_filter selection:sale.order,state:0
+#: view:sale.order:sale.view_sales_order_filter
+#: selection:sale.order,state:0
 #, python-format
 msgid "Sales Order"
 msgstr "销售订单"
@@ -1761,9 +1786,9 @@ msgstr "销售订单统计"
 #: view:account.invoice:sale.account_invoice_groupby_inherit
 #: view:account.invoice:sale.account_invoice_tree
 #: field:account.invoice,section_id:0
-#: view:account.invoice.report:sale.view_account_invoice_report_search_inherit
 #: field:account.invoice.report,section_id:0
-#: view:sale.order:sale.view_sales_order_filter field:sale.order,section_id:0
+#: view:sale.order:sale.view_sales_order_filter
+#: field:sale.order,section_id:0
 #: view:sale.report:sale.view_order_product_search
 #: field:sale.report,section_id:0
 msgid "Sales Team"
@@ -1785,10 +1810,12 @@ msgid "Sales order lines done"
 msgstr "销售订单行完成"
 
 #. module: sale
-#: view:sale.order:sale.view_sales_order_filter field:sale.order,user_id:0
+#: view:sale.order:sale.view_sales_order_filter
+#: field:sale.order,user_id:0
 #: view:sale.order.line:sale.view_sales_order_line_filter
 #: field:sale.order.line,salesman_id:0
-#: view:sale.report:sale.view_order_product_search field:sale.report,user_id:0
+#: view:sale.report:sale.view_order_product_search
+#: field:sale.report,user_id:0
 msgid "Salesperson"
 msgstr "业务员"
 
@@ -1814,9 +1841,7 @@ msgid ""
 "Select a product of type service which is called 'Advance Product'.\n"
 "                You may have to create it and set it as a default value on "
 "this field."
-msgstr ""
-"选择一个叫做“预付款产品”的服务类型的产品，。你可以在这个字段创建并且设置默认"
-"值。"
+msgstr "选择一个叫做“预付款产品”的服务类型的产品，。你可以在这个字段创建并且设置默认值。"
 
 #. module: sale
 #: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
@@ -1842,13 +1867,14 @@ msgid "Shipped"
 msgstr "已送货"
 
 #. module: sale
-#: selection:sale.order,state:0 selection:sale.report,state:0
+#: selection:sale.order,state:0
+#: selection:sale.report,state:0
 msgid "Shipping Exception"
 msgstr "送货异常"
 
 #. module: sale
 #: view:website:sale.report_saleorder_document
-msgid "Shipping address:"
+msgid "Shipping address :"
 msgstr "运货地址:"
 
 #. module: sale
@@ -1894,7 +1920,8 @@ msgid ""
 msgstr ""
 
 #. module: sale
-#: field:sale.order,amount_tax:0 field:sale.order.line,tax_id:0
+#: field:sale.order,amount_tax:0
+#: field:sale.order.line,tax_id:0
 #: view:website:sale.report_saleorder_document
 msgid "Taxes"
 msgstr "税"
@@ -1940,7 +1967,7 @@ msgid "The total amount."
 msgstr "总金额。"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:106
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:103
 #, python-format
 msgid "The value of Advance Amount must be positive."
 msgstr "定金必须是正的"
@@ -1960,13 +1987,13 @@ msgid "There is no default company for the current user!"
 msgstr ""
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:96
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:93
 #, python-format
 msgid "There is no income account defined as global property."
 msgstr "没有收益科目定义为全局属性"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:100
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:97
 #, python-format
 msgid "There is no income account defined for this product: \"%s\" (id:%d)."
 msgstr "在这个产品没有定义收益科目: \"%s\" (id:%d)."
@@ -2001,9 +2028,7 @@ msgid ""
 "This is the list of invoices that have been generated for this sales order. "
 "The same sales order may have been invoiced in several times (by line for "
 "example)."
-msgstr ""
-"这是为此销售订单生成的发票列表。同一销售订单可能会多次开票（比如按销售明"
-"细）。"
+msgstr "这是为此销售订单生成的发票列表。同一销售订单可能会多次开票（比如按销售明细）。"
 
 #. module: sale
 #: model:ir.actions.act_window,help:sale.action_order_report_all
@@ -2014,9 +2039,8 @@ msgid ""
 "having invoiced yet. If you want to analyse your turnover, you should use "
 "the Invoice Analysis report in the Accounting application."
 msgstr ""
-"这个报表会对你的报价单和销售订单进行分析。分析检查你的销售收入，并且按照不同"
-"的标准分组（业务员，合作伙伴，产品等）。用这个报表对还没有开票的销售订单进行"
-"分析。 如果你想分析你的营业额，你应该用会计模块里的发票分析报表。"
+"这个报表会对你的报价单和销售订单进行分析。分析检查你的销售收入，并且按照不同的标准分组（业务员，合作伙伴，产品等）。用这个报表对还没有开票的销售订单进行分"
+"析。 如果你想分析你的营业额，你应该用会计模块里的发票分析报表。"
 
 #. module: sale
 #: model:ir.actions.act_window,help:sale.action_order_report_quotation_salesteam
@@ -2171,7 +2195,8 @@ msgid "View Invoice"
 msgstr "查看发票"
 
 #. module: sale
-#: selection:sale.order,state:0 selection:sale.report,state:0
+#: selection:sale.order,state:0
+#: selection:sale.report,state:0
 msgid "Waiting Schedule"
 msgstr "等待排期"
 
@@ -2181,12 +2206,22 @@ msgid "Warehouse Features"
 msgstr "仓库特性"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_line_invoice.py:113
+#: code:addons/sale/wizard/sale_line_invoice.py:107
 #: code:addons/sale/wizard/sale_make_invoice.py:42
 #: code:addons/sale/wizard/sale_make_invoice.py:55
 #, python-format
 msgid "Warning!"
 msgstr "警告！"
+
+#. module: sale
+#: field:sale.order,website_message_ids:0
+msgid "Website Messages"
+msgstr ""
+
+#. module: sale
+#: help:sale.order,website_message_ids:0
+msgid "Website communication history"
+msgstr ""
 
 #. module: sale
 #: field:sale.order.line,th_weight:0
@@ -2243,13 +2278,6 @@ msgstr "您不可以为下列销售订单 %s 手工开票"
 #: view:website:sale.report_saleorder_document
 msgid "Your Reference:"
 msgstr ""
-
-#. module: sale
-#: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
-#: view:sale.make.invoice:sale.view_sale_order_make_invoice
-#: view:sale.order.line.make.invoice:sale.view_sale_order_line_make_invoice
-msgid "or"
-msgstr "或"
 
 #. module: sale
 #: view:res.partner:sale.res_partner_address_type

@@ -72,7 +72,8 @@ msgid ""
 msgstr ""
 
 #. module: hr_timesheet
-#: selection:hr.sign.in.project,state:0 selection:hr.sign.out.project,state:0
+#: selection:hr.sign.in.project,state:0
+#: selection:hr.sign.out.project,state:0
 msgid "Absent"
 msgstr ""
 
@@ -141,7 +142,7 @@ msgstr ""
 #. module: hr_timesheet
 #: field:hr.timesheet.report,cost:0
 msgid "Cost"
-msgstr "成本"
+msgstr ""
 
 #. module: hr_timesheet
 #: view:account.analytic.account:hr_timesheet.account_analytic_account_timesheet_form
@@ -174,7 +175,8 @@ msgid "Current Date"
 msgstr "当前日期"
 
 #. module: hr_timesheet
-#: field:hr.sign.in.project,state:0 field:hr.sign.out.project,state:0
+#: field:hr.sign.in.project,state:0
+#: field:hr.sign.out.project,state:0
 msgid "Current Status"
 msgstr "当前状态"
 
@@ -205,7 +207,8 @@ msgid "Employee"
 msgstr "员工"
 
 #. module: hr_timesheet
-#: field:hr.sign.in.project,emp_id:0 field:hr.sign.out.project,emp_id:0
+#: field:hr.sign.in.project,emp_id:0
+#: field:hr.sign.out.project,emp_id:0
 msgid "Employee ID"
 msgstr "员工ID"
 
@@ -218,9 +221,10 @@ msgid ""
 msgstr ""
 
 #. module: hr_timesheet
-#: field:hr.sign.in.project,name:0 field:hr.sign.out.project,name:0
+#: field:hr.sign.in.project,name:0
+#: field:hr.sign.out.project,name:0
 msgid "Employee's Name"
-msgstr "员工姓名"
+msgstr ""
 
 #. module: hr_timesheet
 #: view:hr.sign.in.project:hr_timesheet.view_hr_timesheet_sign_in_message
@@ -271,7 +275,7 @@ msgstr ""
 #: view:hr.analytic.timesheet:hr_timesheet.hr_timesheet_line_search
 #: view:hr.timesheet.report:hr_timesheet.view_hr_timesheet_report_search
 msgid "Group By"
-msgstr "分组方式"
+msgstr ""
 
 #. module: hr_timesheet
 #: view:hr.timesheet.report:hr_timesheet.view_hr_timesheet_report_search
@@ -279,8 +283,10 @@ msgid "Group by month of date"
 msgstr ""
 
 #. module: hr_timesheet
-#: field:hr.analytic.timesheet,id:0 field:hr.sign.in.project,id:0
-#: field:hr.sign.out.project,id:0 field:hr.timesheet.report,id:0
+#: field:hr.analytic.timesheet,id:0
+#: field:hr.sign.in.project,id:0
+#: field:hr.sign.out.project,id:0
+#: field:hr.timesheet.report,id:0
 msgid "ID"
 msgstr ""
 
@@ -303,7 +309,8 @@ msgstr ""
 
 #. module: hr_timesheet
 #: field:hr.analytic.timesheet,write_uid:0
-#: field:hr.sign.in.project,write_uid:0 field:hr.sign.out.project,write_uid:0
+#: field:hr.sign.in.project,write_uid:0
+#: field:hr.sign.out.project,write_uid:0
 msgid "Last Updated by"
 msgstr ""
 
@@ -370,14 +377,16 @@ msgid "Please define employee for your user."
 msgstr "请为你的用户定义员工信息。"
 
 #. module: hr_timesheet
-#: selection:hr.sign.in.project,state:0 selection:hr.sign.out.project,state:0
+#: selection:hr.sign.in.project,state:0
+#: selection:hr.sign.out.project,state:0
 msgid "Present"
 msgstr ""
 
 #. module: hr_timesheet
 #: view:hr.analytic.timesheet:hr_timesheet.hr_timesheet_line_form
 #: view:hr.analytic.timesheet:hr_timesheet.hr_timesheet_line_search
-#: field:hr.employee,product_id:0 field:hr.timesheet.report,product_id:0
+#: field:hr.employee,product_id:0
+#: field:hr.timesheet.report,product_id:0
 msgid "Product"
 msgstr "产品"
 
@@ -427,7 +436,8 @@ msgid "Start Working"
 msgstr "开始工作"
 
 #. module: hr_timesheet
-#: field:hr.sign.in.project,date:0 field:hr.sign.out.project,date_start:0
+#: field:hr.sign.in.project,date:0
+#: field:hr.sign.out.project,date_start:0
 msgid "Starting Date"
 msgstr "开始日期"
 
@@ -459,7 +469,7 @@ msgstr "计工单"
 #: model:ir.actions.act_window,name:hr_timesheet.act_hr_timesheet_accounts_form
 #: model:ir.ui.menu,name:hr_timesheet.menu_timesheet_accounts
 msgid "Timesheet Accounts"
-msgstr "时间表核算项"
+msgstr ""
 
 #. module: hr_timesheet
 #: view:hr.analytic.timesheet:hr_timesheet.hr_timesheet_line_form
