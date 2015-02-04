@@ -1693,7 +1693,7 @@ msgstr "计算金额"
 #: field:account.model.line,amount_currency:0
 #: field:account.move.line,amount_currency:0
 msgid "Amount Currency"
-msgstr "原币种金额"
+msgstr "原币金额"
 
 #. module: account
 #: view:account.payment.term.line:account.view_payment_term_line_form
@@ -11885,7 +11885,7 @@ msgstr "已关闭科目无法创建分录账项。"
 msgid ""
 "You cannot create journal items with a secondary currency without recording "
 "both 'currency' and 'amount currency' field."
-msgstr "对于没有币种和原币种金额的第二货币，你不能用它来创建分类账项。"
+msgstr "对于没有币种和原币金额的第二货币，你不能用它来创建分类账项。"
 
 #. module: account
 #: constraint:account.move:0

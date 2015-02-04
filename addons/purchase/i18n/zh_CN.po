@@ -672,7 +672,7 @@ msgstr ""
 #. module: purchase
 #: field:purchase.config.settings,group_advance_purchase_requisition:0
 msgid "Choose from several bids in a call for bids"
-msgstr ""
+msgstr "允许从询价中选择多份报价"
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_res_company

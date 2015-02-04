@@ -225,7 +225,7 @@ msgstr "送货地址"
 #. module: mrp_repair
 #: field:mrp.repair,location_dest_id:0
 msgid "Delivery Location"
-msgstr "送货地点"
+msgstr "入库库位"
 
 #. module: mrp_repair
 #: field:mrp.repair.fee,name:0
@@ -347,7 +347,7 @@ msgstr "内部单据"
 #. module: mrp_repair
 #: field:mrp.repair.line,move_id:0
 msgid "Inventory Move"
-msgstr "存货调拨"
+msgstr "存货移转"
 
 #. module: mrp_repair
 #: field:mrp.repair,invoice_id:0
@@ -459,12 +459,12 @@ msgstr "消息和通信历史记录"
 #. module: mrp_repair
 #: field:mrp.repair,move_id:0
 msgid "Move"
-msgstr "调拨"
+msgstr "移转"
 
 #. module: mrp_repair
 #: help:mrp.repair,move_id:0
 msgid "Move created by the repair order"
-msgstr ""
+msgstr "该修理单所产生的库存移转"
 
 #. module: mrp_repair
 #: selection:mrp.repair,invoice_method:0
@@ -475,7 +475,7 @@ msgstr "不开票"
 #: code:addons/mrp_repair/mrp_repair.py:528
 #, python-format
 msgid "No Pricelist!"
-msgstr ""
+msgstr "没有价格表！"
 
 #. module: mrp_repair
 #: code:addons/mrp_repair/mrp_repair.py:339
@@ -569,14 +569,14 @@ msgstr "产品信息"
 #. module: mrp_repair
 #: field:mrp.repair,product_qty:0
 msgid "Product Quantity"
-msgstr ""
+msgstr "产品数量"
 
 #. module: mrp_repair
 #: field:mrp.repair,product_uom:0
 #: field:mrp.repair.fee,product_uom:0
 #: field:mrp.repair.line,product_uom:0
 msgid "Product Unit of Measure"
-msgstr "产品计量单位"
+msgstr "计量单位"
 
 #. module: mrp_repair
 #: field:mrp.repair,product_id:0
@@ -907,7 +907,7 @@ msgstr "警告！"
 #. module: mrp_repair
 #: field:mrp.repair,guarantee_limit:0
 msgid "Warranty Expiration"
-msgstr "保修期已过"
+msgstr "保修期至"
 
 #. module: mrp_repair
 #: field:mrp.repair,website_message_ids:0

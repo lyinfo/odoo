@@ -33,7 +33,7 @@ msgstr "# 物料清单"
 #: field:product.product,mo_count:0
 #: field:product.template,mo_count:0
 msgid "# Manufacturing Orders"
-msgstr "# 工单"
+msgstr "# 生产订单"
 
 #. module: mrp
 #: code:addons/mrp/mrp.py:323
@@ -97,7 +97,7 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "               单击增加一个工作中心\n"
 "              </p><p>\n"
-"                工作中心允许建立建立和关联一个工单元。他们可以是工人和（或）机\n"
+"                工作中心允许建立建立和关联一个生产订单元。他们可以是工人和（或）机\n"
 "                 器，被作为任务分配以及能力和计划规划的单元\n"
 "              </p>\n"
 "            "
@@ -283,7 +283,7 @@ msgstr "循环金额"
 #. module: mrp
 #: selection:mrp.workcenter.load,measure_unit:0
 msgid "Amount in hours"
-msgstr "工时数"
+msgstr "工时"
 
 #. module: mrp
 #: field:mrp.workcenter.load,measure_unit:0
@@ -466,7 +466,7 @@ msgstr ""
 #: code:addons/mrp/mrp.py:605
 #, python-format
 msgid "Cannot delete a manufacturing order in state '%s'."
-msgstr "不能删除'%s'状态的工单。"
+msgstr "不能删除'%s'状态的生产订单。"
 
 #. module: mrp
 #: code:addons/mrp/mrp.py:679
@@ -515,7 +515,7 @@ msgstr "检查料况"
 #. module: mrp
 #: field:mrp.routing,code:0
 msgid "Code"
-msgstr "代码"
+msgstr "内部编号"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_res_company
@@ -949,7 +949,7 @@ msgstr "未活动的"
 #. module: mrp
 #: field:mrp.bom,position:0
 msgid "Internal Reference"
-msgstr "内部单号"
+msgstr "参考单号"
 
 #. module: mrp
 #: code:addons/mrp/mrp.py:289
@@ -1114,13 +1114,13 @@ msgstr "生产提前期"
 #: field:mrp.production.workcenter.line,production_id:0
 #: field:procurement.order,production_id:0
 msgid "Manufacturing Order"
-msgstr "工单"
+msgstr "生产订单"
 
 #. module: mrp
 #: code:addons/mrp/procurement.py:131
 #, python-format
 msgid "Manufacturing Order <em>%s</em> created."
-msgstr "工单 <em>%s</em>  创建。"
+msgstr "生产订单 <em>%s</em>  创建。"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.act_product_mrp_production
@@ -1132,22 +1132,22 @@ msgstr "工单 <em>%s</em>  创建。"
 #: view:mrp.production:mrp.view_production_calendar
 #: view:mrp.production:mrp.view_production_graph
 msgid "Manufacturing Orders"
-msgstr "工单"
+msgstr "生产订单"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.mrp_production_action2
 msgid "Manufacturing Orders To Start"
-msgstr "未开始的工单"
+msgstr "未开始的生产订单"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.mrp_production_action4
 msgid "Manufacturing Orders Waiting Products"
-msgstr "等待原材料的工单"
+msgstr "等待原材料的生产订单"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.mrp_production_action3
 msgid "Manufacturing Orders in Progress"
-msgstr "未完成的工单"
+msgstr "未完成的生产订单"
 
 #. module: mrp
 #: view:mrp.production:mrp.view_mrp_production_filter
@@ -1228,12 +1228,12 @@ msgstr "不存在此产品的BoM!"
 #. module: mrp
 #: view:website:mrp.report_mrporder
 msgid "No. Of Cycles"
-msgstr "周期数"
+msgstr "循环数"
 
 #. module: mrp
 #: view:website:mrp.report_mrporder
 msgid "No. Of Hours"
-msgstr "工时数"
+msgstr "工时"
 
 #. module: mrp
 #: selection:mrp.bom,type:0
@@ -1262,14 +1262,14 @@ msgstr "备注"
 #: field:mrp.routing.workcenter,cycle_nbr:0
 #: field:report.workcenter.load,cycle:0
 msgid "Number of Cycles"
-msgstr "周期数"
+msgstr "循环次数"
 
 #. module: mrp
 #: field:mrp.production.workcenter.line,hour:0
 #: field:mrp.routing.workcenter,hour_nbr:0
 #: field:report.workcenter.load,hour:0
 msgid "Number of Hours"
-msgstr "工时数"
+msgstr "计划工时"
 
 #. module: mrp
 #: help:mrp.routing.workcenter,cycle_nbr:0
@@ -1303,7 +1303,7 @@ msgstr "订单"
 #. module: mrp
 #: model:ir.ui.menu,name:mrp.menu_mrp_production_order_action
 msgid "Order Planning"
-msgstr "制造单计划"
+msgstr "生产订单计划"
 
 #. module: mrp
 #: constraint:mrp.production:0
@@ -1406,7 +1406,7 @@ msgstr "生产"
 #. module: mrp
 #: field:mrp.config.settings,module_mrp_byproduct:0
 msgid "Produce several products from one manufacturing order"
-msgstr "从一个工单生产几个产品"
+msgstr "从一个生产订单生产几个产品"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
@@ -1438,7 +1438,7 @@ msgstr "产品成本构成"
 #. module: mrp
 #: field:mrp.production,move_prod_id:0
 msgid "Product Move"
-msgstr "产品移动"
+msgstr "产品移转"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_mrp_product_price
@@ -1534,24 +1534,24 @@ msgstr ""
 #. module: mrp
 #: view:mrp.production:mrp.view_mrp_production_filter
 msgid "Production"
-msgstr "工单编码"
+msgstr "生产订单编码"
 
 #. module: mrp
 #: view:mrp.routing:mrp.mrp_routing_search_view
 #: field:mrp.routing,location_id:0
 msgid "Production Location"
-msgstr "产品库位"
+msgstr "备料库位"
 
 #. module: mrp
 #: model:ir.actions.report.xml,name:mrp.action_report_production_order
 #: field:mrp.production.product.line,production_id:0
 msgid "Production Order"
-msgstr "工单"
+msgstr "生产订单"
 
 #. module: mrp
 #: view:website:mrp.report_mrporder
 msgid "Production Order N° :"
-msgstr "工单号:"
+msgstr "生产订单号:"
 
 #. module: mrp
 #: field:stock.move,production_id:0
@@ -1707,18 +1707,18 @@ msgstr "准备生产"
 #: field:mrp.bom,code:0
 #: field:mrp.production,name:0
 msgid "Reference"
-msgstr "工单编号"
+msgstr "内部编号"
 
 #. module: mrp
 #: sql_constraint:mrp.production:0
 msgid "Reference must be unique per Company!"
-msgstr "编号必须在公司内唯一！"
+msgstr "内部编号必须在公司内唯一！"
 
 #. module: mrp
 #: help:mrp.production,origin:0
 msgid ""
 "Reference of the document that generated this production order request."
-msgstr "生成这张工单的前置单据编号"
+msgstr "生成这张生产订单的前置单据编号"
 
 #. module: mrp
 #: help:mrp.bom,position:0
@@ -1824,12 +1824,12 @@ msgstr "计划（月）"
 #: view:mrp.production.product.line:mrp.mrp_production_product_form_view
 #: view:mrp.production.product.line:mrp.mrp_production_product_tree_view
 msgid "Scheduled Products"
-msgstr "备料清单"
+msgstr "备料"
 
 #. module: mrp
 #: field:mrp.production,product_lines:0
 msgid "Scheduled goods"
-msgstr "备料清单"
+msgstr "备料"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
@@ -1883,7 +1883,7 @@ msgstr "选择时间单位"
 #: field:mrp.routing.workcenter,sequence:0
 #: view:website:mrp.report_mrporder
 msgid "Sequence"
-msgstr "序列"
+msgstr "序号"
 
 #. module: mrp
 #: selection:mrp.bom,type:0
@@ -2045,12 +2045,12 @@ msgstr "生产准备时间"
 #. module: mrp
 #: field:mrp.workcenter,time_cycle:0
 msgid "Time for 1 cycle (hour)"
-msgstr "一个周期的时间(小时)"
+msgstr "一个循环的时间(小时)"
 
 #. module: mrp
 #: help:mrp.workcenter,time_cycle:0
 msgid "Time in hours for doing one cycle."
-msgstr "一个周期的工作小时数"
+msgstr "一个循环的工作小时数"
 
 #. module: mrp
 #: help:mrp.workcenter,time_stop:0
@@ -2085,7 +2085,7 @@ msgstr "总成本：%s %s"
 #: view:mrp.production:mrp.mrp_production_tree_view
 #: field:mrp.production,cycle_total:0
 msgid "Total Cycles"
-msgstr "总周期"
+msgstr "总循环"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_tree_view
@@ -2118,7 +2118,7 @@ msgstr "类型"
 #. module: mrp
 #: field:mrp.workcenter.load,time_unit:0
 msgid "Type of period"
-msgstr "周期类型"
+msgstr "循环类型"
 
 #. module: mrp
 #: view:mrp.production:mrp.mrp_production_form_view
@@ -2288,7 +2288,7 @@ msgid ""
 "'In Production'.\n"
 "                When the production is over, the status is set to 'Done'."
 msgstr ""
-"当 工单被创建时，状态是“草稿”。\n"
+"当 生产订单被创建时，状态是“草稿”。\n"
 "                                   如果被确认，状态设置为“等待原料”\n"
 "                                   如果有任何意外发生，状态被设置为“领料异常”\n"
 "                                   如果库存可用了，状态被设置为“准备生产”。\n"
