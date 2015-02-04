@@ -134,7 +134,7 @@ msgstr "选中这里就不会按工作中心工作时间重排生产单日期。
 #. module: mrp_operations
 #: field:stock.move,move_dest_id_lines:0
 msgid "Children Moves"
-msgstr "子调拨"
+msgstr "子移转"
 
 #. module: mrp_operations
 #: field:mrp_operations.operation,code_id:0
@@ -162,12 +162,12 @@ msgstr ""
 #. module: mrp_operations
 #: view:mrp.workorder:mrp_operations.view_report_mrp_workorder_filter
 msgid "Current"
-msgstr "当前的"
+msgstr "生產中"
 
 #. module: mrp_operations
 #: model:ir.filters,name:mrp_operations.filter_mrp_workorder_current_production
 msgid "Current Production"
-msgstr ""
+msgstr "生产中的订单"
 
 #. module: mrp_operations
 #: field:mrp.workorder,date:0
@@ -440,13 +440,13 @@ msgstr "生产"
 #. module: mrp_operations
 #: view:mrp_operations.operation:mrp_operations.mrp_production_operation_tree_view
 msgid "Production Operation"
-msgstr "生产生产订单"
+msgstr "生产操作"
 
 #. module: mrp_operations
 #: view:mrp_operations.operation.code:mrp_operations.mrp_production_code_form_view
 #: view:mrp_operations.operation.code:mrp_operations.mrp_production_code_tree_view
 msgid "Production Operation Code"
-msgstr "生产订单编号"
+msgstr "生产操作编号"
 
 #. module: mrp_operations
 #: field:mrp.production.workcenter.line,production_state:0
@@ -667,4 +667,4 @@ msgstr "实际工时"
 #. module: mrp_operations
 #: model:ir.filters,name:mrp_operations.filter_mrp_workorder_workload
 msgid "Workload"
-msgstr ""
+msgstr "工作量"
