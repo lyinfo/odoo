@@ -1615,7 +1615,7 @@ msgstr "有未開發票的採購明細之採購單"
 #. module: purchase
 #: field:stock.warehouse,buy_to_resupply:0
 msgid "Purchase to resupply this warehouse"
-msgstr ""
+msgstr "採購入庫倉庫"
 
 #. module: purchase
 #: field:purchase.report,negociation:0
