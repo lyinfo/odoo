@@ -14123,7 +14123,7 @@ msgstr "分享"
 #. module: base
 #: selection:res.partner,type:0
 msgid "Shipping"
-msgstr "发货"
+msgstr "送货"
 
 #. module: base
 #. openerp-web

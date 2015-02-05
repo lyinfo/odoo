@@ -549,6 +549,8 @@ class res_partner(osv.Model, format_address):
         # company)
         if vals.get('website'):
             vals['website'] = self._clean_website(vals['website'])
+        if 'is_company' in vals:
+            vals['type'] = 'invoice' if vals['is_company'] else 'contact'
         if vals.get('company_id'):
             company = self.env['res.company'].browse(vals['company_id'])
             for partner in self:

@@ -13776,7 +13776,7 @@ msgstr "分享"
 #. module: base
 #: selection:res.partner,type:0
 msgid "Shipping"
-msgstr "船運"
+msgstr "送貨"
 
 #. module: base
 #. openerp-web
