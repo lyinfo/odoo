@@ -7,6 +7,7 @@ import openerp
 import openerp.service.report
 import uuid
 import collections
+import babel.dates
 from werkzeug.exceptions import BadRequest
 from datetime import datetime, timedelta
 from dateutil import parser
@@ -1415,6 +1416,12 @@ class calendar_event(osv.Model):
             del context['default_date']
         return super(calendar_event, self).message_post(cr, uid, thread_id, body=body, subject=subject, type=type, subtype=subtype, parent_id=parent_id, attachments=attachments, context=context, **kwargs)
 
+    def message_subscribe(self, cr, uid, ids, partner_ids, subtype_ids=None, context=None):
+        return super(calendar_event, self).message_subscribe(cr, uid, get_real_ids(ids), partner_ids, subtype_ids=subtype_ids, context=context)
+
+    def message_unsubscribe(self, cr, uid, ids, partner_ids, context=None):
+        return super(calendar_event, self).message_unsubscribe(cr, uid, get_real_ids(ids), partner_ids, context=context)
+
     def do_sendmail(self, cr, uid, ids, context=None):
         for event in self.browse(cr, uid, ids, context):
             current_user = self.pool['res.users'].browse(cr, uid, uid, context=context)
@@ -1440,7 +1447,16 @@ class calendar_event(osv.Model):
         return invitation
 
     def get_interval(self, cr, uid, ids, date, interval, tz=None, context=None):
-        #Function used only in calendar_event_data.xml for email template
+        ''' Format and localize some dates to be used in email templates
+
+            :param string date: date/time to be formatted
+            :param string interval: Among 'day', 'month', 'dayname' and 'time' indicating the desired formatting
+            :param string tz: Timezone indicator (optional)
+
+            :return unicode: Formatted date or time (as unicode string, to prevent jinja2 crash)
+
+            (Function used only in calendar_event_data.xml) '''
+
         date = openerp.fields.Datetime.from_string(date)
 
         if tz:
@@ -1448,14 +1464,23 @@ class calendar_event(osv.Model):
             date = date.replace(tzinfo=pytz.timezone('UTC')).astimezone(timezone)
 
         if interval == 'day':
-            res = str(date.day)
+            # Day number (1-31)
+            res = unicode(date.day)
+
         elif interval == 'month':
-            res = date.strftime('%B') + " " + str(date.year)
+            # Localized month name and year
+            res = babel.dates.format_date(date=date, format='MMMM y', locale=context.get('lang', 'en_US'))
+
         elif interval == 'dayname':
-            res = date.strftime('%A')
+            # Localized day name
+            res = babel.dates.format_date(date=date, format='EEEE', locale=context.get('lang', 'en_US'))
+
         elif interval == 'time':
+            # Localized time
+
             dummy, format_time = self.get_date_formats(cr, uid, context=context)
-            res = date.strftime(format_time + " %Z")
+            res = tools.ustr(date.strftime(format_time + " %Z"))
+
         return res
 
     def search(self, cr, uid, args, offset=0, limit=0, order=None, context=None, count=False):
@@ -1728,7 +1753,6 @@ class calendar_event(osv.Model):
 
         return res
 
-
 class mail_message(osv.Model):
     _inherit = "mail.message"
 
@@ -1806,6 +1830,8 @@ class invite_wizard(osv.osv_memory):
         '''
         in case someone clicked on 'invite others' wizard in the followers widget, transform virtual ids in real ids
         '''
+        if 'default_res_id' in context:
+            context = dict(context, default_res_id=get_real_ids(context['default_res_id']))
         result = super(invite_wizard, self).default_get(cr, uid, fields, context=context)
         if 'res_id' in result:
             result['res_id'] = get_real_ids(result['res_id'])
