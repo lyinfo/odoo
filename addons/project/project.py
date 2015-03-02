@@ -317,7 +317,13 @@ class project(osv.osv):
                                    ('cancelled', 'Cancelled'),
                                    ('pending','Pending'),
                                    ('close','Closed')],
-                                  'Status', required=True, copy=False),
+                                  'Status', required=True, copy=False,
+                                  help='* The \'Template\' status is set when the related project as template serves create new project \
+                                      \n* The \'New\' status is set when the related project in New status. \
+                                      \n* The \'In Progress\' status is set when the related project is running in progress. \
+                                      \n* The \'Cancelled\' status is set when a user cancel the project. \
+                                      \n* The \'Pending\' status is set when the related project is suspend. \
+                                      \n* The \'Closed\' status is set when the project was finished and closed. '),
         'doc_count': fields.function(
             _get_attached_docs, string="Number of documents attached", type='integer'
         )

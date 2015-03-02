@@ -195,6 +195,7 @@
             <field name="arch" type="xml">
                 <search string="Search Project">
                     <field name="name" string="Project Name"/>
+                    <filter string="New" name="Draft" domain="[('state', '=','draft')]"/>
                     <filter string="Open" name="Current" domain="[('state', '=','open')]"/>
                     <filter string="Pending" name="Pending" domain="[('state', '=','pending')]"/>
                     <filter string="Template" name="Template" domain="[('state', '=','template')]"/>
