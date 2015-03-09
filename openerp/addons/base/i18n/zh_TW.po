@@ -6768,7 +6768,7 @@ msgstr ""
 #. module: base
 #: field:res.partner,ref:0
 msgid "Contact Reference"
-msgstr ""
+msgstr "編號"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_partner_title_contact
@@ -12771,7 +12771,7 @@ msgstr "請購"
 #: model:ir.module.category,name:base.module_category_purchase_management
 #: model:ir.ui.menu,name:base.menu_purchase_root
 msgid "Purchases"
-msgstr "購貨"
+msgstr "採購"
 
 #. module: base
 #: view:res.partner:base.view_partner_form
