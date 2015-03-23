@@ -384,7 +384,7 @@ class mrp_bom_line(osv.osv):
         'product_qty': fields.float('Product Quantity', required=True, digits_compute=dp.get_precision('Product Unit of Measure')),
         'product_uom': fields.many2one('product.uom', 'Product Unit of Measure', required=True,
             help="Unit of Measure (Unit of Measure) is the unit of measurement for the inventory control"),
-
+        
         'date_start': fields.date('Valid From', help="Validity of component. Keep empty if it's always valid."),
         'date_stop': fields.date('Valid Until', help="Validity of component. Keep empty if it's always valid."),
         'sequence': fields.integer('Sequence', help="Gives the sequence order when displaying."),
@@ -522,7 +522,7 @@ class mrp_production(osv.osv):
         'priority': fields.selection([('0', 'Not urgent'), ('1', 'Normal'), ('2', 'Urgent'), ('3', 'Very Urgent')], 'Priority',
             select=True, readonly=True, states=dict.fromkeys(['draft', 'confirmed'], [('readonly', False)])),
 
-        'product_id': fields.many2one('product.product', 'Product', required=True, readonly=True, states={'draft': [('readonly', False)]},
+        'product_id': fields.many2one('product.product', 'Product', required=True, readonly=True, states={'draft': [('readonly', False)]}, 
                                       domain=[('type','!=','service')]),
         'product_qty': fields.float('Product Quantity', digits_compute=dp.get_precision('Product Unit of Measure'), required=True, readonly=True, states={'draft': [('readonly', False)]}),
         'product_uom': fields.many2one('product.uom', 'Product Unit of Measure', required=True, readonly=True, states={'draft': [('readonly', False)]}),
@@ -854,7 +854,7 @@ class mrp_production(osv.osv):
         for product_id in scheduled_qty.keys():
 
             consumed_qty = consumed_data.get(product_id, 0.0)
-
+            
             # qty available for consume and produce
             sched_product_qty = scheduled_qty[product_id]
             qty_avail = sched_product_qty - consumed_qty
@@ -1048,8 +1048,8 @@ class mrp_production(osv.osv):
                 res = False
         return res
 
-
-
+    
+    
     def _make_production_produce_line(self, cr, uid, production, context=None):
         stock_move = self.pool.get('stock.move')
         proc_obj = self.pool.get('procurement.order')
@@ -1080,24 +1080,37 @@ class mrp_production(osv.osv):
         #is 1 element long, so we can take the first.
         return stock_move.action_confirm(cr, uid, [move_id], context=context)[0]
 
-    def _get_raw_material_procure_method(self, cr, uid, product, context=None):
-        '''This method returns the procure_method to use when creating the stock move for the production raw materials'''
+    def _get_raw_material_procure_method(self, cr, uid, product, location_id=False, location_dest_id=False, context=None):
+        '''This method returns the procure_method to use when creating the stock move for the production raw materials
+        Besides the standard configuration of looking if the product or product category has the MTO route,
+        you can also define a rule e.g. from Stock to Production (which might be used in the future like the sale orders)
+        '''
         warehouse_obj = self.pool['stock.warehouse']
+        routes = product.route_ids + product.categ_id.total_route_ids
+
+        if location_id and location_dest_id:
+            pull_obj = self.pool['procurement.rule']
+            pulls = pull_obj.search(cr, uid, [('route_id', 'in', [x.id for x in routes]),
+                                            ('location_id', '=', location_dest_id),
+                                            ('location_src_id', '=', location_id)], limit=1, context=context)
+            if pulls:
+                return pull_obj.browse(cr, uid, pulls[0], context=context).procure_method
+
         try:
             mto_route = warehouse_obj._get_mto_route(cr, uid, context=context)
         except:
             return "make_to_stock"
-        routes = product.route_ids + product.categ_id.total_route_ids
+
         if mto_route in [x.id for x in routes]:
             return "make_to_order"
         return "make_to_stock"
 
     def _create_previous_move(self, cr, uid, move_id, product, source_location_id, dest_location_id, context=None):
         '''
-        When the routing gives a different location than the raw material location of the production order,
-        we should create an extra move from the raw material location to the location of the routing, which
+        When the routing gives a different location than the raw material location of the production order, 
+        we should create an extra move from the raw material location to the location of the routing, which 
         precedes the consumption line (chained).  The picking type depends on the warehouse in which this happens
-        and the type of locations.
+        and the type of locations. 
         '''
         loc_obj = self.pool.get("stock.location")
         stock_move = self.pool.get('stock.move')
@@ -1113,14 +1126,15 @@ class mrp_production(osv.osv):
             check_loc = dest_loc
         wh = loc_obj.get_warehouse(cr, uid, check_loc, context=context)
         domain = [('code', '=', code)]
-        if wh:
+        if wh: 
             domain += [('warehouse_id', '=', wh)]
         types = type_obj.search(cr, uid, domain, context=context)
         move = stock_move.copy(cr, uid, move_id, default = {
             'location_id': source_location_id,
             'location_dest_id': dest_location_id,
-            'procure_method': self._get_raw_material_procure_method(cr, uid, product, context=context),
-            'raw_material_production_id': False,
+            'procure_method': self._get_raw_material_procure_method(cr, uid, product, location_id=source_location_id,
+                                                                    location_dest_id=dest_location_id, context=context),
+            'raw_material_production_id': False, 
             'move_dest_id': move_id,
             'picking_type_id': types and types[0] or False,
         }, context=context)
@@ -1163,7 +1177,8 @@ class mrp_production(osv.osv):
             'location_id': source_location_id,
             'location_dest_id': destination_location_id,
             'company_id': production.company_id.id,
-            'procure_method': prev_move and 'make_to_stock' or self._get_raw_material_procure_method(cr, uid, product, context=context), #Make_to_stock avoids creating procurement
+            'procure_method': prev_move and 'make_to_stock' or self._get_raw_material_procure_method(cr, uid, product, location_id=source_location_id,
+                                                                                                     location_dest_id=destination_location_id, context=context), #Make_to_stock avoids creating procurement
             'raw_material_production_id': production.id,
             #this saves us a browse in create()
             'price_unit': product.standard_price,
@@ -1171,7 +1186,7 @@ class mrp_production(osv.osv):
             'warehouse_id': loc_obj.get_warehouse(cr, uid, production.location_src_id, context=context),
             'group_id': production.move_prod_id.group_id.id,
         }, context=context)
-
+        
         if prev_move:
             prev_move = self._create_previous_move(cr, uid, move_id, product, prod_location_id, source_location_id, context=context)
             stock_move.action_confirm(cr, uid, [prev_move], context=context)
