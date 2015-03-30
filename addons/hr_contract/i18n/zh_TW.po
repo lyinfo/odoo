@@ -49,13 +49,13 @@ msgstr ""
 #: model:ir.model,name:hr_contract.model_hr_contract
 #: model:ir.ui.menu,name:hr_contract.next_id_56
 msgid "Contract"
-msgstr ""
+msgstr "合約"
 
 #. module: hr_contract
 #: view:hr.contract:hr_contract.hr_contract_view_form
 #: field:hr.contract,name:0
 msgid "Contract Reference"
-msgstr ""
+msgstr "合約編號"
 
 #. module: hr_contract
 #: view:hr.contract:hr_contract.hr_contract_view_search
@@ -66,13 +66,13 @@ msgstr ""
 #: field:hr.contract.type,name:0
 #: model:ir.model,name:hr_contract.model_hr_contract_type
 msgid "Contract Type"
-msgstr ""
+msgstr "合約類型"
 
 #. module: hr_contract
 #: model:ir.actions.act_window,name:hr_contract.action_hr_contract_type
 #: model:ir.ui.menu,name:hr_contract.hr_menu_contract_type
 msgid "Contract Types"
-msgstr ""
+msgstr "合約類型"
 
 #. module: hr_contract
 #: view:hr.contract:hr_contract.hr_contract_view_search
@@ -84,7 +84,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:hr_contract.action_hr_contract
 #: model:ir.ui.menu,name:hr_contract.hr_menu_contract
 msgid "Contracts"
-msgstr ""
+msgstr "合約"
 
 #. module: hr_contract
 #: field:hr.contract,create_uid:0
@@ -101,24 +101,24 @@ msgstr ""
 #. module: hr_contract
 #: field:hr.contract,department_id:0
 msgid "Department"
-msgstr ""
+msgstr "部門"
 
 #. module: hr_contract
 #: view:hr.contract:hr_contract.hr_contract_view_form
 msgid "Duration"
-msgstr ""
+msgstr "持續時間"
 
 #. module: hr_contract
 #: view:hr.contract:hr_contract.hr_contract_view_search
 #: field:hr.contract,employee_id:0
 #: model:ir.model,name:hr_contract.model_hr_employee
 msgid "Employee"
-msgstr ""
+msgstr "員工"
 
 #. module: hr_contract
 #: field:hr.contract,date_end:0
 msgid "End Date"
-msgstr ""
+msgstr "結束日期"
 
 #. module: hr_contract
 #: constraint:hr.contract:0
@@ -149,22 +149,22 @@ msgstr ""
 #. module: hr_contract
 #: view:hr.contract:hr_contract.hr_contract_view_form
 msgid "Information"
-msgstr ""
+msgstr "一般資訊"
 
 #. module: hr_contract
 #: field:hr.employee,manager:0
 msgid "Is a Manager"
-msgstr ""
+msgstr "經理"
 
 #. module: hr_contract
 #: view:hr.contract:hr_contract.hr_contract_view_search
 msgid "Job"
-msgstr ""
+msgstr "工作"
 
 #. module: hr_contract
 #: field:hr.contract,job_id:0
 msgid "Job Title"
-msgstr ""
+msgstr "職位"
 
 #. module: hr_contract
 #: field:hr.contract,write_uid:0
@@ -227,7 +227,7 @@ msgstr ""
 #. module: hr_contract
 #: field:hr.contract,date_start:0
 msgid "Start Date"
-msgstr ""
+msgstr "起始日期"
 
 #. module: hr_contract
 #: field:hr.contract,trial_date_end:0
@@ -257,30 +257,30 @@ msgstr ""
 #. module: hr_contract
 #: field:hr.contract,visa_expire:0
 msgid "Visa Expire Date"
-msgstr ""
+msgstr "簽證有效期"
 
 #. module: hr_contract
 #: field:hr.contract,visa_no:0
 msgid "Visa No"
-msgstr ""
+msgstr "簽證號碼"
 
 #. module: hr_contract
 #: field:hr.contract,wage:0
 msgid "Wage"
-msgstr ""
+msgstr "薪資"
 
 #. module: hr_contract
 #: view:hr.contract:hr_contract.hr_contract_view_form
 msgid "Work Permit"
-msgstr ""
+msgstr "工作證"
 
 #. module: hr_contract
 #: field:hr.contract,permit_no:0
 msgid "Work Permit No"
-msgstr ""
+msgstr "工作證編號"
 
 #. module: hr_contract
 #: view:hr.contract:hr_contract.hr_contract_view_search
 #: field:hr.contract,working_hours:0
 msgid "Working Schedule"
-msgstr ""
+msgstr "工作時間表"

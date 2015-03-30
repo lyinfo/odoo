@@ -67,7 +67,7 @@ msgstr ""
 #: field:hr.employee,state:0
 #: model:ir.model,name:hr_attendance.model_hr_attendance
 msgid "Attendance"
-msgstr ""
+msgstr "考勤"
 
 #. module: hr_attendance
 #: field:hr.employee,attendance_access:0
@@ -78,7 +78,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:hr_attendance.action_hr_attendance_graph
 #: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_graph
 msgid "Attendance Analysis"
-msgstr ""
+msgstr "考勤分析"
 
 #. module: hr_attendance
 #: model:ir.actions.act_window,name:hr_attendance.action_hr_attendance_error
@@ -168,14 +168,14 @@ msgstr "定义出勤理由"
 #. module: hr_attendance
 #: view:website:hr_attendance.report_attendanceerrors
 msgid "Delay"
-msgstr ""
+msgstr "遲到"
 
 #. module: hr_attendance
 #: view:hr.attendance:hr_attendance.view_hr_attendance_filter
 #: field:hr.attendance,employee_id:0
 #: model:ir.model,name:hr_attendance.model_hr_employee
 msgid "Employee"
-msgstr ""
+msgstr "員工"
 
 #. module: hr_attendance
 #: view:hr.attendance:hr_attendance.view_attendance_form
@@ -241,22 +241,22 @@ msgstr ""
 #. module: hr_attendance
 #: field:hr.attendance.error,max_delay:0
 msgid "Max. Delay (Min)"
-msgstr ""
+msgstr "最長遲到（分）"
 
 #. module: hr_attendance
 #: view:website:hr_attendance.report_attendanceerrors
 msgid "Min Delay"
-msgstr ""
+msgstr "最短遲到"
 
 #. module: hr_attendance
 #: view:hr.attendance:hr_attendance.view_hr_attendance_filter
 msgid "Month"
-msgstr ""
+msgstr "月份"
 
 #. module: hr_attendance
 #: view:hr.attendance:hr_attendance.view_hr_attendance_filter
 msgid "My Attendance"
-msgstr ""
+msgstr "我的考勤"
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/wizard/hr_attendance_error.py:50
@@ -283,7 +283,7 @@ msgstr ""
 #. module: hr_attendance
 #: view:hr.attendance.error:hr_attendance.view_hr_attendance_error
 msgid "Print"
-msgstr ""
+msgstr "列印"
 
 #. module: hr_attendance
 #: view:hr.attendance.error:hr_attendance.view_hr_attendance_error
@@ -306,7 +306,7 @@ msgstr "理由"
 #: view:hr.employee:hr_attendance.hr_attendance_employee
 #, python-format
 msgid "Sign In"
-msgstr ""
+msgstr "上班"
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/hr_attendance.py:175
@@ -314,17 +314,17 @@ msgstr ""
 #: view:hr.employee:hr_attendance.hr_attendance_employee
 #, python-format
 msgid "Sign Out"
-msgstr ""
+msgstr "下班"
 
 #. module: hr_attendance
 #: selection:hr.action.reason,action_type:0
 msgid "Sign in"
-msgstr ""
+msgstr "上班"
 
 #. module: hr_attendance
 #: selection:hr.action.reason,action_type:0
 msgid "Sign out"
-msgstr ""
+msgstr "下班"
 
 #. module: hr_attendance
 #: help:hr.attendance,action_desc:0
@@ -358,7 +358,7 @@ msgstr ""
 #. module: hr_attendance
 #: view:hr.attendance:hr_attendance.view_hr_attendance_filter
 msgid "Today"
-msgstr ""
+msgstr "今日"
 
 #. module: hr_attendance
 #: view:website:hr_attendance.report_attendanceerrors
