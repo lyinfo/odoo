@@ -36,9 +36,12 @@ def replace_hours_label(model, cr, uid, view, context=None):
     # read uom as admin to avoid access rights issues, e.g. for portal/share users,
     # this should be safe (no context passed to avoid side-effects)
     obj_tm = users_obj.browse(cr, SUPERUSER_ID, uid, context=context).company_id.project_time_mode_id
-    tm = obj_tm and obj_tm.name or 'Hours'
-
-    if tm in ['Hours','Hour']:
+    try:
+        # using get_object to get translation value
+        uom_hour = model.pool['ir.model.data'].get_object(cr, uid, 'product', 'product_uom_hour', context=context)
+    except ValueError:
+        uom_hour = False
+    if not obj_tm or not uom_hour or obj_tm.id == uom_hour.id:
         return view
 
     eview = etree.fromstring(view['arch'])
@@ -53,7 +56,7 @@ def replace_hours_label(model, cr, uid, view, context=None):
     def _replace_label(view_info):
         for f in view_info['fields']:
             if 'Hours' in view_info['fields'][f]['string']:
-                view_info['fields'][f]['string'] = view_info['fields'][f]['string'].replace('Hours',tm)
+                view_info['fields'][f]['string'] = view_info['fields'][f]['string'].replace('Hours', obj_tm.name)
             #recursive the nested views
             for sub_name, subview in view_info['fields'][f].get('views', {}).iteritems():
                 _replace_label(subview)
