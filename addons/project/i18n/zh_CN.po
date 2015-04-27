@@ -457,7 +457,7 @@ msgstr "剩余天数"
 #: field:project.task,date_deadline:0
 #: field:report.project.task.user,date_deadline:0
 msgid "Deadline"
-msgstr "计划完成日期"
+msgstr "截止日期"
 
 #. module: project
 #: field:project.task.type,case_default:0
@@ -576,7 +576,7 @@ msgstr "结束日期"
 #: field:project.task,date_end:0
 #: field:report.project.task.user,date_end:0
 msgid "Ending Date"
-msgstr "结束日期"
+msgstr "预计完成日期"
 
 #. module: project
 #: constraint:project.task:0
@@ -1396,7 +1396,7 @@ msgstr "适用于所有项目的公共阶段"
 #. module: project
 #: field:project.task,date_start:0
 msgid "Starting Date"
-msgstr "开始日期"
+msgstr "提出日期"
 
 #. module: project
 #: field:project.project,state:0
