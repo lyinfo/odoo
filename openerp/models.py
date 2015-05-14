@@ -5110,7 +5110,7 @@ class BaseModel(object):
     # for backward compatibility
     resolve_o2m_commands_to_record_dicts = resolve_2many_commands
 
-    def search_read(self, cr, uid, domain=None, fields=None, offset=0, limit=None, order=None, context=None):
+    def search_read(self, cr, uid, domain=None, fields=None, offset=0, limit=None, order=None, context=None, load='_classic_read'):
         """
         Performs a ``search()`` followed by a ``read()``.
 
@@ -5141,7 +5141,7 @@ class BaseModel(object):
         read_ctx = dict(context or {})
         read_ctx.pop('active_test', None)
 
-        result = self.read(cr, uid, record_ids, fields, context=read_ctx)
+        result = self.read(cr, uid, record_ids, fields, context=read_ctx, load=load)
         if len(result) <= 1:
             return result
 
