@@ -28,6 +28,7 @@ from openerp import tools
 from openerp.addons.resource.faces import task as Task
 from openerp.osv import fields, osv
 from openerp.tools.translate import _
+from openerp.tools import ustr
 
 
 def replace_hours_label(model, cr, uid, view, context=None):
@@ -49,14 +50,18 @@ def replace_hours_label(model, cr, uid, view, context=None):
     def _check_rec(eview):
         if eview.attrib.get('widget','') == 'float_time':
             eview.set('widget','float')
+        label = eview.attrib.get('string', '')
+        if uom_hour.name in label:
+            eview.set('string', label.replace(uom_hour.name, obj_tm.name))
         for child in eview:
             _check_rec(child)
         return True
 
     def _replace_label(view_info):
         for f in view_info['fields']:
-            if 'Hours' in view_info['fields'][f]['string']:
-                view_info['fields'][f]['string'] = view_info['fields'][f]['string'].replace('Hours', obj_tm.name)
+            label = ustr(view_info['fields'][f]['string'])
+            if uom_hour.name in label:
+                view_info['fields'][f]['string'] = label.replace(uom_hour.name, obj_tm.name)
             #recursive the nested views
             for sub_name, subview in view_info['fields'][f].get('views', {}).iteritems():
                 _replace_label(subview)
