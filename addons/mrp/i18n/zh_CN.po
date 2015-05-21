@@ -1099,7 +1099,7 @@ msgstr "生产管理"
 #: field:mrp.bom,product_efficiency:0
 #: field:mrp.bom.line,product_efficiency:0
 msgid "Manufacturing Efficiency"
-msgstr "生产效率"
+msgstr "得率"
 
 #. module: mrp
 #: field:product.template,produce_delay:0
@@ -1352,6 +1352,8 @@ msgid ""
 "manufacturing orders,it will be directly replaced by the raw materials of "
 "its own BoM, without triggeringan extra manufacturing order."
 msgstr ""
+"虚拟件：此组件没有直接与之对应的原物料用于生产订单，"
+"它将直接被自己BoM里面的原料材料替代， 不会额外生成生产订单。"
 
 #. module: mrp
 #: model:ir.ui.menu,name:mrp.menu_mrp_planning
@@ -2183,13 +2185,13 @@ msgstr "有效期到"
 #: help:mrp.bom.line,date_start:0
 #: help:mrp.bom.line,date_stop:0
 msgid "Validity of component. Keep empty if it's always valid."
-msgstr ""
+msgstr "该组件在当前BoM里面的有效期。 保持空白表示永远有效。"
 
 #. module: mrp
 #: help:mrp.bom,date_start:0
 #: help:mrp.bom,date_stop:0
 msgid "Validity of this BoM. Keep empty if it's always valid."
-msgstr ""
+msgstr "该Bom的有效期。 保持空白表示永远有效。"
 
 #. module: mrp
 #: view:mrp.bom:mrp.view_mrp_bom_filter
@@ -2199,7 +2201,7 @@ msgstr "型号"
 #. module: mrp
 #: field:mrp.bom.line,attribute_value_ids:0
 msgid "Variants"
-msgstr "属性"
+msgstr "规格"
 
 #. module: mrp
 #: selection:mrp.production,priority:0

@@ -344,7 +344,7 @@ msgstr ""
 #. module: analytic
 #: field:account.analytic.account,user_id:0
 msgid "Project Manager"
-msgstr ""
+msgstr "專案經理"
 
 #. module: analytic
 #: field:account.analytic.account,quantity:0
@@ -361,7 +361,7 @@ msgstr ""
 #. module: analytic
 #: field:account.analytic.account,code:0
 msgid "Reference"
-msgstr ""
+msgstr "內部編號"
 
 #. module: analytic
 #: view:account.analytic.account:analytic.view_account_analytic_account_form

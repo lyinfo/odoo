@@ -276,7 +276,7 @@ msgstr "CHECK: "
 #: code:addons/project/wizard/project_task_delegate.py:81
 #, python-format
 msgid "CHECK: %s"
-msgstr "参考：%s"
+msgstr "检查：%s"
 
 #. module: project
 #: view:project.config.settings:project.view_config_settings

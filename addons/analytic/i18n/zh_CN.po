@@ -361,7 +361,7 @@ msgstr "不允许快速客户创建"
 #. module: analytic
 #: field:account.analytic.account,code:0
 msgid "Reference"
-msgstr "参考"
+msgstr "内部编号"
 
 #. module: analytic
 #: view:account.analytic.account:analytic.view_account_analytic_account_form

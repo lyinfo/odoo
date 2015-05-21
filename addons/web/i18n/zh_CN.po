@@ -312,7 +312,7 @@ msgstr "添加条件"
 #: code:addons/web/static/src/js/view_form.js:3953
 #, python-format
 msgid "Add an item"
-msgstr "添加一个项目"
+msgstr "添加一行"
 
 #. module: web
 #. openerp-web
