@@ -797,7 +797,7 @@ msgstr ""
 #: model:ir.ui.menu,name:calendar.mail_menu_calendar
 #: model:ir.ui.menu,name:calendar.menu_calendar_configuration
 msgid "Calendar"
-msgstr "日历"
+msgstr "日历/会议"
 
 #. module: calendar
 #. openerp-web
