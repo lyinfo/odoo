@@ -348,7 +348,7 @@ msgstr ""
 #: field:mail.compose.message,author_id:0 view:mail.mail:mail.view_mail_search
 #: field:mail.message,author_id:0
 msgid "Author"
-msgstr "作者"
+msgstr "呈送者"
 
 #. module: mail
 #: help:mail.compose.message,author_id:0 help:mail.message,author_id:0
@@ -1631,7 +1631,7 @@ msgstr "发送信息"
 #: code:addons/mail/static/src/xml/mail.xml:54
 #, python-format
 msgid "Send a message to all followers of the document"
-msgstr ""
+msgstr "发送一个消息给当前文档的所有关注者"
 
 #. module: mail
 #: view:mail.group:mail.view_group_form
