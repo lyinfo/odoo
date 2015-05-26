@@ -52,7 +52,7 @@ def transfer_field_to_modifiers(field, modifiers):
 # For non-tree views, the context shouldn't be given.
 def transfer_node_to_modifiers(node, modifiers, context=None, in_tree_view=False):
     if node.get('attrs'):
-        modifiers.update(eval(node.get('attrs')))
+        modifiers.update(eval(node.get('attrs'), {'context': context or {}}))
 
     if node.get('states'):
         if 'invisible' in modifiers and isinstance(modifiers['invisible'], list):
