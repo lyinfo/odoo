@@ -185,7 +185,7 @@ msgstr "套用"
 #. module: project
 #: field:project.task.delegate,user_id:0
 msgid "Assign To"
-msgstr "分配給"
+msgstr "負責人"
 
 #. module: project
 #: field:report.project.task.user,date_start:0

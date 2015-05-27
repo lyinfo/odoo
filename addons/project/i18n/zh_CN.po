@@ -202,7 +202,7 @@ msgstr "应用"
 #. module: project
 #: field:project.task.delegate,user_id:0
 msgid "Assign To"
-msgstr "指派到"
+msgstr "负责人"
 
 #. module: project
 #: field:report.project.task.user,date_start:0
@@ -231,7 +231,7 @@ msgstr "分配给"
 #: view:project.task.history.cumulative:project.view_task_history_search
 #: view:report.project.task.user:project.view_task_project_user_search
 msgid "Assigned to"
-msgstr "指派到"
+msgstr "负责人"
 
 #. module: project
 #: code:addons/project/project.py:212
@@ -350,12 +350,12 @@ msgstr "公司"
 msgid ""
 "Computed as difference between planned hours by the project manager and the "
 "total hours of the task."
-msgstr "计算公式为：项目经理估算的时间和实际花费的时间的差"
+msgstr "计算公式为：项目经理估算的时间和实际花费小时数的差"
 
 #. module: project
 #: help:project.task,total_hours:0
 msgid "Computed as: Time Spent + Remaining Time."
-msgstr "计算:花费的时间 + 剩余的时间"
+msgstr "计算:花费小时数 + 剩余的时间"
 
 #. module: project
 #: help:project.task,effective_hours:0
@@ -727,7 +727,7 @@ msgstr ""
 #. module: project
 #: field:project.task,effective_hours:0
 msgid "Hours Spent"
-msgstr "时间花费"
+msgstr "花费小时数"
 
 #. module: project
 #: field:project.task.delegate,planned_hours_me:0
@@ -797,7 +797,7 @@ msgstr ""
 #. module: project
 #: field:project.task,planned_hours:0
 msgid "Initially Planned Hours"
-msgstr "最初计划小时数"
+msgstr "计划使用小时数"
 
 #. module: project
 #: help:project.project,alias_id:0
@@ -1112,14 +1112,14 @@ msgstr "已结束任务和未结束任务的百分比。"
 #: field:project.task.delegate,planned_hours:0
 #: field:report.project.task.user,hours_planned:0
 msgid "Planned Hours"
-msgstr "已计划的小时数"
+msgstr "计划使用小时数"
 
 #. module: project
 #: field:project.project,planned_hours:0
 #: field:project.task.history,planned_hours:0
 #: field:project.task.history.cumulative,planned_hours:0
 msgid "Planned Time"
-msgstr "已计划的时间"
+msgstr "计划使用小时数"
 
 #. module: project
 #: view:project.config.settings:project.view_config_settings
@@ -1355,7 +1355,7 @@ msgstr "文档"
 #: view:project.task:project.view_task_form2
 #: view:project.task:project.view_task_tree2
 msgid "Spent Hours"
-msgstr "花费时间"
+msgstr "花费小时数"
 
 #. module: project
 #: view:project.task:project.view_task_search_form
@@ -1688,7 +1688,7 @@ msgstr "任务时间估计"
 #: field:project.project,effective_hours:0
 #: field:project.task.work,hours:0
 msgid "Time Spent"
-msgstr "花费的时间"
+msgstr "花费小时数"
 
 #. module: project
 #: help:project.project,resource_calendar_id:0
@@ -1813,7 +1813,7 @@ msgstr "工作摘要"
 #. module: project
 #: field:project.project,resource_calendar_id:0
 msgid "Working Time"
-msgstr "工作时间"
+msgstr "工作日历"
 
 #. module: project
 #: field:project.task,progress:0
