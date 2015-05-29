@@ -1377,11 +1377,11 @@ class Export(http.Controller):
             if length == 2:
                 # subfields is a seq of $base/*rest, and not loaded yet
                 info.update(self.graft_subfields(
-                    fields[base]['relation'], base, fields[base]['string'],
+                    fields[base]['relation'], base, ustr(fields[base]['string']),
                     subfields
                 ))
             elif base in fields:
-                info[base] = fields[base]['string']
+                info[base] = ustr(fields[base]['string'])
 
         return info
 
