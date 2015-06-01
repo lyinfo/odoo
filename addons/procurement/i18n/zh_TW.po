@@ -1,21 +1,21 @@
-# Chinese (Traditional) translation for openobject-addons
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
-# This file is distributed under the same license as the openobject-addons package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
-#
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * procurement
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Project-Id-Version: Odoo 8.0\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-21 14:08+0000\n"
-"PO-Revision-Date: 2014-08-14 16:10+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
+"PO-Revision-Date: 2015-05-29 12:58+0000\n"
+"Last-Translator: Martin Trigaux\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/odoo-8/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-22 08:06+0000\n"
-"X-Generator: Launchpad (build 17306)\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: procurement
 #: model:ir.actions.act_window,help:procurement.procurement_exceptions
@@ -24,22 +24,14 @@ msgid ""
 "                 Click to create a Procurement.\n"
 "              </p>\n"
 "              <p>\n"
-"                <b>Procurement Orders</b> represent the need for a certain "
-"quantity of products, at a given time, in a given location.\n"
+"                <b>Procurement Orders</b> represent the need for a certain quantity of products, at a given time, in a given location.\n"
 "              </p>\n"
 "              <p>\n"
-"                <b>Sales Orders</b> are one typical source of Procurement "
-"Orders (but these are distinct documents). \n"
-"                <br/>Depending on the procurement parameters and the product "
-"configuration, the procurement engine will attempt to satisfy the need by "
-"reserving products from stock, ordering products from a supplier, or passing "
-"a manufacturing order, etc...\n"
+"                <b>Sales Orders</b> are one typical source of Procurement Orders (but these are distinct documents). \n"
+"                <br/>Depending on the procurement parameters and the product configuration, the procurement engine will attempt to satisfy the need by reserving products from stock, ordering products from a supplier, or passing a manufacturing order, etc...\n"
 "              </p>\n"
 "              <p>\n"
-"                A <b>Procurement Exception</b> occurs when the system cannot "
-"find a way to fulfill a procurement. Some exceptions will resolve themselves "
-"automatically, but others require manual intervention (those are identified "
-"by a specific error message in the chatter).\n"
+"                A <b>Procurement Exception</b> occurs when the system cannot find a way to fulfill a procurement. Some exceptions will resolve themselves automatically, but others require manual intervention (those are identified by a specific error message in the chatter).\n"
 "              </p>\n"
 "            "
 msgstr ""
@@ -51,18 +43,14 @@ msgid ""
 "                 Click to create a procurement order.  \n"
 "              </p>\n"
 "              <p>\n"
-"                A <b>procurement order</b> is used to record a need for a "
-"specific\n"
-"                product at a specific location. Procurement orders are "
-"usually\n"
-"                created automatically from <i>sales orders, pull logistic "
-"rules or\n"
+"                A <b>procurement order</b> is used to record a need for a specific\n"
+"                product at a specific location. Procurement orders are usually\n"
+"                created automatically from <i>sales orders, pull logistic rules or\n"
 "                minimum stock rules.</i>\n"
 "              </p>\n"
 "              <p>\n"
 "                When the procurement order is confirmed, it automatically\n"
-"                creates the necessary operations to fullfil the need: "
-"purchase\n"
+"                creates the necessary operations to fullfil the need: purchase\n"
 "                order proposition, manufacturing order, etc.\n"
 "              </p>\n"
 "            "
@@ -112,13 +100,13 @@ msgstr "檢查需求計劃"
 #. module: procurement
 #: help:procurement.order,rule_id:0
 msgid ""
-"Chosen rule for the procurement resolution. Usually chosen by the system but "
-"can be manually set by the procurement manager to force an unusual behavior."
+"Chosen rule for the procurement resolution. Usually chosen by the system but"
+" can be manually set by the procurement manager to force an unusual "
+"behavior."
 msgstr ""
 
 #. module: procurement
-#: field:procurement.order,company_id:0
-#: field:procurement.rule,company_id:0
+#: field:procurement.order,company_id:0 field:procurement.rule,company_id:0
 msgid "Company"
 msgstr "公司"
 
@@ -138,20 +126,18 @@ msgid "Confirmed"
 msgstr "已確認"
 
 #. module: procurement
-#: field:procurement.group,create_uid:0
-#: field:procurement.order,create_uid:0
+#: field:procurement.group,create_uid:0 field:procurement.order,create_uid:0
 #: field:procurement.order.compute.all,create_uid:0
 #: field:procurement.rule,create_uid:0
 msgid "Created by"
 msgstr ""
 
 #. module: procurement
-#: field:procurement.group,create_date:0
-#: field:procurement.order,create_date:0
+#: field:procurement.group,create_date:0 field:procurement.order,create_date:0
 #: field:procurement.order.compute.all,create_date:0
 #: field:procurement.rule,create_date:0
 msgid "Created on"
-msgstr ""
+msgstr "建立於"
 
 #. module: procurement
 #: help:procurement.order,message_last_post:0
@@ -161,12 +147,12 @@ msgstr ""
 #. module: procurement
 #: field:procurement.group,move_type:0
 msgid "Delivery Method"
-msgstr "出貨方法"
+msgstr "交貨方法"
 
 #. module: procurement
 #: field:procurement.order,name:0
 msgid "Description"
-msgstr "描述"
+msgstr "說明"
 
 #. module: procurement
 #: selection:procurement.order,state:0
@@ -176,7 +162,7 @@ msgstr "完成"
 #. module: procurement
 #: selection:procurement.order,state:0
 msgid "Exception"
-msgstr "異常"
+msgstr "異常情況"
 
 #. module: procurement
 #: view:procurement.order:procurement.view_procurement_filter
@@ -206,7 +192,7 @@ msgstr "固定需求組"
 #. module: procurement
 #: field:procurement.order,message_follower_ids:0
 msgid "Followers"
-msgstr ""
+msgstr "關注者"
 
 #. module: procurement
 #: view:procurement.rule:procurement.view_procurement_rule_form
@@ -229,20 +215,18 @@ msgstr "分組的需求計劃"
 msgid ""
 "Holds the Chatter summary (number of messages, ...). This summary is "
 "directly in html format in order to be inserted in kanban views."
-msgstr ""
+msgstr "保留談話摘要(訊息數量等等)。為了放入看板檢視模式，此摘要直接存為HTML格式。"
 
 #. module: procurement
-#: field:procurement.group,id:0
-#: field:procurement.order,id:0
-#: field:procurement.order.compute.all,id:0
-#: field:procurement.rule,id:0
+#: field:procurement.group,id:0 field:procurement.order,id:0
+#: field:procurement.order.compute.all,id:0 field:procurement.rule,id:0
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: procurement
 #: help:procurement.order,message_unread:0
 msgid "If checked new messages require your attention."
-msgstr ""
+msgstr "當有新訊息時通知您。"
 
 #. module: procurement
 #: help:procurement.rule,active:0
@@ -253,12 +237,12 @@ msgstr "如果未釣選，允許你隱藏該規則而不用刪除他。"
 #: code:addons/procurement/procurement.py:155
 #, python-format
 msgid "Invalid Action!"
-msgstr "無效動作！"
+msgstr "無效的動作！"
 
 #. module: procurement
 #: field:procurement.order,message_is_follower:0
 msgid "Is a Follower"
-msgstr ""
+msgstr "為關注者"
 
 #. module: procurement
 #: field:procurement.order,message_last_post:0
@@ -266,16 +250,14 @@ msgid "Last Message Date"
 msgstr ""
 
 #. module: procurement
-#: field:procurement.group,write_uid:0
-#: field:procurement.order,write_uid:0
+#: field:procurement.group,write_uid:0 field:procurement.order,write_uid:0
 #: field:procurement.order.compute.all,write_uid:0
 #: field:procurement.rule,write_uid:0
 msgid "Last Updated by"
 msgstr ""
 
 #. module: procurement
-#: field:procurement.group,write_date:0
-#: field:procurement.order,write_date:0
+#: field:procurement.group,write_date:0 field:procurement.order,write_date:0
 #: field:procurement.order.compute.all,write_date:0
 #: field:procurement.rule,write_date:0
 msgid "Last Updated on"
@@ -284,7 +266,7 @@ msgstr ""
 #. module: procurement
 #: view:procurement.order:procurement.view_procurement_filter
 msgid "Late"
-msgstr "逾期"
+msgstr "延遲"
 
 #. module: procurement
 #: selection:procurement.rule,group_propagation_option:0
@@ -299,12 +281,12 @@ msgstr "物流"
 #. module: procurement
 #: field:procurement.order,message_ids:0
 msgid "Messages"
-msgstr ""
+msgstr "訊息"
 
 #. module: procurement
 #: help:procurement.order,message_ids:0
 msgid "Messages and communication history"
-msgstr ""
+msgstr "訊息及聯絡紀錄"
 
 #. module: procurement
 #: field:procurement.rule,name:0
@@ -335,12 +317,12 @@ msgstr "備註"
 #. module: procurement
 #: selection:procurement.group,move_type:0
 msgid "Partial"
-msgstr "部分"
+msgstr "部份"
 
 #. module: procurement
 #: field:procurement.order,priority:0
 msgid "Priority"
-msgstr "優先級"
+msgstr "優先次序"
 
 #. module: procurement
 #: model:ir.model,name:procurement.model_procurement_order
@@ -479,12 +461,12 @@ msgstr "執行排程"
 #. module: procurement
 #: selection:procurement.order,state:0
 msgid "Running"
-msgstr "執行中"
+msgstr "正在處理"
 
 #. module: procurement
 #: field:procurement.order,date_planned:0
 msgid "Scheduled Date"
-msgstr "計劃日期"
+msgstr "預定日期"
 
 #. module: procurement
 #: view:procurement.order:procurement.view_procurement_filter
@@ -535,12 +517,12 @@ msgstr ""
 #. module: procurement
 #: view:procurement.order:procurement.procurement_tree_view
 msgid "Unit of Measure"
-msgstr "計劃單位"
+msgstr "量度單位"
 
 #. module: procurement
 #: field:procurement.order,message_unread:0
 msgid "Unread Messages"
-msgstr ""
+msgstr "未讀訊息"
 
 #. module: procurement
 #: field:procurement.order,product_uos_qty:0

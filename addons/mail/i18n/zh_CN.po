@@ -1,21 +1,22 @@
-# Chinese (Simplified) translation for openobject-addons
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
-# This file is distributed under the same license as the openobject-addons package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
-#
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mail
+# 
+# Translators:
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Project-Id-Version: Odoo 8.0\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-21 14:07+0000\n"
-"PO-Revision-Date: 2015-04-09 17:21+0000\n"
-"Last-Translator: Henry Siu <henry.siu@qq.com>\n"
-"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"PO-Revision-Date: 2015-05-29 13:12+0000\n"
+"Last-Translator: Martin Trigaux\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/odoo-8/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-04-10 05:30+0000\n"
-"X-Generator: Launchpad (build 17413)\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: mail
 #: code:addons/mail/mail_thread.py:384
@@ -60,8 +61,7 @@ msgstr "<div><p>你好，</p><p>%s 邀请你关注新文档。</p></div>"
 #, python-format
 msgid ""
 "<p class='oe_view_nocontent_create'>\n"
-"                            Click here to add new %(document)s or send an "
-"email to: <a href='mailto:%(email)s'>%(email)s</a>\n"
+"                            Click here to add new %(document)s or send an email to: <a href='mailto:%(email)s'>%(email)s</a>\n"
 "                        </p>\n"
 "                        %(static_help)s"
 msgstr ""
@@ -80,21 +80,12 @@ msgid ""
 "<p>\n"
 "                    <b>Good Job!</b> Your inbox is empty.\n"
 "                </p><p>\n"
-"                    Your inbox contains private messages or emails sent to "
-"you\n"
-"                    as well as information related to documents or people "
-"you\n"
+"                    Your inbox contains private messages or emails sent to you\n"
+"                    as well as information related to documents or people you\n"
 "                    follow.\n"
 "                </p>\n"
 "            "
-msgstr ""
-"<p>\n"
-"                    <b>你的收件箱是空的。</b>\n"
-"                </p><p>\n"
-"                    你的收件箱包含了你的私人消息或者发给你的邮件 ，包括你关注"
-"的单据或者个人的信息。\n"
-"                </p>\n"
-"            "
+msgstr "<p>\n                    <b>你的收件箱是空的。</b>\n                </p><p>\n                    你的收件箱包含了你的私人消息或者发给你的邮件 ，包括你关注的单据或者个人的信息。\n                </p>\n            "
 
 #. module: mail
 #: model:ir.actions.client,help:mail.action_mail_to_me_feeds
@@ -105,14 +96,7 @@ msgid ""
 "                    This list contains messages sent to you.\n"
 "                </p>\n"
 "            "
-msgstr ""
-"<p>\n"
-"               <b>没有私人消息</b>\n"
-"                </p>\n"
-"                <p>\n"
-"                    这个列表包含了发给你的消息.\n"
-"                </p>\n"
-"            "
+msgstr "<p>\n               <b>没有私人消息</b>\n                </p>\n                <p>\n                    这个列表包含了发给你的消息.\n                </p>\n            "
 
 #. module: mail
 #: model:ir.actions.client,help:mail.action_mail_star_feeds
@@ -120,21 +104,11 @@ msgid ""
 "<p>\n"
 "                    <b>No todo.</b>\n"
 "                </p><p>\n"
-"                    When you process messages in your inbox, you can mark "
-"some\n"
-"                    as <i>todo</i>. From this menu, you can process all your "
-"todo.\n"
+"                    When you process messages in your inbox, you can mark some\n"
+"                    as <i>todo</i>. From this menu, you can process all your todo.\n"
 "                </p>\n"
 "            "
-msgstr ""
-"<p>\n"
-"                    <b>没有待办事项</b>\n"
-"                </p><p>\n"
-"                    当你处理收件箱里的消息时，你能标记一些消息作为<i>待办事项"
-"</i>. \n"
-"                    从这个菜单，你能处理你所有的待办事项。\n"
-"                </p>\n"
-"            "
+msgstr "<p>\n                    <b>没有待办事项</b>\n                </p><p>\n                    当你处理收件箱里的消息时，你能标记一些消息作为<i>待办事项</i>. \n                    从这个菜单，你能处理你所有的待办事项。\n                </p>\n            "
 
 #. module: mail
 #: model:ir.actions.client,help:mail.action_mail_archives_feeds
@@ -143,18 +117,10 @@ msgid ""
 "                    No message found and no message sent yet.\n"
 "                </p><p>\n"
 "                    Click on the top-right icon to compose a message. This\n"
-"                    message will be sent by email if it's an internal "
-"contact.\n"
+"                    message will be sent by email if it's an internal contact.\n"
 "                </p>\n"
 "            "
-msgstr ""
-"<p>\n"
-"                    没有发现消息，也没有尚未发送的消息。\n"
-"                </p><p>\n"
-"                    点击右上角的图标写一个消息，\n"
-"                    如果是个内部联系人，这消息将通过email发送。\n"
-"                </p>\n"
-"            "
+msgstr "<p>\n                    没有发现消息，也没有尚未发送的消息。\n                </p><p>\n                    点击右上角的图标写一个消息，\n                    如果是个内部联系人，这消息将通过email发送。\n                </p>\n            "
 
 #. module: mail
 #: model:ir.actions.client,help:mail.action_mail_group_feeds
@@ -163,11 +129,7 @@ msgid ""
 "                    No message in this group.\n"
 "                </p>\n"
 "            "
-msgstr ""
-"<p>\n"
-"                    在这个群组没有消息.\n"
-"                </p>\n"
-"            "
+msgstr "<p>\n                    在这个群组没有消息.\n                </p>\n            "
 
 #. module: mail
 #: help:mail.alias,alias_defaults:0
@@ -289,8 +251,7 @@ msgstr "全部消息"
 #: view:mail.compose.message:mail.email_compose_message_wizard_form
 msgid ""
 "All records matching your current search filter will be mailed,\n"
-"                                    not only the ids selected in the list "
-"view."
+"                                    not only the ids selected in the list view."
 msgstr ""
 
 #. module: mail
@@ -353,11 +314,9 @@ msgstr "呈送者"
 #. module: mail
 #: help:mail.compose.message,author_id:0 help:mail.message,author_id:0
 msgid ""
-"Author of the message. If not set, email_from may hold an email address that "
-"did not match any partner."
-msgstr ""
-"消息的作者。如果没设置，email_from 可能保存一个不匹配任何合作伙伴的 email地"
-"址，"
+"Author of the message. If not set, email_from may hold an email address that"
+" did not match any partner."
+msgstr "消息的作者。如果没设置，email_from 可能保存一个不匹配任何合作伙伴的 email地址，"
 
 #. module: mail
 #: field:mail.compose.message,author_avatar:0
@@ -526,7 +485,7 @@ msgstr "日期"
 #: help:mail.group,message_last_post:0 help:mail.thread,message_last_post:0
 #: help:res.partner,message_last_post:0
 msgid "Date of the last message posted on the record."
-msgstr ""
+msgstr "发布到记录上的最后信息的日期"
 
 #. module: mail
 #: field:mail.message.subtype,default:0
@@ -724,9 +683,7 @@ msgid ""
 "Field used to link the related model to the subtype model when using "
 "automatic subscription on a related document. The field is used to compute "
 "getattr(related_document.relation_field)."
-msgstr ""
-"使用自动注册相关文档时用来关联模型和子模型的域。该域用来计算 "
-"getattr(related_document.relation_field)."
+msgstr "使用自动注册相关文档时用来关联模型和子模型的域。该域用来计算 getattr(related_document.relation_field)."
 
 #. module: mail
 #: field:ir.attachment,file_type_icon:0
@@ -798,7 +755,7 @@ msgstr "发件人"
 #: code:addons/mail/res_users.py:75
 #, python-format
 msgid "Go to the configuration panel"
-msgstr ""
+msgstr "跳转到指定的控制面板"
 
 #. module: mail
 #: view:mail.group:mail.view_group_search
@@ -810,7 +767,7 @@ msgstr "群组"
 #: view:mail.mail:mail.view_mail_search
 #: view:mail.message:mail.view_message_search
 msgid "Group By"
-msgstr ""
+msgstr "分组"
 
 #. module: mail
 #: view:mail.group:mail.view_group_form
@@ -840,12 +797,12 @@ msgstr "有附件"
 #. module: mail
 #: view:mail.mail:mail.view_mail_form field:mail.mail,headers:0
 msgid "Headers"
-msgstr ""
+msgstr "页眉"
 
 #. module: mail
 #: field:mail.message.subtype,hidden:0
 msgid "Hidden"
-msgstr ""
+msgstr "隐藏"
 
 #. module: mail
 #: help:mail.message.subtype,hidden:0
@@ -868,13 +825,13 @@ msgstr ""
 #: field:mail.notification,id:0 field:mail.thread,id:0
 #: field:mail.wizard.invite,id:0 field:publisher_warranty.contract,id:0
 msgid "ID"
-msgstr ""
+msgstr "标识"
 
 #. module: mail
 #: help:mail.alias,alias_parent_thread_id:0
 msgid ""
-"ID of the parent record holding the alias (example: project holding the task "
-"creation alias)"
+"ID of the parent record holding the alias (example: project holding the task"
+" creation alias)"
 msgstr ""
 
 #. module: mail
@@ -980,7 +937,7 @@ msgstr "加入群组"
 #: field:mail.group,message_last_post:0 field:mail.thread,message_last_post:0
 #: field:res.partner,message_last_post:0
 msgid "Last Message Date"
-msgstr ""
+msgstr "最后信息日期"
 
 #. module: mail
 #: field:mail.alias,write_uid:0 field:mail.compose.message,write_uid:0
@@ -988,7 +945,7 @@ msgstr ""
 #: field:mail.message,write_uid:0 field:mail.message.subtype,write_uid:0
 #: field:mail.wizard.invite,write_uid:0
 msgid "Last Updated by"
-msgstr ""
+msgstr "最后更新"
 
 #. module: mail
 #: field:mail.alias,write_date:0 field:mail.compose.message,write_date:0
@@ -996,7 +953,7 @@ msgstr ""
 #: field:mail.message,write_date:0 field:mail.message.subtype,write_date:0
 #: field:mail.wizard.invite,write_date:0
 msgid "Last Updated on"
-msgstr ""
+msgstr "最后一次更新"
 
 #. module: mail
 #: help:mail.wizard.invite,partner_ids:0
@@ -1107,13 +1064,11 @@ msgstr "邮件引用"
 #: help:mail.message.subtype,name:0
 msgid ""
 "Message subtype gives a more precise type on the message, especially for "
-"system notifications. For example, it can be a notification related to a new "
-"record (New), or to a stage change in a process (Stage change). Message "
+"system notifications. For example, it can be a notification related to a new"
+" record (New), or to a stage change in a process (Stage change). Message "
 "subtypes allow to precisely tune the notifications the user want to receive "
 "on its wall."
-msgstr ""
-"消息子类型给了消息更精确的类型，特别是系统通知。例如：关于新记录建立的通知，"
-"或者流程中阶段被改变。消息子类型允许你精确地调整用户想要收到的消息。"
+msgstr "消息子类型给了消息更精确的类型，特别是系统通知。例如：关于新记录建立的通知，或者流程中阶段被改变。消息子类型允许你精确地调整用户想要收到的消息。"
 
 #. module: mail
 #: model:ir.model,name:mail.model_mail_message_subtype
@@ -1374,7 +1329,7 @@ msgstr "父消息"
 #. module: mail
 #: field:mail.alias,alias_parent_model_id:0
 msgid "Parent Model"
-msgstr ""
+msgstr "上级模型"
 
 #. module: mail
 #: field:mail.alias,alias_parent_thread_id:0
@@ -1612,7 +1567,7 @@ msgstr "发送"
 #. module: mail
 #: field:mail.wizard.invite,send_mail:0
 msgid "Send Email"
-msgstr ""
+msgstr "发送电子邮件"
 
 #. module: mail
 #: view:mail.mail:mail.view_mail_form view:mail.mail:mail.view_mail_tree
@@ -1652,7 +1607,7 @@ msgstr ""
 #. module: mail
 #: field:mail.message.subtype,sequence:0
 msgid "Sequence"
-msgstr ""
+msgstr "序列"
 
 #. module: mail
 #. openerp-web
@@ -1682,11 +1637,9 @@ msgstr "小尺寸照片"
 #: help:mail.group,image_small:0
 msgid ""
 "Small-sized photo of the group. It is automatically resized as a 64x64px "
-"image, with aspect ratio preserved. Use this field anywhere a small image is "
-"required."
-msgstr ""
-"群组的小尺寸照片. 被自动缩放到64x64px，保持纵横比。这个字段用于任何需要小图片"
-"的地方"
+"image, with aspect ratio preserved. Use this field anywhere a small image is"
+" required."
+msgstr "群组的小尺寸照片. 被自动缩放到64x64px，保持纵横比。这个字段用于任何需要小图片的地方"
 
 #. module: mail
 #: field:mail.compose.message,starred:0 field:mail.message,starred:0
@@ -1770,9 +1723,9 @@ msgstr "关联这个群组的email地址。收到新的email将自动创建一�
 #. module: mail
 #: help:mail.alias,alias_model_id:0
 msgid ""
-"The model (Odoo Document Kind) to which this alias corresponds. Any incoming "
-"email that does not reply to an existing record will cause the creation of a "
-"new record of this model (e.g. a Project Task)"
+"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+" email that does not reply to an existing record will cause the creation of "
+"a new record of this model (e.g. a Project Task)"
 msgstr ""
 
 #. module: mail
@@ -1789,23 +1742,16 @@ msgid ""
 "field is not set the system will attempt to find the right owner based on "
 "the sender (From) address, or will use the Administrator account if no "
 "system user is found for that address."
-msgstr ""
-"记录所有者是根据在此别名上接受邮件来创立的。\r\n"
-"若此字段无设置，系统将依据收发地址来寻找正确的所有者，如果在那个地址上没有系"
-"统使用者可以找到的话，将使用admin账户。"
+msgstr "记录所有者是根据在此别名上接受邮件来创立的。\r\n若此字段无设置，系统将依据收发地址来寻找正确的所有者，如果在那个地址上没有系统使用者可以找到的话，将使用admin账户。"
 
 #. module: mail
 #: code:addons/mail/mail_message.py:764
 #, python-format
 msgid ""
-"The requested operation cannot be completed due to security restrictions. "
-"Please contact your system administrator.\n"
+"The requested operation cannot be completed due to security restrictions. Please contact your system administrator.\n"
 "\n"
 "(Document type: %s, Operation: %s)"
-msgstr ""
-"由于安全限制，请求的操作不能被完成。请联系你的系统管理员。\n"
-"\n"
-"(单据类型: %s, 操作: %s)"
+msgstr "由于安全限制，请求的操作不能被完成。请联系你的系统管理员。\n\n(单据类型: %s, 操作: %s)"
 
 #. module: mail
 #: help:mail.group,image:0
@@ -1842,7 +1788,7 @@ msgstr "收件人"
 #. module: mail
 #: field:mail.mail,recipient_ids:0
 msgid "To (Partners)"
-msgstr ""
+msgstr "到（合作伙伴）"
 
 #. module: mail
 #: view:mail.message:mail.view_message_search
@@ -1961,7 +1907,7 @@ msgstr "投票"
 #: code:addons/mail/mail_group.py:174
 #, python-format
 msgid "Warning!"
-msgstr ""
+msgstr "警告！"
 
 #. module: mail
 #. openerp-web
@@ -1969,8 +1915,7 @@ msgstr ""
 #, python-format
 msgid ""
 "Warning! \n"
-" %s won't be notified of any email or discussion on this document. Do you "
-"really want to remove him from the followers ?"
+" %s won't be notified of any email or discussion on this document. Do you really want to remove him from the followers ?"
 msgstr ""
 
 #. module: mail
@@ -1979,11 +1924,8 @@ msgstr ""
 #, python-format
 msgid ""
 "Warning! \n"
-"You won't be notified of any email or discussion on this document. Do you "
-"really want to unfollow this document ?"
-msgstr ""
-"警告！\n"
-"您将被该单据的邮件或者公告提醒。你确信要取消关注该单据？"
+"You won't be notified of any email or discussion on this document. Do you really want to unfollow this document ?"
+msgstr "警告！\n您将被该单据的邮件或者公告提醒。你确信要取消关注该单据？"
 
 #. module: mail
 #: help:mail.compose.message,is_log:0
