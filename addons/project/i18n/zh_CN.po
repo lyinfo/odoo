@@ -727,7 +727,7 @@ msgstr ""
 #. module: project
 #: field:project.task,effective_hours:0
 msgid "Hours Spent"
-msgstr "花费时间(H)"
+msgstr "花费小时数"
 
 #. module: project
 #: field:project.task.delegate,planned_hours_me:0
@@ -1688,7 +1688,7 @@ msgstr "任务时间估计"
 #: field:project.project,effective_hours:0
 #: field:project.task.work,hours:0
 msgid "Time Spent"
-msgstr "花费小时数"
+msgstr "花费时间"
 
 #. module: project
 #: help:project.project,resource_calendar_id:0
