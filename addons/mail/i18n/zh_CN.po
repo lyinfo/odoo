@@ -1979,7 +1979,7 @@ msgstr "您有一个未读消息"
 #: code:addons/mail/mail_mail.py:160
 #, python-format
 msgid "about"
-msgstr "大约"
+msgstr "关于"
 
 #. module: mail
 #: code:addons/mail/mail_mail.py:160
