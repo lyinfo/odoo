@@ -1338,7 +1338,7 @@ msgstr "适用于所有项目的公共阶段"
 #. module: project
 #: field:project.task,date_start:0
 msgid "Starting Date"
-msgstr "提出日期"
+msgstr "计划开始日期"
 
 #. module: project
 #: field:project.project,state:0
