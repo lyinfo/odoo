@@ -210,6 +210,8 @@ class document_directory(osv.osv):
         ('no_selfparent', 'check(parent_id <> id)', 'Directory cannot be parent of itself!'),
     ]
     def name_get(self, cr, uid, ids, context=None):
+        if not isinstance(ids, (list, tuple)):
+            ids = [ids]
         res = []
         if not self.search(cr,uid,[('id','in',ids)]):
             ids = []
