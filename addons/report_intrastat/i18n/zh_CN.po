@@ -165,7 +165,7 @@ msgstr "欧盟内部成员"
 #. module: report_intrastat
 #: model:ir.model,name:report_intrastat.model_report_intrastat
 msgid "Intrastat report"
-msgstr "内部统计报告"
+msgstr "内部统计报表"
 
 #. module: report_intrastat
 #: view:website:report_intrastat.report_intrastatinvoice_document

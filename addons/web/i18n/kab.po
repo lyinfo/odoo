@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-21 14:08+0000\n"
-"PO-Revision-Date: 2015-06-05 19:06+0000\n"
+"PO-Revision-Date: 2015-06-28 20:27+0000\n"
 "Last-Translator: Belkacem Mohammed <belkacem77@gmail.com>\n"
 "Language-Team: Kabyle (http://www.transifex.com/projects/p/odoo-8/language/kab/)\n"
 "MIME-Version: 1.0\n"
@@ -292,14 +292,14 @@ msgstr ""
 #: code:addons/web/static/src/xml/base.xml:1842
 #, python-format
 msgid "Add"
-msgstr "Rnu"
+msgstr "Rrnu"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:1603
 #, python-format
 msgid "Add Advanced Filter"
-msgstr "Rrnu imzizdig leqqayen"
+msgstr "Rrnu imzizdeg leqqayen"
 
 #. module: web
 #. openerp-web
@@ -363,7 +363,7 @@ msgstr "Iseqdacen imaṛṛa"
 #: code:addons/web/static/src/xml/base.xml:1758
 #, python-format
 msgid "Apply"
-msgstr "Appliquer"
+msgstr "Snes"
 
 #. module: web
 #. openerp-web
@@ -781,7 +781,7 @@ msgstr "Illul-ed sɣur:"
 #: code:addons/web/static/src/js/search.js:1778
 #, python-format
 msgid "Custom Filter"
-msgstr "Izizdig Yugenen"
+msgstr "Imzizdeg Yugenen"
 
 #. module: web
 #: view:website:web.database_select
@@ -1075,7 +1075,7 @@ msgstr ""
 #: code:addons/web/static/src/js/search.js:1886
 #, python-format
 msgid "Error"
-msgstr "Erreur"
+msgstr "Tuccḍa"
 
 #. module: web
 #: code:addons/web/controllers/main.py:764
@@ -1118,7 +1118,7 @@ msgstr ""
 #: code:addons/web/static/src/js/data_export.js:36
 #, python-format
 msgid "Export To File"
-msgstr ""
+msgstr "Sifeḍ ɣer ufaylu"
 
 #. module: web
 #. openerp-web
@@ -1182,21 +1182,21 @@ msgstr ""
 #: code:addons/web/static/src/js/view_form.js:5622
 #, python-format
 msgid "File Upload"
-msgstr ""
+msgstr "Asali n ufaylu"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/view_form.js:5602
 #, python-format
 msgid "File upload"
-msgstr ""
+msgstr "Asili n ufaylu"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:260
 #, python-format
 msgid "File:"
-msgstr ""
+msgstr "Afaylu:"
 
 #. module: web
 #. openerp-web
@@ -1214,7 +1214,7 @@ msgstr ""
 #: code:addons/web/static/src/js/search.js:1148
 #, python-format
 msgid "Filter"
-msgstr "Imzizdig"
+msgstr "Imzizdeg"
 
 #. module: web
 #. openerp-web
@@ -1464,7 +1464,7 @@ msgstr ""
 #: code:addons/web/static/src/js/chrome.js:394
 #, python-format
 msgid "Loading"
-msgstr "Asbibi"
+msgstr "Asili"
 
 #. module: web
 #. openerp-web
@@ -1495,7 +1495,7 @@ msgstr ""
 #. module: web
 #: view:website:web.login
 msgid "Log in"
-msgstr "Aseqdac"
+msgstr "Kcem"
 
 #. module: web
 #. openerp-web
@@ -1639,7 +1639,7 @@ msgstr "Isem:"
 #: code:addons/web/static/src/js/view_form.js:330
 #, python-format
 msgid "New"
-msgstr "Nouveau"
+msgstr "Amaynut"
 
 #. module: web
 #. openerp-web
@@ -1920,7 +1920,7 @@ msgstr ""
 #: code:addons/web/static/src/xml/base.xml:367
 #, python-format
 msgid "Preferences"
-msgstr ""
+msgstr "Ismenyifen"
 
 #. module: web
 #. openerp-web
@@ -2052,7 +2052,7 @@ msgstr ""
 #: code:addons/web/static/src/xml/base.xml:1738
 #, python-format
 msgid "Save current filter"
-msgstr ""
+msgstr "Kles imzizdeig amiran"
 
 #. module: web
 #. openerp-web
@@ -2274,7 +2274,7 @@ msgstr ""
 #: code:addons/web/static/src/js/core.js:702
 #, python-format
 msgid "Still loading..."
-msgstr "Ittali-d yakan..."
+msgstr "Iţali-d yakan..."
 
 #. module: web
 #. openerp-web
@@ -2453,7 +2453,7 @@ msgstr ""
 #: code:addons/web/static/src/js/view_form.js:2651
 #, python-format
 msgid "Today"
-msgstr "Aujourd'hui"
+msgstr "Assa"
 
 #. module: web
 #. openerp-web
@@ -2590,7 +2590,7 @@ msgstr ""
 #: code:addons/web/static/src/xml/base.xml:459
 #, python-format
 msgid "User's timezone"
-msgstr ""
+msgstr "Izḍi usrig n useqdac"
 
 #. module: web
 #. openerp-web
@@ -2715,7 +2715,7 @@ msgstr ""
 #: code:addons/web/static/src/js/views.js:1269
 #, python-format
 msgid "You must choose at least one record."
-msgstr "Vous devez sélectionner au moins un enregistrement."
+msgstr "Issefk aţfarneḍ ɣarṣum yiwen ukalas."
 
 #. module: web
 #. openerp-web
@@ -2736,7 +2736,7 @@ msgstr ""
 #: code:addons/web/static/src/xml/base.xml:456
 #, python-format
 msgid "Your user's preference timezone does not match your browser timezone:"
-msgstr ""
+msgstr "Iẓdi usrig n useqdac inek ur yedda yara d  iẓdi usrig n uminig-inek:"
 
 #. module: web
 #. openerp-web

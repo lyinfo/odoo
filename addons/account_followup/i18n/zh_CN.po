@@ -624,7 +624,7 @@ msgstr ""
 #. module: account_followup
 #: model:ir.actions.report.xml,name:account_followup.action_report_followup
 msgid "Follow-up Report"
-msgstr "催款报告"
+msgstr "催款报表"
 
 #. module: account_followup
 #: view:res.partner:account_followup.customer_followup_search_view

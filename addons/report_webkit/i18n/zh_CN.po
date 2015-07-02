@@ -164,7 +164,7 @@ msgstr "取消"
 msgid ""
 "Check this to add a Print action for this Report in the sidebar of the "
 "corresponding document types"
-msgstr "勾选此添加在相应的文件报告打印动到侧边栏"
+msgstr "勾选此添加在相应的文件报表打印动到侧边栏"
 
 #. module: report_webkit
 #: help:report.webkit.actions,open_action:0

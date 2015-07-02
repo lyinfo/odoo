@@ -5,13 +5,15 @@
 # Translators:
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012
 # jeffery chen fan <jeffery9@gmail.com>, 2015
+# mrshelly <mrshelly@hotmail.com>, 2015
+# Xor3 <xor3@outlook.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-21 14:07+0000\n"
-"PO-Revision-Date: 2015-06-04 04:42+0000\n"
-"Last-Translator: jeffery chen fan <jeffery9@gmail.com>\n"
+"PO-Revision-Date: 2015-06-26 04:40+0000\n"
+"Last-Translator: leangjia <liangjia@qq.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/odoo-8/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -321,7 +323,7 @@ msgid ""
 "                the bottom of each invoice.\n"
 "              </p>\n"
 "            "
-msgstr "<p class=\"oe_view_nocontent_create\">\n                单击创建一张客户发票。\n              </p><p>\n                OpenERP的电子发票允许您方便快捷地\n                收取客户付款，客户也可通过电子邮件来接收发票、\n                在线支付，或将数据导入到\n                他自己的系统中。\n              </p><p>\n                您与客户的沟通记录会自动显示在\n                相关发票的下方。\n              </p>\n            "
+msgstr "<p class=\"oe_view_nocontent_create\">\n单击创建一张客户发票。\n</p><p>\n Odoo的电子发票允许您方便快捷地收取客户付款，客户也可通过电子邮件来接收发票、在线支付，或将数据导入到他自己的系统中。\n</p><p>\n您与客户的沟通记录会自动显示在相关发票的下方。\n</p>"
 
 #. module: account
 #: model:ir.actions.act_window,help:account.action_invoice_tree3
@@ -395,7 +397,7 @@ msgid ""
 "                (profit/loss or balance sheet).\n"
 "              </p>\n"
 "            "
-msgstr "<p class=\"oe_view_nocontent_create\">\n                点击创建一个新的科目类型.\n              </p><p>\n                科目类型用来说明在各个日记账中如何使用这个科目。\n                科目类型的递延方法决定了该账户在年终结账时的处理流程。\n                财务报告，如资产负债表、损益表，将会使用这个分类。\n              </p>\n            "
+msgstr "<p class=\"oe_view_nocontent_create\">\n                点击创建一个新的科目类型.\n              </p><p>\n                科目类型用来说明在各个日记账中如何使用这个科目。\n                科目类型的递延方法决定了该账户在年终结账时的处理流程。\n                财务报表，如资产负债表、损益表，将会使用这个分类。\n              </p>\n            "
 
 #. module: account
 #: model:ir.actions.act_window,help:account.action_subscription_form
@@ -423,7 +425,7 @@ msgid ""
 "                one or several tax code.\n"
 "              </p>\n"
 "            "
-msgstr "<p class=\"oe_view_nocontent_create\">\n                单击定义一个新的税号.\n              </p><p>\n                根据国家要求，是填写法定税报告通常以\n                税号为单位，OpenERP 允许您定义\n                税种组成，每种税的计算会计入\n                一个或多个税号。\n              </p>\n            "
+msgstr "<p class=\"oe_view_nocontent_create\">\n                单击定义一个新的税号.\n              </p><p>\n                根据国家要求，是填写法定税报表通常以\n                税号为单位，OpenERP 允许您定义\n                税种组成，每种税的计算会计入\n                一个或多个税号。\n              </p>\n            "
 
 #. module: account
 #: model:ir.actions.act_window,help:account.action_invoice_tree2
@@ -464,7 +466,7 @@ msgid ""
 "                refunds and reconcile them directly from the related supplier invoice.\n"
 "              </p>\n"
 "            "
-msgstr "<p class=\"oe_view_nocontent_create\">\n                单击记录您从供应商收到的退款.\n              </p><p>\n                不需要手工创建供应商退款，您可以从供应商发票生成退款，并且将它们直接关联。\n              </p>\n            "
+msgstr "<p class=\"oe_view_nocontent_create\">\n单击记录您从供应商收到的退款.\n</p><p>\n您可以直接从供应商发票生成退款并核销，而不需要手工创建供应商退款，\n</p>"
 
 #. module: account
 #: model:ir.actions.act_window,help:account.action_account_fiscalyear
@@ -511,7 +513,7 @@ msgid ""
 "            accounts will be created automatically based on these data.\n"
 "          </p>\n"
 "        "
-msgstr "<p class=\"oe_view_nocontent_create\">\n           单击配置一个新的银行账户。 \n          </p><p>\n            配置贵公司的银行账户，并选择在报告脚注必须显示的账户。\n          </p><p>\n           若使用OpenERP的会计应用,分录和科目将按这些数据自动创建。\n          </p>\n        "
+msgstr "<p class=\"oe_view_nocontent_create\">\n           单击配置一个新的银行账户。 \n          </p><p>\n            配置贵公司的银行账户，并选择在报表脚注必须显示的账户。\n          </p><p>\n           若使用OpenERP的会计应用,分录和科目将按这些数据自动创建。\n          </p>\n        "
 
 #. module: account
 #: model:ir.actions.act_window,help:account.action_account_manual_reconcile
@@ -539,7 +541,7 @@ msgid ""
 "                related account.\n"
 "              </p>\n"
 "            "
-msgstr "<p>\n                单击添加一个新的分析账户.\n              </p><p>\n                正规的会计科目表\n                有国家法定要求的内容，帐户的分析\n                科目应反映企业自身的业务\n                成本/收入分析和报告的需要。\n              </p><p>\n                它们通常由合同、项目、产品或\n                部门构成。多数的OpenERP运用程序（发票、\n                计工单、费用等）会在\n                相关的帐户生成分析分录。\n              </p>\n            "
+msgstr "<p>\n                单击添加一个新的分析账户.\n              </p><p>\n                正规的会计科目表\n                有国家法定要求的内容，帐户的分析\n                科目应反映企业自身的业务\n                成本/收入分析和报表的需要。\n              </p><p>\n                它们通常由合同、项目、产品或\n                部门构成。多数的OpenERP运用程序（发票、\n                计工单、费用等）会在\n                相关的帐户生成分析分录。\n              </p>\n            "
 
 #. module: account
 #: view:account.bank.statement:account.view_bank_statement_form2
@@ -619,7 +621,7 @@ msgstr "科目"
 #. module: account
 #: model:ir.model,name:account.model_account_aged_trial_balance
 msgid "Account Aged Trial balance Report"
-msgstr "会计到期的试算表报告"
+msgstr "会计到期的试算表报表"
 
 #. module: account
 #: model:ir.model,name:account.model_account_analytic_balance
@@ -639,7 +641,7 @@ msgstr "会计分析成本分类账"
 #. module: account
 #: model:ir.model,name:account.model_account_analytic_cost_ledger_journal_report
 msgid "Account Analytic Cost Ledger For Journal Report"
-msgstr "会计分析成本分类账的日记账报告"
+msgstr "会计分析成本分类账的日记账报表"
 
 #. module: account
 #: model:ir.model,name:account.model_account_analytic_inverted_balance
@@ -675,22 +677,22 @@ msgstr "科目代码和名称"
 #. module: account
 #: model:ir.model,name:account.model_account_common_account_report
 msgid "Account Common Account Report"
-msgstr "会计共通科目报告"
+msgstr "会计共通科目报表"
 
 #. module: account
 #: model:ir.model,name:account.model_account_common_journal_report
 msgid "Account Common Journal Report"
-msgstr "会计共通日记账报告"
+msgstr "会计共通日记账报表"
 
 #. module: account
 #: model:ir.model,name:account.model_account_common_partner_report
 msgid "Account Common Partner Report"
-msgstr "会计共通业务伙伴报告"
+msgstr "会计共通业务伙伴报表"
 
 #. module: account
 #: model:ir.model,name:account.model_account_common_report
 msgid "Account Common Report"
-msgstr "会计共通报告"
+msgstr "会计共通报表"
 
 #. module: account
 #: field:account.analytic.line,currency_id:0
@@ -805,19 +807,19 @@ msgstr "科目调节"
 #: field:account.financial.report,children_ids:0
 #: model:ir.model,name:account.model_account_financial_report
 msgid "Account Report"
-msgstr "会计报告"
+msgstr "会计报表"
 
 #. module: account
 #: field:accounting.report,account_report_id:0
 #: model:ir.ui.menu,name:account.menu_account_financial_reports_tree
 msgid "Account Reports"
-msgstr "会计报告"
+msgstr "会计报表"
 
 #. module: account
 #: view:account.financial.report:account.view_account_report_tree_hierarchy
 #: model:ir.ui.menu,name:account.menu_account_report_tree_hierarchy
 msgid "Account Reports Hierarchy"
-msgstr "会计报告层级"
+msgstr "会计报表层级"
 
 #. module: account
 #: field:account.fiscal.position.account,account_src_id:0
@@ -923,7 +925,7 @@ msgid ""
 "Account Type is used for information purpose, to generate country-specific "
 "legal reports, and set the rules to close a fiscal year and generate opening"
 " entries."
-msgstr "科目类别用于生成合乎各国财税规范的报告，配置财年结帐的规则以及生成未登帐凭证"
+msgstr "科目类别用于生成合乎各国财税规范的报表，配置财年结帐的规则以及生成未登帐凭证"
 
 #. module: account
 #: field:account.financial.report,account_type_ids:0
@@ -1061,12 +1063,12 @@ msgstr "会计期间"
 #. module: account
 #: model:ir.model,name:account.model_accounting_report
 msgid "Accounting Report"
-msgstr "会计报告"
+msgstr "会计报表"
 
 #. module: account
 #: model:ir.ui.menu,name:account.final_accounting_reports
 msgid "Accounting Reports"
-msgstr "会计报告"
+msgstr "会计报表"
 
 #. module: account
 #: view:res.partner:account.view_partner_property_form
@@ -1180,7 +1182,7 @@ msgid ""
 "Odoo then calculates a table of credit balance by period. So if you request "
 "an interval of 30 days Odoo generates an analysis of creditors for the past "
 "month, past two months, and so on."
-msgstr "业务伙伴账龄分析是某个时间间隔内应收账款的更详细的报告。打开这个报告后，请选择科目一览表、开始日期、分析的时间间隔（按天）。Odoo会按时间间隔计算应收账款余额。如果您输入了30天，Odoo生成业务伙伴的应付分析为前一个月、前两个月,以此类推。"
+msgstr "业务伙伴账龄分析是某个时间间隔内应收账款的更详细的报表。打开这个报表后，请选择科目一览表、开始日期、分析的时间间隔（按天）。Odoo会按时间间隔计算应收账款余额。如果您输入了30天，Odoo生成业务伙伴的应付分析为前一个月、前两个月,以此类推。"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_aged_receivable_graph
@@ -1788,7 +1790,7 @@ msgstr "错误的合计!"
 #: view:website:account.report_partnerledgerother
 #: view:website:account.report_trialbalance
 msgid "Balance"
-msgstr "结转余额"
+msgstr "余额"
 
 #. module: account
 #: view:website:account.report_overdue_document
@@ -1837,7 +1839,7 @@ msgstr "已平衡"
 #: code:addons/account/account.py:3071
 #, python-format
 msgid "Bank"
-msgstr "银行分录"
+msgstr "银行"
 
 #. module: account
 #: view:account.config.settings:account.view_account_config_settings
@@ -1875,12 +1877,12 @@ msgstr "银行详细信息"
 #. module: account
 #: view:account.statement.operation.template:account.view_account_statement_operation_template_tree
 msgid "Bank Reconciliation Move Presets"
-msgstr "银行调节的凭证预制"
+msgstr "银行调节凭证预制"
 
 #. module: account
 #: view:account.statement.operation.template:account.view_account_statement_operation_template_search
 msgid "Bank Reconciliation Move preset"
-msgstr "银行调节的凭证预制"
+msgstr "银行调节凭证预制"
 
 #. module: account
 #: view:account.bank.statement:account.view_account_bank_statement_filter
@@ -1979,12 +1981,12 @@ msgstr "期间开始日期"
 #. module: account
 #: model:ir.ui.menu,name:account.menu_finance_management_belgian_reports
 msgid "Belgian Reports"
-msgstr "比利时报告"
+msgstr "比利时报表"
 
 #. module: account
 #: model:ir.ui.menu,name:account.menu_finance_periodical_processing_billing
 msgid "Billing"
-msgstr "开账单"
+msgstr "计费"
 
 #. module: account
 #: field:account.config.settings,module_account_budget:0
@@ -2360,7 +2362,7 @@ msgstr "模板一览表"
 #: field:account.vat.declaration,chart_account_id:0
 #: field:accounting.report,chart_account_id:0
 msgid "Chart of Account"
-msgstr "科目一览表"
+msgstr "科目表"
 
 #. module: account
 #: view:account.config.settings:account.view_account_config_settings
@@ -2368,19 +2370,19 @@ msgstr "科目一览表"
 #: model:ir.actions.act_window,name:account.action_account_tree
 #: model:ir.ui.menu,name:account.menu_action_account_tree2
 msgid "Chart of Accounts"
-msgstr "科目一览表"
+msgstr "科目表"
 
 #. module: account
 #: view:account.chart.template:account.view_account_chart_template_form
 #: view:account.chart.template:account.view_account_chart_template_tree
 msgid "Chart of Accounts Template"
-msgstr "科目一览表模板"
+msgstr "科目表模版"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_chart_template_form
 #: model:ir.ui.menu,name:account.menu_action_account_chart_template_form
 msgid "Chart of Accounts Templates"
-msgstr "科目一览表模板"
+msgstr "科目表模版"
 
 #. module: account
 #: view:website:account.report_agedpartnerbalance
@@ -2395,7 +2397,7 @@ msgstr "科目一览表模板"
 #: view:website:account.report_salepurchasejournal
 #: view:website:account.report_trialbalance
 msgid "Chart of Accounts:"
-msgstr "科目一览表"
+msgstr "科目表"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_analytic_account_tree2
@@ -2436,7 +2438,7 @@ msgstr "图表"
 #: model:account.account.type,name:account.conf_account_type_chk
 #: selection:account.bank.accounts.wizard,account_type:0
 msgid "Check"
-msgstr "审查"
+msgstr "核对"
 
 #. module: account
 #: field:account.journal,allow_date:0
@@ -2468,7 +2470,7 @@ msgstr "勾选此项"
 msgid ""
 "Check this box if the partner is subjected to the VAT. It will be used for "
 "the VAT legal statement."
-msgstr "如果业务伙伴是隶属于增值税，选中此复选框。它将被用于增值税报告。"
+msgstr "如果业务伙伴是隶属于增值税，选中此复选框。它将被用于增值税报表。"
 
 #. module: account
 #: help:account.account,reconcile:0
@@ -2694,7 +2696,7 @@ msgstr "商业实体"
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_common_menu
 msgid "Common Report"
-msgstr "共通报告"
+msgstr "共通报表"
 
 #. module: account
 #: field:account.bank.statement.line,name:0
@@ -2943,7 +2945,7 @@ msgstr "继续"
 #: view:res.partner:account.partner_view_buttons
 #: field:res.partner,contract_ids:0 field:res.partner,contracts_count:0
 msgid "Contracts"
-msgstr "合同列表"
+msgstr "合同"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_open_partner_analytic_accounts
@@ -3463,7 +3465,7 @@ msgstr "创建日期"
 #. module: account
 #: field:account.entries.report,date_maturity:0
 msgid "Date Maturity"
-msgstr "到期日"
+msgstr "成熟日期"
 
 #. module: account
 #: view:account.config.settings:account.view_account_config_settings
@@ -3486,7 +3488,7 @@ msgstr "日期从:"
 #. module: account
 #: selection:account.model.line,date_maturity:0
 msgid "Date of the day"
-msgstr "日期中的一天"
+msgstr "那天的日期"
 
 #. module: account
 #: help:account.bank.statement,message_last_post:0
@@ -3540,7 +3542,7 @@ msgstr "日期"
 #. module: account
 #: field:account.payment.term.line,days2:0
 msgid "Day of the Month"
-msgstr "月份的天"
+msgstr "那月的天"
 
 #. module: account
 #: help:account.payment.term.line,days2:0
@@ -3684,7 +3686,7 @@ msgstr "详细"
 msgid ""
 "Determine the display order in the report 'Accounting \\ Reporting \\ "
 "Generic Reporting \\ Taxes \\ Taxes Report'"
-msgstr "确定以下报告的显示顺序：”会计-报告-通用报告-税务-税务报告“"
+msgstr "确定以下报表的显示顺序：”会计-报表-通用报表-税务-税务报表“"
 
 #. module: account
 #: view:account.bank.statement:account.view_bank_statement_form2
@@ -3740,7 +3742,7 @@ msgstr "显示细节"
 #. module: account
 #: help:account.partner.ledger,page_split:0
 msgid "Display Ledger Report with One partner per page"
-msgstr "每页一个业务伙伴的显示分类帐报告"
+msgstr "每页一个业务伙伴的显示分类帐报表"
 
 #. module: account
 #: field:account.partner.balance,display_partner:0
@@ -3770,7 +3772,7 @@ msgstr "单据"
 #. module: account
 #: view:website:account.report_overdue_document
 msgid "Document: Customer account statement"
-msgstr "文档:客户科目报告"
+msgstr "文档:客户科目报表"
 
 #. module: account
 #: field:account.tax,domain:0 field:account.tax.template,domain:0
@@ -4383,12 +4385,12 @@ msgstr "财务经理"
 #. module: account
 #: model:ir.ui.menu,name:account.menu_account_report
 msgid "Financial Report"
-msgstr "财务报告"
+msgstr "财务报表"
 
 #. module: account
 #: field:account.financial.report,style_overwrite:0
 msgid "Financial Report Style"
-msgstr "财务报告样式"
+msgstr "财务报表样式"
 
 #. module: account
 #: field:account.account,financial_report_ids:0
@@ -4397,17 +4399,17 @@ msgstr "财务报告样式"
 #: model:ir.actions.act_window,name:account.action_account_report
 #: model:ir.ui.menu,name:account.menu_account_reports
 msgid "Financial Reports"
-msgstr "财务报告"
+msgstr "财务报表"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_report_tree_hierarchy
 msgid "Financial Reports Hierarchy"
-msgstr "财务报告层级"
+msgstr "财务报表层级"
 
 #. module: account
 #: model:ir.actions.report.xml,name:account.action_report_financial
 msgid "Financial report"
-msgstr "财务报告"
+msgstr "财务报表"
 
 #. module: account
 #: field:account.fiscal.position.account.template,position_id:0
@@ -4576,7 +4578,7 @@ msgid ""
 "the sign of the balance; e.g.: Expense account. The same applies for "
 "accounts that are typically more credited than debited and that you would "
 "like to print as positive amounts in your reports; e.g.: Income account."
-msgstr "对于贷方发生额大于借方发生额的会计科目，您希望在打印报告时显示余额的绝对值，您可以对科目的余额取反；例如：收入科目。对于借方发生额大于贷方发生额的会计科目，您希望在打印报告时显示余额的绝对值，您可以对科目的余额取反；例如：费用科目。"
+msgstr "对于贷方发生额大于借方发生额的会计科目，您希望在打印报表时显示余额的绝对值，您可以对科目的余额取反；例如：收入科目。对于借方发生额大于贷方发生额的会计科目，您希望在打印报表时显示余额的绝对值，您可以对科目的余额取反；例如：费用科目。"
 
 #. module: account
 #: view:account.automatic.reconcile:account.account_automatic_reconcile_view
@@ -4647,7 +4649,7 @@ msgid ""
 "From this report, you can have an overview of the amount invoiced to your "
 "customer. The tool search can also be used to personalise your Invoices "
 "reports and so, match this analysis to your needs."
-msgstr "根据此报告，你可总体上了解向客人开票的情况，这一工具也可用于生成个性化的发票报告，以满足你分析的需要。"
+msgstr "根据此报表，你可总体上了解向客人开票的情况，这一工具也可用于生成个性化的发票报表，以满足你分析的需要。"
 
 #. module: account
 #: model:ir.actions.act_window,help:account.action_analytic_entries_report
@@ -4664,7 +4666,7 @@ msgid ""
 "From this view, have an analysis of your different financial accounts. The "
 "document shows your debit and credit taking in consideration some criteria "
 "you can choose by using the search tool."
-msgstr "在这个界面上，您可以对不同的科目做分析。按照您输入的条件出具报告显示这些科目的借贷方发生额。"
+msgstr "在这个界面上，您可以对不同的科目做分析。按照您输入的条件出具报表显示这些科目的借贷方发生额。"
 
 #. module: account
 #: model:ir.actions.act_window,help:account.action_account_treasury_report_all
@@ -4678,7 +4680,7 @@ msgstr "在这里分析贵公司的资金。这里汇总了每个期间在流动
 msgid ""
 "Full accounting features: journals, legal statements, chart of accounts, "
 "etc."
-msgstr "全部会计特性：日记账，法定报告，会计科目表 等等"
+msgstr "全部会计特性：日记账，法定报表，会计科目表 等等"
 
 #. module: account
 #: selection:account.aged.trial.balance,direction_selection:0
@@ -4735,7 +4737,7 @@ msgstr "总账"
 #. module: account
 #: model:ir.model,name:account.model_account_report_general_ledger
 msgid "General Ledger Report"
-msgstr "总账报告"
+msgstr "总账报表"
 
 #. module: account
 #: view:account.subscription.generate:account.view_account_subscription_generate
@@ -4763,7 +4765,7 @@ msgstr "生成开帐分录"
 #. module: account
 #: model:ir.ui.menu,name:account.menu_finance_generic_reporting
 msgid "Generic Reporting"
-msgstr "通用报告"
+msgstr "通用报表"
 
 #. module: account
 #: help:account.fiscalyear.close,report_name:0
@@ -4826,7 +4828,7 @@ msgstr "跳转到指定的仪表盘"
 #: code:addons/account/static/src/xml/account_bank_statement_reconciliation.xml:8
 #, python-format
 msgid "Good Job!"
-msgstr "非常好！"
+msgstr "做得好！"
 
 #. module: account
 #. openerp-web
@@ -4864,7 +4866,7 @@ msgstr "分组于"
 #. module: account
 #: field:account.journal,group_invoice_lines:0
 msgid "Group Invoice Lines"
-msgstr "发票明细"
+msgstr "分组发票明细"
 
 #. module: account
 #: field:account.journal,groups_id:0
@@ -4874,12 +4876,12 @@ msgstr "组"
 #. module: account
 #: field:account.installer,has_default_company:0
 msgid "Has Default Company"
-msgstr "已经存在默认公司"
+msgstr "有默认公司"
 
 #. module: account
 #: field:account.config.settings,has_default_company:0
 msgid "Has default company"
-msgstr "存在默认公司"
+msgstr "有默认公司"
 
 #. module: account
 #: help:account.bank.statement,message_summary:0
@@ -5287,14 +5289,14 @@ msgstr "安装本地化财务系统以尽可能的适应本国的财务要求"
 #: code:addons/account/account_bank_statement.py:690
 #, python-format
 msgid "Insufficient Configuration!"
-msgstr "数据不足!"
+msgstr "不充分的配置！"
 
 #. module: account
 #: code:addons/account/account_invoice.py:512
 #: code:addons/account/wizard/account_invoice_refund.py:153
 #, python-format
 msgid "Insufficient Data!"
-msgstr "数据不足！"
+msgstr "不充分的数据！"
 
 #. module: account
 #: view:account.entries.report:account.view_account_entries_report_search
@@ -5378,7 +5380,7 @@ msgstr "反向分析余额 -"
 #: view:website:account.report_invoice_document
 #, python-format
 msgid "Invoice"
-msgstr "开发票"
+msgstr "发票"
 
 #. module: account
 #: view:account.change.currency:account.view_account_change_currency
@@ -5439,7 +5441,7 @@ msgstr "发票状态"
 #. module: account
 #: view:account.analytic.line:account.view_account_analytic_line_filter
 msgid "Invoice Tasks by Month"
-msgstr "按月开发票"
+msgstr "开票任务按月"
 
 #. module: account
 #: model:ir.model,name:account.model_account_invoice_tax
@@ -5477,7 +5479,7 @@ msgstr "发票明细"
 #. module: account
 #: model:mail.message.subtype,description:account.mt_invoice_paid
 msgid "Invoice paid"
-msgstr "发票已付清"
+msgstr "发票已付"
 
 #. module: account
 #: code:addons/account/account_invoice.py:1195
@@ -5527,7 +5529,7 @@ msgstr "已开发票"
 #: view:report.invoice.created:account.board_view_created_invoice
 #: field:res.partner,invoice_ids:0
 msgid "Invoices"
-msgstr "发票列表"
+msgstr "发票"
 
 #. module: account
 #: view:account.invoice.report:account.view_account_invoice_report_graph
@@ -5584,7 +5586,7 @@ msgstr "它将作为一个默认的借方科目"
 msgid ""
 "It adds the currency column on report if the currency differs from the "
 "company currency."
-msgstr "当所用币种与公司币种不同时，报告将添加币种栏。"
+msgstr "当所用币种与公司币种不同时，报表将添加币种栏。"
 
 #. module: account
 #: help:account.invoice,reconciled:0
@@ -5682,7 +5684,7 @@ msgstr "日记账 :"
 #. module: account
 #: field:account.analytic.journal,code:0
 msgid "Journal Code"
-msgstr "日记账编码"
+msgstr "日记账代码"
 
 #. module: account
 #: view:account.bank.statement:account.view_bank_statement_form2
@@ -6146,7 +6148,7 @@ msgstr "最后的手工对账处理"
 #. module: account
 #: model:ir.ui.menu,name:account.menu_finance_legal_statement
 msgid "Legal Reports"
-msgstr "正式报告"
+msgstr "正式报表"
 
 #. module: account
 #: view:account.model:account.view_model_form field:account.model,legend:0
@@ -6836,7 +6838,7 @@ msgstr "打开表"
 #: view:account.journal.select:account.open_journal_button_view
 #: view:project.account.analytic.line:account.view_project_account_analytic_line_form
 msgid "Open Entries"
-msgstr "开帐分录"
+msgstr "开帐条目"
 
 #. module: account
 #: view:account.state.open:account.view_account_state_open
@@ -7059,7 +7061,7 @@ msgstr "父级左"
 #. module: account
 #: view:account.financial.report:account.view_account_financial_report_search
 msgid "Parent Report"
-msgstr "父级报告"
+msgstr "父级报表"
 
 #. module: account
 #: field:account.account,parent_right:0
@@ -7601,7 +7603,7 @@ msgstr "打印发票"
 msgid ""
 "Print Report with the currency column if the currency differs from the "
 "company currency."
-msgstr "如果币种跟公司本位币不同，带币种打印报告。"
+msgstr "如果币种跟公司本位币不同，带币种打印报表。"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_print_sale_purchase_journal
@@ -7711,7 +7713,7 @@ msgstr "损益表（收入科目）"
 #. module: account
 #: model:account.financial.report,name:account.account_financial_report_profitloss_toreport0
 msgid "Profit (Loss) to report"
-msgstr "待报告的利润（损失）"
+msgstr "待报表的利润（损失）"
 
 #. module: account
 #: field:account.journal,profit_account_id:0
@@ -8088,7 +8090,7 @@ msgstr "参考计量单位"
 #. module: account
 #: help:report.invoice.created,origin:0
 msgid "Reference of the document that generated this invoice report."
-msgstr "相关单据生成此发票报告"
+msgstr "相关单据生成此发票报表"
 
 #. module: account
 #: help:account.invoice,origin:0 help:account.invoice.line,origin:0
@@ -8207,54 +8209,54 @@ msgstr "替代税"
 #. module: account
 #: view:account.financial.report:account.view_account_financial_report_form
 msgid "Report"
-msgstr "报告"
+msgstr "报表"
 
 #. module: account
 #: field:account.financial.report,name:0
 msgid "Report Name"
-msgstr "报告名称"
+msgstr "报表名称"
 
 #. module: account
 #: view:account.aged.trial.balance:account.account_aged_balance_view
 #: view:account.common.report:account.account_common_report_view
 msgid "Report Options"
-msgstr "报告选项"
+msgstr "报表选项"
 
 #. module: account
 #: view:account.financial.report:account.view_account_financial_report_search
 msgid "Report Type"
-msgstr "报告类型"
+msgstr "报表类型"
 
 #. module: account
 #: field:account.financial.report,account_report_id:0
 #: selection:account.financial.report,type:0
 msgid "Report Value"
-msgstr "报告数值"
+msgstr "报表数值"
 
 #. module: account
 #: model:ir.model,name:account.model_report_invoice_created
 msgid "Report of Invoices Created within Last 15 days"
-msgstr "近15天创建的发票报告"
+msgstr "近15天创建的发票报表"
 
 #. module: account
 #: model:ir.model,name:account.model_report_account_sales
 msgid "Report of the Sales by Account"
-msgstr "销售报告，按科目"
+msgstr "销售报表，按科目"
 
 #. module: account
 #: model:ir.model,name:account.model_report_account_type_sales
 msgid "Report of the Sales by Account Type"
-msgstr "销售报告，按科目类型"
+msgstr "销售报表，按科目类型"
 
 #. module: account
 #: model:ir.ui.menu,name:account.menu_finance_reports
 msgid "Reporting"
-msgstr "报告"
+msgstr "报表"
 
 #. module: account
 #: view:account.tax.code:account.view_tax_code_form
 msgid "Reporting Configuration"
-msgstr "报告配置"
+msgstr "报表配置"
 
 #. module: account
 #: view:account.invoice:account.invoice_form
@@ -8807,7 +8809,7 @@ msgstr "父项的符号"
 #. module: account
 #: field:account.financial.report,sign:0
 msgid "Sign on Reports"
-msgstr "报告上的符号"
+msgstr "报表上的符号"
 
 #. module: account
 #: selection:account.analytic.journal,type:0
@@ -8996,7 +8998,7 @@ msgstr "对账单明细"
 #. module: account
 #: model:ir.ui.menu,name:account.menu_account_pp_statements
 msgid "Statements"
-msgstr "报告"
+msgstr "报表"
 
 #. module: account
 #: view:account.move:account.view_account_move_filter
@@ -9428,7 +9430,7 @@ msgstr "税金映射"
 #: view:account.vat.declaration:account.view_account_vat_declaration
 #: model:ir.ui.menu,name:account.menu_account_vat_declaration
 msgid "Taxes Report"
-msgstr "税金报告"
+msgstr "税金报表"
 
 #. module: account
 #: code:addons/account/account_invoice.py:732
@@ -9606,7 +9608,7 @@ msgstr "每个公司的日记账代码必须唯一！"
 #. module: account
 #: help:account.journal,code:0
 msgid "The code will be displayed on reports."
-msgstr "该代码会在报告中显示"
+msgstr "该代码会在报表中显示"
 
 #. module: account
 #: help:account.invoice,commercial_partner_id:0
@@ -9717,7 +9719,7 @@ msgstr "如果是一个多货币凭证可选其它货币"
 msgid ""
 "The optional quantity expressed by this line, eg: number of product sold. "
 "The quantity is not a legal requirement but is very useful for some reports."
-msgstr "行显示的非强制性数量，如：已销售产品。这数量不是一个强制要求，但对一些报告非常有用。"
+msgstr "行显示的非强制性数量，如：已销售产品。这数量不是一个强制要求，但对一些报表非常有用。"
 
 #. module: account
 #: help:account.model.line,quantity:0
@@ -10086,7 +10088,7 @@ msgstr "此字段是用于应付账款和应收账款的会计分录。您可以
 msgid ""
 "This field is used to generate legal reports: profit and loss, balance "
 "sheet."
-msgstr "这个字段用于生成法定报告：损益表，资产负债表"
+msgstr "这个字段用于生成法定报表：损益表，资产负债表"
 
 #. module: account
 #: help:account.bank.statement.line,partner_name:0
@@ -10166,7 +10168,7 @@ msgstr "当保存数据时，系统会自动为此银行账户创建像相应的
 msgid ""
 "This label will be displayed on report to show the balance computed for the "
 "given comparison filter."
-msgstr "这个标签将放在报告上用来显示根据比较筛选条件计算出来的余额"
+msgstr "这个标签将放在报表上用来显示根据比较筛选条件计算出来的余额"
 
 #. module: account
 #: view:account.vat.declaration:account.view_account_vat_declaration
@@ -10182,7 +10184,7 @@ msgstr "这个菜单基于发票或者支付打印一个纳税申报。选择财
 #. module: account
 #: help:account.tax,name:0
 msgid "This name will be displayed on reports"
-msgstr "这名称将显示在报告"
+msgstr "这名称将显示在报表"
 
 #. module: account
 #: help:accounting.report,debit_credit:0
@@ -10518,7 +10520,7 @@ msgstr "试算表"
 #. module: account
 #: model:ir.model,name:account.model_account_balance_report
 msgid "Trial Balance Report"
-msgstr "试算表报告"
+msgstr "试算表报表"
 
 #. module: account
 #: selection:account.tax.template,applicable_type:0
@@ -10902,7 +10904,7 @@ msgid ""
 "When journal period is created. The status is 'Draft'. If a report is "
 "printed it comes to 'Printed' status. When all transactions are done, it "
 "comes in 'Done' status."
-msgstr "会计期间创建时，状态为“草稿“；报告被打印后，状态为”已打印“；所有交易完成时，状态为”完成“。"
+msgstr "会计期间创建时，状态为“草稿“；报表被打印后，状态为”已打印“；所有交易完成时，状态为”完成“。"
 
 #. module: account
 #: help:account.period,state:0
@@ -11097,7 +11099,7 @@ msgid ""
 "You can set up here the format you want this record to be displayed. If you "
 "leave the automatic formatting, it will be computed based on the financial "
 "reports hierarchy (auto-computed field 'level')."
-msgstr "这里可以配置您想要记录显示格式.如果保留自动,它将基于财务报告结构计算(自动计算字段\"level\")"
+msgstr "这里可以配置您想要记录显示格式.如果保留自动,它将基于财务报表结构计算(自动计算字段\"level\")"
 
 #. module: account
 #: help:account.tax.code,sign:0

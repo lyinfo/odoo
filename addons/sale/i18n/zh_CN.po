@@ -846,7 +846,7 @@ msgid ""
 "From this report, you can have an overview of the amount invoiced to your "
 "customer. The tool search can also be used to personalise your Invoices "
 "reports and so, match this analysis to your needs."
-msgstr "根据此报告，你可总体上了解向客人开票的情况，这一工具也可用于生成个性化的发票报告，以满足你分析的需要。"
+msgstr "根据此报表，你可总体上了解向客人开票的情况，这一工具也可用于生成个性化的发票报表，以满足你分析的需要。"
 
 #. module: sale
 #: field:sale.config.settings,group_invoice_so_lines:0

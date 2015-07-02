@@ -609,7 +609,7 @@ msgstr ""
 #: view:campaign.analysis:marketing_campaign.view_campaign_analysis_tree
 #: view:campaign.analysis:marketing_campaign.view_report_campaign_analysis_graph
 msgid "Marketing Reports"
-msgstr "市场报告"
+msgstr "市场报表"
 
 #. module: marketing_campaign
 #: selection:campaign.analysis,month:0
