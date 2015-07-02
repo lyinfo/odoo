@@ -690,6 +690,14 @@ msgid ""
 "- Followers Only: employees see only the followed tasks or issues; if portal\n"
 "   is activated, portal users see the followed tasks or issues."
 msgstr ""
+"当前项目的任务及问题的可见度：\n"
+"- 公开项目： 任何人可见； 如果客户门户被激活， 客户用户可以看见所有任务及问题； 如果匿名用户被\n"
+"   激活， 匿名访问者也可以看见所有的任务及问题\n"
+"- 客户相关项目（只有客户门户模块被安装时可用）：内部雇员可以看见任何；\n"
+"   如果客户项目功能被激活， 客户用户可以看见自己成功订阅的任务及问题或自己公司的项目\n"
+"- 内部项目：仅内部所有雇员可以看见所有任务及问题\n"
+"- 私有项目：内部雇员仅可以看见自己订阅的任务及问题； 如果客户门户功能被激活， \n"
+"   客户用户仅可以看见自己订阅的项目\n"
 
 #. module: project
 #: field:project.task,effective_hours:0
