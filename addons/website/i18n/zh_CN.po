@@ -98,7 +98,7 @@ msgstr "1. 定义关键字"
 #: code:addons/website/static/src/xml/website.seo.xml:40
 #, python-format
 msgid "2. Reference Your Page"
-msgstr ""
+msgstr "介绍你的页面"
 
 #. module: website
 #. openerp-web
@@ -643,7 +643,7 @@ msgstr "设置网站菜单"
 #. module: website
 #: view:website:website.layout
 msgid "Connect with us"
-msgstr "与我们连接"
+msgstr "连接你我"
 
 #. module: website
 #: view:website:website.snippets
@@ -708,7 +708,7 @@ msgstr "继续"
 #. module: website
 #: view:website:website.layout
 msgid "Copyright &copy;"
-msgstr ""
+msgstr "版权所有 &copy;"
 
 #. module: website
 #: view:website:website.themes
@@ -982,7 +982,7 @@ msgstr "编辑"
 #: view:website:website.layout
 #, python-format
 msgid "Edit Menu"
-msgstr ""
+msgstr "编辑菜单"
 
 #. module: website
 #. openerp-web
@@ -994,12 +994,12 @@ msgstr ""
 #. module: website
 #: view:website:website.layout
 msgid "Edit Top Menu"
-msgstr ""
+msgstr "编辑顶层菜单"
 
 #. module: website
 #: view:website:website.publish_management
 msgid "Edit in backend"
-msgstr ""
+msgstr "后台编辑"
 
 #. module: website
 #: view:website:website.page_404
@@ -1013,19 +1013,19 @@ msgstr ""
 #: code:addons/website/static/src/js/website.tour.banner.js:20
 #, python-format
 msgid "Edit this page"
-msgstr ""
+msgstr "编辑当前页面"
 
 #. module: website
 #: view:website:website.snippets
 msgid "Effects"
-msgstr ""
+msgstr "效果"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.editor.xml:378
 #, python-format
 msgid "Embed Video (HTML)"
-msgstr ""
+msgstr "嵌入视频（HTML）"
 
 #. module: website
 #: view:website:website.snippets
@@ -1040,7 +1040,7 @@ msgstr "错误"
 #. module: website
 #: view:website:website.http_error_debug
 msgid "Error message:"
-msgstr ""
+msgstr "错误消息："
 
 #. module: website
 #. openerp-web
@@ -1053,7 +1053,7 @@ msgstr ""
 #. module: website
 #: view:website:website.snippets
 msgid "Expert"
-msgstr ""
+msgstr "导出"
 
 #. module: website
 #: view:website:website.snippets
@@ -1187,7 +1187,7 @@ msgstr ""
 #, python-format
 msgid ""
 "Get this page efficiently referenced in Google to attract more visitors."
-msgstr ""
+msgstr "添加搜索引擎可见的页面关键字与描述以吸引更多的访问者。"
 
 #. module: website
 #: field:website,social_github:0 field:website.config.settings,social_github:0
@@ -1248,7 +1248,7 @@ msgstr ""
 #. module: website
 #: view:website:website.layout
 msgid "HELP & TUTORIALS"
-msgstr ""
+msgstr "帮助&向导"
 
 #. module: website
 #: view:website:website.layout
@@ -1401,7 +1401,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.snippets.xml:7
 #, python-format
 msgid "Insert Blocks"
-msgstr ""
+msgstr "插入区块"
 
 #. module: website
 #. openerp-web
@@ -1413,7 +1413,7 @@ msgstr ""
 #. module: website
 #: view:website:website.layout
 msgid "Install Apps"
-msgstr ""
+msgstr "安装新的应用"
 
 #. module: website
 #: model:ir.model,name:website.model_base_language_install
@@ -1560,12 +1560,12 @@ msgstr ""
 #. module: website
 #: view:website:website.layout
 msgid "Logout"
-msgstr ""
+msgstr "注册登录"
 
 #. module: website
 #: field:website,menu_id:0
 msgid "Main Menu"
-msgstr ""
+msgstr "主菜单"
 
 #. module: website
 #: view:website:website.snippet_options
@@ -1628,7 +1628,7 @@ msgstr ""
 #: view:website:website.layout
 #, python-format
 msgid "Mobile preview"
-msgstr ""
+msgstr "手机预览"
 
 #. module: website
 #: view:website:website.snippets
@@ -1645,7 +1645,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.seo.xml:36
 #, python-format
 msgid "Most searched topics related to your keywords, ordered by importance:"
-msgstr ""
+msgstr "更多不同的搜索主题关键字，以重要优先排序:"
 
 #. module: website
 #: view:website:website.snippet_options
@@ -1655,7 +1655,7 @@ msgstr ""
 #. module: website
 #: view:website:website.layout
 msgid "My Account"
-msgstr ""
+msgstr "我的资料"
 
 #. module: website
 #: view:website:website.snippet_options
@@ -1668,7 +1668,7 @@ msgstr ""
 #: view:website:website.layout
 #, python-format
 msgid "New Page"
-msgstr ""
+msgstr "新页面"
 
 #. module: website
 #: field:website.menu,new_window:0
@@ -1822,12 +1822,12 @@ msgstr "内部编号"
 #. module: website
 #: view:website:website.aboutus
 msgid "Our Team"
-msgstr ""
+msgstr "我们的团队"
 
 #. module: website
 #: view:website:website.layout
 msgid "Our products & Services"
-msgstr ""
+msgstr "产品与服务"
 
 #. module: website
 #: view:website:website.aboutus
@@ -1860,7 +1860,7 @@ msgstr "页面标题"
 #. module: website
 #: view:website:website.snippets
 msgid "Panel"
-msgstr ""
+msgstr "面板"
 
 #. module: website
 #: view:website:website.snippets
@@ -1919,7 +1919,7 @@ msgstr "用户"
 #: code:addons/website/static/src/xml/website.editor.xml:157
 #, python-format
 msgid "Pictogram"
-msgstr ""
+msgstr "图形"
 
 #. module: website
 #: view:website:website.snippets
@@ -1934,7 +1934,7 @@ msgstr "选择自由，选择"
 #. module: website
 #: view:website:website.kanban_contain view:website:website.pager
 msgid "Prev"
-msgstr ""
+msgstr "上一页"
 
 #. module: website
 #. openerp-web
@@ -1968,14 +1968,14 @@ msgstr ""
 #: view:website:website.layout
 #, python-format
 msgid "Promote"
-msgstr ""
+msgstr "发布"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.seo.xml:14
 #, python-format
 msgid "Promote This Page"
-msgstr ""
+msgstr "发布当前页面"
 
 #. module: website
 #. openerp-web
@@ -1983,29 +1983,29 @@ msgstr ""
 #: view:website:website.layout
 #, python-format
 msgid "Promote page on the web"
-msgstr ""
+msgstr "发布当前页面到站点"
 
 #. module: website
 #: field:website,partner_id:0
 msgid "Public Partner"
-msgstr ""
+msgstr "公开合作伙伴"
 
 #. module: website
 #: field:website,user_id:0
 msgid "Public User"
-msgstr ""
+msgstr "公司用户"
 
 #. module: website
 #: view:website:website.publish_management
 msgid "Publish"
-msgstr ""
+msgstr "发布"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/js/website.tour.banner.js:83
 #, python-format
 msgid "Publish your page by clicking on the <em>'Save'</em> button."
-msgstr ""
+msgstr "点击<em>’保存‘</em>按钮发布你的页面"
 
 #. module: website
 #. openerp-web
@@ -2195,7 +2195,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.editor.xml:152
 #, python-format
 msgid "Select a Media"
-msgstr ""
+msgstr "选择一个媒体"
 
 #. module: website
 #. openerp-web
@@ -2229,12 +2229,12 @@ msgstr "发送"
 #. module: website
 #: view:website:website.template_partner_comment
 msgid "Send a Message to our Partners"
-msgstr ""
+msgstr "发送一个消息给我们的合伙伙伴"
 
 #. module: website
 #: view:website:website.contactus
 msgid "Send us an email"
-msgstr ""
+msgstr "发送email给我们"
 
 #. module: website
 #: view:website:website.snippets
@@ -2251,7 +2251,7 @@ msgstr "序列"
 #: code:addons/website/static/src/xml/website.editor.xml:367
 #, python-format
 msgid "Set a video URL"
-msgstr ""
+msgstr "设置一个视频网址"
 
 #. module: website
 #: view:website:website.themes
@@ -2276,7 +2276,7 @@ msgstr ""
 #. module: website
 #: view:website:website.layout
 msgid "Sign in"
-msgstr "签入"
+msgstr "登录"
 
 #. module: website
 #: view:website:website.themes
@@ -2447,7 +2447,7 @@ msgstr ""
 #. module: website
 #: view:website:website.snippets
 msgid "Text Block"
-msgstr ""
+msgstr "文本块"
 
 #. module: website
 #: view:website:website.snippets
@@ -2727,7 +2727,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.editor.xml:158
 #, python-format
 msgid "Video"
-msgstr ""
+msgstr "视频"
 
 #. module: website
 #. openerp-web
@@ -2784,18 +2784,18 @@ msgstr ""
 #. module: website
 #: model:ir.actions.act_url,name:website.action_website_homepage
 msgid "Website Homepage"
-msgstr ""
+msgstr "网站主页"
 
 #. module: website
 #: model:ir.actions.act_window,name:website.action_website_menu
 #: model:ir.model,name:website.model_website_menu
 msgid "Website Menu"
-msgstr ""
+msgstr "网站菜单"
 
 #. module: website
 #: field:website.config.settings,website_name:0
 msgid "Website Name"
-msgstr ""
+msgstr "网站名称"
 
 #. module: website
 #: model:ir.actions.server,name:website.action_partner_post
@@ -2805,12 +2805,12 @@ msgstr ""
 #. module: website
 #: model:ir.actions.server,name:website.action_partner_comment
 msgid "Website Partners Comment Form"
-msgstr ""
+msgstr "网站合作伙伴评论表单"
 
 #. module: website
 #: field:ir.actions.server,website_path:0
 msgid "Website Path"
-msgstr ""
+msgstr "网站路径"
 
 #. module: website
 #: model:crm.case.section,name:website.salesteam_website_sales
@@ -2822,50 +2822,50 @@ msgstr ""
 #: model:ir.ui.menu,name:website.menu_website_configuration
 #: view:website:website.view_website_form
 msgid "Website Settings"
-msgstr ""
+msgstr "网站设置"
 
 #. module: website
 #: field:ir.actions.server,website_url:0
 msgid "Website URL"
-msgstr ""
+msgstr "网站URL"
 
 #. module: website
 #: model:ir.actions.act_url,name:website.action_website_tutorial
 msgid "Website With Tutorial"
-msgstr ""
+msgstr "网站使用向导"
 
 #. module: website
 #: view:website.menu:website.menu_tree
 msgid "Website menu"
-msgstr ""
+msgstr "网站菜单"
 
 #. module: website
 #: field:ir.ui.view,website_meta_description:0
 #: field:website.seo.metadata,website_meta_description:0
 msgid "Website meta description"
-msgstr ""
+msgstr "网站元数据描述"
 
 #. module: website
 #: field:ir.ui.view,website_meta_keywords:0
 #: field:website.seo.metadata,website_meta_keywords:0
 msgid "Website meta keywords"
-msgstr ""
+msgstr "网站元数据关键字"
 
 #. module: website
 #: field:ir.ui.view,website_meta_title:0
 #: field:website.seo.metadata,website_meta_title:0
 msgid "Website meta title"
-msgstr ""
+msgstr "网站元数据抬头"
 
 #. module: website
 #: view:website:website.view_website_tree
 msgid "Websites"
-msgstr ""
+msgstr "网站"
 
 #. module: website
 #: field:base.language.install,website_ids:0
 msgid "Websites to translate"
-msgstr ""
+msgstr "待翻译的网站"
 
 #. module: website
 #: view:website:website.snippets
@@ -2882,7 +2882,7 @@ msgstr ""
 #: code:addons/website/static/src/js/website.tour.banner.js:12
 #, python-format
 msgid "Welcome to your website!"
-msgstr ""
+msgstr "欢迎来到您的网站！"
 
 #. module: website
 #: view:website:website.snippets
@@ -3063,7 +3063,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.seo.xml:22
 #, python-format
 msgid "describing your page content"
-msgstr ""
+msgstr "说明你的页面内容"
 
 #. module: website
 #: view:website:website.snippets
@@ -3085,7 +3085,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.seo.xml:57
 #, python-format
 msgid "how your page will be listed on Google"
-msgstr ""
+msgstr "你的页面会怎样呈现在搜索结果列表"
 
 #. module: website
 #. openerp-web
@@ -3242,12 +3242,12 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.seo.xml:40
 #, python-format
 msgid "using above suggested keywords"
-msgstr ""
+msgstr "使用上面所建议的关键字"
 
 #. module: website
 #: field:website.config.settings,website_id:0
 msgid "website"
-msgstr ""
+msgstr "网站"
 
 #. module: website
 #: view:website:website.500
@@ -3257,7 +3257,7 @@ msgstr "是"
 #. module: website
 #: view:website:website.themes
 msgid "your homepage"
-msgstr ""
+msgstr "个人主页"
 
 #. module: website
 #. openerp-web
