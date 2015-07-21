@@ -211,7 +211,7 @@ class stock_location_route(osv.osv):
     _order = 'sequence'
 
     _columns = {
-        'name': fields.char('Route Name', required=True),
+        'name': fields.char('Route Name', required=True, translate=True),
         'sequence': fields.integer('Sequence'),
         'pull_ids': fields.one2many('procurement.rule', 'route_id', 'Pull Rules', copy=True),
         'active': fields.boolean('Active', help="If the active field is set to False, it will allow you to hide the route without removing it."),
@@ -1763,7 +1763,7 @@ class stock_move(osv.osv):
                 "the product reservation, and should be done with care."
         ),
         'product_uom': fields.many2one('product.uom', 'Unit of Measure', required=True, states={'done': [('readonly', True)]}),
-        'product_uos_qty': fields.float('Quantity (UOS)', digits_compute=dp.get_precision('Product Unit of Measure'), states={'done': [('readonly', True)]}),
+        'product_uos_qty': fields.float('Quantity (UOS)', digits_compute=dp.get_precision('Product UoS'), states={'done': [('readonly', True)]}),
         'product_uos': fields.many2one('product.uom', 'Product UOS', states={'done': [('readonly', True)]}),
         'product_tmpl_id': fields.related('product_id', 'product_tmpl_id', type='many2one', relation='product.template', string='Product Template'),
 
@@ -2043,7 +2043,8 @@ class stock_move(osv.osv):
                 break
 
         if product_uos and product_uom and (product_uom != product_uos):
-            result['product_uos_qty'] = product_qty * uos_coeff['uos_coeff']
+            precision = self.pool.get('decimal.precision').precision_get(cr, uid, 'Product UoS')
+            result['product_uos_qty'] = float_round(product_qty * uos_coeff['uos_coeff'], precision_digits=precision)
         else:
             result['product_uos_qty'] = product_qty
 
@@ -2073,7 +2074,8 @@ class stock_move(osv.osv):
         # The clients should call onchange_quantity too anyway
 
         if product_uos and product_uom and (product_uom != product_uos):
-            result['product_uom_qty'] = product_uos_qty / uos_coeff['uos_coeff']
+            precision = self.pool.get('decimal.precision').precision_get(cr, uid, 'Product Unit of Measure')
+            result['product_uom_qty'] = float_round(product_uos_qty / uos_coeff['uos_coeff'], precision_digits=precision)
         else:
             result['product_uom_qty'] = product_uos_qty
         return {'value': result}
