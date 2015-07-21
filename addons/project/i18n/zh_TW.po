@@ -1633,7 +1633,7 @@ msgstr ""
 #. module: project
 #: field:project.project,effective_hours:0 field:project.task.work,hours:0
 msgid "Time Spent"
-msgstr ""
+msgstr "花費小時數"
 
 #. module: project
 #: help:project.project,resource_calendar_id:0

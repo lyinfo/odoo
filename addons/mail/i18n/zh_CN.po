@@ -1301,7 +1301,7 @@ msgstr "个人助理"
 #. module: mail
 #: view:mail.mail:mail.view_mail_search selection:mail.mail,state:0
 msgid "Outgoing"
-msgstr "发件箱"
+msgstr "待发送"
 
 #. module: mail
 #: model:ir.model,name:mail.model_mail_mail
@@ -2061,7 +2061,7 @@ msgstr "mycompany.odoo.com"
 #: code:addons/mail/static/src/xml/mail.xml:312
 #, python-format
 msgid "notified"
-msgstr "通知"
+msgstr "被通知"
 
 #. module: mail
 #: view:mail.compose.message:mail.email_compose_message_wizard_form
@@ -2142,7 +2142,7 @@ msgstr "取消支持"
 #: code:addons/mail/static/src/xml/mail.xml:286
 #, python-format
 msgid "updated document"
-msgstr "更新文档"
+msgstr "作出修改"
 
 #. module: mail
 #. openerp-web

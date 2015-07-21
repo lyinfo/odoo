@@ -60,12 +60,12 @@ msgstr "在这里添加一个内部提示 ..."
 #. module: account_asset
 #: field:account.asset.depreciation.line,depreciated_value:0
 msgid "Amount Already Depreciated"
-msgstr "已折旧的总额"
+msgstr "已折旧的金额"
 
 #. module: account_asset
 #: field:asset.asset.report,depreciation_value:0
 msgid "Amount of Depreciation Lines"
-msgstr "折旧行的总额"
+msgstr "可折旧金额"
 
 #. module: account_asset
 #: view:account.asset.category:account_asset.view_account_asset_category_form
@@ -369,7 +369,7 @@ msgstr "折旧科目"
 #. module: account_asset
 #: view:account.asset.asset:account_asset.view_account_asset_asset_form
 msgid "Depreciation Board"
-msgstr "折旧板"
+msgstr "折旧"
 
 #. module: account_asset
 #: field:account.asset.depreciation.line,depreciation_date:0
@@ -401,7 +401,7 @@ msgstr "折旧方法"
 #. module: account_asset
 #: view:asset.asset.report:account_asset.view_asset_asset_report_search
 msgid "Depreciation Month"
-msgstr ""
+msgstr "折旧月份"
 
 #. module: account_asset
 #: field:account.asset.depreciation.line,name:0
@@ -460,12 +460,12 @@ msgstr "通用"
 #. module: account_asset
 #: field:asset.asset.report,gross_value:0
 msgid "Gross Amount"
-msgstr "总额"
+msgstr "资产总值"
 
 #. module: account_asset
 #: field:account.asset.asset,purchase_value:0
 msgid "Gross Value"
-msgstr "总值"
+msgstr "资产总值"
 
 #. module: account_asset
 #: view:asset.asset.report:account_asset.view_asset_asset_report_search
@@ -571,7 +571,7 @@ msgstr "名称"
 #. module: account_asset
 #: field:account.asset.depreciation.line,remaining_value:0
 msgid "Next Period Depreciation"
-msgstr "下个期间的折旧"
+msgstr "下个期间剩余价值"
 
 #. module: account_asset
 #: field:account.asset.asset,note:0 field:account.asset.category,note:0
@@ -636,12 +636,12 @@ msgstr "已登帐"
 #. module: account_asset
 #: field:asset.asset.report,posted_value:0
 msgid "Posted Amount"
-msgstr "已登帐金额"
+msgstr "已折旧金额"
 
 #. module: account_asset
 #: view:asset.asset.report:account_asset.view_asset_asset_report_search
 msgid "Posted depreciation lines"
-msgstr "已登帐折旧明细"
+msgstr "已折旧明细"
 
 #. module: account_asset
 #: field:account.asset.asset,prorata:0 field:account.asset.category,prorata:0
@@ -674,7 +674,7 @@ msgstr "理由"
 #. module: account_asset
 #: field:account.asset.asset,code:0
 msgid "Reference"
-msgstr "引用"
+msgstr "资产编号"
 
 #. module: account_asset
 #: field:account.asset.asset,value_residual:0
@@ -686,12 +686,12 @@ msgstr "剩余价值"
 #: view:asset.asset.report:account_asset.view_asset_asset_report_search
 #: selection:asset.asset.report,state:0
 msgid "Running"
-msgstr "运行中"
+msgstr "使用中"
 
 #. module: account_asset
 #: field:account.asset.asset,salvage_value:0
 msgid "Salvage Value"
-msgstr "残值"
+msgstr "预留残值"
 
 #. module: account_asset
 #: view:account.asset.category:account_asset.view_account_asset_category_search
@@ -768,7 +768,7 @@ msgstr "以月计的折旧间隔"
 #. module: account_asset
 #: field:asset.asset.report,unposted_value:0
 msgid "Unposted Amount"
-msgstr "未登帐总额"
+msgstr "未折旧金额"
 
 #. module: account_asset
 #: field:account.asset.history,user_id:0

@@ -10848,7 +10848,7 @@ msgstr "办公用品"
 #. module: base
 #: model:res.groups,name:base.group_hr_user
 msgid "Officer"
-msgstr "文员"
+msgstr "主管"
 
 #. module: base
 #: model:ir.module.module,description:base.module_payment_ogone

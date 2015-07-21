@@ -8311,22 +8311,22 @@ msgstr "根/視圖"
 #. module: account
 #: selection:res.company,tax_calculation_rounding_method:0
 msgid "Round Globally"
-msgstr ""
+msgstr "整體捨入"
 
 #. module: account
 #: selection:account.config.settings,tax_calculation_rounding_method:0
 msgid "Round globally"
-msgstr ""
+msgstr "整體捨入"
 
 #. module: account
 #: selection:res.company,tax_calculation_rounding_method:0
 msgid "Round per Line"
-msgstr ""
+msgstr "每行捨入"
 
 #. module: account
 #: selection:account.config.settings,tax_calculation_rounding_method:0
 msgid "Round per line"
-msgstr ""
+msgstr "每行捨入"
 
 #. module: account
 #: view:account.subscription:account.view_subscription_search
@@ -9239,7 +9239,7 @@ msgstr "稅適用"
 #. module: account
 #: field:res.company,tax_calculation_rounding_method:0
 msgid "Tax Calculation Rounding Method"
-msgstr "稅額計算的四捨五入方式"
+msgstr "稅額計算的捨入方式"
 
 #. module: account
 #: field:account.tax.code,name:0 field:account.tax.code.template,name:0
@@ -9380,7 +9380,7 @@ msgstr "稅基不同！\n點擊「計算」更新稅基。"
 #. module: account
 #: field:account.config.settings,tax_calculation_rounding_method:0
 msgid "Tax calculation rounding method"
-msgstr "稅額計算的四捨五入方式"
+msgstr "稅額計算的舍入方式"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_tax_code_list
