@@ -659,19 +659,19 @@ msgstr ""
 #. module: website
 #: view:website:website.403 view:website:website.404
 msgid "Contact Us"
-msgstr "联络我们"
+msgstr "联系我们"
 
 #. module: website
 #: view:website:website.snippets
 msgid "Contact Us Now"
-msgstr "现在联络我们"
+msgstr "现在联系我们"
 
 #. module: website
 #: view:website:website.contactus view:website:website.layout
 #: view:website:website.snippets
 #: model:website.menu,name:website.menu_contactus
 msgid "Contact us"
-msgstr "联络我们"
+msgstr "联系我们"
 
 #. module: website
 #: view:website:website.contactus
@@ -1560,7 +1560,7 @@ msgstr ""
 #. module: website
 #: view:website:website.layout
 msgid "Logout"
-msgstr "注册登录"
+msgstr "退出登录"
 
 #. module: website
 #: field:website,menu_id:0
@@ -1968,14 +1968,14 @@ msgstr ""
 #: view:website:website.layout
 #, python-format
 msgid "Promote"
-msgstr "发布"
+msgstr "推广"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.seo.xml:14
 #, python-format
 msgid "Promote This Page"
-msgstr "发布当前页面"
+msgstr "推广当前页面"
 
 #. module: website
 #. openerp-web
@@ -1983,7 +1983,7 @@ msgstr "发布当前页面"
 #: view:website:website.layout
 #, python-format
 msgid "Promote page on the web"
-msgstr "发布当前页面到站点"
+msgstr "推广当前页面到站点"
 
 #. module: website
 #: field:website,partner_id:0
@@ -2565,7 +2565,7 @@ msgstr ""
 #: view:website:website.snippets
 #, python-format
 msgid "Title"
-msgstr "称谓"
+msgstr "标题"
 
 #. module: website
 #: view:website:website.snippets
@@ -2579,12 +2579,12 @@ msgstr ""
 #. module: website
 #: view:website:website.layout
 msgid "Toggle navigation"
-msgstr ""
+msgstr "切换导航"
 
 #. module: website
 #: model:website.menu,name:website.main_menu
 msgid "Top Menu"
-msgstr ""
+msgstr "顶层菜单"
 
 #. module: website
 #: view:website:website.http_error_debug
@@ -2594,26 +2594,26 @@ msgstr ""
 #. module: website
 #: view:website:website.snippet_options
 msgid "Transform"
-msgstr ""
+msgstr "移动"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.translator.xml:12
 #, python-format
 msgid "Translate this page"
-msgstr ""
+msgstr "翻译当前页面"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.translator.xml:25
 #, python-format
 msgid "Translated content"
-msgstr ""
+msgstr "已翻译的内容"
 
 #. module: website
 #: view:website:website.themes
 msgid "Try a New Theme"
-msgstr ""
+msgstr "尝试一个新的主题"
 
 #. module: website
 #: view:website:website.snippet_options
