@@ -401,7 +401,7 @@ msgstr ""
 #. module: website
 #: view:website:website.snippets
 msgid "Big Message"
-msgstr ""
+msgstr "大消息"
 
 #. module: website
 #: view:website:website.snippets
@@ -557,7 +557,7 @@ msgstr "点击这里"
 #: code:addons/website/static/src/js/website.tour.banner.js:28
 #, python-format
 msgid "Click here to insert blocks of content in the page."
-msgstr ""
+msgstr "点击这里去插入内容区域到当前页面。"
 
 #. module: website
 #. openerp-web
@@ -596,7 +596,7 @@ msgstr "关闭"
 #: code:addons/website/static/src/js/website.tour.banner.js:113
 #, python-format
 msgid "Close Tutorial"
-msgstr ""
+msgstr "关闭向导"
 
 #. module: website
 #: view:website:website.snippet_options
@@ -608,7 +608,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.editor.xml:86
 #, python-format
 msgid "Color Style"
-msgstr ""
+msgstr "颜色样式"
 
 #. module: website
 #: model:ir.model,name:website.model_res_company
@@ -628,7 +628,7 @@ msgstr "公司名称"
 #. module: website
 #: view:website:website.snippets
 msgid "Comparisons"
-msgstr ""
+msgstr "对照"
 
 #. module: website
 #: view:website.config.settings:website.view_website_config_settings
@@ -763,20 +763,21 @@ msgid ""
 "Customize any block through this menu. Try to change the background of the "
 "banner."
 msgstr ""
+"通过此菜单可以定制任何区块。尝试改变容器的背景色。"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/js/website.tour.banner.js:42
 #, python-format
 msgid "Customize banner's text"
-msgstr ""
+msgstr "定制容器的文字"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/js/website.tour.banner.js:59
 #, python-format
 msgid "Customize the banner"
-msgstr ""
+msgstr "定制此容器"
 
 #. module: website
 #: view:website:website.themes
@@ -924,35 +925,35 @@ msgstr "拖放这个区块"
 #: code:addons/website/static/src/js/website.tour.banner.js:34
 #, python-format
 msgid "Drag & Drop a Banner"
-msgstr ""
+msgstr "拖放一个容器"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.contentMenu.xml:34
 #, python-format
 msgid "Drag a menu to the right to create a sub-menu"
-msgstr ""
+msgstr "拖动一个菜单到右边去创建一个子菜单"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/js/website.tour.banner.js:75
 #, python-format
 msgid "Drag the <em>'Features'</em> block and drop it below the banner."
-msgstr ""
+msgstr "拖动<em>'特性'</em>区块并放到窗口上方。"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/js/website.tour.banner.js:35
 #, python-format
 msgid "Drag the Banner block and drop it in your page."
-msgstr ""
+msgstr "拖动容器区块放到你的页面上。"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.snippets.xml:34
 #, python-format
 msgid "Drag to Move"
-msgstr ""
+msgstr "拖动"
 
 #. module: website
 #: view:website:website.snippets
@@ -964,12 +965,12 @@ msgstr "复制"
 #: code:addons/website/static/src/xml/website.snippets.xml:35
 #, python-format
 msgid "Duplicate Container"
-msgstr ""
+msgstr "复制容器"
 
 #. module: website
 #: view:website:website.snippets
 msgid "Duplicate blocks to add more features."
-msgstr ""
+msgstr "复制区块去增加更多的特性。"
 
 #. module: website
 #: view:website:website.layout view:website:website.publish_management
@@ -989,7 +990,7 @@ msgstr "编辑菜单"
 #: code:addons/website/static/src/xml/website.contentMenu.xml:48
 #, python-format
 msgid "Edit Menu Entry"
-msgstr ""
+msgstr "编辑菜单项"
 
 #. module: website
 #: view:website:website.layout
@@ -1049,6 +1050,7 @@ msgstr "错误消息："
 msgid ""
 "Every page of your website can be modified through the <i>Edit</i> button."
 msgstr ""
+"你的网站的每个页面都可以通过<i>编辑</i>按钮进行修改。"
 
 #. module: website
 #: view:website:website.snippets
@@ -1355,22 +1357,22 @@ msgstr "图像"
 #. module: website
 #: view:website:website.snippets
 msgid "Image Floating"
-msgstr ""
+msgstr "图片浮动"
 
 #. module: website
 #: view:website:website.snippets
 msgid "Image Gallery"
-msgstr ""
+msgstr "相册"
 
 #. module: website
 #: view:website:website.snippets
 msgid "Image-Floating"
-msgstr ""
+msgstr "图片-浮动"
 
 #. module: website
 #: view:website:website.snippets
 msgid "Image-Text"
-msgstr ""
+msgstr "图片-文字"
 
 #. module: website
 #. openerp-web
@@ -1408,7 +1410,7 @@ msgstr "插入区块"
 #: code:addons/website/static/src/js/website.tour.banner.js:27
 #, python-format
 msgid "Insert building blocks"
-msgstr ""
+msgstr "插入构建区块"
 
 #. module: website
 #: view:website:website.layout
@@ -1511,19 +1513,19 @@ msgstr ""
 #: code:addons/website/static/src/js/website.tour.banner.js:68
 #, python-format
 msgid "Let's add another building block to your page."
-msgstr ""
+msgstr "让我们增加另外一个区块到你的页面。"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/js/website.tour.banner.js:97
 #, python-format
 msgid "Let's check how your homepage looks like on mobile devices."
-msgstr ""
+msgstr "让我们检查你的主页在移动设备是如何显示的。"
 
 #. module: website
 #: view:website:website.snippets
 msgid "Limited support"
-msgstr ""
+msgstr "有限支持"
 
 #. module: website
 #. openerp-web
@@ -1537,14 +1539,14 @@ msgstr "链接"
 #: code:addons/website/static/src/xml/website.editor.xml:71
 #, python-format
 msgid "Link text"
-msgstr ""
+msgstr "链接文字"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.editor.xml:41
 #, python-format
 msgid "Link to"
-msgstr ""
+msgstr "链接到"
 
 #. module: website
 #: field:website,social_linkedin:0
@@ -1555,7 +1557,7 @@ msgstr ""
 #. module: website
 #: view:website:website.snippets
 msgid "List of Features"
-msgstr ""
+msgstr "特性列表"
 
 #. module: website
 #: view:website:website.layout
@@ -1575,14 +1577,14 @@ msgstr ""
 #. module: website
 #: view:website:website.snippet_options
 msgid "Margin"
-msgstr "毛利"
+msgstr "边距"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.snippets.xml:60
 #, python-format
 msgid "Margin resize"
-msgstr ""
+msgstr "边距尺寸"
 
 #. module: website
 #: view:website:website.403 view:website:website.404
@@ -2033,7 +2035,7 @@ msgstr "QWeb"
 #. module: website
 #: view:website:website.snippet_options view:website:website.snippets
 msgid "Quote"
-msgstr ""
+msgstr "引用"
 
 #. module: website
 #: view:website:website.snippets
@@ -2171,24 +2173,24 @@ msgstr ""
 #: code:addons/website/static/src/js/website.tour.banner.js:104
 #, python-format
 msgid "Scroll to check rendering and then close the mobile preview."
-msgstr ""
+msgstr "拉动滚轴检查渲染效果然后关闭移动预览。"
 
 #. module: website
 #: view:website:website.snippets
 msgid "Second Feature"
-msgstr ""
+msgstr "第二特性"
 
 #. module: website
 #: view:website:website.snippets
 msgid "Second List"
-msgstr ""
+msgstr "第二列表"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.snippets.xml:29
 #, python-format
 msgid "Select Container Block"
-msgstr ""
+msgstr "选择容器区块"
 
 #. module: website
 #. openerp-web
@@ -2207,14 +2209,14 @@ msgstr "选择一个图片"
 #. module: website
 #: view:website:website.snippets
 msgid "Select and delete blocks to remove some features."
-msgstr ""
+msgstr "选择并删除区块以移除一些特性。"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/js/website.tour.banner.js:53
 #, python-format
 msgid "Select the parent container to get the global options of the banner."
-msgstr ""
+msgstr "选择上层容器取得格子的全局选项."
 
 #. module: website
 #: view:website:website.snippets
@@ -2344,7 +2346,7 @@ msgstr ""
 #: code:addons/website/static/src/js/website.tour.banner.js:14
 #, python-format
 msgid "Start Tutorial"
-msgstr ""
+msgstr "开始向导"
 
 #. module: website
 #: view:website:website.snippets
@@ -2375,34 +2377,34 @@ msgstr "结构"
 #: view:website:website.snippet_options
 #, python-format
 msgid "Style"
-msgstr ""
+msgstr "样式"
 
 #. module: website
 #: view:website:website.layout
 msgid "Subtitle"
-msgstr ""
+msgstr "子标题"
 
 #. module: website
 #: view:website:website.layout
 msgid "Subtitle 2"
-msgstr ""
+msgstr "子标题 2"
 
 #. module: website
 #: view:website:website.layout
 msgid "Subtitle 3"
-msgstr ""
+msgstr "子标题 3"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.editor.xml:95
 #, python-format
 msgid "Success"
-msgstr ""
+msgstr "成功"
 
 #. module: website
 #: view:website:website.snippet_options
 msgid "Sunflower"
-msgstr ""
+msgstr "葵花"
 
 #. module: website
 #: view:website:website.themes
@@ -2412,7 +2414,7 @@ msgstr ""
 #. module: website
 #: view:website:website.info
 msgid "Technical name:"
-msgstr ""
+msgstr "技术名称:"
 
 #. module: website
 #: view:website:website.snippets
@@ -2442,7 +2444,7 @@ msgstr ""
 #: code:addons/website/static/src/js/website.tour.banner.js:96
 #, python-format
 msgid "Test Your Mobile Version"
-msgstr ""
+msgstr "测试你的移动版本"
 
 #. module: website
 #: view:website:website.snippets
@@ -2452,7 +2454,7 @@ msgstr "文本块"
 #. module: website
 #: view:website:website.snippets
 msgid "Text-Image"
-msgstr ""
+msgstr "文字-图片"
 
 #. module: website
 #: view:website:website.template_partner_post
@@ -2464,7 +2466,7 @@ msgstr ""
 #: code:addons/website/static/src/js/website.tour.banner.js:112
 #, python-format
 msgid "The 'Content' menu allows you to add pages or add the top menu."
-msgstr ""
+msgstr "'内容'菜单允许你增加页面或增加顶级菜单。"
 
 #. module: website
 #: view:website:website.snippets
@@ -2553,11 +2555,12 @@ msgid ""
 "This tutorial will guide you to build your home page. We will start by "
 "adding a banner."
 msgstr ""
+"此向导将带领你建制你的主页。我们将从增加一个容器开始。"
 
 #. module: website
 #: view:website:website.snippets
 msgid "Three Columns"
-msgstr ""
+msgstr "三列"
 
 #. module: website
 #. openerp-web
@@ -2674,14 +2677,14 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.editor.xml:209
 #, python-format
 msgid "Upload an image from your computer"
-msgstr ""
+msgstr "从你的电脑上传一张图片"
 
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.editor.xml:215
 #, python-format
 msgid "Upload image without optimization"
-msgstr ""
+msgstr "跳过优化上传图片"
 
 #. module: website
 #. openerp-web
@@ -2894,7 +2897,7 @@ msgstr ""
 #: code:addons/website/static/src/js/website.tour.banner.js:89
 #, python-format
 msgid "Well done, you created your homepage."
-msgstr ""
+msgstr "干得漂亮， 你创建了你的主面。"
 
 #. module: website
 #: field:ir.ui.view,page:0

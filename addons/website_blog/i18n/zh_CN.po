@@ -227,60 +227,60 @@ msgstr ""
 #: code:addons/website_blog/models/website_blog.py:211
 #, python-format
 msgid "A new post %s has been published on the %s blog."
-msgstr ""
+msgstr "一份新的文章 %s 已经发布到 %s 文章."
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_short
 msgid "About us"
-msgstr ""
+msgstr "关于我们"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:66
 #, python-format
 msgid "Add Another Block"
-msgstr ""
+msgstr "增加另一个区块"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:18
 #, python-format
 msgid "Add Content"
-msgstr ""
+msgstr "增加内容"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_short
 msgid "Archives"
-msgstr ""
+msgstr "存档"
 
 #. module: website_blog
 #: view:blog.post:website_blog.view_blog_post_search
 #: field:blog.post,author_id:0
 #: field:blog.post,create_uid:0
 msgid "Author"
-msgstr ""
+msgstr "作者"
 
 #. module: website_blog
 #: field:blog.post,author_avatar:0
 msgid "Avatar"
-msgstr ""
+msgstr "头像"
 
 #. module: website_blog
 #: field:blog.post,background_image:0
 msgid "Background Image"
-msgstr ""
+msgstr "背景图片"
 
 #. module: website_blog
 #: view:blog.blog:website_blog.view_blog_blog_form
 #: view:blog.post:website_blog.view_blog_post_search
 #: field:blog.post,blog_id:0
 msgid "Blog"
-msgstr ""
+msgstr "文章"
 
 #. module: website_blog
 #: field:blog.blog,name:0
 msgid "Blog Name"
-msgstr ""
+msgstr "文章名称"
 
 #. module: website_blog
 #: view:blog.post:website_blog.view_blog_post_form
@@ -288,27 +288,27 @@ msgstr ""
 #: field:blog.post.history,post_id:0
 #: model:ir.model,name:website_blog.model_blog_post
 msgid "Blog Post"
-msgstr ""
+msgstr "文章"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:37
 #, python-format
 msgid "Blog Post Created"
-msgstr ""
+msgstr "文章已被创建"
 
 #. module: website_blog
 #: view:blog.post.history:website_blog.view_blog_history_form
 #: model:ir.model,name:website_blog.model_blog_post_history
 msgid "Blog Post History"
-msgstr ""
+msgstr "文章历史"
 
 #. module: website_blog
 #: code:addons/website_blog/controllers/main.py:305
 #: code:addons/website_blog/models/website_blog.py:133
 #, python-format
 msgid "Blog Post Title"
-msgstr ""
+msgstr "文章抬头"
 
 #. module: website_blog
 #: view:blog.post:website_blog.view_blog_post_list
@@ -316,24 +316,24 @@ msgstr ""
 #: model:ir.ui.menu,name:website_blog.menu_page
 #: model:ir.ui.menu,name:website_blog.menu_wiki
 msgid "Blog Posts"
-msgstr ""
+msgstr "文章"
 
 #. module: website_blog
 #: field:blog.blog,subtitle:0
 #: view:blog.post:website_blog.view_blog_post_form
 msgid "Blog Subtitle"
-msgstr ""
+msgstr "子标题"
 
 #. module: website_blog
 #: model:ir.model,name:website_blog.model_blog_tag
 msgid "Blog Tag"
-msgstr ""
+msgstr "文章标签"
 
 #. module: website_blog
 #: model:ir.actions.act_window,name:website_blog.action_tags
 #: model:ir.ui.menu,name:website_blog.menu_blog_tag
 msgid "Blog Tags"
-msgstr ""
+msgstr "文章标签"
 
 #. module: website_blog
 #: view:blog.blog:website_blog.view_blog_blog_list
@@ -341,7 +341,7 @@ msgstr ""
 #: model:ir.model,name:website_blog.model_blog_blog
 #: model:ir.ui.menu,name:website_blog.menu_blog
 msgid "Blogs"
-msgstr ""
+msgstr "文章"
 
 #. module: website_blog
 #: model:blog.post,subtitle:website_blog.blog_post_2
@@ -351,30 +351,30 @@ msgstr ""
 #. module: website_blog
 #: view:blog.post.history.show_diff:website_blog.view_wiki_show_diff
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_complete
 msgid "Change Cover"
-msgstr ""
+msgstr "改变封面"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:33
 #, python-format
 msgid "Click <em>Continue</em> to create the blog post."
-msgstr ""
+msgstr "点击 <em>继续</em> 创建新的文章。"
 
 #. module: website_blog
 #: code:addons/website_blog/models/website_blog.py:212
 #, python-format
 msgid "Click here to access the post."
-msgstr ""
+msgstr "点击这里查看此文章."
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_short
 msgid "Click on \"Content\" on the top menu to write your first blog post."
-msgstr ""
+msgstr "点击顶层菜单上的\"内容\" 去编写你的第一篇文章。"
 
 #. module: website_blog
 #. openerp-web
@@ -388,47 +388,47 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:88
 #, python-format
 msgid "Click the <em>Save</em> button to record changes on the page."
-msgstr ""
+msgstr "点击 <em>保存</em> 按钮去记录你对页面所做的修改。"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:102
 #, python-format
 msgid "Close Tutorial"
-msgstr ""
+msgstr "关闭向导"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_short
 msgid "Contact us"
-msgstr ""
+msgstr "联系我们"
 
 #. module: website_blog
 #: view:blog.post:website_blog.view_blog_post_search
 #: field:blog.post,content:0
 #: field:blog.post.history,content:0
 msgid "Content"
-msgstr ""
+msgstr "内容"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:39
 #, python-format
 msgid "Continue"
-msgstr ""
+msgstr "继续"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:32
 #, python-format
 msgid "Create Blog Post"
-msgstr ""
+msgstr "创建文章"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:8
 #, python-format
 msgid "Create a blog post"
-msgstr ""
+msgstr "创建一篇文章"
 
 #. module: website_blog
 #: field:blog.blog,create_uid:0
@@ -448,7 +448,7 @@ msgstr ""
 #. module: website_blog
 #: field:blog.post.history,create_date:0
 msgid "Date"
-msgstr ""
+msgstr "日期"
 
 #. module: website_blog
 #: help:blog.blog,message_last_post:0
@@ -461,95 +461,95 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:80
 #, python-format
 msgid "Delete the block"
-msgstr ""
+msgstr "删除此区块"
 
 #. module: website_blog
 #: field:blog.blog,description:0
 msgid "Description"
-msgstr ""
+msgstr "说明"
 
 #. module: website_blog
 #: field:blog.post.history.show_diff,diff:0
 msgid "Diff"
-msgstr ""
+msgstr "差异"
 
 #. module: website_blog
 #: view:blog.post.history.show_diff:website_blog.view_wiki_show_diff
 #: model:ir.actions.act_window,name:website_blog.action_view_wiki_show_diff
 #: model:ir.actions.act_window,name:website_blog.action_view_wiki_show_diff_values
 msgid "Difference"
-msgstr ""
+msgstr "差异"
 
 #. module: website_blog
 #: field:mail.message,path:0
 msgid "Discussion Path"
-msgstr ""
+msgstr "讨论路径"
 
 #. module: website_blog
 #: view:blog.post.history:website_blog.view_blog_history_tree
 msgid "Document History"
-msgstr ""
+msgstr "文档历史"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:59
 #, python-format
 msgid "Drag & Drop a Block"
-msgstr ""
+msgstr "拖放一个区块"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:73
 #, python-format
 msgid "Drag & Drop a block"
-msgstr ""
+msgstr "拖放一个区块"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:74
 #, python-format
 msgid "Drag this block and drop it below the image block."
-msgstr ""
+msgstr "拖动此区块放在图片区块的上面。"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:60
 #, python-format
 msgid "Drag this block and drop it in your page."
-msgstr ""
+msgstr "拖放此区块放到你的页面上。"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_complete
 msgid "Duplicate"
-msgstr ""
+msgstr "复制"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_short
 msgid "Follow us"
-msgstr ""
+msgstr "关注我们"
 
 #. module: website_blog
 #: field:blog.blog,message_follower_ids:0
 #: field:blog.post,message_follower_ids:0
 msgid "Followers"
-msgstr ""
+msgstr "注意者"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:81
 #, python-format
 msgid "From this toolbar you can move, duplicate or delete the selected zone. Click on the garbage can image to delete the block. Or click on the Title and delete it."
-msgstr ""
+msgstr "从此工具栏你可以移动，复制或删除选中的区域。 点击垃圾桶可以记住被删除的区块。 或点击在标题并删除它。"
 
 #. module: website_blog
 #: view:blog.post:website_blog.view_blog_post_search
 msgid "Group By"
-msgstr ""
+msgstr "分组"
 
 #. module: website_blog
 #: field:blog.post,history_ids:0
 msgid "History"
-msgstr ""
+msgstr "历史"
 
 #. module: website_blog
 #: help:blog.blog,message_summary:0
@@ -629,28 +629,28 @@ msgstr ""
 #. module: website_blog
 #: view:website:website_blog.latest_blogs
 msgid "Latest Posts"
-msgstr ""
+msgstr "最新文章"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:52
 #, python-format
 msgid "Layout Your Blog Post"
-msgstr ""
+msgstr "组织你的文章"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:67
 #, python-format
 msgid "Let's add another block to your post."
-msgstr ""
+msgstr "让我们增加其他区块到你的文章。"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:12
 #, python-format
 msgid "Let's go through the first steps to write beautiful blog posts."
-msgstr ""
+msgstr "让我们第一步步的去写一篇漂亮的文章。"
 
 #. module: website_blog
 #: model:ir.model,name:website_blog.model_mail_message
@@ -688,7 +688,7 @@ msgstr ""
 #: view:website:website.layout
 #, python-format
 msgid "New Blog Post"
-msgstr "新博客"
+msgstr "新文章"
 
 #. module: website_blog
 #: view:website:website.layout
@@ -704,24 +704,24 @@ msgstr "还没有可显示的文章."
 #. module: website_blog
 #: view:website:website_blog.latest_blogs
 msgid "No keywords defined!"
-msgstr ""
+msgstr "未定义关键字"
 
 #. module: website_blog
 #: field:blog.post,visits:0
 msgid "No of Views"
-msgstr ""
+msgstr "阅读"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/xml/website_blog.inline.discussion.xml:9
 #, python-format
 msgid "Not Published"
-msgstr ""
+msgstr "未发布"
 
 #. module: website_blog
 #: view:website:website_blog.latest_blogs
 msgid "Not published"
-msgstr ""
+msgstr "未发布"
 
 #. module: website_blog
 #: model:blog.post,website_meta_keywords:website_blog.blog_post_1
@@ -731,22 +731,22 @@ msgstr ""
 #. module: website_blog
 #: view:website:website_blog.blog_post_short
 msgid "Our Blogs"
-msgstr ""
+msgstr "我们的文章"
 
 #. module: website_blog
 #: model:ir.actions.act_window,name:website_blog.action_related_page_history
 msgid "Page History"
-msgstr ""
+msgstr "页面历史"
 
 #. module: website_blog
 #: model:ir.actions.act_window,name:website_blog.action_history
 msgid "Page history"
-msgstr ""
+msgstr "页面历史"
 
 #. module: website_blog
 #: model:ir.ui.menu,name:website_blog.menu_page_history
 msgid "Pages history"
-msgstr ""
+msgstr "页面历史"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_short
@@ -759,71 +759,71 @@ msgstr ""
 #: view:website:website_blog.blog_post_complete
 #, python-format
 msgid "Post"
-msgstr ""
+msgstr "文章"
 
 #. module: website_blog
 #: field:blog.tag,post_ids:0
 msgid "Posts"
-msgstr ""
+msgstr "文章"
 
 #. module: website_blog
 #: field:blog.post,website_published:0
 msgid "Publish"
-msgstr ""
+msgstr "发布"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:95
 #, python-format
 msgid "Publish Your Post"
-msgstr ""
+msgstr "发布你的文章"
 
 #. module: website_blog
 #: help:blog.post,website_published:0
 msgid "Publish on the website"
-msgstr ""
+msgstr "发布到网站"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/xml/website_blog.inline.discussion.xml:10
 #, python-format
 msgid "Published"
-msgstr ""
+msgstr "已发布"
 
 #. module: website_blog
 #: model:mail.message.subtype,description:website_blog.mt_blog_blog_published
 #: model:mail.message.subtype,name:website_blog.mt_blog_blog_published
 msgid "Published Post"
-msgstr ""
+msgstr "已发布的文章"
 
 #. module: website_blog
 #: field:blog.post,ranking:0
 msgid "Ranking"
-msgstr ""
+msgstr "评分"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_complete
 msgid "Read Next"
-msgstr ""
+msgstr "下一页"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:87
 #, python-format
 msgid "Save Your Blog"
-msgstr ""
+msgstr "保存你的文章"
 
 #. module: website_blog
 #: view:website:website_blog.latest_blogs
 msgid "Search Engine Optimization"
-msgstr ""
+msgstr "搜索引擎优化"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:26
 #, python-format
 msgid "Select this menu item to create a new blog post."
-msgstr ""
+msgstr "选择此菜单项目去创建一遍新的文章。"
 
 #. module: website_blog
 #: view:blog.blog:website_blog.view_blog_blog_form
@@ -836,61 +836,61 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:45
 #, python-format
 msgid "Set a Title"
-msgstr ""
+msgstr "设定标题"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:13
 #, python-format
 msgid "Skip"
-msgstr ""
+msgstr "跳过"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:13
 #, python-format
 msgid "Start Tutorial"
-msgstr ""
+msgstr "开始向导"
 
 #. module: website_blog
 #: field:blog.post,subtitle:0
 msgid "Sub Title"
-msgstr ""
+msgstr "子标题"
 
 #. module: website_blog
 #: code:addons/website_blog/controllers/main.py:306
 #: code:addons/website_blog/models/website_blog.py:134
 #, python-format
 msgid "Subtitle"
-msgstr ""
+msgstr "子标题"
 
 #. module: website_blog
 #: field:blog.blog,message_summary:0
 #: field:blog.post,message_summary:0
 #: field:blog.post.history,summary:0
 msgid "Summary"
-msgstr ""
+msgstr "摘要"
 
 #. module: website_blog
 #: view:blog.tag:website_blog.blog_tag_form
 msgid "Tag Form"
-msgstr ""
+msgstr "标签表单"
 
 #. module: website_blog
 #: view:blog.tag:website_blog.blog_tag_tree
 msgid "Tag List"
-msgstr ""
+msgstr "标签列表"
 
 #. module: website_blog
 #: field:blog.post,tag_ids:0
 #: view:website:website_blog.blog_post_short
 msgid "Tags"
-msgstr ""
+msgstr "标签"
 
 #. module: website_blog
 #: view:blog.post:website_blog.view_blog_post_form
 msgid "Technical"
-msgstr ""
+msgstr "技术"
 
 #. module: website_blog
 #: model:blog.post,name:website_blog.blog_post_1
@@ -902,19 +902,19 @@ msgstr ""
 #: code:addons/website_blog/models/website_blog.py:265
 #, python-format
 msgid "There are no changes in revisions."
-msgstr ""
+msgstr "此版本没有任何变更。"
 
 #. module: website_blog
 #: view:website:website_blog.latest_blogs
 msgid "This box will not be visible to your visitors."
-msgstr ""
+msgstr "此盒子不会被你的访问者看到。"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:38
 #, python-format
 msgid "This is your new blog post. Let's edit it."
-msgstr ""
+msgstr "这是你的文章， 让我们编辑它。"
 
 #. module: website_blog
 #: view:website:website_blog.latest_blogs
@@ -926,17 +926,17 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:101
 #, python-format
 msgid "This tutorial is finished. To discover more features, improve the content of this page and try the <em>Promote</em> button in the top right menu."
-msgstr ""
+msgstr "此向导已结束。去探索更多特性，改进页面内容并尝试右上角的 <em>推广</em> 按钮"
 
 #. module: website_blog
 #: field:blog.post,name:0
 msgid "Title"
-msgstr ""
+msgstr "标题"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_complete
 msgid "True"
-msgstr ""
+msgstr "真"
 
 #. module: website_blog
 #: field:blog.blog,message_unread:0
@@ -949,19 +949,19 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:19
 #, python-format
 msgid "Use this <em>'Content'</em> menu to create a new blog post like any other document (page, menu, products, event, ...)."
-msgstr ""
+msgstr "向创建其他元素（页面，菜单，产品，事件...）一样，使用 <em>'内容'</em> 菜单去创建一篇新的文章"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:53
 #, python-format
 msgid "Use well designed building blocks to structure the content of your blog. Click 'Insert Blocks' to add new content."
-msgstr ""
+msgstr "使用精心设计的构件结构你的文章的内容。点击“插入块”来添加新的内容。"
 
 #. module: website_blog
 #: view:blog.tag:website_blog.blog_tag_form
 msgid "Used in:"
-msgstr ""
+msgstr "使用于："
 
 #. module: website_blog
 #: help:mail.message,path:0
@@ -1049,19 +1049,19 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:96
 #, python-format
 msgid "Your blog post is not yet published. You can update this draft version and publish it once you are ready."
-msgstr ""
+msgstr "你的文章还没有发布。 当你编辑完成后可以改掉此草稿状态并发布文章。"
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/xml/website_blog.inline.discussion.xml:29
 #, python-format
 msgid "Your name..."
-msgstr ""
+msgstr "你的名字..."
 
 #. module: website_blog
 #: view:website:website_blog.latest_blogs
 msgid "add a banner on the top"
-msgstr ""
+msgstr "增加一个格子到上方"
 
 #. module: website_blog
 #: view:website:website_blog.latest_blogs
@@ -1094,13 +1094,13 @@ msgstr ""
 #: view:website:website_blog.blog_post_short
 #: view:website:website_blog.latest_blogs
 msgid "comment"
-msgstr ""
+msgstr "评论"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_short
 #: view:website:website_blog.latest_blogs
 msgid "comments"
-msgstr ""
+msgstr "评论"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_short
@@ -1116,12 +1116,12 @@ msgstr ""
 #. module: website_blog
 #: view:website:website_blog.blog_post_short
 msgid "new visitors"
-msgstr ""
+msgstr "新的到访者"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_short
 msgid "not published"
-msgstr ""
+msgstr "未发布"
 
 #. module: website_blog
 #: view:website:website_blog.blog_post_complete
@@ -1132,5 +1132,5 @@ msgstr ""
 #: view:website:website_blog.blog_post_short
 #: view:website:website_blog.latest_blogs
 msgid "pull-right"
-msgstr ""
+msgstr "靠右"
 
