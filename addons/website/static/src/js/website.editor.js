@@ -319,7 +319,6 @@
                     .attr('title', help_text);
             }
 
-            $('.dropdown-toggle').dropdown();
 
             this.$buttons.edit.click(function(ev) {
                 self.edit();
