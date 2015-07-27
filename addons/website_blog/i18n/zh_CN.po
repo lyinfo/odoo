@@ -275,12 +275,12 @@ msgstr "背景图片"
 #: view:blog.post:website_blog.view_blog_post_search
 #: field:blog.post,blog_id:0
 msgid "Blog"
-msgstr "文章"
+msgstr "文章分类"
 
 #. module: website_blog
 #: field:blog.blog,name:0
 msgid "Blog Name"
-msgstr "文章名称"
+msgstr "名称"
 
 #. module: website_blog
 #: view:blog.post:website_blog.view_blog_post_form
@@ -341,7 +341,7 @@ msgstr "文章标签"
 #: model:ir.model,name:website_blog.model_blog_blog
 #: model:ir.ui.menu,name:website_blog.menu_blog
 msgid "Blogs"
-msgstr "文章"
+msgstr "文章分类"
 
 #. module: website_blog
 #: model:blog.post,subtitle:website_blog.blog_post_2
@@ -592,7 +592,7 @@ msgstr ""
 #: view:blog.post:website_blog.view_blog_post_search
 #: field:blog.post,write_uid:0
 msgid "Last Contributor"
-msgstr ""
+msgstr "最近的投稿者"
 
 #. module: website_blog
 #: field:blog.blog,message_last_post:0
@@ -603,7 +603,7 @@ msgstr ""
 #. module: website_blog
 #: field:blog.post,write_date:0
 msgid "Last Modified on"
-msgstr ""
+msgstr "最近修改于"
 
 #. module: website_blog
 #: field:blog.blog,write_uid:0

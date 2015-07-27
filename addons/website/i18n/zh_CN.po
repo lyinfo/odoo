@@ -315,7 +315,7 @@ msgstr "应用"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Aqua"
-msgstr ""
+msgstr "浅绿色"
 
 #. module: website
 #: field:ir.attachment,website_url:0
@@ -411,7 +411,7 @@ msgstr "大图片"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Bigger Text"
-msgstr "更大的文本"
+msgstr "平铺"
 
 #. module: website
 #: view:website:website.snippet_options
@@ -440,7 +440,7 @@ msgstr "创建一个页面"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Business Guy"
-msgstr ""
+msgstr "商人"
 
 #. module: website
 #: view:website:website.snippets
@@ -601,7 +601,7 @@ msgstr "关闭向导"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Color Splash"
-msgstr ""
+msgstr "色彩涂鸦"
 
 #. module: website
 #. openerp-web
@@ -794,12 +794,12 @@ msgstr ""
 #. module: website
 #: view:website:website.snippet_options
 msgid "Dark Blue"
-msgstr ""
+msgstr "空蓝色"
 
 #. module: website
 #: view:website:website.snippet_options
 msgid "Darken"
-msgstr ""
+msgstr "深灰色"
 
 #. module: website
 #: field:ir.attachment,datas_checksum:0
@@ -1155,7 +1155,7 @@ msgstr "浮点数"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Flowers Field"
-msgstr ""
+msgstr "野花"
 
 #. module: website
 #. openerp-web
@@ -1245,7 +1245,7 @@ msgstr "绿色"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Greenfields"
-msgstr ""
+msgstr "绿色草源"
 
 #. module: website
 #: view:website:website.layout
@@ -1469,7 +1469,7 @@ msgstr "日记"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Landscape"
-msgstr "景观"
+msgstr "风景"
 
 #. module: website
 #: view:website.config.settings:website.view_website_config_settings
@@ -1572,7 +1572,7 @@ msgstr "主菜单"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Mango"
-msgstr ""
+msgstr "芒果"
 
 #. module: website
 #: view:website:website.snippet_options
@@ -1652,7 +1652,7 @@ msgstr "更多不同的搜索主题关键字，以重要优先排序:"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Mountains"
-msgstr ""
+msgstr "高山"
 
 #. module: website
 #: view:website:website.layout
@@ -1662,7 +1662,7 @@ msgstr "我的资料"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Narrow"
-msgstr ""
+msgstr "狭窄"
 
 #. module: website
 #. openerp-web
@@ -1712,7 +1712,7 @@ msgstr "无"
 #: view:website:website.publish_management view:website:website.publish_short
 #, python-format
 msgid "Not Published"
-msgstr ""
+msgstr "未发布"
 
 #. module: website
 #: view:website:website.info
@@ -1789,12 +1789,12 @@ msgstr ""
 #. module: website
 #: view:website:website.snippet_options
 msgid "Orange"
-msgstr "橙"
+msgstr "橙色"
 
 #. module: website
 #: view:website:website.snippet_options
 msgid "Orange Red"
-msgstr ""
+msgstr "橙红"
 
 #. module: website
 #: view:website:website.snippets
@@ -1914,7 +1914,7 @@ msgstr "业务伙伴"
 #. module: website
 #: view:website:website.snippet_options
 msgid "People"
-msgstr "用户"
+msgstr "人物"
 
 #. module: website
 #. openerp-web
@@ -2025,7 +2025,7 @@ msgstr ""
 #. module: website
 #: view:website:website.snippet_options
 msgid "Purple"
-msgstr ""
+msgstr "紫色"
 
 #. module: website
 #: view:website:website.http_error_debug
@@ -2621,7 +2621,7 @@ msgstr "尝试一个新的主题"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Turquoise"
-msgstr ""
+msgstr "绿松色"
 
 #. module: website
 #: field:website,social_twitter:0
@@ -2655,7 +2655,7 @@ msgstr ""
 #. module: website
 #: view:website:website.snippet_options
 msgid "Uniform Color"
-msgstr ""
+msgstr "纯色"
 
 #. module: website
 #: view:website:website.themes
@@ -2701,12 +2701,12 @@ msgstr "Url"
 #. module: website
 #: view:website:website.snippet_options
 msgid "Various"
-msgstr ""
+msgstr "渐变"
 
 #. module: website
 #: view:website:website.snippet_options
 msgid "Velour"
-msgstr ""
+msgstr "丝绒"
 
 #. module: website
 #. openerp-web
@@ -2928,7 +2928,7 @@ msgstr ""
 #. module: website
 #: view:website:website.snippet_options
 msgid "Wood"
-msgstr ""
+msgstr "木材"
 
 #. module: website
 #: view:website:website.snippets
@@ -2987,12 +2987,12 @@ msgstr ""
 #. module: website
 #: view:website:website.snippet_options
 msgid "Yellow Green"
-msgstr ""
+msgstr "黄绿"
 
 #. module: website
 #: view:website:website.snippets
 msgid "Yes."
-msgstr ""
+msgstr "是."
 
 #. module: website
 #: view:website:website.themes
@@ -3054,7 +3054,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/website.editor.xml:335
 #, python-format
 msgid "border"
-msgstr ""
+msgstr "边框"
 
 #. module: website
 #: view:website:website.snippets
@@ -3071,12 +3071,12 @@ msgstr "说明你的页面内容"
 #. module: website
 #: view:website:website.snippets
 msgid "don't worry"
-msgstr ""
+msgstr "不用担心"
 
 #. module: website
 #: view:website:website.500
 msgid "factory settings"
-msgstr ""
+msgstr "出厂设置"
 
 #. module: website
 #: view:website:website.snippets
