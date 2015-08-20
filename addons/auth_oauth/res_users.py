@@ -112,7 +112,12 @@ class res_users(osv.Model):
         self._auth_oauth_overwrite(cr,uid,validation,provider,params,context=context)
         # required check
         if not validation.get('user_id'):
-            raise openerp.exceptions.AccessDenied()
+            # Workaround: facebook does not send 'user_id' in Open Graph Api
+            if validation.get('id'):
+                validation['user_id'] = validation['id']
+            else:
+                raise openerp.exceptions.AccessDenied()
+
         # retrieve and sign in user
         login = self._auth_oauth_signin(cr, uid, provider, validation, params, context=context)
         if not login:
