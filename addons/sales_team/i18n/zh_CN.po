@@ -51,7 +51,7 @@ msgstr "编号"
 #. module: sales_team
 #: field:crm.case.section,color:0
 msgid "Color Index"
-msgstr ""
+msgstr "颜色"
 
 #. module: sales_team
 #: field:crm.case.section,create_uid:0
@@ -71,7 +71,7 @@ msgstr ""
 #. module: sales_team
 #: field:res.users,default_section_id:0
 msgid "Default Sales Team"
-msgstr ""
+msgstr "默认销售团队"
 
 #. module: sales_team
 #: view:crm.case.section:sales_team.crm_case_section_salesteams_view_kanban
@@ -206,7 +206,7 @@ msgstr ""
 #. module: sales_team
 #: field:crm.case.section,change_responsible:0
 msgid "Reassign Escalated"
-msgstr ""
+msgstr "重新分配"
 
 #. module: sales_team
 #: field:crm.case.section,reply_to:0
@@ -290,7 +290,7 @@ msgstr ""
 #. module: sales_team
 #: help:crm.case.section,change_responsible:0
 msgid "When escalating to this team override the salesman with the team leader."
-msgstr ""
+msgstr "当提升到当前团队时，以该团队领导出任业务员。"
 
 #. module: sales_team
 #: field:crm.case.section,working_hours:0

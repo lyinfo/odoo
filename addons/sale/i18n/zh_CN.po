@@ -487,7 +487,7 @@ msgstr "选择此项，发票将会按客户分组。"
 #. module: sale
 #: help:crm.case.section,use_quotations:0
 msgid "Check this box to manage quotations in this sales team."
-msgstr ""
+msgstr "选择此项，允许该销售团队使用报价单。"
 
 #. module: sale
 #: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
@@ -693,6 +693,7 @@ msgid ""
 "Define an invoicing target in the sales team settings to see the period's "
 "achievement and forecast at a glance."
 msgstr ""
+"为销售团队设定一个发票收入目标，在需要的时候比较区间的预测与达成"
 
 #. module: sale
 #: field:sale.order,partner_shipping_id:0
@@ -969,7 +970,7 @@ msgstr "发票异常"
 #. module: sale
 #: field:crm.case.section,invoiced_forecast:0
 msgid "Invoice Forecast"
-msgstr ""
+msgstr "预测发票收入"
 
 #. module: sale
 #: field:sale.order.line,invoice_lines:0
@@ -989,7 +990,7 @@ msgstr "销售订单开票"
 #. module: sale
 #: field:crm.case.section,invoiced_target:0
 msgid "Invoice Target"
-msgstr ""
+msgstr "目标发票收入"
 
 #. module: sale
 #: help:sale.order,partner_invoice_id:0
@@ -1791,6 +1792,7 @@ msgid ""
 "Target of invoice revenue for the current month. This is the amount the sales \n"
 "team estimates to be able to invoice this month."
 msgstr ""
+"当月目标发票收入。这是当月团队需要达成的销售目标。"
 
 #. module: sale
 #: field:sale.order,amount_tax:0 field:sale.order.line,tax_id:0
