@@ -2970,6 +2970,10 @@ instance.web.form.FieldTextHtml = instance.web.form.AbstractField.extend(instanc
             }
         }
     },
+    focus: function() {
+        var input = !this.get("effective_readonly") && this.$cleditor
+        return input ? input.focus() : false;
+    },
     render_value: function() {
         if (! this.get("effective_readonly")) {
             this.$textarea.val(this.get('value') || '');

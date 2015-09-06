@@ -895,7 +895,7 @@ class task(osv.osv):
 
     # Override view according to the company definition
     def fields_view_get(self, cr, uid, view_id=None, view_type='form', context=None, toolbar=False, submenu=False):
-        res = super(task, self).fields_view_get(cr, uid, view_id, view_type, context, toolbar, submenu=submenu)
+        res = super(task, self).fields_view_get(cr, uid, view_id, view_type, context=context, toolbar=toolbar, submenu=submenu)
         return replace_hours_label(self, cr, uid, res, context=context)
 
     def get_empty_list_help(self, cr, uid, help, context=None):

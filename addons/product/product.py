@@ -525,7 +525,7 @@ class product_template(osv.osv):
         'price': fields.function(_product_template_price, type='float', string='Price', digits_compute=dp.get_precision('Product Price')),
         'list_price': fields.float('Sale Price', digits_compute=dp.get_precision('Product Price'), help="Base price to compute the customer price. Sometimes called the catalog price."),
         'lst_price' : fields.related('list_price', type="float", string='Public Price', digits_compute=dp.get_precision('Product Price')),
-        'standard_price': fields.property(type = 'float', digits_compute=dp.get_precision('Product Price'), 
+        'standard_price': fields.property(type = 'float', digits_compute=dp.get_precision('Product Price'), copy=True,
                                           help="Cost price of the product template used for standard stock valuation in accounting and used as a base price on purchase orders. "
                                                "Expressed in the default unit of measure of the product.",
                                           groups="base.group_user", string="Cost Price"),
@@ -821,18 +821,24 @@ class product_template(osv.osv):
         if not name or any(term[0] == 'id' for term in (args or [])):
             return super(product_template, self).name_search(
                 cr, user, name=name, args=args, operator=operator, context=context, limit=limit)
-
+        template_ids = set()
         product_product = self.pool['product.product']
-        results = product_product.name_search(
-            cr, user, name, args, operator=operator, context=context, limit=limit)
+        results = product_product.name_search(cr, user, name, args, operator=operator, context=context, limit=limit)
         product_ids = [p[0] for p in results]
-        template_ids = [p.product_tmpl_id.id
-                            for p in product_product.browse(
-                                cr, user, product_ids, context=context)]
+        for p in product_product.browse(cr, user, product_ids, context=context):
+            template_ids.add(p.product_tmpl_id.id)
+        while (results and len(template_ids) < limit):
+            domain = [('product_tmpl_id', 'not in', list(template_ids))]
+            results = product_product.name_search(
+                cr, user, name, args+domain, operator=operator, context=context, limit=limit)
+            product_ids = [p[0] for p in results]
+            for p in product_product.browse(cr, user, product_ids, context=context):
+                template_ids.add(p.product_tmpl_id.id)
+
 
         # re-apply product.template order + name_get
         return super(product_template, self).name_search(
-            cr, user, '', args=[('id', 'in', template_ids)],
+            cr, user, '', args=[('id', 'in', list(template_ids))],
             operator='ilike', context=context, limit=limit)
 
 class product_product(osv.osv):
