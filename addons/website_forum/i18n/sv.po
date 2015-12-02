@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-09 09:20+0000\n"
-"PO-Revision-Date: 2015-10-16 08:13+0000\n"
+"PO-Revision-Date: 2015-11-18 13:38+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Swedish (http://www.transifex.com/odoo/odoo-9/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -397,7 +397,7 @@ msgstr "Aktivitet"
 #: code:addons/website_forum/static/src/js/website_tour_forum.js:19
 #, python-format
 msgid "Add Content"
-msgstr ""
+msgstr "Lägg till innehåll"
 
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.post_answer
@@ -409,7 +409,7 @@ msgstr ""
 #: code:addons/website_forum/static/src/js/website_forum.editor.js:25
 #, python-format
 msgid "Add page in menu"
-msgstr ""
+msgstr "Lägg till sidan i menyn"
 
 #. module: website_forum
 #: model:ir.model.fields,help:website_forum.field_forum_forum_allow_share
@@ -1115,7 +1115,7 @@ msgstr "Diskussioner"
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_vote_display_name
 #: model:ir.model.fields,field_description:website_forum.field_forum_tag_display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Visa namn"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_karma_user_bio
@@ -1645,7 +1645,7 @@ msgstr "Senast meddelandedatum"
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_vote___last_update
 #: model:ir.model.fields,field_description:website_forum.field_forum_tag___last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Senast redigerad"
 
 #. module: website_forum
 #: selection:forum.forum,default_order:0
@@ -1676,7 +1676,7 @@ msgstr ""
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_res_users_calendar_last_notif_ack
 msgid "Last notification marked as read from base Calendar"
-msgstr ""
+msgstr "Sista notifikationen markerad som läst från baskalendern."
 
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.header
@@ -1698,7 +1698,7 @@ msgstr ""
 #. module: website_forum
 #: selection:forum.forum,default_post_type:0
 msgid "Link"
-msgstr ""
+msgstr "Länk"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_allow_link
@@ -2070,7 +2070,7 @@ msgstr ""
 #: model:ir.ui.menu,name:website_forum.menu_forum_posts
 #: model:ir.ui.view,arch_db:website_forum.forum_index
 msgid "Posts"
-msgstr ""
+msgstr "Inlägg"
 
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.new_question
@@ -2459,7 +2459,7 @@ msgstr ""
 #. module: website_forum
 #: model:ir.ui.view,arch_db:website_forum.view_forum_post_search
 msgid "Tag"
-msgstr ""
+msgstr "Etikett"
 
 #. module: website_forum
 #: sql_constraint:forum.tag:0
@@ -2839,7 +2839,7 @@ msgstr "Webbplatsens metabeskrivning"
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_website_meta_keywords
 #: model:ir.model.fields,field_description:website_forum.field_forum_tag_website_meta_keywords
 msgid "Website meta keywords"
-msgstr ""
+msgstr "Webbplats metasökord"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum_website_meta_title

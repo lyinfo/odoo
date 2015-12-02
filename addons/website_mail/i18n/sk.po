@@ -3,12 +3,13 @@
 # * website_mail
 # 
 # Translators:
+# Robert Kirschner <robertkirschner@yahoo.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-29 10:26+0000\n"
-"PO-Revision-Date: 2015-10-13 20:25+0000\n"
+"PO-Revision-Date: 2015-11-02 16:22+0000\n"
 "Last-Translator: Pavol Krnáč <pavol.krnac@ekoenergo.sk>\n"
 "Language-Team: Slovak (http://www.transifex.com/odoo/odoo-9/language/sk/)\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +21,12 @@ msgstr ""
 #. module: website_mail
 #: model:mail.channel,name:website_mail.channel_public
 msgid "Discussion Group"
-msgstr ""
+msgstr "Diskusná skupina"
 
 #. module: website_mail
 #: model:ir.model,name:website_mail.model_mail_thread
 msgid "Email Thread"
-msgstr ""
+msgstr "Emailová reťaz"
 
 #. module: website_mail
 #: model:ir.ui.view,arch_db:website_mail.message_thread

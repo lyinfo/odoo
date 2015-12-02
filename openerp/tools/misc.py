@@ -44,7 +44,10 @@ _logger = logging.getLogger(__name__)
 
 # List of etree._Element subclasses that we choose to ignore when parsing XML.
 # We include the *Base ones just in case, currently they seem to be subclasses of the _* ones.
-SKIPPED_ELEMENT_TYPES = (etree._Comment, etree._ProcessingInstruction, etree.CommentBase, etree.PIBase)
+SKIPPED_ELEMENT_TYPES = (etree._Comment, etree._ProcessingInstruction, etree.CommentBase, etree.PIBase, etree._Entity)
+
+# Configure default global parser
+etree.set_default_parser(etree.XMLParser(resolve_entities=False))
 
 #----------------------------------------------------------
 # Subprocesses
@@ -1050,14 +1053,15 @@ def dumpstacks(sig=None, frame=None):
     _logger.info("\n".join(code))
 
 def freehash(arg):
-    if isinstance(arg, Mapping):
-        return hash(frozendict(arg))
-    elif isinstance(arg, Iterable):
-        return hash(frozenset(arg))
-    elif isinstance(arg, Hashable):
+    try:
         return hash(arg)
-    else:
-        return id(arg)
+    except Exception:
+        if isinstance(arg, Mapping):
+            return hash(frozendict(arg))
+        elif isinstance(arg, Iterable):
+            return hash(frozenset(map(freehash, arg)))
+        else:
+            return id(arg)
 
 class frozendict(dict):
     """ An implementation of an immutable dictionary. """

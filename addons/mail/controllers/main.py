@@ -44,6 +44,7 @@ class MailController(http.Controller):
             result.append({
                 'id': follower.id,
                 'name': follower.partner_id.name or follower.channel_id.name,
+                'email': follower.partner_id.email if follower.partner_id else None,
                 'res_model': 'res.partner' if follower.partner_id else 'mail.channel',
                 'res_id': follower.partner_id.id or follower.channel_id.id,
                 'is_editable': is_editable,
@@ -118,7 +119,7 @@ class MailController(http.Controller):
         if not record_sudo:
             # record does not seem to exist -> redirect to login
             return self._redirect_to_messaging()
-        record_action = record_sudo.get_access_action()[0]
+        record_action = record_sudo.get_access_action()
 
         # the record has an URL redirection: use it directly
         if record_action['type'] == 'ir.actions.act_url':
@@ -240,7 +241,7 @@ class MailController(http.Controller):
     def mail_client_action(self):
         values = {
             'needaction_inbox_counter': request.env['res.partner'].get_needaction_count(),
-            'chatter_needaction_auto': request.env.user.chatter_needaction_auto,
-            'channel_slots': request.env['mail.channel'].channel_fetch_slot()
+            'channel_slots': request.env['mail.channel'].channel_fetch_slot(),
+            'mention_partner_suggestions': request.env['res.partner'].get_static_mention_suggestions(),
         }
         return values

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-29 10:26+0000\n"
-"PO-Revision-Date: 2015-09-30 09:23+0000\n"
+"PO-Revision-Date: 2015-11-20 19:35+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Turkish (http://www.transifex.com/odoo/odoo-9/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -103,7 +103,7 @@ msgstr "Ürünün bir özet açıklaması, yalnızca iç bilgi amacıyla kullan�
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Eylem Gerekiyor"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_active
@@ -258,7 +258,7 @@ msgstr ""
 msgid ""
 "Coefficient to convert default Unit of Measure to Unit of Sale uos = uom * "
 "coeff"
-msgstr ""
+msgstr "Ölçü Birimini, Satış Birimine dönüştüren Katsayı sb= öb+ kats"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_color
@@ -333,7 +333,7 @@ msgid ""
 "In a context with a single Warehouse, this includes goods stored in the Stock Location of this Warehouse, or any of its children.\n"
 "stored in the Stock Location of the Warehouse of this Shop, or any of its children.\n"
 "Otherwise, this includes goods stored in any Stock Location with 'internal' type."
-msgstr ""
+msgstr "Ürünlerin geçerli miktarı.\nTek stok Konumlu bir bağlamda, bu Konumda depolanan mallar ya da alt mallar içerilir.\nTek Depolu bir bağlamda, Bu Depodaki Stok Konumunda depolanan mallar ya da alt mallar içerilir.\nTek Mağazalı bir bağlamda, Bu Mağazaya ait Depodaki Stok Konumunda depolanan mallar ya da alt mallar içerilir.\nAksi durumda, 'İç' tipli herhangi bir Stok Konumundaki mallar içerilir."
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_sale_delay
@@ -450,7 +450,7 @@ msgstr "Görünüm sırasını belirle"
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_display_name
 #: model:ir.model.fields,field_description:delivery.field_delivery_price_rule_display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Adı Göster"
 
 #. module: delivery
 #: model:ir.actions.act_window,help:delivery.action_delivery_carrier_form
@@ -513,7 +513,7 @@ msgstr "Gider Hesabı"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_expense_policy
 msgid "Expense Invoice Policy"
-msgstr ""
+msgstr "Gider Faturası Politikamız"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_sale_order_carrier_id
@@ -534,12 +534,12 @@ msgstr "İzleyiciler"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_channel_ids
 msgid "Followers (Channels)"
-msgstr ""
+msgstr "İzleyiciler (Kanallar)"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "İzleyiciler (İş ortakları)"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_virtual_available
@@ -597,7 +597,7 @@ msgstr "Eğer işaretliyse yeni iletiler ilginizi gerektirir."
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "İşaretliyse, yeni mesajlar dikkatinizi gerektirir."
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_property_valuation
@@ -629,7 +629,7 @@ msgid ""
 "If you invoice at cost, the expense will be invoiced on the sale order at "
 "the cost of the analytic line;if you invoice at sales price, the price of "
 "the product will be used instead."
-msgstr ""
+msgstr "Eğer maliyetden faturalandırıyorsanız, gider analiz satırı maliyetindeki satış siparişi üzerinden faturalandırılacaktır; eğer satış fiyatından faturalandırıyorsanız, ürünün satış fiyatı kullanılacaktır."
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_image
@@ -707,7 +707,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Takipçi mi"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_sale_order_line_is_delivery
@@ -851,7 +851,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "İşlem Sayısı"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_stock_picking_number_of_packages
@@ -861,12 +861,12 @@ msgstr "Paket Sayısı"
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr ""
+msgstr "Eylem gerektiren mesaj sayısı"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_message_unread_counter
 msgid "Number of unread messages"
-msgstr ""
+msgstr "Okunmamış mesaj sayısı"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_price_rule_operator
@@ -881,7 +881,7 @@ msgstr "Giden"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_stock_picking_package_ids
 msgid "Packages"
-msgstr ""
+msgstr "Paketler"
 
 #. module: delivery
 #: model:ir.model,name:delivery.model_res_partner
@@ -891,7 +891,7 @@ msgstr "İş Ortağı"
 #. module: delivery
 #: model:ir.model,name:delivery.model_stock_quant_package
 msgid "Physical Packages"
-msgstr ""
+msgstr "Fiziksel Paketler"
 
 #. module: delivery
 #: selection:delivery.price.rule,variable:0
@@ -1032,7 +1032,7 @@ msgid ""
 "In a context with a single Stock Location, this includes goods arriving to this Location, or any of its children.\n"
 "In a context with a single Warehouse, this includes goods arriving to the Stock Location of this Warehouse, or any of its children.\n"
 "Otherwise, this includes goods arriving to any Stock Location with 'internal' type."
-msgstr ""
+msgstr "Gelmesi planlanan ürünlerin miktarı.\nTek Stok Konumlu bir bağlamda, bu Konuma gelen mallar ya da alt mallar içerilir.\nTek Depolu bir bağlamda, bu Depodaki Stok Konumuna gelen mallar ve alt malları içerilir.\nTek Mağazalı bir bağlamda, Bu Mağazaya ait Depodaki Stok Konumuna gelen mallar ve alt malları içerilir.\nAksi durumda, 'İç Tipli' herhangi bir Stok Konumuna gelen mallar içerilir."
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_outgoing_qty
@@ -1041,7 +1041,7 @@ msgid ""
 "In a context with a single Stock Location, this includes goods leaving this Location, or any of its children.\n"
 "In a context with a single Warehouse, this includes goods leaving the Stock Location of this Warehouse, or any of its children.\n"
 "Otherwise, this includes goods leaving any Stock Location with 'internal' type."
-msgstr ""
+msgstr "Gelmesi planlanan ürünlerin miktarı.\nTek Stok Konumlu bir bağlamda, bu Konuma gelen mallar ya da alt mallar içerilir.\nTek Depolu bir bağlamda, bu Depodaki Stok Konumuna gelen mallar ve alt malları içerilir.\nTek Mağazalı bir bağlamda, Bu Mağazaya ait Depodaki Stok Konumuna gelen mallar ve alt malları içerilir.\nAksi durumda, 'İç Tipli' herhangi bir Stok Konumuna gelen mallar içerilir."
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_reception_count
@@ -1183,7 +1183,7 @@ msgstr "Durumu"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_state
 msgid "Status"
-msgstr ""
+msgstr "Durumu"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_property_stock_account_input
@@ -1439,7 +1439,7 @@ msgstr "Okunmamış Mesajlar"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_unread_counter
 msgid "Unread Messages Counter"
-msgstr ""
+msgstr "Okunmamış Mesaj Sayacı"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_price_rule_variable

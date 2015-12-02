@@ -59,6 +59,14 @@ class crm_lead(format_address, osv.osv):
     _inherit = ['mail.thread', 'ir.needaction_mixin', 'utm.mixin']
     _mail_mass_mailing = _('Leads / Opportunities')
 
+    def _get_default_probability(self, cr, uid, context=None):
+        """ Gives default probability """
+        stage_id = self._get_default_stage_id(cr, uid, context=None)
+        if stage_id:
+            return self.pool['crm.stage'].browse(cr, uid, stage_id, context=context).probability
+        else:
+            return 10
+
     def _get_default_stage_id(self, cr, uid, context=None):
         """ Gives default stage_id """
         team_id = self.pool['crm.team']._get_default_team_id(cr, SUPERUSER_ID, context=context, user_id=uid)
@@ -239,7 +247,7 @@ class crm_lead(format_address, osv.osv):
         'team_id': lambda s, cr, uid, c: s.pool['crm.team']._get_default_team_id(cr, SUPERUSER_ID, context=c, user_id=uid),
         'company_id': lambda s, cr, uid, c: s.pool.get('res.company')._company_default_get(cr, uid, 'crm.lead', context=c),
         'priority': lambda *a: crm_stage.AVAILABLE_PRIORITIES[0][0],
-        'probability': 10,
+        'probability': lambda s, cr, uid, c: s._get_default_probability(cr, uid, c),
         'color': 0,
         'date_last_stage_update': fields.datetime.now,
     }
@@ -282,7 +290,15 @@ class crm_lead(format_address, osv.osv):
     def on_change_user(self, cr, uid, ids, user_id, context=None):
         """ When changing the user, also set a team_id or restrict team id
             to the ones user_id is member of. """
+        if user_id and context.get('team_id'):
+            team = self.pool['crm.team'].browse(cr, uid, context['team_id'], context=context)
+            if user_id in team.member_ids.ids:
+                return {}
         team_id = self.pool['crm.team']._get_default_team_id(cr, uid, context=context, user_id=user_id)
+        if user_id and not team_id and self.pool['res.users'].has_group(cr, uid, 'base.group_multi_salesteams'):
+            team_ids = self.pool.get('crm.team').search(cr, uid, ['|', ('user_id', '=', user_id), ('member_ids', '=', user_id)], context=context)
+            if team_ids:
+                team_id = team_ids[0]
         return {'value': {'team_id': team_id}}
 
     def stage_find(self, cr, uid, cases, team_id, domain=None, order='sequence', context=None):
@@ -662,7 +678,7 @@ class crm_lead(format_address, osv.osv):
 
         # Check if the stage is in the stages of the sales team. If not, assign the stage with the lowest sequence
         if merged_data.get('team_id'):
-            team_stage_ids = self.pool.get('crm.stage').search(cr, uid, [('team_ids', 'in', merged_data['team_id']), ('type', '=', merged_data.get('type'))], order='sequence', context=context)
+            team_stage_ids = self.pool.get('crm.stage').search(cr, uid, [('team_ids', 'in', merged_data['team_id']), ('type', 'in', [merged_data.get('type'), 'both'])], order='sequence', context=context)
             if merged_data.get('stage_id') not in team_stage_ids:
                 merged_data['stage_id'] = team_stage_ids and team_stage_ids[0] or False
         # Write merged data into first opportunity

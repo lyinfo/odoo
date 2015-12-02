@@ -4,6 +4,7 @@ import logging
 import threading
 
 from openerp import _, api, fields, models, tools
+from openerp.osv import expression
 
 _logger = logging.getLogger(__name__)
 
@@ -209,3 +210,29 @@ class Partner(models.Model):
             return self.env.cr.dictfetchall()[0].get('needaction_count')
         _logger.error('Call to needaction_count without partner_id')
         return 0
+
+    @api.model
+    def get_static_mention_suggestions(self):
+        """ To be overwritten to return the id, name and email of partners used as static mention
+            suggestions loaded once at webclient initialization and stored client side. """
+        return []
+
+    @api.model
+    def get_mention_suggestions(self, search, limit=8):
+        """ Return 'limit'-first partners' id, name and email such that the name or email matches a
+            'search' string. Prioritize users, and then extend the research to all partners. """
+        search_dom = expression.OR([[('name', 'ilike', search)], [('email', 'ilike', search)]])
+        fields = ['id', 'name', 'email']
+
+        # Search users
+        domain = expression.AND([[('user_ids.id', '!=', False)], search_dom])
+        users = self.search_read(domain, fields, limit=limit)
+
+        # Search partners if less than 'limit' users found
+        partners = []
+        if len(users) < limit:
+            partners = self.search_read(search_dom, fields, limit=limit)
+            # Remove duplicates
+            partners = [p for p in partners if not len([u for u in users if u['id'] == p['id']])] 
+
+        return [users, partners]

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-09 09:18+0000\n"
-"PO-Revision-Date: 2015-10-10 09:45+0000\n"
+"POT-Creation-Date: 2015-11-18 08:05+0000\n"
+"PO-Revision-Date: 2015-11-18 08:43+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Latvian (http://www.transifex.com/odoo/odoo-9/language/lv/)\n"
 "MIME-Version: 1.0\n"
@@ -855,17 +855,17 @@ msgstr ""
 #. module: account
 #: model:ir.model,name:account.model_account_common_account_report
 msgid "Account Common Account Report"
-msgstr ""
+msgstr "Grāmatvedības Vispārējās Atskaites"
 
 #. module: account
 #: model:ir.model,name:account.model_account_common_partner_report
 msgid "Account Common Partner Report"
-msgstr ""
+msgstr "Konta Partnera Kopējais Pārskats"
 
 #. module: account
 #: model:ir.model,name:account.model_account_common_report
 msgid "Account Common Report"
-msgstr ""
+msgstr "Grāmatvedības Atskaite"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account_currency_id
@@ -946,13 +946,15 @@ msgstr "Konta atskaite"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_accounting_report_account_report_id
+#: model:ir.ui.menu,name:account.menu_account_financial_reports_tree
 msgid "Account Reports"
-msgstr ""
+msgstr "Konta atskaites"
 
 #. module: account
+#: model:ir.ui.menu,name:account.menu_account_report_tree_hierarchy
 #: model:ir.ui.view,arch_db:account.view_account_report_tree_hierarchy
 msgid "Account Reports Hierarchy"
-msgstr ""
+msgstr "Konta atskaišu hierarhija"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_account_template_account_src_id
@@ -1006,7 +1008,7 @@ msgstr "Kontu Veidnes"
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_agedpartnerbalance
 msgid "Account Total"
-msgstr ""
+msgstr "Kopā"
 
 #. module: account
 #: selection:account.financial.report,type:0
@@ -1149,7 +1151,7 @@ msgstr "Grāmatvedības ieraksti"
 #. module: account
 #: model:ir.model,name:account.model_accounting_report
 msgid "Accounting Report"
-msgstr ""
+msgstr "Grāmatvedības atskaite"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
@@ -1267,9 +1269,10 @@ msgstr ""
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_aged_balance_view
 #: model:ir.actions.report.xml,name:account.action_report_aged_partner_balance
+#: model:ir.ui.menu,name:account.menu_aged_trial_balance
 #: model:ir.ui.view,arch_db:account.account_aged_balance_view
 msgid "Aged Partner Balance"
-msgstr ""
+msgstr "Savstarpējo Norēķinu Bilance"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_aged_balance_view
@@ -1285,7 +1288,7 @@ msgstr ""
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_agedpartnerbalance
 msgid "Aged Trial Balance"
-msgstr ""
+msgstr "Konta apgrozījums vecuma struktūrā"
 
 #. module: account
 #. openerp-web
@@ -1310,7 +1313,7 @@ msgstr "Visi"
 #: model:ir.ui.view,arch_db:account.report_generalledger
 #: model:ir.ui.view,arch_db:account.report_trialbalance
 msgid "All Entries"
-msgstr ""
+msgstr "Visi Ieraksti"
 
 #. module: account
 #: selection:account.aged.trial.balance,target_move:0
@@ -1325,17 +1328,17 @@ msgstr ""
 #: model:ir.ui.view,arch_db:account.report_generalledger
 #: model:ir.ui.view,arch_db:account.report_trialbalance
 msgid "All Posted Entries"
-msgstr ""
+msgstr "Visi Iegrāmatotie Kontējumi"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_trialbalance
 msgid "All accounts"
-msgstr ""
+msgstr "Visi konti"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_generalledger
 msgid "All accounts'"
-msgstr ""
+msgstr "Visi konti"
 
 #. module: account
 #. openerp-web
@@ -1642,7 +1645,7 @@ msgstr ""
 #. module: account
 #: model:account.financial.report,name:account.account_financial_report_assets0
 msgid "Assets"
-msgstr ""
+msgstr "Pamatlīdzekļi"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_config_settings_module_account_asset
@@ -1719,6 +1722,7 @@ msgstr "Bilance"
 #. module: account
 #: model:account.financial.report,name:account.account_financial_report_balancesheet0
 #: model:ir.actions.act_window,name:account.action_account_report_bs
+#: model:ir.ui.menu,name:account.menu_account_report_bs
 #: model:ir.ui.view,arch_db:account.view_account_form
 msgid "Balance Sheet"
 msgstr "Bilance"
@@ -1735,7 +1739,7 @@ msgstr ""
 
 #. module: account
 #: selection:account.bank.accounts.wizard,account_type:0
-#: selection:account.journal,type:0 code:addons/account/models/account.py:393
+#: selection:account.journal,type:0
 #: code:addons/account/models/chart_template.py:606
 #: model:ir.model.fields,field_description:account.field_account_journal_bank_id
 #: model:ir.model.fields,field_description:account.field_res_partner_bank_account_count
@@ -2443,7 +2447,7 @@ msgstr "Krāsas Indekss"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_accounting_report_label_filter
 msgid "Column Label"
-msgstr ""
+msgstr "Kolonnas apzīmējums"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line_reconcile_writeoff_comment
@@ -2459,12 +2463,12 @@ msgstr ""
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_common_menu
 msgid "Common Report"
-msgstr ""
+msgstr "Standarta atskaite"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_overdue_document
 msgid "Communication"
-msgstr ""
+msgstr "Saziņa"
 
 #. module: account
 #: model:ir.model,name:account.model_res_company
@@ -2532,7 +2536,7 @@ msgstr "Reģistra uzņēmums"
 #. module: account
 #: model:ir.ui.view,arch_db:account.accounting_report_view
 msgid "Comparison"
-msgstr ""
+msgstr "Salīdzināšana"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_chart_template_complete_tax_set
@@ -3294,12 +3298,12 @@ msgstr "Atlaide (%)"
 #: model:ir.model.fields,field_description:account.field_account_common_account_report_display_account
 #: model:ir.model.fields,field_description:account.field_account_report_general_ledger_display_account
 msgid "Display Accounts"
-msgstr ""
+msgstr "Izvadīt kontus"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_accounting_report_debit_credit
 msgid "Display Debit/Credit Columns"
-msgstr ""
+msgstr "Izvadīt debeta/kredīta kolonnas"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_abstract_payment_display_name
@@ -3461,7 +3465,7 @@ msgstr "Neapstiprināti izraksti"
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_overdue_document
 msgid "Due"
-msgstr ""
+msgstr "Nav apmaksāts"
 
 #. module: account
 #. openerp-web
@@ -3482,6 +3486,11 @@ msgstr "Termiņa aprēķins"
 #. module: account
 #: model:ir.ui.view,arch_db:account.view_account_invoice_report_search
 msgid "Due Month"
+msgstr ""
+
+#. module: account
+#: model:ir.actions.report.xml,name:account.action_report_print_overdue
+msgid "Due Payments"
 msgstr ""
 
 #. module: account
@@ -3536,7 +3545,7 @@ msgstr "E-pasta sastādīšanas vednis"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_accounting_report_enable_filter
 msgid "Enable Comparison"
-msgstr ""
+msgstr "Iespējot salīdzināšanu"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_config_settings_module_account_reports_followup
@@ -3558,7 +3567,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account.field_accounting_report_date_to
 #: model:ir.model.fields,field_description:account.field_accounting_report_date_to_cmp
 msgid "End Date"
-msgstr ""
+msgstr "Beigu datums"
 
 #. module: account
 #: model:account.payment.term,name:account.account_payment_term
@@ -3600,7 +3609,7 @@ msgstr "Ieraksti: "
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_generalledger
 msgid "Entry Label"
-msgstr ""
+msgstr "Grāmatojuma Birka"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal_sequence_id
@@ -3649,8 +3658,9 @@ msgstr ""
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
 msgid ""
-"Exchange rates are updated automatically once a day from "
-"<strong>XE.com</strong>. You do not need to setup your own rates."
+"Exchange rates can be automatically updated once a day from <strong>Yahoo "
+"Finance</strong> or the <strong>European Central Bank</strong>. You can "
+"activate this feature in the bottom of the"
 msgstr ""
 
 #. module: account
@@ -3661,7 +3671,7 @@ msgstr "Sagaida kontu plānu"
 #. module: account
 #: model:account.financial.report,name:account.account_financial_report_expense0
 msgid "Expense"
-msgstr ""
+msgstr "Avansa Norēķini"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_product_category_property_account_expense_categ_id
@@ -3731,7 +3741,7 @@ msgstr "Aizpildiet šo formu, ja ievietojiet naudu lādē:"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_accounting_report_filter_cmp
 msgid "Filter by"
-msgstr ""
+msgstr "Filtrēt pēc"
 
 #. module: account
 #. openerp-web
@@ -3747,6 +3757,11 @@ msgid "Financial Account"
 msgstr ""
 
 #. module: account
+#: model:ir.ui.menu,name:account.menu_account_report
+msgid "Financial Report"
+msgstr ""
+
+#. module: account
 #: model:ir.model.fields,field_description:account.field_account_financial_report_style_overwrite
 msgid "Financial Report Style"
 msgstr "Finanšu atskaites stils"
@@ -3754,17 +3769,17 @@ msgstr "Finanšu atskaites stils"
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_financial_report_tree
 #: model:ir.actions.act_window,name:account.action_account_report
+#: model:ir.ui.menu,name:account.menu_account_reports
 msgid "Financial Reports"
-msgstr ""
+msgstr "Finanšu atskaites"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_report_tree_hierarchy
 msgid "Financial Reports Hierarchy"
-msgstr ""
+msgstr "Finanšu atskaišu hierarhija"
 
 #. module: account
 #: model:ir.actions.report.xml,name:account.action_report_financial
-#: model:ir.ui.menu,name:account.menu_account_report
 msgid "Financial report"
 msgstr ""
 
@@ -3971,13 +3986,14 @@ msgstr "Vispārīgā informācija"
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_general_ledger_menu
 #: model:ir.actions.report.xml,name:account.action_report_general_ledger
+#: model:ir.ui.menu,name:account.menu_general_ledger
 msgid "General Ledger"
-msgstr ""
+msgstr "Virsgrāmata"
 
 #. module: account
 #: model:ir.model,name:account.model_account_report_general_ledger
 msgid "General Ledger Report"
-msgstr ""
+msgstr "Galvenās Grāmatas Atskaite"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_config_settings_module_account_tax_cash_basis
@@ -4412,7 +4428,7 @@ msgstr ""
 #, python-format
 msgid ""
 "In order to pay multiple invoices at once, they must belong to the same "
-"partner."
+"commercial partner."
 msgstr ""
 
 #. module: account
@@ -4435,7 +4451,7 @@ msgstr "Ienākošais"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report_general_ledger_initial_balance
 msgid "Include Initial Balances"
-msgstr ""
+msgstr "Iekļaut sākuma atlikumus"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_tax_analytic
@@ -4751,7 +4767,7 @@ msgid "It indicates that the invoice has been sent."
 msgstr "Tas norāda, ka rēķins bija nosūtīts."
 
 #. module: account
-#: code:addons/account/models/account_move.py:802
+#: code:addons/account/models/account_move.py:811
 #, python-format
 msgid ""
 "It is mandatory to specify an account and a journal to create a write-off."
@@ -4794,7 +4810,7 @@ msgstr ""
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_generalledger
 msgid "JRNL"
-msgstr ""
+msgstr "Žurn."
 
 #. module: account
 #: selection:res.company,fiscalyear_last_month:0
@@ -4827,7 +4843,7 @@ msgstr "Reģistrs"
 #. module: account
 #: selection:account.report.general.ledger,sortby:0
 msgid "Journal & Partner"
-msgstr ""
+msgstr "Reģistrs un partneris"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_move_journal_line
@@ -5251,7 +5267,7 @@ msgstr "Līmenis"
 #: model:account.financial.report,name:account.account_financial_report_liability0
 #: model:account.financial.report,name:account.account_financial_report_liabilitysum0
 msgid "Liability"
-msgstr ""
+msgstr "Pasīvi"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_invoice_move_id
@@ -5272,7 +5288,7 @@ msgstr "Rēķinu, kurus uzstādīs vednis, saraksts."
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_overdue_document
 msgid "Litigation"
-msgstr ""
+msgstr "Tiesas prāva"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_config_settings_fiscalyear_lock_date
@@ -5615,7 +5631,7 @@ msgstr ""
 #. module: account
 #: selection:accounting.report,filter_cmp:0
 msgid "No Filters"
-msgstr ""
+msgstr "Nav Filtru"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line_blocked
@@ -5689,7 +5705,7 @@ msgstr ""
 #: code:addons/account/wizard/account_report_common.py:28
 #, python-format
 msgid "Not implemented."
-msgstr ""
+msgstr "Nav izveidots."
 
 #. module: account
 #. openerp-web
@@ -6029,13 +6045,13 @@ msgstr ""
 #. module: account
 #: model:ir.ui.view,arch_db:account.view_company_inherit_form
 msgid "Overdue Payments"
-msgstr ""
+msgstr "Kavētie Maksājumi"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_company_overdue_msg
 #: model:ir.ui.view,arch_db:account.view_company_inherit_form
 msgid "Overdue Payments Message"
-msgstr ""
+msgstr "Brīdinājuma Teksts Par Kavētiem Maksājumiem"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.view_account_invoice_filter
@@ -6150,12 +6166,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:account.field_account_aged_trial_balance_result_selection
 #: model:ir.model.fields,field_description:account.field_account_common_partner_report_result_selection
 msgid "Partner's"
-msgstr ""
+msgstr "Partnera"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_agedpartnerbalance
 msgid "Partners"
-msgstr ""
+msgstr "Partneri"
 
 #. module: account
 #: code:addons/account/models/account_journal_dashboard.py:96
@@ -6430,7 +6446,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_aged_trial_balance_period_length
 msgid "Period Length (days)"
-msgstr ""
+msgstr "Perioda garums (dienās)"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_config_settings_module_account_plaid
@@ -6642,7 +6658,7 @@ msgstr ""
 #. module: account
 #: model:account.financial.report,name:account.account_financial_report_profitloss_toreport0
 msgid "Profit (Loss) to report"
-msgstr ""
+msgstr "Peļņa (zaudējumi) atskaitei"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal_profit_account_id
@@ -6654,7 +6670,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:account.action_account_report_pl
 #: model:ir.ui.menu,name:account.menu_account_report_pl
 msgid "Profit and Loss"
-msgstr ""
+msgstr "Peļņas vai zaudējumu aprēķins"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.view_account_invoice_filter
@@ -6706,12 +6722,6 @@ msgid "Purchase Tax"
 msgstr ""
 
 #. module: account
-#: code:addons/account/models/chart_template.py:683
-#, python-format
-msgid "Purchase Tax %.2f%%"
-msgstr ""
-
-#. module: account
 #: model:ir.model.fields,field_description:account.field_wizard_multi_charts_accounts_purchase_tax_rate
 msgid "Purchase Tax(%)"
 msgstr ""
@@ -6739,7 +6749,7 @@ msgstr ""
 #: selection:account.tax,amount_type:0
 #: selection:account.tax.template,amount_type:0
 msgid "Python Code"
-msgstr ""
+msgstr "Python pirmkods"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_quantity
@@ -6787,7 +6797,7 @@ msgstr ""
 #: selection:account.common.partner.report,result_selection:0
 #: model:ir.ui.view,arch_db:account.report_agedpartnerbalance
 msgid "Receivable and Payable Accounts"
-msgstr ""
+msgstr "Ieņēmumu un Izdevumu Konti"
 
 #. module: account
 #: selection:account.abstract.payment,payment_type:0
@@ -6888,7 +6898,7 @@ msgstr ""
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_generalledger
 msgid "Ref"
-msgstr ""
+msgstr "Ats."
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_analytic_line_ref
@@ -7038,7 +7048,7 @@ msgstr ""
 #. module: account
 #: model:ir.ui.view,arch_db:account.view_account_financial_report_form
 msgid "Report"
-msgstr ""
+msgstr "Atskaite"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_financial_report_name
@@ -7049,12 +7059,12 @@ msgstr ""
 #: model:ir.ui.view,arch_db:account.account_aged_balance_view
 #: model:ir.ui.view,arch_db:account.account_common_report_view
 msgid "Report Options"
-msgstr ""
+msgstr "Atskaites Opcijas"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.view_account_financial_report_search
 msgid "Report Type"
-msgstr ""
+msgstr "Atskaites Tips"
 
 #. module: account
 #: selection:account.financial.report,type:0
@@ -7436,7 +7446,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report_general_ledger_sortby
 msgid "Sort by"
-msgstr ""
+msgstr "Kārtot pēc"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_origin
@@ -7454,7 +7464,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account.field_accounting_report_date_from
 #: model:ir.model.fields,field_description:account.field_accounting_report_date_from_cmp
 msgid "Start Date"
-msgstr ""
+msgstr "Sākuma datums"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_balance_start
@@ -7566,7 +7576,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account.field_account_report_general_ledger_target_move
 #: model:ir.model.fields,field_description:account.field_accounting_report_target_move
 msgid "Target Moves"
-msgstr ""
+msgstr "Mērķa Grāmatojumi"
 
 #. module: account
 #. openerp-web
@@ -7584,6 +7594,7 @@ msgstr ""
 
 #. module: account
 #: code:addons/account/models/chart_template.py:680
+#: code:addons/account/models/chart_template.py:683
 #, python-format
 msgid "Tax %.2f%%"
 msgstr ""
@@ -7764,12 +7775,8 @@ msgstr ""
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_bank_statement_journal_type
-msgid "Technical field used for usability purposes"
-msgstr ""
-
-#. module: account
 #: model:ir.model.fields,help:account.field_account_payment_has_invoices
-msgid "Technical field used for usablity purposes"
+msgid "Technical field used for usability purposes"
 msgstr ""
 
 #. module: account
@@ -8634,12 +8641,12 @@ msgstr ""
 #: model:ir.actions.report.xml,name:account.action_report_trial_balance
 #: model:ir.ui.menu,name:account.menu_general_Balance_report
 msgid "Trial Balance"
-msgstr ""
+msgstr "Operatīvā Bilance"
 
 #. module: account
 #: model:ir.model,name:account.model_account_balance_report
 msgid "Trial Balance Report"
-msgstr ""
+msgstr "Operatīvā Bilance"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account_internal_type
@@ -9043,7 +9050,7 @@ msgstr ""
 #: selection:account.common.account.report,display_account:0
 #: selection:account.report.general.ledger,display_account:0
 msgid "With balance is not equal to 0"
-msgstr ""
+msgstr "Kur bilance nav vienāda ar 0"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_generalledger
@@ -9058,7 +9065,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:account.report_generalledger
 #: model:ir.ui.view,arch_db:account.report_trialbalance
 msgid "With movements"
-msgstr ""
+msgstr "Ar grāmatojumiem"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.view_account_operation_template_search
@@ -9310,13 +9317,13 @@ msgstr ""
 #: code:addons/account/wizard/account_report_aged_partner_balance.py:26
 #, python-format
 msgid "You must set a period length greater than 0."
-msgstr ""
+msgstr "Norādiet perioda ilgumu lielāku par 0."
 
 #. module: account
 #: code:addons/account/wizard/account_report_aged_partner_balance.py:28
 #, python-format
 msgid "You must set a start date."
-msgstr ""
+msgstr "Jums jānorāda sākuma datums."
 
 #. module: account
 #: code:addons/account/models/account_move.py:1160
@@ -9437,6 +9444,11 @@ msgstr ""
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
+msgid "accounting settings"
+msgstr ""
+
+#. module: account
+#: model:ir.ui.view,arch_db:account.account_planner
 msgid "activate this feature"
 msgstr ""
 
@@ -9497,11 +9509,6 @@ msgid "e.g. sales@odoo.com"
 msgstr ""
 
 #. module: account
-#: model:ir.ui.view,arch_db:account.view_account_config_settings
-msgid "eInvoicing & Payments"
-msgstr ""
-
-#. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
 msgid "fast recording interface"
 msgstr ""
@@ -9525,7 +9532,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:account.account_aged_balance_view
 #: model:ir.ui.view,arch_db:account.account_common_report_view
 msgid "or"
-msgstr ""
+msgstr "vai"
 
 #. module: account
 #. openerp-web
