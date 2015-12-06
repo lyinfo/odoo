@@ -387,6 +387,13 @@ class mail_thread(osv.AbstractModel):
             name = ir_model_pool.read(cr, uid, ids, ['name'], context=context)[0]['name']
             self.message_post(cr, uid, thread_id, body=_('%s created') % name, context=context)
 
+        # auto_subscribe: take values and defaults into account
+        create_values = dict(values)
+        for key, val in context.iteritems():
+            if key.startswith('default_') and key[8:] not in create_values:
+                create_values[key[8:]] = val
+        self.message_auto_subscribe(cr, uid, [thread_id], create_values.keys(), context=context, values=create_values)
+
         # track values
         track_ctx = dict(context)
         if 'lang' not in track_ctx:
@@ -396,13 +403,6 @@ class mail_thread(osv.AbstractModel):
             if tracked_fields:
                 initial_values = {thread_id: dict.fromkeys(tracked_fields, False)}
                 self.message_track(cr, uid, [thread_id], tracked_fields, initial_values, context=track_ctx)
-
-        # auto_subscribe: take values and defaults into account
-        create_values = dict(values)
-        for key, val in context.iteritems():
-            if key.startswith('default_') and key[8:] not in create_values:
-                create_values[key[8:]] = val
-        self.message_auto_subscribe(cr, uid, [thread_id], create_values.keys(), context=context, values=create_values)
 
         return thread_id
 
@@ -1861,7 +1861,7 @@ class mail_thread(osv.AbstractModel):
                 if msg_ids:
                     notification_obj = self.pool.get('mail.notification')
                     notification_obj._notify(cr, uid, msg_ids[0], partners_to_notify=partner_ids, context=context)
-                    message = message_obj.browse(cr, uid, msg_ids[0], context=context)
+                    message = message_obj.browse(cr, SUPERUSER_ID, msg_ids[0], context=context)
                     if message.parent_id:
                         partner_ids_to_parent_notify = set(partner_ids).difference(partner.id for partner in message.parent_id.notified_partner_ids)
                         for partner_id in partner_ids_to_parent_notify:

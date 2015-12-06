@@ -135,6 +135,7 @@ import collections
 
 import logging
 import traceback
+from zlib import crc32
 
 import openerp.modules
 from . import fields
@@ -165,6 +166,26 @@ TERM_OPERATORS = ('=', '!=', '<=', '<', '>', '>=', '=?', '=like', '=ilike',
 # below, this doesn't necessarily mean that any of those NEGATIVE_TERM_OPERATORS is
 # legal in the processed term.
 NEGATIVE_TERM_OPERATORS = ('!=', 'not like', 'not ilike', 'not in')
+
+# Negation of domain expressions
+DOMAIN_OPERATORS_NEGATION = {
+    AND_OPERATOR: OR_OPERATOR,
+    OR_OPERATOR: AND_OPERATOR,
+}
+TERM_OPERATORS_NEGATION = {
+    '<': '>=',
+    '>': '<=',
+    '<=': '>',
+    '>=': '<',
+    '=': '!=',
+    '!=': '=',
+    'in': 'not in',
+    'like': 'not like',
+    'ilike': 'not ilike',
+    'not in': 'in',
+    'not like': 'like',
+    'not ilike': 'ilike',
+}
 
 TRUE_LEAF = (1, '=', 1)
 FALSE_LEAF = (0, '=', 1)
@@ -262,51 +283,36 @@ def distribute_not(domain):
          ['|',('user_id','!=',4),('partner_id','not in',[1,2])]
 
     """
-    def negate(leaf):
-        """Negates and returns a single domain leaf term,
-        using the opposite operator if possible"""
-        left, operator, right = leaf
-        mapping = {
-            '<': '>=',
-            '>': '<=',
-            '<=': '>',
-            '>=': '<',
-            '=': '!=',
-            '!=': '=',
-        }
-        if operator in ('in', 'like', 'ilike'):
-            operator = 'not ' + operator
-            return [(left, operator, right)]
-        if operator in ('not in', 'not like', 'not ilike'):
-            operator = operator[4:]
-            return [(left, operator, right)]
-        if operator in mapping:
-            operator = mapping[operator]
-            return [(left, operator, right)]
-        return [NOT_OPERATOR, (left, operator, right)]
 
-    def distribute_negate(domain):
-        """Negate the domain ``subtree`` rooted at domain[0],
-        leaving the rest of the domain intact, and return
-        (negated_subtree, untouched_domain_rest)
-        """
-        if is_leaf(domain[0]):
-            return negate(domain[0]), domain[1:]
-        if domain[0] == AND_OPERATOR:
-            done1, todo1 = distribute_negate(domain[1:])
-            done2, todo2 = distribute_negate(todo1)
-            return [OR_OPERATOR] + done1 + done2, todo2
-        if domain[0] == OR_OPERATOR:
-            done1, todo1 = distribute_negate(domain[1:])
-            done2, todo2 = distribute_negate(todo1)
-            return [AND_OPERATOR] + done1 + done2, todo2
-    if not domain:
-        return []
-    if domain[0] != NOT_OPERATOR:
-        return [domain[0]] + distribute_not(domain[1:])
-    if domain[0] == NOT_OPERATOR:
-        done, todo = distribute_negate(domain[1:])
-        return done + distribute_not(todo)
+    # This is an iterative version of a recursive function that split domain
+    # into subdomains, processes them and combine the results. The "stack" below
+    # represents the recursive calls to be done.
+    result = []
+    stack = [False]
+
+    for token in domain:
+        negate = stack.pop()
+        # negate tells whether the subdomain starting with token must be negated
+        if is_leaf(token):
+            if negate:
+                left, operator, right = token
+                if operator in TERM_OPERATORS_NEGATION:
+                    result.append((left, TERM_OPERATORS_NEGATION[operator], right))
+                else:
+                    result.append(NOT_OPERATOR)
+                    result.append(token)
+            else:
+                result.append(token)
+        elif token == NOT_OPERATOR:
+            stack.append(not negate)
+        elif token in DOMAIN_OPERATORS_NEGATION:
+            result.append(DOMAIN_OPERATORS_NEGATION[token] if negate else token)
+            stack.append(negate)
+            stack.append(negate)
+        else:
+            result.append(token)
+
+    return result
 
 
 # --------------------------------------------------
@@ -343,7 +349,16 @@ def generate_table_alias(src_table_alias, joined_tables=[]):
         return '%s' % alias, '%s' % _quote(alias)
     for link in joined_tables:
         alias += '__' + link[1]
-    assert len(alias) < 64, 'Table alias name %s is longer than the 64 characters size accepted by default in postgresql.' % alias
+    # Use an alternate alias scheme if length exceeds the PostgreSQL limit
+    # of 63 characters.
+    if len(alias) >= 64:
+        # We have to fit a crc32 hash and one underscore
+        # into a 63 character alias. The remaining space we can use to add
+        # a human readable prefix.
+        alias_hash = hex(crc32(alias))[2:]
+        ALIAS_PREFIX_LENGTH = 63 - len(alias_hash) - 1
+        alias = "%s_%s" % (
+            alias[:ALIAS_PREFIX_LENGTH], alias_hash)
     return '%s' % alias, '%s as %s' % (_quote(joined_tables[-1][0]), _quote(alias))
 
 
@@ -714,6 +729,8 @@ class expression(object):
             """ Return a domain implementing the child_of operator for [(left,child_of,ids)],
                 either as a range using the parent_left/right tree lookup fields
                 (when available), or as an expanded [(left,in,child_ids)] """
+            if not ids:
+                return FALSE_DOMAIN
             if left_model._parent_store and (not left_model.pool._init):
                 # TODO: Improve where joins are implemented for many with '.', replace by:
                 # doms += ['&',(prefix+'.parent_left','<',o.parent_right),(prefix+'.parent_left','>=',o.parent_left)]

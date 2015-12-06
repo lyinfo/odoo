@@ -206,7 +206,7 @@ class google_calendar(osv.AbstractModel):
             context = {}
         if event.allday:
             start_date = fields.datetime.context_timestamp(cr, uid, datetime.strptime(event.start, tools.DEFAULT_SERVER_DATETIME_FORMAT), context=context).isoformat('T').split('T')[0]
-            final_date = fields.datetime.context_timestamp(cr, uid, datetime.strptime(event.start, tools.DEFAULT_SERVER_DATETIME_FORMAT) + timedelta(hours=event.duration) + timedelta(days=isCreating and 1 or 0), context=context).isoformat('T').split('T')[0]
+            final_date = fields.datetime.context_timestamp(cr, uid, datetime.strptime(event.stop, tools.DEFAULT_SERVER_DATETIME_FORMAT) + timedelta(days=1), context=context).isoformat('T').split('T')[0]
             type = 'date'
             vstype = 'dateTime'
         else:
@@ -875,11 +875,9 @@ class google_calendar(osv.AbstractModel):
                     if actSrc == 'GG':
                         try:
                             self.delete_an_event(cr, uid, current_event[0], context=context)
-                        except Exception, e:
-                            error = simplejson.loads(e.read())
-                            error_nr = error.get('error', {}).get('code')
+                        except urllib2.HTTPError, e:
                             # if already deleted from gmail or never created
-                            if error_nr in (404, 410,):
+                            if e.code in (404, 410,):
                                 pass
                             else:
                                 raise e

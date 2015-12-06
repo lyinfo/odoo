@@ -1014,7 +1014,10 @@ class purchase_order(osv.osv):
                     if (po_line.move_ids and
                             all(move.state in ('done', 'cancel') for move in po_line.move_ids) and
                             not all(move.state == 'cancel' for move in po_line.move_ids) and
-                            all(move.invoice_state == 'invoiced' for move in po_line.move_ids if move.state == 'done')):
+                            all(move.invoice_state == 'invoiced' for move in po_line.move_ids if move.state == 'done')
+                            and po_line.invoice_lines and all(line.invoice_id.state not in ['draft', 'cancel'] for line in po_line.invoice_lines)):
+                        is_invoiced.append(po_line.id)
+                    elif po_line.product_id.type == 'service':
                         is_invoiced.append(po_line.id)
             else:
                 for po_line in po.order_line:
@@ -1466,7 +1469,7 @@ class procurement_order(osv.osv):
         if qty != po_line.product_qty:
             pricelist_obj = self.pool.get('product.pricelist')
             pricelist_id = po_line.order_id.partner_id.property_product_pricelist_purchase.id
-            price = pricelist_obj.price_get(cr, uid, [pricelist_id], procurement.product_id.id, qty, po_line.order_id.partner_id.id, {'uom': procurement.product_uom.id})[pricelist_id]
+            price = pricelist_obj.price_get(cr, uid, [pricelist_id], procurement.product_id.id, qty, po_line.order_id.partner_id.id, {'uom': procurement.product_id.uom_po_id.id})[pricelist_id]
 
         return qty, price
 
@@ -1503,9 +1506,12 @@ class procurement_order(osv.osv):
                 if available_draft_po_ids:
                     po_id = available_draft_po_ids[0]
                     po_rec = po_obj.browse(cr, uid, po_id, context=context)
+
+                    po_to_update = {'origin': po_rec.origin and ', '.join([po_rec.origin, procurement.origin]) or procurement.origin}
                     #if the product has to be ordered earlier those in the existing PO, we replace the purchase date on the order to avoid ordering it too late
                     if datetime.strptime(po_rec.date_order, DEFAULT_SERVER_DATETIME_FORMAT) > purchase_date:
-                        po_obj.write(cr, uid, [po_id], {'date_order': purchase_date.strftime(DEFAULT_SERVER_DATETIME_FORMAT)}, context=context)
+                        po_to_update.update({'date_order': purchase_date.strftime(DEFAULT_SERVER_DATETIME_FORMAT)})
+                    po_obj.write(cr, uid, [po_id], po_to_update, context=context)
                     #look for any other PO line in the selected PO with same product and UoM to sum quantities instead of creating a new po line
                     available_po_line_ids = po_line_obj.search(cr, uid, [('order_id', '=', po_id), ('product_id', '=', line_vals['product_id']), ('product_uom', '=', line_vals['product_uom'])], context=context)
                     if available_po_line_ids:
@@ -1537,7 +1543,7 @@ class procurement_order(osv.osv):
                         'payment_term_id': partner.property_supplier_payment_term.id or False,
                         'dest_address_id': procurement.partner_dest_id.id,
                     }
-                    po_id = self.create_procurement_purchase_order(cr, SUPERUSER_ID, procurement, po_vals, line_vals, context=context)
+                    po_id = self.create_procurement_purchase_order(cr, SUPERUSER_ID, procurement, po_vals, line_vals, context=dict(context, company_id=po_vals['company_id']))
                     po_line_id = po_obj.browse(cr, uid, po_id, context=context).order_line[0].id
                     pass_ids.append(procurement.id)
                 res[procurement.id] = po_line_id

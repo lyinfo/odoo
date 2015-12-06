@@ -1,45 +1,46 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* fetchmail
-#
+# * fetchmail
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: openobject-addons\n"
+"Project-Id-Version: Odoo 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-21 14:08+0000\n"
-"PO-Revision-Date: 2015-01-26 17:14+0800\n"
-"Last-Translator: \n"
-"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
+"PO-Revision-Date: 2015-07-17 07:08+0000\n"
+"Last-Translator: Martin Trigaux\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-8/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"Content-Transfer-Encoding: \n"
 "Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_tree
 msgid "# of emails"
-msgstr "# 郵件"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_form
 msgid "Actions to Perform on Incoming Mails"
-msgstr "執行郵件傳入操作"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,active:0
 msgid "Active"
-msgstr "啓用"
+msgstr "活躍"
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_form
 msgid "Advanced"
-msgstr "進階"
+msgstr "進階的"
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_form
 msgid "Advanced Options"
-msgstr "進階選項"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_form
@@ -50,30 +51,30 @@ msgstr "設定"
 #. module: fetchmail
 #: view:base.config.settings:fetchmail.inherit_view_general_configuration
 msgid "Configure the incoming email gateway"
-msgstr "設定傳入電子郵件網關"
+msgstr ""
 
 #. module: fetchmail
 #: selection:fetchmail.server,state:0
 msgid "Confirmed"
-msgstr "已確認"
+msgstr "確認"
 
 #. module: fetchmail
 #: code:addons/fetchmail/fetchmail.py:163
 #, python-format
 msgid "Connection test failed!"
-msgstr "連接測試失敗！"
+msgstr ""
 
 #. module: fetchmail
 #: help:fetchmail.server,is_ssl:0
 msgid ""
 "Connections are encrypted with SSL/TLS through a dedicated port (default: "
 "IMAPS=993, POP3S=995)"
-msgstr "連接是通過一個專門的端口加密的SSL/ TLS（默認：IMAPS=993，POP3S=995）"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,object_id:0
 msgid "Create a New Record"
-msgstr "創建新的資料"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.config.settings,create_uid:0
@@ -85,17 +86,17 @@ msgstr ""
 #: field:fetchmail.config.settings,create_date:0
 #: field:fetchmail.server,create_date:0
 msgid "Created on"
-msgstr ""
+msgstr "建立於"
 
 #. module: fetchmail
 #: help:fetchmail.server,priority:0
 msgid "Defines the order of processing, lower values mean higher priority"
-msgstr "設定被處理的順序，較小的值表示較高的優先級"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_form
 msgid "Fetch Now"
-msgstr "現在下載"
+msgstr ""
 
 #. module: fetchmail
 #: code:addons/fetchmail/fetchmail.py:163
@@ -104,18 +105,16 @@ msgid ""
 "Here is what we got instead:\n"
 " %s."
 msgstr ""
-"下面是我們得到了，而不是：\n"
-" %s。"
 
 #. module: fetchmail
 #: help:fetchmail.server,server:0
 msgid "Hostname or IP of the mail server"
-msgstr "郵件伺服器主機名或IP地址"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.config.settings,id:0 field:fetchmail.server,id:0
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_search
@@ -125,44 +124,44 @@ msgstr ""
 #. module: fetchmail
 #: selection:fetchmail.server,type:0
 msgid "IMAP Server"
-msgstr "IMAP伺服器"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_search
 msgid "If SSL required."
-msgstr "如果需要開啓SSL."
+msgstr ""
 
 #. module: fetchmail
 #: field:mail.mail,fetchmail_server_id:0
 msgid "Inbound Mail Server"
-msgstr "入站郵件伺服器"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_form
 #: view:fetchmail.server:fetchmail.view_email_server_search
 msgid "Incoming Mail Server"
-msgstr "接收郵件伺服器"
+msgstr ""
 
 #. module: fetchmail
 #: model:ir.actions.act_window,name:fetchmail.action_email_server_tree
 #: model:ir.ui.menu,name:fetchmail.menu_action_fetchmail_server_tree
 msgid "Incoming Mail Servers"
-msgstr "接收郵件伺服器"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,attach:0
 msgid "Keep Attachments"
-msgstr "保留附檔"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,original:0
 msgid "Keep Original"
-msgstr "保留原件"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,date:0
 msgid "Last Fetch Date"
-msgstr "最後下載時間"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.config.settings,write_uid:0
@@ -179,18 +178,18 @@ msgstr ""
 #. module: fetchmail
 #: selection:fetchmail.server,type:0
 msgid "Local Server"
-msgstr "本地伺服器"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_form
 msgid "Login Information"
-msgstr "登入資訊"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,message_ids:0
 #: model:ir.actions.act_window,name:fetchmail.act_server_history
 msgid "Messages"
-msgstr ""
+msgstr "訊息"
 
 #. module: fetchmail
 #: field:fetchmail.server,name:0
@@ -200,19 +199,19 @@ msgstr "名稱"
 #. module: fetchmail
 #: selection:fetchmail.server,state:0
 msgid "Not Confirmed"
-msgstr "未確認"
+msgstr ""
 
 #. module: fetchmail
 #: help:fetchmail.server,action_id:0
 msgid ""
 "Optional custom server action to trigger for each incoming mail, on the "
 "record that was created or updated by this mail"
-msgstr "對每個收到的郵件觸發可選的伺服器動作執行於該郵件所創建或修改的資料行。"
+msgstr ""
 
 #. module: fetchmail
 #: model:ir.model,name:fetchmail.model_mail_mail
 msgid "Outgoing Mails"
-msgstr "傳出郵件"
+msgstr "送出信件"
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_search
@@ -222,17 +221,17 @@ msgstr ""
 #. module: fetchmail
 #: selection:fetchmail.server,type:0
 msgid "POP Server"
-msgstr "POP 伺服器"
+msgstr ""
 
 #. module: fetchmail
 #: model:ir.model,name:fetchmail.model_fetchmail_server
 msgid "POP/IMAP Server"
-msgstr "POP/IMAP 伺服器"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_tree
 msgid "POP/IMAP Servers"
-msgstr "POP/IMAP 伺服器"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,password:0
@@ -242,7 +241,7 @@ msgstr "密碼"
 #. module: fetchmail
 #: field:fetchmail.server,port:0
 msgid "Port"
-msgstr "端口"
+msgstr ""
 
 #. module: fetchmail
 #: help:fetchmail.server,object_id:0
@@ -255,7 +254,7 @@ msgstr ""
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_form
 msgid "Reset Confirmation"
-msgstr "取消確認"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_search
@@ -270,17 +269,17 @@ msgstr ""
 #. module: fetchmail
 #: field:fetchmail.server,script:0
 msgid "Script"
-msgstr "腳本"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_search
 msgid "Search Incoming Mail Servers"
-msgstr "搜尋接收郵件伺服器"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_form
 msgid "Server & Login"
-msgstr "伺服器 & 登入"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,action_id:0
@@ -290,32 +289,32 @@ msgstr "伺服器動作"
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_form
 msgid "Server Information"
-msgstr "伺服器資訊"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,server:0
 msgid "Server Name"
-msgstr "伺服器名稱"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,priority:0
 msgid "Server Priority"
-msgstr "伺服器優先級"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,type:0
 msgid "Server Type"
-msgstr "伺服器類型"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_search
 msgid "Server type IMAP."
-msgstr "IMAP"
+msgstr ""
 
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_search
 msgid "Server type POP."
-msgstr "POP"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,state:0
@@ -325,12 +324,12 @@ msgstr "狀態"
 #. module: fetchmail
 #: view:fetchmail.server:fetchmail.view_email_server_form
 msgid "Test & Confirm"
-msgstr "測試 & 確認"
+msgstr ""
 
 #. module: fetchmail
 #: field:fetchmail.server,user:0
 msgid "Username"
-msgstr "登入賬號"
+msgstr "使用者名稱"
 
 #. module: fetchmail
 #: help:fetchmail.server,original:0
