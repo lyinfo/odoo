@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Odoo 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-21 14:08+0000\n"
-"PO-Revision-Date: 2015-07-27 04:26+0000\n"
+"PO-Revision-Date: 2015-12-04 06:06+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/odoo/odoo-8/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -130,7 +130,7 @@ msgstr "已確認"
 #: field:procurement.order.compute.all,create_uid:0
 #: field:procurement.rule,create_uid:0
 msgid "Created by"
-msgstr ""
+msgstr "建立者"
 
 #. module: procurement
 #: field:procurement.group,create_date:0 field:procurement.order,create_date:0
@@ -142,7 +142,7 @@ msgstr "建立於"
 #. module: procurement
 #: help:procurement.order,message_last_post:0
 msgid "Date of the last message posted on the record."
-msgstr ""
+msgstr "釋出到記錄上的最後資訊的日期"
 
 #. module: procurement
 #: field:procurement.group,move_type:0
@@ -247,21 +247,21 @@ msgstr "為關注者"
 #. module: procurement
 #: field:procurement.order,message_last_post:0
 msgid "Last Message Date"
-msgstr ""
+msgstr "最後訊息日期"
 
 #. module: procurement
 #: field:procurement.group,write_uid:0 field:procurement.order,write_uid:0
 #: field:procurement.order.compute.all,write_uid:0
 #: field:procurement.rule,write_uid:0
 msgid "Last Updated by"
-msgstr ""
+msgstr "最後更新："
 
 #. module: procurement
 #: field:procurement.group,write_date:0 field:procurement.order,write_date:0
 #: field:procurement.order.compute.all,write_date:0
 #: field:procurement.rule,write_date:0
 msgid "Last Updated on"
-msgstr ""
+msgstr "最後更新於"
 
 #. module: procurement
 #: view:procurement.order:procurement.view_procurement_filter
@@ -418,7 +418,7 @@ msgstr "拉動規則"
 #. module: procurement
 #: view:procurement.rule:procurement.view_procurement_rule_tree
 msgid "Pull Rules"
-msgstr "拉動規則"
+msgstr "拉式規則"
 
 #. module: procurement
 #: field:procurement.order,product_qty:0

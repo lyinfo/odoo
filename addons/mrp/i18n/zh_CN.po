@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Odoo 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-21 14:07+0000\n"
-"PO-Revision-Date: 2015-11-26 05:44+0000\n"
+"PO-Revision-Date: 2015-12-02 07:35+0000\n"
 "Last-Translator: jeffery chen fan <jeffery9@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/odoo/odoo-8/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -1612,12 +1612,12 @@ msgstr "内部编号必须在公司内唯一！"
 #: help:mrp.production,origin:0
 msgid ""
 "Reference of the document that generated this production order request."
-msgstr "生成这张生产订单的前置单据编号"
+msgstr "生成此生产订单请求的单据参考"
 
 #. module: mrp
 #: help:mrp.bom,position:0
 msgid "Reference to a position in an external plan."
-msgstr "位置的编号"
+msgstr "在外部方案中的位置参考"
 
 #. module: mrp
 #: field:mrp.workcenter,resource_id:0
