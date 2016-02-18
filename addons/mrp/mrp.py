@@ -58,10 +58,10 @@ class mrp_workcenter(osv.osv):
         'time_stop': fields.float('Time after prod.', help="Time in hours for the cleaning."),
         'costs_hour': fields.float('Cost per hour', help="Specify Cost of Work Center per hour."),
         'costs_hour_account_id': fields.many2one('account.analytic.account', 'Hour Account',
-            help="Fill this only if you want automatic analytic accounting entries on production orders."),
+            help="Fill this only if you want automatic analytic accounting entries on production orders.", domain=[('account_type', '=', 'normal')]),
         'costs_cycle': fields.float('Cost per cycle', help="Specify Cost of Work Center per cycle."),
         'costs_cycle_account_id': fields.many2one('account.analytic.account', 'Cycle Account',
-            help="Fill this only if you want automatic analytic accounting entries on production orders."),
+            help="Fill this only if you want automatic analytic accounting entries on production orders.", domain=[('account_type', '=', 'normal')]),
         'costs_general_account_id': fields.many2one('account.account', 'General Account', domain=[('deprecated', '=', False)]),
         'resource_id': fields.many2one('resource.resource','Resource', ondelete='cascade', required=True),
         'product_id': fields.many2one('product.product','Work Center Product', help="Fill this product to easily track your production costs in the analytic accounting."),
@@ -313,7 +313,7 @@ class mrp_bom(osv.osv):
                 continue
 
             if previous_products and bom_line_id.product_id.product_tmpl_id.id in previous_products:
-                raise UserError(_('BoM "%s" contains a BoM line with a product recursion: "%s".') % (master_bom.name,bom_line_id.product_id.name_get()[0][1]))
+                raise UserError(_('BoM "%s" contains a BoM line with a product recursion: "%s".') % (master_bom.code or "", bom_line_id.product_id.name_get()[0][1]))
 
             quantity = _factor(bom_line_id.product_qty * factor, bom_line_id.product_efficiency, bom_line_id.product_rounding)
             bom_id = self._bom_find(cr, uid, product_id=bom_line_id.product_id.id, properties=properties, context=context)
@@ -1221,6 +1221,7 @@ class mrp_production(osv.osv):
         move_id = stock_move.create(cr, uid, {
             'name': production.name,
             'date': production.date_planned,
+            'date_expected': production.date_planned,
             'product_id': product.id,
             'product_uom_qty': qty,
             'product_uom': uom_id,

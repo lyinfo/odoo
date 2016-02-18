@@ -13,7 +13,7 @@
         <menuitem name="Search"
             id="menu_project_management"
             parent="base.menu_main_pm"
-            sequence="2" groups="base.group_no_one,group_project_manager"/>
+            sequence="2" groups="base.group_no_one,group_project_user"/>
 
         <menuitem id="menu_project_config" name="Configuration" parent="base.menu_main_pm"
             sequence="100" groups="base.group_configuration"/>
@@ -34,7 +34,7 @@
                     <separator/>
                     <filter string="New" name="draft" domain="[('stage_id.sequence', '&lt;=', 1)]"/>
                     <separator/>
-                    <filter string="Important Messages" name="message_needaction" domain="[('message_needaction','=',True)]"/>
+                    <filter string="Unread Messages" name="message_needaction" domain="[('message_needaction','=',True)]"/>
                     <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
                     <group expand="0" string="Group By">
                         <filter string="Project" name="project" context="{'group_by':'project_id'}"/>
@@ -164,7 +164,7 @@
                     <filter string="Manager" domain="[('user_id','=',uid)]"/>
                     <filter string="Followed by Me" domain="[('message_is_follower','=',True)]"/>
                     <separator/>
-                    <filter string="Important Messages" name="message_needaction" domain="[('message_needaction','=',True)]"/>
+                    <filter string="Unread Messages" name="message_needaction" domain="[('message_needaction','=',True)]"/>
                     <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
                     <field name="user_id" string="Project Manager"/>
                     <field name="partner_id" string="Contact" filter_domain="[('partner_id', 'child_of', self)]"/>
@@ -361,7 +361,7 @@
                                 <div class="oe_kanban_bottom_left">
                                     <field name="priority" widget="priority"/>
                                     <t t-if="record.message_needaction_counter.raw_value">
-                                        <span class='oe_kanban_mail_new' title='Important Messages'><i class='fa fa-comments'/><t t-raw="record.message_needaction_counter.raw_value"/></span>
+                                        <span class='oe_kanban_mail_new' title='Unread Messages'><i class='fa fa-comments'/><t t-raw="record.message_needaction_counter.raw_value"/></span>
                                     </t>
                                 </div>
                                 <div class="oe_kanban_bottom_right">
@@ -444,6 +444,12 @@
                     <field name="use_tasks"/>
                     <label for="use_tasks"/>
                 </xpath>
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <button class="oe_stat_button" type="object" name="projects_action" 
+                        icon="fa-puzzle-piece" attrs="{'invisible': [('project_count', '=', 0)]}">
+                        <field string="Projects" name="project_count" widget="statinfo"/>
+                    </button>
+                </xpath>
             </field>
         </record>
 
@@ -460,12 +466,12 @@
             </field>
         </record>
         <record id="open_view_task_list_kanban" model="ir.actions.act_window.view">
-            <field name="sequence" eval="1"/>
+            <field name="sequence" eval="0"/>
             <field name="view_mode">kanban</field>
             <field name="act_window_id" ref="action_view_task"/>
         </record>
         <record id="open_view_task_list_tree" model="ir.actions.act_window.view">
-            <field name="sequence" eval="0"/>
+            <field name="sequence" eval="1"/>
             <field name="view_mode">tree</field>
             <field name="act_window_id" ref="action_view_task"/>
         </record>
@@ -600,7 +606,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//group[@name='account_grp']" position="after">
                     <group name="project_grp" string="Projects">
-                        <field name="project_time_mode_id" domain="[('category_id','=', %(product.uom_categ_wtime)d)]"/>
+                        <field name="project_time_mode_id" domain="[('category_id','=', %(product.uom_categ_wtime)d)]" groups="base.group_no_one"/>
                     </group>
                 </xpath>
             </field>

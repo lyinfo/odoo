@@ -295,10 +295,6 @@ class crm_lead(format_address, osv.osv):
             if user_id in team.member_ids.ids:
                 return {}
         team_id = self.pool['crm.team']._get_default_team_id(cr, uid, context=context, user_id=user_id)
-        if user_id and not team_id and self.pool['res.users'].has_group(cr, uid, 'base.group_multi_salesteams'):
-            team_ids = self.pool.get('crm.team').search(cr, uid, ['|', ('user_id', '=', user_id), ('member_ids', '=', user_id)], context=context)
-            if team_ids:
-                team_id = team_ids[0]
         return {'value': {'team_id': team_id}}
 
     def stage_find(self, cr, uid, cases, team_id, domain=None, order='sequence', context=None):
@@ -932,7 +928,7 @@ class crm_lead(format_address, osv.osv):
             if alias_record and alias_record.alias_domain and alias_record.alias_name:
                 dynamic_help = '<p>%s</p>' % _("""All email incoming to %(link)s  will automatically create new opportunity.
 Update your business card, phone book, social media,... Send an email right now and see it here.""") % {
-                    'link': "<a href='mailto:%s'>%s</a>" % (alias_record.alias_name, alias_record.alias_domain)
+                    'link': "<a href='mailto:%(email)s'>%(email)s</a>" % {'email': '%s@%s' % (alias_record.alias_name, alias_record.alias_domain)}
                 }
                 return '<p class="oe_view_nocontent_create">%s</p>%s%s' % (
                     _('Click to add a new opportunity'),
