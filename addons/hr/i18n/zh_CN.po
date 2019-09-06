@@ -289,7 +289,7 @@ msgstr "学士"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__bank_account_id
 msgid "Bank Account Number"
-msgstr "银行账户号码"
+msgstr "工资银行帐户"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_cto
@@ -328,7 +328,7 @@ msgstr "出生"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__certificate
 msgid "Certificate Level"
-msgstr "证书等级"
+msgstr "学历"
 
 #. module: hr
 #: model:hr.job,name:hr.job_ceo
@@ -365,7 +365,7 @@ msgstr "接近完美..."
 #: model:ir.model.fields,field_description:hr.field_hr_employee__coach_id
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_filter
 msgid "Coach"
-msgstr "教练"
+msgstr "入职引导人"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department__color
@@ -647,7 +647,7 @@ msgstr "女性"
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__study_field
 msgid "Field of Study"
-msgstr "研究领域"
+msgstr "所学专业"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_consultant
@@ -1004,7 +1004,7 @@ msgstr "已婚"
 #. module: hr
 #: selection:hr.employee,certificate:0
 msgid "Master"
-msgstr "主版本"
+msgstr "硕士"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_cto
@@ -1059,7 +1059,7 @@ msgstr "必备..."
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__name
 msgid "Name"
-msgstr "名称"
+msgstr "姓名"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__country_id
@@ -1994,7 +1994,7 @@ msgstr "部门"
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
 msgid "e.g. Part Time"
-msgstr "例如： 部分时间"
+msgstr "例如： 兼职"
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_hr_job_form
